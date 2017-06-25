@@ -1,0 +1,69 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Anton|Lato|Montserrat')
+
+/* Variables (Solo se ve en SASS) */
+
+$yellow: #ffb61e
+$black: #1b1b1b
+$white: #ffffff
+$grey: #eeeeee
+$red: #ff5959
+$blue: #0071ce
+
+$anton: "Anton", "Helvetica Neue", sans-serif
+$montserrat: "Montserrat", "Helvetica Neue", sans-serif
+$lato: "Lato", "Helvetica Neue", sans-serif
+
+$normal-size: 18px
+$mobile-size: 16px
+$big-size: 20px
+
+$transition: .2s ease-in
+
+/* Componentes Basicos */
+body
+    background-color: $white
+    overflow-x: hidden
+    font-family: $lato
+    font-size: $normal-size
+    color: $black
+
+@media (max-width: 600px)
+    body
+        font-size: $mobile-size
+        
+
+@media (max-width: 1500px)
+    body
+        font-size: $big-size
+        
+h1,h2,h3,h4,h5,h6
+    font-family: $montserrat
+
+/* Selection */
+::-moz-selection 
+    text-shadow: none
+    background: $blue
+    color: $white
+
+::selection 
+    text-shadow: none
+    background: $blue
+    color: $white
+
+img::-moz-selection 
+    background: transparent
+
+img::selection 
+    background: transparent
+
+img::-moz-selection 
+    background: transparent
+
+    
+/* Buttons */
+@import 'buttons.sass'
+/* index.html */
+@import 'index.sass'
+/* 404.html + Under Construction */
+@import 'error.sass'

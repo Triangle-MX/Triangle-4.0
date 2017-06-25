@@ -1,0 +1,304 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css?family=Anton|Lato|Montserrat");
+/* Variables (Solo se ve en SASS) */
+/* Componentes Basicos */
+body {
+  background-color: #ffffff;
+  overflow-x: hidden;
+  font-family: "Lato", "Helvetica Neue", sans-serif;
+  font-size: 18px;
+  color: #1b1b1b; }
+
+@media (max-width: 600px) {
+  body {
+    font-size: 16px; } }
+@media (max-width: 1500px) {
+  body {
+    font-size: 20px; } }
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", "Helvetica Neue", sans-serif; }
+
+/* Selection */
+::-moz-selection {
+  text-shadow: none;
+  background: #0071ce;
+  color: #ffffff; }
+
+::selection {
+  text-shadow: none;
+  background: #0071ce;
+  color: #ffffff; }
+
+img::-moz-selection {
+  background: transparent; }
+
+img::selection {
+  background: transparent; }
+
+img::-moz-selection {
+  background: transparent; }
+
+/* Buttons */
+.btn1, .btn1:visited, .btn1:active {
+  padding: 10px 42px;
+  background-color: #ffb61e;
+  color: #ffffff;
+  cursor: pointer;
+  border: 3px solid #ffb61e;
+  border-radius: 250px;
+  font-size: 120%;
+  transition: 0.2s ease-in; }
+  .btn1:hover, .btn1:focus, .btn1:visited:hover, .btn1:visited:focus, .btn1:active:hover, .btn1:active:focus {
+    background-color: #ffffff;
+    color: #ffb61e;
+    text-decoration: none !important; }
+
+/* index.html */
+/* Hero */
+#hero {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #ffffff;
+  background-image: url("../img/City.svg");
+  background-repeat: none;
+  background-size: cover;
+  background-position: bottom;
+  padding-top: 80px; }
+  @media (max-width: 600px) {
+    #hero {
+      padding-top: 40px; } }
+  @media (max-width: 900px) {
+    #hero {
+      padding-top: 60px; } }
+  #hero #logo {
+    width: 250px;
+    margin-bottom: 10px; }
+    @media (min-width: 1300px) {
+      #hero #logo {
+        width: 400px; } }
+  #hero #title {
+    font-size: 450%;
+    font-family: "Anton", "Helvetica Neue", sans-serif;
+    text-transform: uppercase;
+    color: #1b1b1b;
+    margin: 0px; }
+    @media (min-width: 1400px) {
+      #hero #title {
+        font-size: 400%; } }
+    @media (max-width: 900px) {
+      #hero #title {
+        font-size: 300%; } }
+    @media (max-width: 500px) {
+      #hero #title {
+        font-size: 250%; } }
+    #hero #title span {
+      color: #ffb61e; }
+  #hero #lead {
+    font-size: 160%;
+    font-family: "Lato", "Helvetica Neue", sans-serif;
+    color: #1b1b1b; }
+    @media (min-width: 1400px) {
+      #hero #lead {
+        font-size: 200%; } }
+    @media (max-width: 900px) {
+      #hero #lead {
+        font-size: 130%; } }
+    @media (max-width: 500px) {
+      #hero #lead {
+        font-size: 110%; } }
+    #hero #lead span {
+      color: #ffb61e;
+      font-weight: bold;
+      font-size: 110%; }
+  #hero #car {
+    width: 150px;
+    z-index: 10;
+    position: relative;
+    left: -150px;
+    bottom: -131px;
+    animation-name: car;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s; }
+@keyframes car {
+  60% {
+    margin-left: 770px; }
+  70% {
+    margin-left: 800px; }
+  100% {
+    margin-left: 1590px; } }
+    @media (min-width: 1445px) {
+      #hero #car {
+        display: none; } }
+    @media (max-width: 1435px) {
+      #hero #car {
+        display: none; } }
+  #hero #taxi {
+    width: 150px;
+    z-index: 10;
+    position: relative;
+    left: -150px;
+    bottom: -139px;
+    animation-name: taxi;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s; }
+@keyframes taxi {
+  40% {
+    margin-left: 770px; }
+  50% {
+    margin-left: 800px; }
+  100% {
+    margin-left: 1590px; } }
+    @media (min-width: 1445px) {
+      #hero #taxi {
+        display: none; } }
+    @media (max-width: 1435px) {
+      #hero #taxi {
+        display: none; } }
+
+/* Pasos */
+.paso-container {
+  background-color: #ffffff;
+  width: 100%;
+  height: 100%;
+  padding: 60px; }
+  .paso-container .icon {
+    height: 141px;
+    width: auto;
+    margin-bottom: 20px; }
+    @media (max-width: 900px) {
+      .paso-container .icon {
+        height: 100px; } }
+  .paso-container .title {
+    margin-top: 0px;
+    margin-bottom: 30px; }
+    .paso-container .title span {
+      font-weight: bold; }
+  .paso-container .lead {
+    margin-top: 0px;
+    margin-bottom: 51px; }
+
+#obten, #construye, #expande, #nosotros {
+  padding: 80px 144px; }
+  @media (max-width: 900px) {
+    #obten, #construye, #expande, #nosotros {
+      padding: 40px; } }
+  @media (max-width: 600px) {
+    #obten, #construye, #expande, #nosotros {
+      padding: 20px; } }
+
+#obten {
+  background-color: #ffb61e; }
+
+#construye {
+  background-color: #eeeeee; }
+
+#expande {
+  background-color: #1b1b1b; }
+
+#nosotros {
+  background-color: #eeeeee; }
+
+#proyectos {
+  width: 100%;
+  min-height: 500px;
+  background-color: #ffffff;
+  background-image: url("../img/City2.0B.svg");
+  background-repeat: none;
+  background-size: cover;
+  background-position: bottom right;
+  padding-bottom: 80px;
+  padding-top: 80px;
+  transition: 0.2s ease-in; }
+  @media (max-width: 1200px) {
+    #proyectos {
+      background-image: url("../img/City2.0.svg"); } }
+  @media (max-width: 600px) {
+    #proyectos {
+      padding-top: 40px;
+      padding-bottom: 40px; } }
+  @media (max-width: 900px) {
+    #proyectos {
+      padding-top: 60px;
+      padding-bottom: 40px; } }
+  #proyectos:hover {
+    background-image: url("../img/City2.0.svg"); }
+  #proyectos .title {
+    font-size: 450%;
+    font-family: "Anton", "Helvetica Neue", sans-serif;
+    text-transform: uppercase;
+    color: #1b1b1b;
+    margin: 0px; }
+    @media (min-width: 1400px) {
+      #proyectos .title {
+        font-size: 450%; } }
+    @media (max-width: 1300px) {
+      #proyectos .title {
+        font-size: 280%; } }
+    @media (max-width: 500px) {
+      #proyectos .title {
+        font-size: 200%; } }
+    #proyectos .title span {
+      color: #ffb61e; }
+  #proyectos .lead {
+    font-size: 110%;
+    font-family: "Lato", "Helvetica Neue", sans-serif;
+    color: #1b1b1b; }
+    @media (min-width: 1400px) {
+      #proyectos .lead {
+        font-size: 120%; } }
+    @media (max-width: 900px) {
+      #proyectos .lead {
+        font-size: 110%; } }
+    @media (max-width: 500px) {
+      #proyectos .lead {
+        font-size: 100%; } }
+    #proyectos .lead span {
+      color: #ffb61e;
+      font-weight: bold;
+      font-size: 100%; }
+
+/* 404.html + Under Construction */
+#error-message {
+  width: 100%;
+  min-height: 100vh;
+  text-align: center;
+  padding-top: 70px; }
+  @media (max-width: 600px) {
+    #error-message {
+      padding-top: 80px; } }
+  #error-message .icon {
+    margin-bottom: 10px;
+    height: 250px; }
+  #error-message .title {
+    font-size: 350%;
+    margin: 0; }
+    @media (max-width: 650px) {
+      #error-message .title {
+        font-size: 250%; } }
+  #error-message .lead {
+    margin-bottom: 20px; }
+  #error-message span {
+    font-size: 110%;
+    font-weight: bold; }
+
+.error .btn1 {
+  background-color: #ff5959;
+  border-color: #ff5959; }
+  .error .btn1:hover {
+    background-color: #ffffff;
+    color: #ff5959; }
+.error span {
+  color: #ff5959; }
+
+.construction .btn1 {
+  background-color: #ffb61e;
+  border-color: #ffb61e; }
+  .construction .btn1:hover {
+    background-color: #ffffff;
+    color: #ffb61e; }
+.construction span {
+  color: #ffb61e; }
+
+/*# sourceMappingURL=main.css.map */
