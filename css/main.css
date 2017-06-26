@@ -48,6 +48,16 @@ img::-moz-selection {
   border-radius: 250px;
   font-size: 120%;
   transition: 0.2s ease-in; }
+  @media (max-width: 600px) {
+    .btn1, .btn1:visited, .btn1:active {
+      padding: 5px 21px;
+      background-color: #ffb61e;
+      color: #ffffff;
+      cursor: pointer;
+      border: 3px solid #ffb61e;
+      border-radius: 250px;
+      font-size: 110%;
+      transition: 0.2s ease-in; } }
   .btn1:hover, .btn1:focus, .btn1:visited:hover, .btn1:visited:focus, .btn1:active:hover, .btn1:active:focus {
     background-color: #ffffff;
     color: #ffb61e;
@@ -211,6 +221,8 @@ img::-moz-selection {
   padding-bottom: 80px;
   padding-top: 80px;
   transition: 0.2s ease-in; }
+  #proyectos:hover {
+    background-image: url("../img/City2.0.svg"); }
   @media (max-width: 1200px) {
     #proyectos {
       background-image: url("../img/City2.0.svg"); } }
@@ -222,8 +234,12 @@ img::-moz-selection {
     #proyectos {
       padding-top: 60px;
       padding-bottom: 40px; } }
-  #proyectos:hover {
-    background-image: url("../img/City2.0.svg"); }
+  @media (max-width: 600px) {
+    #proyectos {
+      background-image: url("../img/City2.0C.svg");
+      padding-bottom: 80px; }
+      #proyectos:hover {
+        background-image: url("../img/City2.0C.svg"); } }
   #proyectos .title {
     font-size: 450%;
     font-family: "Anton", "Helvetica Neue", sans-serif;
@@ -244,7 +260,8 @@ img::-moz-selection {
   #proyectos .lead {
     font-size: 110%;
     font-family: "Lato", "Helvetica Neue", sans-serif;
-    color: #1b1b1b; }
+    color: #1b1b1b;
+    margin-bottom: 30px; }
     @media (min-width: 1400px) {
       #proyectos .lead {
         font-size: 120%; } }

@@ -170,6 +170,9 @@
     padding-top: 80px
     transition: $transition
     
+    &:hover
+        background-image: url('../img/City2.0.svg')
+    
     @media (max-width: 1200px)
         background-image: url('../img/City2.0.svg')
     
@@ -181,15 +184,20 @@
         padding-top: 60px
         padding-bottom: 40px
         
-    &:hover
-        background-image: url('../img/City2.0.svg')
-    
+    @media (max-width: 600px)
+        background-image: url('../img/City2.0C.svg')
+        padding-bottom: 80px
+        
+        &:hover
+            background-image: url('../img/City2.0C.svg')
+        
     .title
         font-size: 450%
         font-family: $anton
         text-transform: uppercase
         color: $black
         margin: 0px
+        
         
         @media (min-width: 1400px)
             font-size: 450%
@@ -207,6 +215,7 @@
         font-size: 110%
         font-family: $lato
         color: $black
+        margin-bottom: 30px
         
         @media (min-width: 1400px)
             font-size: 120%
