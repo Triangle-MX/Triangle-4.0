@@ -14,5 +14,5 @@ The redesign includes subtle **animations**, wich will help to create a more **h
 
 The new version of the site includes several easter eggs:
 
-- Taxi (13" Macbooks | Other 1440px wide screens): Send you to a B&W version of the Header. Click the Taxi again to go back.
+- Taxi (13" Macbooks | Other 1440px wide screens): When you click it a Horn sound plays.
 
