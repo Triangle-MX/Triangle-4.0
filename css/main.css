@@ -344,11 +344,20 @@ img::-moz-selection {
     font-size: 140%;
     margin-bottom: 0px; }
   #footer .facebook i {
-    color: #3b5998; }
+    color: #3b5998;
+    transition: 0.2s ease-in; }
+    #footer .facebook i:hover {
+      color: #1b1b1b !important; }
   #footer .instagram i {
-    color: #8a3ab9; }
+    color: #8a3ab9;
+    transition: 0.2s ease-in; }
+    #footer .instagram i:hover {
+      color: #1b1b1b !important; }
   #footer .github i {
-    color: #333; }
+    color: #333;
+    transition: 0.2s ease-in; }
+    #footer .github i:hover {
+      color: #1b1b1b !important; }
   #footer .daltonic i {
     animation-name: daltonic;
     animation-duration: 5s;
@@ -382,7 +391,7 @@ img::-moz-selection {
     transition: 0.2s ease-in;
     cursor: pointer; }
     #footer .social-icons a:hover, #footer .star-wars-icons a:hover {
-      color: #ffb61e; }
+      color: #ffb61e !important; }
   #footer .list-inline {
     padding-top: 3px;
     padding-left: 0;

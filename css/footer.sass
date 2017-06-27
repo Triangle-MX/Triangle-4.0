@@ -20,19 +20,31 @@
         
     .facebook i
         color: #3b5998
+        transition: $transition
+        
+        &:hover
+            color: $black !important
     
     .instagram i
         color: #8a3ab9
+        transition: $transition
+        
+        &:hover
+            color: $black !important
         
     .github i
         color: #333
+        transition: $transition
+        
+        &:hover
+            color: $black !important
         
     .daltonic i
         animation-name: daltonic
         animation-duration: 5s
         animation-iteration-count: infinite
         cursor: pointer
-    
+        
         @keyframes daltonic
             0%
                 color: $black
@@ -63,7 +75,7 @@
         cursor: pointer
         
         &:hover
-            color: $yellow
+            color: $yellow !important
             
     .list-inline
         padding-top: 3px
