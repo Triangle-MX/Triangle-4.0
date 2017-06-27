@@ -248,6 +248,35 @@ img::-moz-selection {
     #footer .brand strong {
       color: #ffb61e;
       font-weight: bold; }
+  #footer .social-icons, #footer .star-wars-icons {
+    text-align: center;
+    font-size: 140%;
+    margin-bottom: 0px; }
+  #footer .facebook i {
+    color: #3b5998; }
+  #footer .instagram i {
+    color: #8a3ab9; }
+  #footer .github i {
+    color: #333; }
+  #footer .social-icons a, #footer .star-wars-icons a {
+    color: #1b1b1b;
+    transition: 0.2s ease-in;
+    cursor: pointer; }
+    #footer .social-icons a:hover, #footer .star-wars-icons a:hover {
+      color: #ffb61e; }
+  #footer .list-inline {
+    padding-top: 3px;
+    padding-left: 0;
+    margin-left: -7px;
+    list-style: none; }
+  #footer .star-wars-icons {
+    opacity: 0.05; }
+    @media (max-width: 1200px) {
+      #footer .star-wars-icons {
+        display: none; } }
+
+.daltonic i {
+  color: #0071ce; }
 
 /* Taxi Easter Egg */
 /* Taxi Animation on index.html */

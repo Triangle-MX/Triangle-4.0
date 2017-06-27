@@ -203,3 +203,40 @@
         strong
             color: $yellow
             font-weight: bold
+    
+    .social-icons, .star-wars-icons
+        text-align: center
+        font-size: 140%
+        margin-bottom: 0px
+        
+    .facebook i
+        color: #3b5998
+    
+    .instagram i
+        color: #8a3ab9
+        
+    .github i
+        color: #333
+    
+    .social-icons a, .star-wars-icons a
+        color: $black
+        transition: $transition
+        cursor: pointer
+        
+        &:hover
+            color: $yellow
+            
+    .list-inline
+        padding-top: 3px
+        padding-left: 0
+        margin-left: -7px
+        list-style: none
+        
+    .star-wars-icons
+        opacity: .05
+        
+        @media (max-width: 1200px)
+            display: none
+            
+.daltonic i
+    color: $blue

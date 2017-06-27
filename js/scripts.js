@@ -1,7 +1,19 @@
 // Taxi
 function horn(){
-       var audio = document.getElementById("horn-honk");
-       audio.play();
+       var taxiSound = document.getElementById("horn-honk");
+       taxiSound.play();
+};
+
+// Han
+function han(){
+       var hanSound = document.getElementById("han");
+       hanSound.play();
+};
+
+// Vader
+function vader(){
+       var vaderSound = document.getElementById("vader");
+       vaderSound.play();
 };
 
 // Smooth Scroll
