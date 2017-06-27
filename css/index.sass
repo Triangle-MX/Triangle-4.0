@@ -217,6 +217,36 @@
         
     .github i
         color: #333
+        
+    .daltonic i
+        animation-name: daltonic
+        animation-duration: 5s
+        animation-iteration-count: infinite
+        cursor: pointer
+    
+        @keyframes daltonic
+            0%
+                color: $black
+            10%
+                color: $grey
+            20%
+                color: $yellow
+            30%
+                color: orange
+            40%
+                color: $red
+            50%
+                color: #8a3ab9
+            60%
+                color: $blue
+            70%
+                color: aquamarine
+            80%
+                color: green
+            90%
+                color: #333
+            100%
+                color: $black
     
     .social-icons a, .star-wars-icons a
         color: $black
@@ -237,6 +267,3 @@
         
         @media (max-width: 1200px)
             display: none
-            
-.daltonic i
-    color: $blue

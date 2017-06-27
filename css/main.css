@@ -258,6 +258,34 @@ img::-moz-selection {
     color: #8a3ab9; }
   #footer .github i {
     color: #333; }
+  #footer .daltonic i {
+    animation-name: daltonic;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    cursor: pointer; }
+@keyframes daltonic {
+  0% {
+    color: #1b1b1b; }
+  10% {
+    color: #eeeeee; }
+  20% {
+    color: #ffb61e; }
+  30% {
+    color: orange; }
+  40% {
+    color: #ff5959; }
+  50% {
+    color: #8a3ab9; }
+  60% {
+    color: #0071ce; }
+  70% {
+    color: aquamarine; }
+  80% {
+    color: green; }
+  90% {
+    color: #333; }
+  100% {
+    color: #1b1b1b; } }
   #footer .social-icons a, #footer .star-wars-icons a {
     color: #1b1b1b;
     transition: 0.2s ease-in;
@@ -274,9 +302,6 @@ img::-moz-selection {
     @media (max-width: 1200px) {
       #footer .star-wars-icons {
         display: none; } }
-
-.daltonic i {
-  color: #0071ce; }
 
 /* Taxi Easter Egg */
 /* Taxi Animation on index.html */
