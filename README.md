@@ -19,7 +19,7 @@ The new version of the site includes several easter eggs:
 
 ## License
 
-We wanted to make the new version of our site open-source, so we added the **Creative Commons Attribution-ShareAlike 4.0** license. That means:
+We wanted to make the new version of our site open-source, so we added the **Creative Commons Attribution-ShareAlike 4.0** license. This is a human-readable summary of (and not a substitute for) the license (you can read the full license on the <code>License.txt</code> file):
 
 ### You are free to:
 
@@ -41,3 +41,5 @@ for any purpose, even commercially.
 You do not have to comply with the license for elements of the material in the public domain or where your use is permitted by an applicable exception or limitation.
 
 No warranties are given. The license may not give you all of the permissions necessary for your intended use. For example, other rights such as publicity, privacy, or moral rights may limit how you use the material.
+
+
