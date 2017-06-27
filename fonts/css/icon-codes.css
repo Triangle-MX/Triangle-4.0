@@ -1,8 +1,15 @@
 
 .icon-eye:before { content: '\e800'; } /* '' */
+.icon-help-circled:before { content: '\e801'; } /* '' */
+.icon-mail:before { content: '\e802'; } /* '' */
+.icon-lock:before { content: '\e803'; } /* '' */
+.icon-heart:before { content: '\e804'; } /* '' */
+.icon-star:before { content: '\e805'; } /* '' */
 .icon-facebook:before { content: '\f09a'; } /* '' */
 .icon-github:before { content: '\f09b'; } /* '' */
-.icon-youtube:before { content: '\f16a'; } /* '' */
+.icon-chat-empty:before { content: '\f0e6'; } /* '' */
+.icon-sitemap:before { content: '\f0e8'; } /* '' */
+.icon-lightbulb:before { content: '\f0eb'; } /* '' */
 .icon-instagram:before { content: '\f16d'; } /* '' */
 .icon-rebel:before { content: '\f1d0'; } /* '' */
 .icon-empire:before { content: '\f1d1'; } /* '' */

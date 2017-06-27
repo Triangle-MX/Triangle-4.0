@@ -38,31 +38,6 @@ img::selection {
 img::-moz-selection {
   background: transparent; }
 
-/* Buttons */
-.btn1, .btn1:visited, .btn1:active {
-  padding: 10px 42px;
-  background-color: #ffb61e;
-  color: #ffffff;
-  cursor: pointer;
-  border: 3px solid #ffb61e;
-  border-radius: 250px;
-  font-size: 120%;
-  transition: 0.2s ease-in; }
-  @media (max-width: 600px) {
-    .btn1, .btn1:visited, .btn1:active {
-      padding: 5px 21px;
-      background-color: #ffb61e;
-      color: #ffffff;
-      cursor: pointer;
-      border: 3px solid #ffb61e;
-      border-radius: 250px;
-      font-size: 110%;
-      transition: 0.2s ease-in; } }
-  .btn1:hover, .btn1:focus, .btn1:visited:hover, .btn1:visited:focus, .btn1:active:hover, .btn1:active:focus {
-    background-color: #ffffff;
-    color: #ffb61e;
-    text-decoration: none !important; }
-
 /* index.html */
 /* Hero */
 #hero {
@@ -326,6 +301,63 @@ img::-moz-selection {
       font-weight: bold;
       font-size: 110%; }
 
+/* Menu */
+#triangle-menu {
+  font-size: 110%;
+  box-shadow: 0px 10px 10px 0px rgba(27, 27, 27, 0.1); }
+
+#triangle-menu.navbar-default .navbar-brand {
+  color: white;
+  font-family: "Montserrat", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  font-size: 120%; }
+
+#triangle-menu.navbar-default {
+  font-size: 16px;
+  background-color: #ffb61e;
+  border-width: 0px;
+  border-radius: 0px; }
+
+#triangle-menu.navbar-default .navbar-nav > li > a {
+  color: white;
+  background-color: #ffb61e;
+  transition: 0.2s ease-in; }
+
+#triangle-menu.navbar-default .navbar-nav > li > a:hover,
+#triangle-menu.navbar-default .navbar-nav > li > a:focus {
+  color: white;
+  background-color: #1b1b1b; }
+
+#triangle-menu.navbar-default .navbar-nav > .active > a,
+#triangle-menu.navbar-default .navbar-nav > .active > a:hover,
+#triangle-menu.navbar-default .navbar-nav > .active > a:focus {
+  color: white;
+  background-color: #1b1b1b; }
+
+#triangle-menu.navbar-default .navbar-toggle {
+  border-color: #1b1b1b; }
+
+#triangle-menu.navbar-default .navbar-toggle:hover,
+#triangle-menu.navbar-default .navbar-toggle:focus {
+  background-color: #1b1b1b; }
+
+#triangle-menu.navbar-default .navbar-toggle .icon-bar {
+  background-color: #1b1b1b; }
+
+#triangle-menu.navbar-default .navbar-toggle:hover .icon-bar,
+#triangle-menu.navbar-default .navbar-toggle:focus .icon-bar {
+  background-color: #ffb61e; }
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  border: 0px; }
+
+.navbar-toggle, .navbar-toggle:active, .navbar-toggle:visited {
+  border: none !important;
+  transition: 0.2s ease-in;
+  border-radius: 25px; }
+  .navbar-toggle .icon-bar, .navbar-toggle:active .icon-bar, .navbar-toggle:visited .icon-bar {
+    background-color: #ffffff !important; }
+
 /* Footer */
 /* Footer */
 #footer {
@@ -347,17 +379,17 @@ img::-moz-selection {
     color: #3b5998;
     transition: 0.2s ease-in; }
     #footer .facebook i:hover {
-      color: #1b1b1b !important; }
+      color: #ffb61e !important; }
   #footer .instagram i {
     color: #8a3ab9;
     transition: 0.2s ease-in; }
     #footer .instagram i:hover {
-      color: #1b1b1b !important; }
+      color: #ffb61e !important; }
   #footer .github i {
     color: #333;
     transition: 0.2s ease-in; }
     #footer .github i:hover {
-      color: #1b1b1b !important; }
+      color: #ffb61e !important; }
   #footer .daltonic i {
     animation-name: daltonic;
     animation-duration: 5s;
@@ -367,7 +399,7 @@ img::-moz-selection {
   0% {
     color: #1b1b1b; }
   10% {
-    color: #eeeeee; }
+    color: yellow; }
   20% {
     color: #ffb61e; }
   30% {
@@ -403,6 +435,32 @@ img::-moz-selection {
       #footer .star-wars-icons {
         display: none; } }
 
+/* Buttons */
+.btn1, .btn1:visited, .btn1:active {
+  padding: 10px 42px;
+  background-color: #ffb61e;
+  color: #ffffff;
+  cursor: pointer;
+  border: 3px solid #ffb61e;
+  border-radius: 250px;
+  font-size: 120%;
+  transition: 0.2s ease-in; }
+  @media (max-width: 600px) {
+    .btn1, .btn1:visited, .btn1:active {
+      padding: 5px 21px;
+      background-color: #ffb61e;
+      color: #ffffff;
+      cursor: pointer;
+      border: 3px solid #ffb61e;
+      border-radius: 250px;
+      font-size: 110%;
+      transition: 0.2s ease-in; } }
+  .btn1:hover, .btn1:focus, .btn1:visited:hover, .btn1:visited:focus, .btn1:active:hover, .btn1:active:focus {
+    background-color: #ffffff;
+    color: #ffb61e;
+    text-decoration: none !important; }
+
+/* About */
 /* 404.html + Under Construction */
 #error-message {
   width: 100%;
