@@ -26,6 +26,7 @@ The new version of the site includes several easter eggs:
 
 - Taxi (13" Macbooks | Other 1440px wide screens): When you click it a Horn sound plays.
 - Building a City (1200px+ wide screens): Small Animation to show our projects.
+- Roger-Roger (All devices): When you click the icon of the FAQ section (on the <code>index.html</code> file), it makes the "Roger-Roger" sound from Star Wars.
 
 ## License
 
