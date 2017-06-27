@@ -80,6 +80,9 @@ img::-moz-selection {
   @media (max-width: 900px) {
     #hero {
       padding-top: 60px; } }
+  #hero .container-fluid {
+    animation-duration: 3s;
+    animation-delay: 2s; }
   #hero #logo {
     width: 250px;
     margin-bottom: 10px; }
