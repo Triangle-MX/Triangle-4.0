@@ -14,5 +14,6 @@ The redesign includes subtle **animations**, wich will help to create a more **h
 
 The new version of the site includes several easter eggs:
 
-- Taxi (13" Macbooks | Other 1440px wide screens): When you click it a Horn sound plays. EXPERIMENT IN PROGRESS.
+- Taxi (13" Macbooks | Other 1440px wide screens): When you click it a Horn sound plays.
+- Building a City (1200px+ wide screens): Small Animation to show our projects.
 
