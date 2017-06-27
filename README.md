@@ -9,3 +9,10 @@ Last version of the Triangle Site (wich can be viewed at https://triangle-mx.git
 The new concept is more **human**, more **personal**. We don´t want to be seen like <i>machines doing websites</i>, but instead we want to be look like <i>humans helping businesses, organizations and other projects to get awesome websites</i>.
 
 The redesign includes subtle **animations**, wich will help to create a more **human** look.
+
+## Easter Eggs
+
+The new version of the site includes several easter eggs:
+
+- Taxi (13" Macbooks | Other 1440px wide screens): WIP
+

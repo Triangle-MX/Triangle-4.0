@@ -120,52 +120,6 @@ img::-moz-selection {
       color: #ffb61e;
       font-weight: bold;
       font-size: 110%; }
-  #hero #car {
-    width: 150px;
-    z-index: 10;
-    position: relative;
-    left: -150px;
-    bottom: -131px;
-    animation-name: car;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-delay: 2s; }
-@keyframes car {
-  60% {
-    margin-left: 770px; }
-  70% {
-    margin-left: 800px; }
-  100% {
-    margin-left: 1590px; } }
-    @media (min-width: 1445px) {
-      #hero #car {
-        display: none; } }
-    @media (max-width: 1435px) {
-      #hero #car {
-        display: none; } }
-  #hero #taxi {
-    width: 150px;
-    z-index: 10;
-    position: relative;
-    left: -150px;
-    bottom: -139px;
-    animation-name: taxi;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-delay: 2s; }
-@keyframes taxi {
-  40% {
-    margin-left: 770px; }
-  50% {
-    margin-left: 800px; }
-  100% {
-    margin-left: 1590px; } }
-    @media (min-width: 1445px) {
-      #hero #taxi {
-        display: none; } }
-    @media (max-width: 1435px) {
-      #hero #taxi {
-        display: none; } }
 
 /* Pasos */
 .paso-container {
@@ -176,7 +130,8 @@ img::-moz-selection {
   .paso-container .icon {
     height: 141px;
     width: auto;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    max-width: 100%; }
     @media (max-width: 900px) {
       .paso-container .icon {
         height: 100px; } }
@@ -189,13 +144,13 @@ img::-moz-selection {
     margin-top: 0px;
     margin-bottom: 51px; }
 
-#obten, #construye, #expande, #nosotros {
+#obten, #construye, #expande, #nosotros, #faq {
   padding: 80px 144px; }
   @media (max-width: 900px) {
-    #obten, #construye, #expande, #nosotros {
+    #obten, #construye, #expande, #nosotros, #faq {
       padding: 40px; } }
   @media (max-width: 600px) {
-    #obten, #construye, #expande, #nosotros {
+    #obten, #construye, #expande, #nosotros, #faq {
       padding: 20px; } }
 
 #obten {
@@ -209,6 +164,9 @@ img::-moz-selection {
 
 #nosotros {
   background-color: #eeeeee; }
+
+#faq {
+  background-color: #1b1b1b; }
 
 #proyectos {
   width: 100%;
@@ -234,7 +192,7 @@ img::-moz-selection {
     #proyectos {
       padding-top: 60px;
       padding-bottom: 40px; } }
-  @media (max-width: 600px) {
+  @media (max-width: 400px) {
     #proyectos {
       background-image: url("../img/City2.0C.svg");
       padding-bottom: 80px; }
@@ -275,6 +233,32 @@ img::-moz-selection {
       color: #ffb61e;
       font-weight: bold;
       font-size: 100%; }
+
+/* Taxi Easter Egg */
+#taxi {
+  width: 150px;
+  z-index: 10;
+  position: relative;
+  left: -150px;
+  bottom: -139px;
+  animation-name: taxi;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-delay: 2s;
+  cursor: pointer; }
+@keyframes taxi {
+  40% {
+    margin-left: 770px; }
+  50% {
+    margin-left: 800px; }
+  100% {
+    margin-left: 1590px; } }
+  @media (min-width: 1450px) {
+    #taxi {
+      display: none; } }
+  @media (max-width: 1430px) {
+    #taxi {
+      display: none; } }
 
 /* 404.html + Under Construction */
 #error-message {
