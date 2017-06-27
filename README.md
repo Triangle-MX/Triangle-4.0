@@ -1,6 +1,6 @@
 # Triangle 4.0
 
-Triangle Site v4.0 is the new version of Triangle's site wich includes a major redesign in the site's design, and has had tons of interactivity and responsiveness added to it.
+Triangle Site 4.0 is the new version of Triangle's site wich includes a major redesign in the site's design, and has had tons of interactivity and responsiveness added to it.
 
 ## The new concept
 
@@ -14,5 +14,5 @@ The redesign includes subtle **animations**, wich will help to create a more **h
 
 The new version of the site includes several easter eggs:
 
-- Taxi (13" Macbooks | Other 1440px wide screens): When you click it a Horn sound plays.
+- Taxi (13" Macbooks | Other 1440px wide screens): When you click it a Horn sound plays. EXPERIMENT IN PROGRESS.
 

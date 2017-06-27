@@ -42,6 +42,9 @@
         
         <!-- Main Styles -->
         <link rel="stylesheet" href="css/main.css">
+        
+        <!-- animate.min.css -->
+        <link rel="stylesheet" href="css/animate.min.css">
 </head>
 <body>
    
@@ -50,7 +53,7 @@
     <![endif]-->
     
     <!-- Hero -->
-    <div id="hero">
+    <div id="hero" class="animated fadeIn">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-10 col-md-push-1">
@@ -129,6 +132,14 @@
         
     </div>
     
+    <div id="footer">
+        <div class="row">
+            <div class="col-md-4"><span class="brand">Somos <strong>Triangle</strong></span></div>
+            <div class="col-md-4"></div>
+            <div class="col-md-4"></div>
+        </div>
+    </div>
+    
     
     <!-- Scripts -->
  
@@ -153,6 +164,9 @@
             
         <!-- Scripts JS -->
         <script src="js/scripts.js"></script>
+        <script>
+		  var rellax = new Rellax('.rellax');
+        </script>
         
         <!-- Modernizr -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>

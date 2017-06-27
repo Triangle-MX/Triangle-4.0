@@ -73,7 +73,9 @@ img::-moz-selection {
   background-repeat: none;
   background-size: cover;
   background-position: bottom;
-  padding-top: 80px; }
+  padding-top: 80px;
+  animation-duration: 3s;
+  animation-delay: 2s; }
   @media (max-width: 600px) {
     #hero {
       padding-top: 40px; } }
@@ -233,6 +235,19 @@ img::-moz-selection {
       color: #ffb61e;
       font-weight: bold;
       font-size: 100%; }
+
+/* Footer */
+#footer {
+  background-color: #ffffff;
+  margin-bottom: 0px;
+  padding: 10px;
+  text-align: center; }
+  #footer .brand {
+    font-family: "Montserrat", "Helvetica Neue", sans-serif;
+    font-size: 140%; }
+    #footer .brand strong {
+      color: #ffb61e;
+      font-weight: bold; }
 
 /* Taxi Easter Egg */
 /* Taxi Animation on index.html */
