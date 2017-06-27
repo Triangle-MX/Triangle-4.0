@@ -235,6 +235,7 @@ img::-moz-selection {
       font-size: 100%; }
 
 /* Taxi Easter Egg */
+/* Taxi Animation on index.html */
 #taxi {
   width: 150px;
   z-index: 10;
@@ -259,6 +260,66 @@ img::-moz-selection {
   @media (max-width: 1430px) {
     #taxi {
       display: none; } }
+
+/* Taxi Hero (taxi.html) */
+/* Hero */
+#taxi-hero {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #ffffff;
+  background-image: url("../img/CityB&W.svg");
+  background-repeat: none;
+  background-size: cover;
+  background-position: bottom;
+  padding-top: 80px; }
+  @media (max-width: 600px) {
+    #taxi-hero {
+      padding-top: 40px; } }
+  @media (max-width: 900px) {
+    #taxi-hero {
+      padding-top: 60px; } }
+  #taxi-hero .container-fluid {
+    filter: grayscale(100%); }
+  #taxi-hero #logo {
+    width: 250px;
+    margin-bottom: 10px; }
+    @media (min-width: 1300px) {
+      #taxi-hero #logo {
+        width: 400px; } }
+  #taxi-hero #title {
+    font-size: 450%;
+    font-family: "Anton", "Helvetica Neue", sans-serif;
+    text-transform: uppercase;
+    color: #1b1b1b;
+    margin: 0px; }
+    @media (min-width: 1400px) {
+      #taxi-hero #title {
+        font-size: 400%; } }
+    @media (max-width: 900px) {
+      #taxi-hero #title {
+        font-size: 300%; } }
+    @media (max-width: 500px) {
+      #taxi-hero #title {
+        font-size: 250%; } }
+    #taxi-hero #title span {
+      color: #ffb61e; }
+  #taxi-hero #lead {
+    font-size: 160%;
+    font-family: "Lato", "Helvetica Neue", sans-serif;
+    color: #1b1b1b; }
+    @media (min-width: 1400px) {
+      #taxi-hero #lead {
+        font-size: 200%; } }
+    @media (max-width: 900px) {
+      #taxi-hero #lead {
+        font-size: 130%; } }
+    @media (max-width: 500px) {
+      #taxi-hero #lead {
+        font-size: 110%; } }
+    #taxi-hero #lead span {
+      color: #ffb61e;
+      font-weight: bold;
+      font-size: 110%; }
 
 /* 404.html + Under Construction */
 #error-message {
