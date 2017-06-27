@@ -234,6 +234,19 @@ img::-moz-selection {
       font-weight: bold;
       font-size: 100%; }
 
+/* Footer */
+#footer {
+  background-color: #ffffff;
+  margin-bottom: 0px;
+  padding: 10px;
+  text-align: center; }
+  #footer .brand {
+    font-family: "Montserrat", "Helvetica Neue", sans-serif;
+    font-size: 140%; }
+    #footer .brand strong {
+      color: #ffb61e;
+      font-weight: bold; }
+
 /* Taxi Easter Egg */
 /* Taxi Animation on index.html */
 #taxi {
