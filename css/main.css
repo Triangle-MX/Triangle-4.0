@@ -174,15 +174,16 @@ img::-moz-selection {
   width: 100%;
   min-height: 500px;
   background-color: #ffffff;
-  background-image: url("../img/City2.0B.svg");
+  background-image: url("../img/City2.0.svg");
   background-repeat: none;
   background-size: cover;
   background-position: bottom right;
   padding-bottom: 80px;
   padding-top: 80px;
-  transition: 0.2s ease-in; }
-  #proyectos:hover {
-    background-image: url("../img/City2.0.svg"); }
+  animation-duration: 1s;
+  animation-delay: 1s;
+  /*&:hover
+   * background-image: url('../img/City2.0.svg') */ }
   @media (max-width: 1200px) {
     #proyectos {
       background-image: url("../img/City2.0.svg"); } }

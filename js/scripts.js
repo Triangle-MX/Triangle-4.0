@@ -16,6 +16,12 @@ function vader(){
        vaderSound.play();
 };
 
+// Roger
+function roger(){
+       var rogerSound = document.getElementById("roger");
+       rogerSound.play();
+};
+
 // Smooth Scroll
 $(function() {
   $('a[href*="#"]:not([href="#"])').click(function() {
