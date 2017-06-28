@@ -23,7 +23,7 @@ a {
   text-decoration: none;
   color: #ffb61e;
   transition: 0.2s ease-in; }
-  a:hover {
+  a:hover, a:active, a:visited {
     color: #1b1b1b;
     text-decoration: none; }
 
