@@ -29,7 +29,7 @@ The new version of the site includes several easter eggs:
 
 ## License
 
-We wanted to make the new version of our site open-source, so we added the **Creative Commons Attribution-ShareAlike 4.0** license. This is a human-readable summary of (and not a substitute for) the license (you can read the full license on the <code>License.txt</code> file):
+We wanted to make the new version of our site open-source, so we added the **Creative Commons Attribution-ShareAlike 4.0** license. This is a human-readable summary of (and not a substitute for) the license (you can and should read the full license on the <code>License.txt</code> file):
 
 ### You are free to:
 
