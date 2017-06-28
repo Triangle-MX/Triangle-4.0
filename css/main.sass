@@ -27,6 +27,7 @@ body
     font-family: $lato
     font-size: $normal-size
     color: $black
+    font-weight: 500
 
 @media (max-width: 600px)
     body
@@ -39,6 +40,15 @@ body
         
 h1,h2,h3,h4,h5,h6
     font-family: $montserrat
+    
+a 
+    text-decoration: none
+    color: $yellow
+    transition: $transition
+    
+    &:hover
+        color: $black
+        text-decoration: none
 
 /* Selection */
 ::-moz-selection 
@@ -59,9 +69,7 @@ img::selection
 
 img::-moz-selection 
     background: transparent
-
     
-
 /* index.html */
 @import 'index.sass'
 /* Taxi Easter Egg */
@@ -73,8 +81,14 @@ img::-moz-selection
 @import 'footer.sass'
 /* Buttons */
 @import 'buttons.sass'
+/* Form */
+@import 'form.sass'
 
+
+/* Sub-Pages */
+@import 'sub-pages.sass'
 /* About */
 @import 'about.sass'
+
 /* 404.html + Under Construction */
 @import 'error.sass'

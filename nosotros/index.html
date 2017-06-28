@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es-MX">
 <head>
-    <title>Triangle</title>
+    <title>Sobre Nosotros</title>
     
     <!-- Important Metas -->
     <meta charset="UTF-8">
@@ -24,14 +24,8 @@
             "@context": "http://schema.org",
             "@type": "Organization",
             "name": "Triangle",
-            "url": "http://www.triangle.mx/",
-            "description": "Somos un estudio de desarrollo web y diseño gráfico con completa seguridad en que tu proyecto tiene que ser visto como lo que es: una idea tuya."
-            "contactPoint": [{
-            "@type": "ContactPoint",
-            "email": "contacto@triangle.mx",
-            "url": "http://triangle.mx/#contacto/",
-            "contactType": "customer service"
-            }]
+            "url": "http://www.triangle.mx/nosotros",
+            "description": "Nacímos con un solo objetivo: Cambiar al mundo, un proyect increíble a la vez."
             }
         </script>
     
@@ -41,101 +35,134 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         
         <!-- Main Styles -->
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="../css/main.css">
         
         <!-- Icon -->
-        <link rel="stylesheet" href="fonts/css/icon.css">
+        <link rel="stylesheet" href="../fonts/css/icon.css">
         
         <!-- animate.min.css -->
-        <link rel="stylesheet" href="css/animate.min.css">
+        <link rel="stylesheet" href="../css/animate.min.css">
 </head>
-<body>
+<body style="padding-top:100px">
    
     <!--[if lt IE 8]>
             <p class="browserupgrade">Estas usando una versión muy <strong>antigua</strong> de tu navegador. Por favor <a href="http://browsehappy.com/">actualiza tu navegador</a> para tener una mejor experiencia en la red.</p>
     <![endif]-->
     
-    <!-- Hero -->
-    <div id="hero">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-10 col-md-push-1">
-                    <img src="img/LogoYellow.svg" alt="Logo Triangle" id="logo">
-                    <h1 id="title">Es hora de <span>hacer</span><br>que te <span>vean</span></h1>
-                    <p id="lead">Somos <span>Triangle</span> y queremos cambiar al mundo, un <span>proyecto increíble</span> a la vez.</p>
-                </div>
-            </div>
+    <!-- Nav -->
+    <div id="triangle-menu" class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header"><a class="navbar-brand" href="#">Triangle</a>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+            </button>
         </div>
-        
-        <a onclick="horn()"><img src="img/Iconos/Taxi.svg" alt="Taxi Amarillo" id="taxi"></a>
-        <audio id="horn-honk" src="src/horn.mp3"></audio>
+        <div class="collapse navbar-collapse navbar-menubuilder">
+            <ul class="nav navbar-nav navbar-left">
+                <li><a href="../">Principal</a></li>
+                <li class="active"><a href="#">Nosotros</a></li>
+                <li><a href="#">Proyectos</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </div>
+    </div>
     </div>
     
-    <!-- Pasos -->
-    <div id="pasos">
-       
-        <div id="obten">
-            <div class="paso-container">
-                <img src="img/Iconos/Idea.svg" alt="Idea" class="icon">
-                <h1 class="title"><span>Obtén</span> tu Idea</h1>
-                <p class="lead">El primer paso para crear un proyecto increíble. Busca inspiración en las ideas de otros y busca combinar diferentes pequeñas y diferentes ideas para crear un gran producto innovador. Solo recuerda: La innovación debe buscar ayudar a todos.</p>
-                <a href="#" class="btn1">Descúbrelo</a>
+    <!-- Main -->
+    <div id="main">
+        <div class="container-fluid">
+            <div class="header">
+                <img src="../img/Iconos/About.svg" alt="Equipo" class="icon">
+                <h1 class="title">Sobre <span>Nosotros</span></h1>
+                <p class="lead">Nuestro objetivo: Cambiar el mundo, un proyecto increíble a la vez.</p>
             </div>
         </div>
+           
+            <div class="section">
         
-        <div id="construye">
-            <div class="paso-container">
-                <img src="img/Iconos/Truck.svg" alt="Excavadora" class="icon">
-                <h1 class="title"><span>Construye</span> tu Marca</h1>
-                <p class="lead">Ya que tienes tu idea lista es hora de que empieces a construir tu marca. Primero, que es un una marca:  Es la base de tu proyecto y de tu idea.  Segundo, es la primera impresión de tu proyecto. Tercero, Es el factor clave para el éxito de tu idea. </p>
-                <a href="#" class="btn1">Descúbrelo</a>
+                    <div class="row">
+                        <div class="col-md-6" id="historia">
+                            <div class="container-fluid">
+                                <h2 class="title">Nuestra <span>Historia</span></h2>
+                                <p class="lead">Triangle nació a principios de 2016 con el objetivo de cambiar el mundo, un proyecto inbreíble a la vez. Ahora ayudamos a que startups, PyMES, organizaciones y otros proyectos tengan páginas web únicas y especiales. Queremos conectar tus ideas, tus proyectos, etc... con tu público.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6" id="compromiso">
+                            <div class="container-fluid">
+                                <h2 class="title">Nuestro <span>Compromiso</span></h2>
+                                <p class="lead">En Triangle siempre ponemos la accesibilidad delante de todo en  nuestros proyectos. ¿Se ve bien en dispositivos móviles?¿Su tiempo de carga es menor a 5 segundos?¿Ya tiene el filtro para daltónicos? Estas son algunas de la cosas que hacemos en cada uno de nuestros proyectos.</p>
+                            </div>
+                        </div>
+                    </div>
+           
             </div>
-        </div>
-        
-        <div id="expande">
-            <div class="paso-container">
-                <img src="img/Iconos/Billboard.svg" alt="Anuncio Publicitario Grande" class="icon">
-                <h1 class="title"><span>Expande</span> tu Proyecto</h1>
-                <p class="lead">Una vez que tu proyecto ya este creada te ayudaremos a que la gente la conozca. Haremos que la gente este deseosa de convivir con tu proyecto, y que tu idea sea conocida para que obtengas más clientes, o personas que deseen conocer más a fondo tu proyecto.</p>
-                <a href="#" class="btn1">Descúbrelo</a>
-            </div>
-        </div>
-        
-        
-        <div id="proyectos">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-7 col-md-push-1">
-                        <div class="title">Nuestros <span>Proyectos</span></div>
-                        <div class="lead">Observa los proyectos que hemos desarrollado para diferentes <span>negocios</span>, <span>organizaciones</span> u otros <span>proyectos</span>.</div>
-                        <a href="#" class="btn1">Ver Proyectos</a>
+           
+            <div class="section" id="equipo">
+                <div class="container-fluid">
+                <h2 class="title">Nuestro <span>Equipo</span></h2>
+                <p class="lead">Triangle sería solo un nombre, una idea, si no fuera por nuestro increíble equipo, por eso es que queremos que conozcas a este grupo de expertos que te ayudarán a <strong>Obtener tu Idea</strong>, <strong>Crear tu Marca</strong> y <strong>Expandir tu Proyecto</strong>.</p>
+                <div id="equipo-flex">
+                    <div class="miembro">
+                        <img src="../img/Equipo/JPIglesias.png" alt="José Pablo">
+                        <span class="nombre">José Pablo Iglesias</span>
+                        <span class="puesto">CEO y Programador Senior</span>
+                    </div>
+                    <div class="miembro">
+                        <img src="../img/Equipo/Alvaro.png" alt="Alvaro">
+                        <span class="nombre">Alvaro López</span>
+                        <span class="puesto">Co-CEO y Programador</span>
+                    </div>
+                    <div class="miembro">
+                        <img src="../img/Equipo/Max.png" alt="Máximo">
+                        <span class="nombre">Máximo Sánchez</span>
+                        <span class="puesto">Diseñador Senior</span>
+                    </div>
+                    <div class="miembro">
+                        <img src="../img/Equipo/Marianovski.png" alt="Mariano">
+                        <span class="nombre">Mariano García</span>
+                        <span class="puesto">Programador</span>
+                    </div>
+                    <div class="miembro">
+                        <img src="../img/Equipo/Rata.png" alt="Santiago">
+                        <span class="nombre">Santiago Gutiérrez</span>
+                        <span class="puesto">Director de Finanzas</span>
                     </div>
                 </div>
+                </div>
             </div>
-        </div>
-        
-                
-        <div id="nosotros">
-            <div class="paso-container">
-                <img src="img/Iconos/About.svg" alt="Equipo" class="icon">
-                <h1 class="title">Sobre <span>Nosotros</span></h1>
-                <p class="lead">Triangle nació a inicios de 2016 con un solo objetivo: Ayudar a pequeños negocios y organizaciónes a llegar más fácilmente a su público objetivo.  Decidimos que cambiaríamos el mundo, que lo mejoraríamos un proyecto increíble a la vez.</p>
-                <a href="nosotros/" class="btn1">Descúbrelo</a>
-            </div>
-        </div>
-        
-        <div id="faq">
-            <div class="paso-container">
-                <a class="roger-roger" onclick="roger()"><img src="img/Iconos/FAQ.svg" alt="Errorbot... Roger Roger" class="icon"></a>
-                <audio id="roger" src="src/roger.mp3"></audio>
-                <h1 class="title"><span>Preguntas</span> Frecuentes</h1>
-                <p class="lead">Nos puedes pregunar lo que quieras (¿Quiénes somos?, ¿Qué hacemos?, ¿Por qué lo hacemos?, etc...) en la forma dentro de la sección de Contacto, pero de todos modos hemos decidido crear una colección con las preguntas más frecuentes.</p>
-                <a href="#" class="btn1">Descúbrelo</a>
-            </div>
-        </div>
-        
     </div>
     
+    <div id="contacto">
+        <div class="paso-container">
+            <img src="../img/Iconos/Contacto.svg" alt="Antena de Radio" class="icon">
+            <h1 class="title"><span>Contacto</span></h1>
+            <p class="lead">Ahora que sabes más sobre nosotros y nuestra historia hablanos sobre tí: Sobre tus ideas, tus proyectos, etc... Cuéntanos en como podemos ayudarte a conseguir tus objetivos, o preguntanos lo que quieras.</p>
+            <div class="row">
+                <div class="col-lg-6 form-column">
+                    <div id="form">
+                        <form method="POST" action="http://formspree.io/form@triangle.mx">
+                            <input type="name" name="nombre" placeholder="Tu Nombre" required>
+                            <input type="email" name="email" placeholder="Tu Correo Electrónico" required>
+                            <textarea name="message" placeholder="Tu Mensaje"></textarea>
+                            <input type="hidden" name="_next" value="../files/thanks.html" />
+                            <input type="hidden" name="_subject" value="Nuevo Mensaje desde triangle.mx" />
+                            <input type="hidden" name="_language" value="es" />
+                            <input type="text" name="_gotcha" style="display:none" />
+                            <br>
+                            <button type="submit" class="btn1">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <p class="lead">Si no deseas utilizar la forma de contacto, puedes utilizar los siguentes medios para contactarnos:</p>
+                    <ul class="contact-methods">
+                        <li><a href="mailto:contacto@triangle.mx"><i class="icon-mail"></i> contacto@triangle.mx</a></li>
+                        <li><a href=""><i class="icon-"></i></a></li>
+                        <li><a href=""><i class="icon-"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
     
     <!-- Footer -->
     <div id="footer">
@@ -170,7 +197,7 @@
     <!-- Scripts -->
  
         <!-- jQuery -->
-        <script src="js/vendor/jquery-1.11.2.min.js"></script>
+        <script src="../js/vendor/jquery-1.11.2.min.js"></script>
         
         <!-- Bootstrap JS -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -186,7 +213,7 @@
         </script>
             
         <!-- Scripts JS -->
-        <script src="js/scripts.js"></script>
+        <script src="../js/scripts.js"></script>
         <script>
 		  var rellax = new Rellax('.rellax');
         </script>

@@ -7,7 +7,8 @@ body {
   overflow-x: hidden;
   font-family: "Lato", "Helvetica Neue", sans-serif;
   font-size: 18px;
-  color: #1b1b1b; }
+  color: #1b1b1b;
+  font-weight: 500; }
 
 @media (max-width: 600px) {
   body {
@@ -17,6 +18,14 @@ body {
     font-size: 20px; } }
 h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", "Helvetica Neue", sans-serif; }
+
+a {
+  text-decoration: none;
+  color: #ffb61e;
+  transition: 0.2s ease-in; }
+  a:hover {
+    color: #1b1b1b;
+    text-decoration: none; }
 
 /* Selection */
 ::-moz-selection {
@@ -104,6 +113,9 @@ img::-moz-selection {
   width: 100%;
   height: 100%;
   padding: 60px; }
+  @media (max-width: 600px) {
+    .paso-container {
+      padding: 30px; } }
   .paso-container .icon {
     height: 141px;
     width: auto;
@@ -121,13 +133,13 @@ img::-moz-selection {
     margin-top: 0px;
     margin-bottom: 51px; }
 
-#obten, #construye, #expande, #nosotros, #faq {
+#obten, #construye, #expande, #nosotros, #faq, #contacto {
   padding: 80px 144px; }
   @media (max-width: 900px) {
-    #obten, #construye, #expande, #nosotros, #faq {
+    #obten, #construye, #expande, #nosotros, #faq, #contacto {
       padding: 40px; } }
   @media (max-width: 600px) {
-    #obten, #construye, #expande, #nosotros, #faq {
+    #obten, #construye, #expande, #nosotros, #faq, #contacto {
       padding: 20px; } }
 
 #obten {
@@ -146,6 +158,17 @@ img::-moz-selection {
   background-color: #1b1b1b; }
   #faq .roger-roger {
     cursor: pointer; }
+
+#contacto {
+  background-color: #ffb61e; }
+  @media (max-width: 1200px) {
+    #contacto .form-column {
+      margin-bottom: 50px; } }
+  #contacto .lead {
+    margin-bottom: 20px; }
+  #contacto .contact-methods {
+    list-style: none;
+    margin-left: -40px; }
 
 #proyectos {
   width: 100%;
@@ -364,7 +387,8 @@ img::-moz-selection {
   background-color: #ffffff;
   margin-bottom: 0px;
   padding: 10px;
-  text-align: center; }
+  text-align: center;
+  box-shadow: 0px -10px 10px 0px rgba(27, 27, 27, 0.1); }
   #footer .brand {
     font-family: "Montserrat", "Helvetica Neue", sans-serif;
     font-size: 140%; }
@@ -375,6 +399,9 @@ img::-moz-selection {
     text-align: center;
     font-size: 140%;
     margin-bottom: 0px; }
+    @media (max-width: 600px) {
+      #footer .social-icons, #footer .star-wars-icons {
+        font-size: 120%; } }
   #footer .facebook i {
     color: #3b5998;
     transition: 0.2s ease-in; }
@@ -460,7 +487,96 @@ img::-moz-selection {
     color: #ffb61e;
     text-decoration: none !important; }
 
+/* Form */
+#form input, #form textarea {
+  padding: 10px;
+  display: block;
+  margin-bottom: 20px;
+  background-color: #fafafa;
+  width: 100%;
+  max-width: 100%;
+  color: #1b1b1b;
+  border: 0px;
+  border-bottom: 2px solid #1b1b1b;
+  transition: 0.2s ease-in; }
+  #form input:active, #form input:focus, #form textarea:active, #form textarea:focus {
+    outline: none;
+    border-bottom: 2px solid #ffb61e; }
+#form textarea {
+  min-height: 100px; }
+
+/* Sub-Pages */
+#main {
+  min-height: 100vh; }
+  #main .header {
+    width: 100%;
+    text-align: center;
+    padding: 40px; }
+    @media (max-width: 600px) {
+      #main .header {
+        text-align: center; } }
+    #main .header .icon {
+      width: 100%;
+      max-width: 450px; }
+    #main .header .title {
+      font-size: 200%; }
+      @media (max-width: 600px) {
+        #main .header .title {
+          font-size: 160%; } }
+      #main .header .title span {
+        font-size: 110%;
+        font-weight: bold;
+        color: #ffb61e; }
+    #main .header .lead {
+      font-size: 110%; }
+      @media (max-width: 600px) {
+        #main .header .lead {
+          font-size: 100%; } }
+  #main .section {
+    padding: 20px; }
+    #main .section .title {
+      font-size: 160%; }
+      @media (max-width: 600px) {
+        #main .section .title {
+          font-size: 130%; } }
+      #main .section .title span {
+        font-size: 110%;
+        font-weight: bold;
+        color: #ffb61e; }
+
 /* About */
+#equipo #equipo-flex {
+  display: flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 30px; }
+  #equipo #equipo-flex .miembro {
+    text-align: center;
+    overflow: hidden;
+    padding: 0px;
+    margin: 5px;
+    max-width: 250px;
+    max-height: 400px;
+    min-width: 100px;
+    min-height: 150px;
+    padding: 20px;
+    transition: 0.5s;
+    background-color: #eeeeee; }
+    #equipo #equipo-flex .miembro img {
+      width: 100%;
+      margin-bottom: 10px; }
+    #equipo #equipo-flex .miembro .nombre {
+      display: block;
+      font-size: 100%;
+      font-family: "Montserrat", "Helvetica Neue", sans-serif;
+      font-weight: bold; }
+    #equipo #equipo-flex .miembro .puesto {
+      display: block;
+      font-size: 80%;
+      color: #333; }
+
 /* 404.html + Under Construction */
 #error-message {
   width: 100%;
