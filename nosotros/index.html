@@ -43,7 +43,7 @@
         <!-- animate.min.css -->
         <link rel="stylesheet" href="../css/animate.min.css">
 </head>
-<body style="padding-top:130px">
+<body style="padding-top:100px">
    
     <!--[if lt IE 8]>
             <p class="browserupgrade">Estas usando una versión muy <strong>antigua</strong> de tu navegador. Por favor <a href="http://browsehappy.com/">actualiza tu navegador</a> para tener una mejor experiencia en la red.</p>
@@ -76,9 +76,10 @@
                 <p class="lead">Nuestro objetivo: Cambiar el mundo, un proyecto increíble a la vez.</p>
             </div>
         </div>
+           
             <div class="section" id="equipo">
                 <div class="container-fluid">
-                    <h2 class="title">Nuestro <span>Equipo</span></h2>
+                <h2 class="title">Nuestro <span>Equipo</span></h2>
                 <p class="lead">Triangle sería solo un nombre, una idea, si no fuera por nuestro increíble equipo, por eso es que queremos que conozcas a este grupo de expertos que te ayudarán a <strong>Obtener tu Idea</strong>, <strong>Crear tu Marca</strong> y <strong>Expandir tu Proyecto</strong>.</p>
                 <div id="equipo-flex">
                     <div class="miembro">
@@ -101,21 +102,66 @@
                         <span class="nombre">Mariano García</span>
                         <span class="puesto">Programador</span>
                     </div>
-                    <!--<div class="miembro">
-                        <img src="../img/Equipo/JPIglesias.png" alt="">
-                        <span class="nombre">Santiago Gutierrez</span>
+                    <div class="miembro">
+                        <img src="../img/Equipo/Rata.png" alt="Santiago">
+                        <span class="nombre">Santiago Gutiérrez</span>
                         <span class="puesto">Director de Finanzas</span>
-                    </div>-->
+                    </div>
                 </div>
                 </div>
             </div>
-            <div class="section" id="historia">
-                <div class="container-fluid">
-                    <h2 class="title">Nuestra <span>Historia</span></h2>
-                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga quidem eos numquam! Totam nam dignissimos, sed quo quae, alias cupiditate provident molestias quos, illo nesciunt placeat obcaecati, voluptates quas! <br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio laboriosam omnis mollitia modi earum recusandae eaque sequi aperiam quisquam accusantium? Odio, natus quo voluptate voluptates, error assumenda amet ex nesciunt. <br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste suscipit accusamus cum ipsam ut perspiciatis fugiat ad, ex aliquam porro, tenetur eum veritatis, aspernatur temporibus voluptate minima nemo! Dicta, tenetur.</p>
-                </div>
-            </div>
+            
+            <div class="section">
         
+                    <div class="row">
+                        <div class="col-md-6" id="historia">
+                            <div class="container-fluid">
+                                <h2 class="title">Nuestra <span>Historia</span></h2>
+                                <p class="lead">Triangle sería solo un nombre, una idea, si no fuera por nuestro increíble equipo, por eso es que queremos que conozcas a este grupo de expertos que te ayudarán a <strong>Obtener tu Idea</strong>, <strong>Crear tu Marca</strong> y <strong>Expandir tu Proyecto</strong>.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6" id="compromiso">
+                            <div class="container-fluid">
+                                <h2 class="title">Nuestro <span>Compromiso</span></h2>
+                                <p class="lead">Triangle sería solo un nombre, una idea, si no fuera por nuestro increíble equipo, por eso es que queremos que conozcas a este grupo de expertos que te ayudarán a <strong>Obtener tu Idea</strong>, <strong>Crear tu Marca</strong> y <strong>Expandir tu Proyecto</strong>.</p>
+                            </div>
+                        </div>
+                    </div>
+           
+            </div>
+            
+            
+            
+            
+    </div>
+    
+    <div id="contacto">
+        <div class="paso-container">
+            <img src="../img/Iconos/Contacto.svg" alt="Antena de Radio" class="icon">
+            <h1 class="title"><span>Contáctanos</span></h1>
+            <p class="lead">Ahora que sabes más sobre nosotros y nuestra historia hablanos sobre tí: Sobre tus ideas, tus proyectos, etc... Cuéntanos en como podemos ayudarte a conseguir tus objetivos, o preguntanos lo que quieras.</p>
+            <div class="row">
+                <div class="col-md-6">
+                    <div id="form">
+                        <form method="POST" action="http://formspree.io/form@triangle.mx">
+                            <input type="name" name="nombre" placeholder="Tu Nombre" required>
+                            <input type="email" name="email" placeholder="Tu Correo Electrónico" required>
+                            <textarea name="message" placeholder="Tu Mensaje"></textarea>
+                            <input type="hidden" name="_next" value="../files/thanks.html" />
+                            <input type="hidden" name="_subject" value="Nuevo Mensaje desde triangle.mx" />
+                            <input type="hidden" name="_language" value="es" />
+                            <input type="text" name="_gotcha" style="display:none" />
+                            <br>
+                            <button type="submit" class="btn1">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <p class="lead">Si no deseas utilizar la forma tu costado, puedes utilizar los siguentes medios para contactarnos:</p>
+                    <span class="correo"><i class="icon-mail"></i><a href="mailto:form@triangle.mx">contacto@triangle.mx</a></span>
+                </div>
+            </div>
+        </div>
     </div>
     
     <!-- Footer -->

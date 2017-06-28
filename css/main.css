@@ -130,13 +130,13 @@ img::-moz-selection {
     margin-top: 0px;
     margin-bottom: 51px; }
 
-#obten, #construye, #expande, #nosotros, #faq {
+#obten, #construye, #expande, #nosotros, #faq, #contacto {
   padding: 80px 144px; }
   @media (max-width: 900px) {
-    #obten, #construye, #expande, #nosotros, #faq {
+    #obten, #construye, #expande, #nosotros, #faq, #contacto {
       padding: 40px; } }
   @media (max-width: 600px) {
-    #obten, #construye, #expande, #nosotros, #faq {
+    #obten, #construye, #expande, #nosotros, #faq, #contacto {
       padding: 20px; } }
 
 #obten {
@@ -155,6 +155,9 @@ img::-moz-selection {
   background-color: #1b1b1b; }
   #faq .roger-roger {
     cursor: pointer; }
+
+#contacto {
+  background-color: #ffb61e; }
 
 #proyectos {
   width: 100%;
@@ -470,6 +473,24 @@ img::-moz-selection {
     color: #ffb61e;
     text-decoration: none !important; }
 
+/* Form */
+#form input, #form textarea {
+  padding: 10px;
+  display: block;
+  margin-bottom: 20px;
+  background-color: #fafafa;
+  width: 100%;
+  max-width: 100%;
+  color: #1b1b1b;
+  border: 0px;
+  border-bottom: 2px solid #1b1b1b;
+  transition: 0.2s ease-in; }
+  #form input:active, #form input:focus, #form textarea:active, #form textarea:focus {
+    outline: none;
+    border-bottom: 2px solid #ffb61e; }
+#form textarea {
+  min-height: 100px; }
+
 /* Sub-Pages */
 #main {
   min-height: 100vh; }
@@ -522,8 +543,8 @@ img::-moz-selection {
     overflow: hidden;
     padding: 0px;
     margin: 5px;
-    max-width: 300px;
-    max-height: 450px;
+    max-width: 250px;
+    max-height: 400px;
     min-width: 100px;
     min-height: 150px;
     padding: 20px;
@@ -534,12 +555,12 @@ img::-moz-selection {
       margin-bottom: 10px; }
     #equipo #equipo-flex .miembro .nombre {
       display: block;
-      font-size: 120%;
+      font-size: 100%;
       font-family: "Montserrat", "Helvetica Neue", sans-serif;
       font-weight: bold; }
     #equipo #equipo-flex .miembro .puesto {
       display: block;
-      font-size: 90%;
+      font-size: 80%;
       color: #333; }
 
 /* 404.html + Under Construction */
