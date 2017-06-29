@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="8929 2421 770 770">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-Kibo-Project);
+      }
+
+      .cls-2, .cls-3 {
+        fill: #fff;
+        font-family: FiraCode-Regular, Fira Code;
+        letter-spacing: -0.1em;
+      }
+
+      .cls-2 {
+        font-size: 62px;
+      }
+
+      .cls-3 {
+        font-size: 236px;
+      }
+
+      .cls-4 {
+        fill: #ff5959;
+      }
+    </style>
+    <clipPath id="clip-Kibo-Project">
+      <rect x="8929" y="2421" width="770" height="770"/>
+    </clipPath>
+  </defs>
+  <g id="Kibo-Project" class="cls-1">
+    <rect class="cls-4" x="8929" y="2421" width="770" height="770"/>
+    <text id="Minimal_Icon_Set" data-name="Minimal Icon Set" class="cls-2" transform="translate(9063 3160)"><tspan x="0" y="0">Minimal Icon Set</tspan></text>
+    <text id="kibo" class="cls-3" transform="translate(9067 2885)"><tspan x="0" y="0">kibo</tspan></text>
+  </g>
+</svg>

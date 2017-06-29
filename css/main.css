@@ -577,6 +577,33 @@ img::-moz-selection {
       font-size: 80%;
       color: #333; }
 
+/* Proyectos */
+#projects-grid .project-card {
+  width: 100%;
+  background-color: #eeeeee;
+  overflow-x: hidden;
+  text-align: center;
+  transition: 0.2s ease-in;
+  margin-bottom: 30px; }
+  #projects-grid .project-card:hover {
+    box-shadow: 0px 0px 10px 5px rgba(27, 27, 27, 0.15);
+    transform: scale(1.05);
+    border-radius: 20px; }
+  #projects-grid .project-card img {
+    width: 100%;
+    transition: 0.2s ease-in; }
+  #projects-grid .project-card .project-info {
+    padding: 20px; }
+    #projects-grid .project-card .project-info .project-title {
+      font-family: "Montserrat", "Helvetica Neue", sans-serif;
+      display: block;
+      font-size: 110%; }
+    #projects-grid .project-card .project-info .project-tags {
+      font-family: "Lato", "Helvetica Neue", sans-serif;
+      display: block;
+      font-size: 90%;
+      color: #333; }
+
 /* 404.html + Under Construction */
 #error-message {
   width: 100%;

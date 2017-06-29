@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="8089 2421 770 770">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-Learning-English-Project);
+      }
+
+      .cls-2, .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        font-size: 77px;
+        font-family: Montserrat-Medium, Montserrat;
+        font-weight: 500;
+      }
+
+      .cls-3 {
+        fill: #f0ad4e;
+      }
+
+      .cls-5 {
+        fill: navy;
+      }
+    </style>
+    <clipPath id="clip-Learning-English-Project">
+      <rect x="8089" y="2421" width="770" height="770"/>
+    </clipPath>
+  </defs>
+  <g id="Learning-English-Project" class="cls-1">
+    <rect class="cls-5" x="8089" y="2421" width="770" height="770"/>
+    <g id="Group_2779" data-name="Group 2779" transform="translate(8089 2439)">
+      <text id="Learning_English" data-name="Learning English" class="cls-2" transform="translate(64 564)"><tspan x="0" y="0">Learning English</tspan></text>
+      <g id="Group_2778" data-name="Group 2778" transform="translate(-37.824)">
+        <path id="Path_6956" data-name="Path 6956" class="cls-3" d="M346.673,50.371H25.679A25.68,25.68,0,0,0,0,76.051v192.6a25.679,25.679,0,0,0,25.679,25.679H51.358v48.7c0,5.719,6.915,8.584,64.2-48.7H346.673a25.679,25.679,0,0,0,25.679-25.679V76.051A25.68,25.68,0,0,0,346.673,50.371Z" transform="translate(198.824 124.629)"/>
+        <path id="Path_6957" data-name="Path 6957" class="cls-4" d="M346.673,50.371H25.679A25.68,25.68,0,0,0,0,76.051v192.6a25.679,25.679,0,0,0,25.679,25.679H271.358c53,55.419,59.915,58.284,63.96,54.239l.239-54.239h11.116a25.679,25.679,0,0,0,25.679-25.679V76.051A25.68,25.68,0,0,0,346.673,50.371Z" transform="translate(273.823 100.629)"/>
+      </g>
+    </g>
+  </g>
+</svg>
