@@ -326,7 +326,7 @@ img::-moz-selection {
 
 /* Menu */
 #triangle-menu {
-  font-size: 110%;
+  font-size: 200%;
   box-shadow: 0px 10px 10px 0px rgba(27, 27, 27, 0.1); }
 
 #triangle-menu.navbar-default .navbar-brand {
@@ -584,7 +584,8 @@ img::-moz-selection {
   overflow-x: hidden;
   text-align: center;
   transition: 0.2s ease-in;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  cursor: pointer; }
   #projects-grid .project-card:hover {
     box-shadow: 0px 0px 10px 5px rgba(27, 27, 27, 0.15);
     transform: scale(1.05);
@@ -597,13 +598,17 @@ img::-moz-selection {
     #projects-grid .project-card .project-info .project-title {
       font-family: "Montserrat", "Helvetica Neue", sans-serif;
       display: block;
-      font-size: 110%; }
+      font-size: 110%;
+      color: #1b1b1b; }
     #projects-grid .project-card .project-info .project-tags {
       font-family: "Lato", "Helvetica Neue", sans-serif;
       display: block;
       font-size: 90%;
       color: #333; }
 
+@media (max-width: 600px) {
+  .mobile-disappear {
+    display: none !important; } }
 /* 404.html + Under Construction */
 #error-message {
   width: 100%;
