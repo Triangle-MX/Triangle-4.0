@@ -43,7 +43,7 @@
         <!-- animate.min.css -->
         <link rel="stylesheet" href="../css/animate.min.css">
 </head>
-<body style="padding-top:100px">
+<body style="padding-top:100px" ng-app="projectsApp">
    
     <!--[if lt IE 8]>
             <p class="browserupgrade">Estas usando una versión muy <strong>antigua</strong> de tu navegador. Por favor <a href="http://browsehappy.com/">actualiza tu navegador</a> para tener una mejor experiencia en la red.</p>
@@ -85,53 +85,20 @@
             </div>
         </div>
            
-        <div class="section" id="projects-grid">
+        <div class="section" id="projects-grid" ng-controller="MainController">
            <!-- Important -->
             <div class="row">
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                   <!-- Astros -->
-                    <a href="http://astros.triangle.mx" target="_blank">
+                <div class="col-lg-3 col-md-4 col-sm-6" ng-repeat="project in projects">
+                   <!-- Project Template -->
+                    <a ng-href="{{ project.link }}" target="_blank">
                         <div class="project-card">
-                            <img src="../img/Proyectos/Astros-Project.svg" alt="">
+                            <img ng-src="{{ project.thumb }}" alt="">
                             <div class="project-info">
-                                <span class="project-title">Astros</span>
-                                <span class="project-tags">Página Web</span>
+                                <span class="project-title">{{ project.name }}</span>
+                                <span class="project-tags">{{ project.type }}</span>
                             </div>
                         </div>
                     </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                   <!-- Learning English -->
-                    <a href="http://learning-english.triangle.mx" target="_blank">
-                        <div class="project-card">
-                            <img src="../img/Proyectos/Learning-English-Project.svg" alt="">
-                            <div class="project-info">
-                                <span class="project-title">Learning English</span>
-                                <span class="project-tags">Colaboración</span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                   <!-- BusinessSenior -->
-                    <a href="http://businesssenior.com.mx" target="_blank">
-                        <div class="project-card">
-                            <img src="../img/Proyectos/Business-Senior-Project.svg" alt="">
-                            <div class="project-info">
-                                <span class="project-title">BusinessSenior</span>
-                                <span class="project-tags">Página Web</span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mobile-disappear">
-                    <div class="project-card">
-                        <img src="../img/Proyectos/Kibo-Project.svg" alt="">
-                        <div class="project-info">
-                            <span class="project-title">Kibo</span>
-                            <span class="project-tags">Diseño Gráfico</span>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -231,6 +198,8 @@
         <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
         
         <!-- Projects App -->
+        <script src="../js/projects-app/app.js"></script>
+        <script src="../js/projects-app/MainControllers.js"></script>
     
 </body>
 </html>
