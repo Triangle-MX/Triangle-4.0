@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Fonts */
 @import url("https://fonts.googleapis.com/css?family=Anton|Lato|Montserrat");
 /* Variables (Solo se ve en SASS) */
@@ -133,19 +134,19 @@ img::-moz-selection {
     margin-top: 0px;
     margin-bottom: 51px; }
 
-#obten, #construye, #expande, #nosotros, #faq, #contacto {
+#desarrollo, #diseño, #nosotros, #faq, #contacto {
   padding: 80px 144px; }
   @media (max-width: 900px) {
-    #obten, #construye, #expande, #nosotros, #faq, #contacto {
+    #desarrollo, #diseño, #nosotros, #faq, #contacto {
       padding: 40px; } }
   @media (max-width: 600px) {
-    #obten, #construye, #expande, #nosotros, #faq, #contacto {
+    #desarrollo, #diseño, #nosotros, #faq, #contacto {
       padding: 20px; } }
 
-#obten {
+#desarrollo {
   background-color: #ffb61e; }
 
-#construye {
+#diseño {
   background-color: #eeeeee; }
 
 #expande {
@@ -334,6 +335,14 @@ img::-moz-selection {
   font-family: "Montserrat", "Helvetica Neue", sans-serif;
   font-weight: bold;
   font-size: 120%; }
+
+#triangle-menu li .dropdown-menu {
+  background-color: #ffb61e;
+  border: 0px; }
+  #triangle-menu li .dropdown-menu a {
+    color: #ffffff; }
+  #triangle-menu li .dropdown-menu li a:hover {
+    background-color: #1b1b1b !important; }
 
 #triangle-menu.navbar-default {
   font-size: 16px;
