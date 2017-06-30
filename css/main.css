@@ -149,9 +149,6 @@ img::-moz-selection {
 #diseño {
   background-color: #eeeeee; }
 
-#expande {
-  background-color: #1b1b1b; }
-
 #nosotros {
   background-color: #eeeeee; }
 
@@ -562,7 +559,7 @@ img::-moz-selection {
       text-align: right;
       font-weight: 300;
       line-height: 0px; }
-    #main .section .icon-1 {
+    #main .section .icon {
       height: 141px;
       margin-top: 30px; }
 

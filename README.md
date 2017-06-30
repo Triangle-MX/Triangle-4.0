@@ -18,7 +18,7 @@ To get a **human** look, we need to make our site more accesible. We are going t
 
 - **Ultra Responsiveness**: Nearly 60% percent of our CSS code is dedicating to make out page mobile friendly and ultra responsive.
 
-- **Fast Loading**: The site is ultra fast and runs smoothly thanks to some JavaScript tweaks.
+- **Fast Loading**: The site is ultra fast and runs smoothly thanks to some JavaScript tweaks and minimized files (It even loads faster than Google when tested on certain servers).
 
 ## Easter Eggs
 
