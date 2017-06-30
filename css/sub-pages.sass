@@ -2,16 +2,21 @@
     min-height: 100vh
     
     .header
+        height: 100vh
         width: 100%
         text-align: center
-        padding: 40px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        text-align: center
+        padding-top: 60px
         
-        @media (max-width: 600px)
-            text-align: center
         
         .icon
             width: 100%
             max-width: 450px
+            max-height: 380px
             
         .title
             font-size: 200%
@@ -43,4 +48,13 @@
                 font-size: 110%
                 font-weight: bold
                 color: $yellow
-                    
+        
+        .author
+            margin-top: -20px
+            text-align: right
+            font-weight: 300
+            line-height: 0px
+            
+        .icon
+            height: 141px
+            margin-top: 30px

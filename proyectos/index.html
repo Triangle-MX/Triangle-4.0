@@ -43,7 +43,12 @@
         <!-- animate.min.css -->
         <link rel="stylesheet" href="../css/animate.min.css">
 </head>
-<body style="padding-top:100px" ng-app="projectsApp">
+<body ng-app="projectsApp">
+    <!-- WOW -->
+    <script src="../js/wow.js"></script>
+    <script>
+              new WOW().init();
+    </script>
    
     <!--[if lt IE 8]>
             <p class="browserupgrade">Estas usando una versión muy <strong>antigua</strong> de tu navegador. Por favor <a href="http://browsehappy.com/">actualiza tu navegador</a> para tener una mejor experiencia en la red.</p>
@@ -68,8 +73,8 @@
           </ul>
         </li>
                 <li><a href="../nosotros/">Nosotros</a></li>
-                <li class="active"><a href="">Proyectos</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li class="active"><a href="../proyectos/">Proyectos</a></li>
+                <li><a href="../contacto">Contacto</a></li>
             </ul>
         </div>
     </div>
@@ -77,7 +82,7 @@
     
     <!-- Main -->
     <div id="main">
-        <div class="container-fluid">
+        <div class="container-fluid wow fadeIn" data-wow-delay=".3s">
             <div class="header">
                 <img src="../img/Iconos/Projects.svg" alt="Equipo" class="icon">
                 <h1 class="title">Nuestros <span>proyectos</span></h1>
@@ -88,7 +93,7 @@
         <div class="section" id="projects-grid" ng-controller="MainController">
             <div class="row">
                <!-- Destacados -->
-                <div class="col-lg-3 col-md-4 col-sm-6" ng-repeat="dproject in dprojects">
+                <div class="col-lg-3 col-md-4 col-sm-6 wow fadeIn" data-wow-delay=".3s" ng-repeat="dproject in dprojects">
                     <a ng-href="{{ dproject.link }}" target="_blank">
                         <div class="project-card">
                             <img ng-src="{{ dproject.thumb }}" alt="">
@@ -100,7 +105,7 @@
                     </a>
                 </div>
                <!-- No destacados -->
-                <div class="col-lg-3 col-md-4 col-sm-6 mobile-disappear" ng-repeat="nproject in nprojects">
+                <div class="col-lg-3 col-md-4 col-sm-6 mobile-disappear wow fadeIn" data-wow-delay=".3s" ng-repeat="nproject in nprojects">
                     <a ng-href="{{ nproject.link }}" target="_blank">
                         <div class="project-card">
                             <img ng-src="{{ nproject.thumb }}" alt="">
@@ -117,7 +122,7 @@
     
     <div id="contacto">
         <div class="paso-container">
-            <img src="../img/Iconos/Contacto.svg" alt="Antena de Radio" class="icon">
+            <img src="../img/Iconos/Contacto.svg" alt="Antena de Radio" class="icon wow fadeIn" data-wow-delay=".3s">
             <h1 class="title"><span>Contacto</span></h1>
             <p class="lead">Ahora que has visto el esfuerzo que le ponemos a nuestros proyectos háblanos sobre tí: Sobre tus ideas, tus proyectos, etc... Cuéntanos en como podemos ayudarte a conseguir tus objetivos, o preguntanos lo que quieras.</p>
             <div class="row">

@@ -327,7 +327,6 @@ img::-moz-selection {
 
 /* Menu */
 #triangle-menu {
-  font-size: 200%;
   box-shadow: 0px 10px 10px 0px rgba(27, 27, 27, 0.1); }
 
 #triangle-menu.navbar-default .navbar-brand {
@@ -341,11 +340,13 @@ img::-moz-selection {
   border: 0px; }
   #triangle-menu li .dropdown-menu a {
     color: #ffffff; }
-  #triangle-menu li .dropdown-menu li a:hover {
-    background-color: #1b1b1b !important; }
+  #triangle-menu li .dropdown-menu li a {
+    font-size: 18px; }
+    #triangle-menu li .dropdown-menu li a:hover {
+      background-color: #1b1b1b !important; }
 
 #triangle-menu.navbar-default {
-  font-size: 16px;
+  font-size: 18px;
   background-color: #ffb61e;
   border-width: 0px;
   border-radius: 0px; }
@@ -518,15 +519,19 @@ img::-moz-selection {
 #main {
   min-height: 100vh; }
   #main .header {
+    height: 100vh;
     width: 100%;
     text-align: center;
-    padding: 40px; }
-    @media (max-width: 600px) {
-      #main .header {
-        text-align: center; } }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 60px; }
     #main .header .icon {
       width: 100%;
-      max-width: 450px; }
+      max-width: 450px;
+      max-height: 380px; }
     #main .header .title {
       font-size: 200%; }
       @media (max-width: 600px) {
@@ -552,6 +557,14 @@ img::-moz-selection {
         font-size: 110%;
         font-weight: bold;
         color: #ffb61e; }
+    #main .section .author {
+      margin-top: -20px;
+      text-align: right;
+      font-weight: 300;
+      line-height: 0px; }
+    #main .section .icon {
+      height: 141px;
+      margin-top: 30px; }
 
 /* About */
 #equipo #equipo-flex {
