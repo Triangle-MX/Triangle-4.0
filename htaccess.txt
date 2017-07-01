@@ -8,5 +8,3 @@ RewriteCond %{HTTP_HOST} ^www.triangle.mx [NC]
 RewriteRule ^(.*)$ https://triangle.mx/$1 [L,R=301]
 
 DefaultLanguage es
-
-AddDefaultCharset UTF-8
