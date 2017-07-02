@@ -529,6 +529,9 @@ img::-moz-selection {
       width: 100%;
       max-width: 450px;
       max-height: 380px; }
+    @media (max-width: 600px) {
+      #main .header #design-icon {
+        height: 270px; } }
     #main .header .title {
       font-size: 200%; }
       @media (max-width: 600px) {
