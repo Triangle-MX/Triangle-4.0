@@ -40,7 +40,7 @@ header("HTTP/1.0 404 Not Found");
         <!-- Main Styles -->
         <link rel="stylesheet" href="../css/main.css">
 </head>
-<body>
+<body onload="setTimeout(goBack, 5000)">
    
     <!--[if lt IE 8]>
             <p class="browserupgrade">Estas usando una versión muy <strong>antigua</strong> de tu navegador. Por favor <a href="http://browsehappy.com/">actualiza tu navegador</a> para tener una mejor experiencia en la red.</p>
@@ -52,7 +52,7 @@ header("HTTP/1.0 404 Not Found");
                 <img src="../img/Iconos/Stop.svg" alt="Alerta" class="icon">
                 <h1 class="title">Error <span>404</span></h1>
                 <div class="lead">Lo sentimos, la página que estás tratando de buscar <span>no existe</span>. Porfavor checa que la <span>dirección URL</span> sea la correcta.</div>
-                <a href="../" class="btn1">Regresar</a>
+                <a class="btn1" onclick="goBack()">Regresar</a>
             </div>
         </div>
     </div>    

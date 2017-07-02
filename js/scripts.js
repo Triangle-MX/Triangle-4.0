@@ -39,8 +39,8 @@ $(function() {
 });
 
 // Home Redirection
-function redirectToHome(){
-    window.location = "../";
+function goBack(){
+    history.back();
 };
 
 // Rellax.js

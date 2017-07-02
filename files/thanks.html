@@ -37,7 +37,7 @@
         <!-- Main Styles -->
         <link rel="stylesheet" href="../css/main.css">
 </head>
-<body onload="setTimeout(redirectToHome, 5000)">
+<body onload="setTimeout(goBack, 5000)">
    
     <!--[if lt IE 8]>
             <p class="browserupgrade">Estas usando una versión muy <strong>antigua</strong> de tu navegador. Por favor <a href="http://browsehappy.com/">actualiza tu navegador</a> para tener una mejor experiencia en la red.</p>
@@ -50,7 +50,7 @@
                 <img src="../img/Iconos/Contacto.svg" alt="Signo de Construcción" class="icon">
                 <h1 class="title">Muchas <span>Gracias</span></h1>
                 <div class="lead">Gracias por <span>contactarnos</span>. Pronto contestaremos tu mensaje <span>increíble</span>. Seras redireccionado a la página principal en unos momentos.</div>
-                <a href="../" class="btn1">Regresar</a>
+                <a class="btn1" onclick="goBack()">Regresar</a>
             </div>
         </div>
     </div>    
