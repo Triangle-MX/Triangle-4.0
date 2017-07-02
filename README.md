@@ -14,7 +14,7 @@ The redesign includes subtle **animations**, wich will help to create a more **h
 
 To get a **human** look, we need to make our site more accesible. We are going to make this in three different ways:
 
-- **Colorblindness Filters**: Thanks to Github User <a href="https://github.com/Altreus" target="_blank">Altreus</a> we managed to get some filters por people with eight different types of color blindness. To access this filters you just need to click on the eye icon at the footer of each page.
+- **Colorblindness Filters**: Thanks to Github User <a href="https://github.com/Altreus" target="_blank">Altreus</a> we managed to get some filters for people with eight different types of color blindness. To access this filters you just need to click on the eye icon at the footer of each page.
 
 - **Ultra Responsiveness**: Nearly 60% percent of our CSS code is dedicating to make out page mobile friendly and ultra responsive.
 
@@ -25,7 +25,13 @@ To get a **human** look, we need to make our site more accesible. We are going t
 The new version of the site includes several easter eggs:
 
 - Taxi (13" Macbooks | Other 1440px wide screens): When you click it a Horn sound plays.
-- Roger-Roger (All devices): When you click the icon of the FAQ section (on the <code>index.html</code> file), it makes the "Roger-Roger" sound from Star Wars.
+
+## Credits
+
+- **José Pablo Iglesias**: Developer
+- **Máximo Sánchez**: Designer
+- **Alvaro López and Mariano García**: Content
+- **Santiago Gutiérrez**: Corrections
 
 ## License
 
