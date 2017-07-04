@@ -134,13 +134,13 @@ img::-moz-selection {
     margin-top: 0px;
     margin-bottom: 51px; }
 
-#desarrollo, #diseño, #nosotros, #faq, #contacto {
+#desarrollo, #diseño, #otros, #nosotros, #faq, #contacto {
   padding: 80px 144px; }
   @media (max-width: 900px) {
-    #desarrollo, #diseño, #nosotros, #faq, #contacto {
+    #desarrollo, #diseño, #otros, #nosotros, #faq, #contacto {
       padding: 40px; } }
   @media (max-width: 600px) {
-    #desarrollo, #diseño, #nosotros, #faq, #contacto {
+    #desarrollo, #diseño, #otros, #nosotros, #faq, #contacto {
       padding: 20px; } }
 
 #desarrollo {
@@ -148,6 +148,9 @@ img::-moz-selection {
 
 #diseño {
   background-color: #eeeeee; }
+
+#otros {
+  background-color: #1b1b1b; }
 
 #nosotros {
   background-color: #eeeeee; }

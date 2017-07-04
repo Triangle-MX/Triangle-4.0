@@ -18,14 +18,20 @@ app.controller('MainController', ['$scope', function($scope) {
     type: 'Página Web',
     thumb: '../img/Proyectos/BusinessSenior-Project.svg',
     link: 'http://businesssenior.com.mx/'
+   },
+   {
+    name: 'Kida',
+    type: 'Diseño Gráfico',
+    thumb: '../img/Proyectos/Kida-Project.svg',
+    link: 'http://kida.com.mx'
    }
    ];
   $scope.nprojects = [
-   { 
-    name: 'Kibo', 
-    type: 'Diseño Gráfico', 
-    thumb: '../img/Proyectos/Kibo-Project.svg',
-    link: 'http://astros.triangle.mx/'
-   }       
+   //{ 
+    //name: 'Kibo', 
+    //type: 'Diseño Gráfico', 
+    //thumb: '../img/Proyectos/Kibo-Project.svg',
+    //link: 'http://astros.triangle.mx/'
+   //}       
    ];
 }]);
