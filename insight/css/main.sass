@@ -1,0 +1,38 @@
+// Variables
+
+// Colors
+$primary: #F4F8FF
+$accent: #266FEF
+$black: #0A162B
+$white: #FFFFFF
+
+// Font-Size
+$normal-size: 18px
+$mobile-size: 16px
+$big-size: 20px
+
+//Font-Family
+$primary-font: 'Lato', 'Helvetica Neue', sans-serif
+$secondary-font: 'Lato', 'Helvetica Neue', sans-serif
+
+$transition: .2s ease-in
+
+body
+    background-color: $primary
+    overflow-x: hidden
+    font-family: $primary-font
+    font-size: $normal-size
+    color: $black
+
+    @media (max-width: 600px)
+        font-size: $mobile-size
+
+    @media (min-width: 1500px)
+        font-size: $big-size
+
+h1,h2,h3,h4,h5,h6
+    font-family: $secondary-font
+
+// Import _partials
+// Sidebar
+@import '_partials/_sidebar.sass'

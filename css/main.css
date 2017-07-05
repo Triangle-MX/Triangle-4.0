@@ -1,7 +1,6 @@
 @charset "UTF-8";
 /* Fonts */
 @import url("https://fonts.googleapis.com/css?family=Anton|Lato|Montserrat");
-/* Variables (Solo se ve en SASS) */
 /* Componentes Basicos */
 body {
   background-color: #ffffff;

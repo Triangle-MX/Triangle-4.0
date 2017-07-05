@@ -2,25 +2,25 @@
 <html lang="es-MX">
 <head>
     <title>Triangle</title>
-    
+
     <!-- Important Metas -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    
+
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="favicon.png">
-    
+
     <!-- Description + Keywords Metas -->
         <meta name="description" content="Somos Triangle y queremos cambiar al mundo, un proyecto increíble a la vez.">
         <meta name="keywords" content="Triangle, Diseño Web, Desarrollo Web, Páginas Web, Sitios Web, México, Diseño Web México, Diseño Web Profesional, Diseño Web Responsive, Diseño Web Adaptable, Desarrollo Web México, Desarrollo Web Profesional, Desarrollo Web Responsive, Desarrollo Web Adaptable">
-    
+
     <!-- OpenGraph Metas-->
         <meta property="og:title" content="Triangle" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://triangle.mx/" />
         <meta property="og:image" content="https://triangle.mx/tile.png" />
-    
+
     <!-- Structured Data -->
         <script type="application/ld+json">
             {
@@ -37,18 +37,18 @@
             }]
             }
         </script>
-    
+
     <!-- Stylesheets -->
-       
+
         <!-- Bootstrap 3 -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        
+
         <!-- Main Styles -->
         <link rel="stylesheet" href="css/main.css">
-        
+
         <!-- Icon -->
         <link rel="stylesheet" href="fonts/css/icon.css">
-        
+
         <!-- animate.min.css -->
         <link rel="stylesheet" href="css/animate.min.css">
 </head>
@@ -58,13 +58,13 @@
     <script>
               new WOW().init();
     </script>
-   
+
     <!--[if lt IE 8]>
             <p class="browserupgrade">Estas usando una versión muy <strong>antigua</strong> de tu navegador. Por favor <a href="http://browsehappy.com/">actualiza tu navegador</a> para tener una mejor experiencia en la red.</p>
     <![endif]-->
-    
+
     <!-- Hero -->
-    <div id="hero">
+    <div id="hero" class="animated fadeIn">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-10 col-md-push-1">
@@ -74,14 +74,14 @@
                 </div>
             </div>
         </div>
-        
+
         <a onclick="horn()"><img src="img/Iconos/Taxi.svg" alt="Taxi Amarillo" id="taxi"></a>
         <audio id="horn-honk" src="src/horn.mp3"></audio>
     </div>
-    
+
     <!-- Pasos -->
     <div id="pasos">
-        
+
         <div id="desarrollo">
             <div class="paso-container">
                 <img src="img/Iconos/Web-Development.svg" alt="Computadora" class="icon wow fadeIn" data-wow-delay=".3s">
@@ -90,7 +90,7 @@
                 <a href="desarrollo/" class="btn1">Descubre Más</a>
             </div>
         </div>
-        
+
         <div id="diseño">
             <div class="paso-container">
                 <img src="img/Iconos/Design.svg" alt="Foco de Luz" class="icon wow fadeIn" data-wow-delay=".3s">
@@ -99,7 +99,7 @@
                 <a href="diseno/" class="btn1">Descubre Más</a>
             </div>
         </div>
-           
+
         <!--<div id="otros">
             <div class="paso-container">
                 <img src="img/Iconos/Other.svg" alt="Foco de Luz" class="icon wow fadeIn" data-wow-delay=".3s">
@@ -107,8 +107,8 @@
                 <p class="lead">Un buen logo, buenas tarjetas de presentación y en general un buen diseño de tu proyecto ayudará a llevar a dicho proyecto al siguente nivel, a que tenga mucha más credibilidad y a que capte más fácilmente la atención de a quien quieras llegar.</p>
                 <a href="otros/" class="btn1">Descubre Más</a>
             </div>
-        </div>-->   
-            
+        </div>-->
+
         <div id="proyectos">
             <div class="container-fluid">
                 <div class="row">
@@ -120,8 +120,8 @@
                 </div>
             </div>
         </div>
-        
-                
+
+
         <div id="nosotros">
             <div class="paso-container">
                 <img src="img/Iconos/About.svg" alt="Equipo" class="icon wow fadeIn" data-wow-delay=".3s">
@@ -130,7 +130,7 @@
                 <a href="nosotros/" class="btn1">Descubre Más</a>
             </div>
         </div>
-        
+
         <!--<div id="faq">
             <div class="paso-container">
                 <a class="roger-roger" onclick="roger()"><img src="img/Iconos/FAQ.svg" alt="Errorbot... Roger Roger" class="icon wow fadeIn" data-wow-delay=".3s"></a>
@@ -140,9 +140,9 @@
                 <a href="#" class="btn1">Descúbrelo</a>
             </div>
         </div>-->
-        
+
     </div>
-    
+
     <!-- Contact -->
     <div id="contacto">
         <div class="paso-container">
@@ -176,8 +176,8 @@
             </div>
         </div>
     </div>
-    
-    
+
+
     <!-- Footer -->
     <div id="footer">
         <div class="row">
@@ -187,14 +187,14 @@
                     <li><a href="https://www.facebook.com/trianglewebmexico/" target="_blank" class="facebook" title="Facebook"><i class="icon-facebook"></i></a></li>
                     <li><a href="https://www.instagram.com/trianglewebsmex/" target="_blank" class="instagram" title="Instagram"><i class="icon-instagram"></i></a></li>
                     <li><a href="https://github.com/Triangle-MX" target="_blank" class="github" title="GitHub"><i class="icon-github"></i></a></li>
-                    
+
                 </ul>
             </div>
             <!--<div class="col-lg-4 star-wars-icons">
                 <ul class="list-inline">
                     <li><a onclick="han()" target="_blank"><i class="icon-rebel"></i></a></li>
                     <li><a onclick="vader()" target="_blank"><i class="icon-empire"></i></a></li>
-                    
+
                     <audio id="han" src="src/han-solo.mp3"></audio>
                     <audio id="vader" src="src/vader.mp3"></audio>
                 </ul>
@@ -206,39 +206,39 @@
             </div>
         </div>
     </div>
-    
-    
+
+
     <!-- Scripts -->
- 
+
         <!-- jQuery -->
         <script src="js/vendor/jquery-1.11.2.min.js"></script>
-        
+
         <!-- Bootstrap JS -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        
+
         <!-- Google Analytics -->
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
             m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
             })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-            
+
               ga('create', 'UA-74662952-3', 'auto');
               ga('send', 'pageview');
 
         </script>
-            
+
         <!-- Scripts JS -->
         <script src="js/scripts.js"></script>
         <script>
 		  var rellax = new Rellax('.rellax');
         </script>
-        
+
         <!-- Modernizr -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-        
+
         <!-- Angular -->
         <script src="js/angular.js"></script>
-    
+
 </body>
 </html>

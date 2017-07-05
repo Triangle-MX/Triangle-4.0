@@ -1,7 +1,7 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css?family=Anton|Lato|Montserrat')
 
-/* Variables (Solo se ve en SASS) */
+// Variables
 
 $yellow: #ffb61e
 $black: #1b1b1b
@@ -32,45 +32,45 @@ body
 @media (max-width: 600px)
     body
         font-size: $mobile-size
-        
+
 
 @media (max-width: 1500px)
     body
         font-size: $big-size
-        
+
 h1,h2,h3,h4,h5,h6
     font-family: $montserrat
-    
-a 
+
+a
     text-decoration: none
     color: $yellow
     transition: $transition
-    
+
     &:hover, &:active, &:visited
         color: $black
         text-decoration: none
 
-    
+
 /* Selection */
-::-moz-selection 
+::-moz-selection
     text-shadow: none
     background: $blue
     color: $white
 
-::selection 
+::selection
     text-shadow: none
     background: $blue
     color: $white
 
-img::-moz-selection 
+img::-moz-selection
     background: transparent
 
-img::selection 
+img::selection
     background: transparent
 
-img::-moz-selection 
+img::-moz-selection
     background: transparent
-    
+
 /* index.html */
 @import 'index.sass'
 /* Taxi Easter Egg */
