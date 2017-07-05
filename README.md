@@ -4,7 +4,7 @@ Triangle Site 4.0 is the new version of Triangle's site wich includes a major re
 
 ## The new concept
 
-Last version of the Triangle Site (wich can be viewed <a href="https://triangle-mx.github.io/Triangle-3.0" target="_blank">here</a>) was kind of **monotonous** and **boring**, that is why we decided to redesign completely it.
+Last version of the Triangle Site (wich can be viewed <a href="https://triangle-mx.github.io/Triangle-3.0">here</a>) was kind of **monotonous** and **boring**, that is why we decided to redesign completely it.
 
 The new concept is more **human**, more **personal**. We don't want to be seen like <i>machines doing websites</i>, but instead we want to be look like <i>humans helping businesses, organizations and other projects to get awesome websites</i>.
 
@@ -14,7 +14,7 @@ The redesign includes subtle **animations**, wich will help to create a more **h
 
 To get a **human** look, we need to make our site more accesible. We are going to make this in three different ways:
 
-- **Colorblindness Filters**: Thanks to Github User <a href="https://github.com/Altreus" target="_blank">Altreus</a> we managed to get some filters for people with eight different types of color blindness. To access this filters you just need to click on the eye icon at the footer of each page.
+- **Colorblindness Filters**: Thanks to Github User <a href="https://github.com/Altreus">Altreus</a> we managed to get some filters for people with eight different types of color blindness. To access this filters you just need to click on the eye icon at the footer of each page.
 
 - **Ultra Responsiveness**: Nearly 60% percent of our CSS code is dedicating to make out page mobile friendly and ultra responsive.
 
@@ -57,5 +57,3 @@ for any purpose, even commercially.
 You do not have to comply with the license for elements of the material in the public domain or where your use is permitted by an applicable exception or limitation.
 
 No warranties are given. The license may not give you all of the permissions necessary for your intended use. For example, other rights such as publicity, privacy, or moral rights may limit how you use the material.
-
-
