@@ -43,6 +43,11 @@ function goBack(){
     history.back();
 };
 
+// Home Redirection
+function goHome(){
+    window.location.href = "https://www.triangle.mx";
+};
+
 // Rellax.js
 (function(g,b){"function"===typeof define&&define.amd?define([],b):"object"===typeof module&&module.exports?module.exports=b():g.Rellax=b()})(this,function(){var g=function(b,l){var c=Object.create(g.prototype),f=0,k=0,e=[],p=!1,t=window.requestAnimationFrame||window.webkitRequestAnimationFrame||window.mozRequestAnimationFrame||window.msRequestAnimationFrame||window.oRequestAnimationFrame||function(a){setTimeout(a,1E3/60)},m=function(a,c,d){return a<=c?c:a>=d?d:a};c.options={speed:-2,center:!1};l&&
 Object.keys(l).forEach(function(a){c.options[a]=l[a]});c.options.speed=m(c.options.speed,-10,10);b||(b=".rellax");if(document.getElementsByClassName(b.replace(".","")))c.elems=document.getElementsByClassName(b.replace(".",""));else if(!1!==document.querySelector(b))c.elems=querySelector(b);else throw Error("The elements you're trying to select don't exist.");var u=function(a){var h=a.getAttribute("data-rellax-percentage"),d=a.getAttribute("data-rellax-speed"),b=h||c.options.center?document.body.scrollTop:
