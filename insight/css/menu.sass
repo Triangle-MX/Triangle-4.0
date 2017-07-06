@@ -1,0 +1,89 @@
+/* Menu */
+
+// Variables
+$menu-transition: .5s ease-out
+
+.page-content
+  position: relative
+  z-index: 0
+  transition: $menu-transition
+
+
+.toggle
+  text-decoration: none
+  font-size: 130%
+  color: $white
+  transition: $menu-transition
+  position: fixed
+  top: 20px
+  left: 20px
+  z-index: 1
+  cursor: pointer
+  padding: 5px
+  background-color: $black
+
+
+.sidebar
+  position: fixed
+  left: -190px
+  top: 0px
+  bottom: 0
+  right: 0
+  transition: $menu-transition
+  width: 180px
+  padding: 30px
+  background: $black
+  z-index: 0
+
+  ul
+    list-style: none
+    margin: 0
+    padding: 0
+
+  li
+    margin-bottom: 16px
+
+    hr
+      border-color: $white
+
+    a
+      color: rgba(255,255,255,0.8)
+      font-family: $primary-font
+      font-size: 110%
+      margin: 0
+      margin-bottom: 16px
+      -webkit-font-smoothing: antialiased
+      cursor: pointer
+
+    .menu-link
+      color: $white
+      transition: $transition
+
+      &:hover
+        color: $accent
+        text-decoration: none
+
+    .menu-link-triangle
+      color: $white
+      transition: $transition
+      font-weight: bold
+      font-family: $secondary-font
+
+      &:hover
+        color: #ffb16e
+        text-decoration: none
+
+#sidebartoggler
+  display: none
+
+  &:checked + .page-wrap
+
+    .sidebar
+      left: 0px
+
+    .toggle
+      left: 200px
+      transform: rotate(360deg)
+
+    .page-content
+      opacity: .1

@@ -9,7 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="../favicon.png">
+    <link rel="icon" type="image/png" href="img/favicon.png">
 
     <!-- Description + Keywords Metas -->
         <meta name="description" content="Triangle es un pequeño estudio de desarrollo web, en los que creamos páginas web únicas, para clientes únicos.">
@@ -39,6 +39,12 @@
 
         <!-- Main Styles -->
         <link rel="stylesheet" href="css/main.css">
+
+        <!-- Icon -->
+        <link rel="stylesheet" href="../fonts/css/icon.css">
+
+        <!-- Scripts JS -->
+        <script src="js/scripts.js"></script>
 </head>
 <body>
 
@@ -46,11 +52,51 @@
             <p class="browserupgrade">Estas usando una versión muy <strong>antigua</strong> de tu navegador. Por favor <a href="http://browsehappy.com/">actualiza tu navegador</a> para tener una mejor experiencia en la red.</p>
     <![endif]-->
 
+    <input type="checkbox" id="sidebartoggler" name="" value="">
+
+    <div class="page-wrap">
+
+        <label for="sidebartoggler" class="toggle"><i class="icon-menu"></i></label>
+
+        <div class="page-content">
+
+            <div id="hero">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-8 col-sm-push-2">
+                            <img src="img/Logo.svg" alt="" id="logo">
+                            <p class="lead">Recaudación y Análisis de Datos, y Creación de Estrategias en base a ellos.</p>
+                            <a href="#" class="btn1">Descubre Más</a>
+                        </div>
+                    </div>
+                </div>
+
+                <a onclick="horn()"><img src="img/Taxi-Blue.svg" alt="Taxi Amarillo" id="taxi"></a>
+                <audio id="horn-honk" src="../src/horn2.mp3"></audio>
+            </div>
+
+       </div>
+
+        <div class="sidebar">
+
+            <ul>
+                <li><img src="img/Logo-B-Alt.svg" alt="" class="sidebar-logo"></li>
+                <li><a class="menu-link" href="#">Principal</a></li>
+                <li><a class="menu-link" href="#">Principal</a></li>
+                <li><a class="menu-link" href="#">Principal</a></li>
+                <li><a class="menu-link" href="#">Principal</a></li>
+                <li><hr></li>
+                <li><a class="menu-link-triangle" href="../">Triangle</a></li>
+            </ul>
+        </div>
+
+    </div>
+
 
     <!-- Scripts -->
 
         <!-- jQuery -->
-        <script src="../../js/vendor/jquery-1.11.2.min.js"></script>
+        <script src="../js/vendor/jquery-1.11.2.min.js"></script>
 
         <!-- Bootstrap JS -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -67,17 +113,11 @@
               ga('send', 'pageview');
         </script> -->
 
-        <!-- Scripts JS -->
-        <script src="../../js/scripts.js"></script>
-        <script>
-		  var rellax = new Rellax('.rellax');
-        </script>
-
         <!-- Modernizr -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 
         <!-- Angular -->
-        <script src="../../js/angular.js"></script>
+        <script src="../js/angular.js"></script>
 
 </body>
 </html>

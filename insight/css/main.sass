@@ -1,3 +1,6 @@
+// Fonts Import
+@import url('https://fonts.googleapis.com/css?family=Lato|Montserrat')
+
 // Variables
 
 // Colors
@@ -13,7 +16,7 @@ $big-size: 20px
 
 //Font-Family
 $primary-font: 'Lato', 'Helvetica Neue', sans-serif
-$secondary-font: 'Lato', 'Helvetica Neue', sans-serif
+$secondary-font: 'Montserrat', 'Helvetica Neue', sans-serif
 
 $transition: .2s ease-in
 
@@ -34,5 +37,38 @@ h1,h2,h3,h4,h5,h6
     font-family: $secondary-font
 
 // Import _partials
-// Sidebar
-@import '_partials/_sidebar.sass'
+// Menu
+@import 'menu.sass'
+// Buttons
+@import 'buttons.sass'
+// Taxi
+@import 'taxi.sass'
+
+/* index.html */
+#hero
+    width: 100%
+    min-height: 100vh
+    background-color: $white
+    background-image: url('../img/City.svg')
+    background-repeat: none
+    background-size: cover
+    background-position: bottom
+    padding: 120px 40px
+    animation-duration: 3s
+    animation-delay: 2s
+
+    @media (max-width: 600px)
+        padding-top: 100px
+
+    @media (max-width: 900px)
+        padding-top: 100px
+
+    #logo
+        max-width: 450px
+        margin-bottom: 10px
+
+        @media (min-width: 1300px)
+            max-width: 500px
+
+    .lead
+        font-size: 140%
