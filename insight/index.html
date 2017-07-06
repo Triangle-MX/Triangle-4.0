@@ -43,6 +43,9 @@
         <!-- Icon -->
         <link rel="stylesheet" href="../fonts/css/icon.css">
 
+        <!-- animate.min.css -->
+        <link rel="stylesheet" href="../css/animate.min.css">
+
         <!-- Scripts JS -->
         <script src="js/scripts.js"></script>
 </head>
@@ -60,7 +63,8 @@
 
         <div class="page-content">
 
-            <div id="hero">
+            <!-- Hero -->
+            <div id="hero" class="animated fadeIn">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-sm-8 col-sm-push-2">
@@ -72,7 +76,41 @@
                 </div>
 
                 <a onclick="horn()"><img src="img/Taxi-Blue.svg" alt="Taxi Amarillo" id="taxi"></a>
-                <audio id="horn-honk" src="../src/horn2.mp3"></audio>
+                <audio id="horn-honk" src="../src/horn.mp3"></audio>
+            </div>
+
+            <!-- Contacto -->
+            <div id="contacto">
+                <div class="paso-container">
+                    <img src="../img/Iconos/Contacto.svg" alt="Antena de Radio" class="icon wow fadeIn" data-wow-delay=".3s">
+                    <h1 class="title"><span>Contacto</span></h1>
+                    <p class="lead">Ahora que sabes un poco de lo que hacemos, cómo lo hacemos y por qué lo hacemos, cuéntanos cómo podemos ayudarte a conseguir tus objetivos, o pregúntanos lo que quieras.</p>
+                    <div class="row">
+                        <div class="col-lg-6 form-column">
+                            <div id="form">
+                                <form method="POST" action="http://formspree.io/insight@triangle.mx">
+                                    <input type="text" name="nombre" placeholder="Tu Nombre" required>
+                                    <input type="email" name="email" placeholder="Tu Correo Electrónico" required>
+                                    <textarea name="message" placeholder="Tu Mensaje"></textarea>
+                                    <input type="hidden" name="_next" value="../files/thanks.html" />
+                                    <input type="hidden" name="_subject" value="Nuevo Mensaje desde triangle.mx" />
+                                    <input type="hidden" name="_language" value="es" />
+                                    <input type="text" name="_gotcha" style="display:none" />
+                                    <br>
+                                    <button type="submit" class="btn1">Enviar</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <p class="lead">Si no deseas utilizar la forma de contacto, puedes utilizar los siguentes medios para contactarnos:</p>
+                            <ul class="contact-methods">
+                                <li><a href="mailto:insighto@triangle.mx"><i class="icon-mail"></i> insight@triangle.mx</a></li>
+                                <li><a href=""><i class="icon-"></i></a></li>
+                                <li><a href=""><i class="icon-"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
 
        </div>

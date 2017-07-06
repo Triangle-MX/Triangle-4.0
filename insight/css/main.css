@@ -15,6 +15,14 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", "Helvetica Neue", sans-serif; }
 
+a {
+  text-decoration: none;
+  color: #266FEF;
+  transition: 0.2s ease-in; }
+  a:hover, a:active, a:visited {
+    color: #0A162B;
+    text-decoration: none; }
+
 /* Menu */
 .page-content {
   position: relative;
@@ -93,7 +101,8 @@ h1, h2, h3, h4, h5, h6 {
   cursor: pointer;
   border-radius: 250px;
   font-size: 120%;
-  transition: 0.2s ease-in; }
+  transition: 0.2s ease-in;
+  border: 3px solid #266FEF; }
   @media (max-width: 600px) {
     .btn1, .btn1:visited, .btn1:active {
       padding: 5px 21px;
@@ -102,11 +111,13 @@ h1, h2, h3, h4, h5, h6 {
       cursor: pointer;
       border-radius: 250px;
       font-size: 110%;
-      transition: 0.2s ease-in; } }
+      transition: 0.2s ease-in;
+      border: 3px solid #266FEF; } }
   .btn1:hover, .btn1:focus, .btn1:visited:hover, .btn1:visited:focus, .btn1:active:hover, .btn1:active:focus {
     background-color: #0A162B;
     color: #FFFFFF;
-    text-decoration: none !important; }
+    text-decoration: none !important;
+    border: 3px solid #0A162B; }
 
 /* Taxi Animation */
 #taxi {
@@ -134,6 +145,23 @@ h1, h2, h3, h4, h5, h6 {
     #taxi {
       display: none; } }
 
+#form input, #form textarea {
+  padding: 10px;
+  display: block;
+  margin-bottom: 20px;
+  background-color: #fafafa;
+  width: 100%;
+  max-width: 100%;
+  color: #0A162B;
+  border: 0px;
+  border-bottom: 2px solid #0A162B;
+  transition: 0.2s ease-in; }
+  #form input:active, #form input:focus, #form textarea:active, #form textarea:focus {
+    outline: none;
+    border-bottom: 2px solid #266FEF; }
+#form textarea {
+  min-height: 100px; }
+
 /* index.html */
 #hero {
   width: 100%;
@@ -160,5 +188,50 @@ h1, h2, h3, h4, h5, h6 {
         max-width: 500px; } }
   #hero .lead {
     font-size: 140%; }
+
+.paso-container {
+  background-color: #FFFFFF;
+  width: 100%;
+  height: 100%;
+  padding: 60px; }
+  @media (max-width: 600px) {
+    .paso-container {
+      padding: 30px; } }
+  .paso-container .icon {
+    height: 141px;
+    width: auto;
+    margin-bottom: 20px;
+    max-width: 100%; }
+    @media (max-width: 900px) {
+      .paso-container .icon {
+        height: 100px; } }
+  .paso-container .title {
+    margin-top: 0px;
+    margin-bottom: 30px; }
+    .paso-container .title span {
+      font-weight: bold; }
+  .paso-container .lead {
+    margin-top: 0px;
+    margin-bottom: 51px; }
+
+#contacto {
+  padding: 80px 144px; }
+  @media (max-width: 900px) {
+    #contacto {
+      padding: 40px; } }
+  @media (max-width: 600px) {
+    #contacto {
+      padding: 20px; } }
+
+#contacto {
+  background-color: #0A162B; }
+  @media (max-width: 1200px) {
+    #contacto .form-column {
+      margin-bottom: 50px; } }
+  #contacto .lead {
+    margin-bottom: 20px; }
+  #contacto .contact-methods {
+    list-style: none;
+    margin-left: -40px; }
 
 /*# sourceMappingURL=main.css.map */
