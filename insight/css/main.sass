@@ -1,5 +1,5 @@
 // Fonts Import
-@import url('https://fonts.googleapis.com/css?family=Lato|Montserrat')
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Open+Sans')
 
 // Variables
 
@@ -16,10 +16,31 @@ $big-size: 20px
 
 //Font-Family
 $primary-font: 'Lato', 'Helvetica Neue', sans-serif
-$secondary-font: 'Montserrat', 'Helvetica Neue', sans-serif
+$secondary-font: 'Merriweather', 'Helvetica Neue', sans-serif
 
 $transition: .2s ease-in
 
+/* Selection */
+::-moz-selection
+    text-shadow: none
+    background: $accent
+    color: $white
+
+::selection
+    text-shadow: none
+    background: $accent
+    color: $white
+
+img::-moz-selection
+    background: transparent
+
+img::selection
+    background: transparent
+
+img::-moz-selection
+    background: transparent
+
+/* Basic Components */
 body
     background-color: $primary
     overflow-x: hidden
@@ -45,7 +66,7 @@ a
         color: $black
         text-decoration: none
 
-// Import _partials
+// Import Components
 // Menu
 @import 'menu.sass'
 // Buttons
@@ -55,93 +76,5 @@ a
 // Form
 @import 'form.sass'
 
-/* index.html */
-#hero
-    width: 100%
-    min-height: 100vh
-    background-color: $white
-    background-image: url('../img/City.svg')
-    background-repeat: none
-    background-size: cover
-    background-position: bottom
-    padding: 120px 40px
-    animation-duration: 3s
-    animation-delay: 2s
-
-    @media (max-width: 600px)
-        padding-top: 100px
-
-    @media (max-width: 900px)
-        padding-top: 100px
-
-    #logo
-        max-width: 450px
-        margin-bottom: 10px
-
-        @media (min-width: 1300px)
-            max-width: 500px
-
-    .lead
-        font-size: 140%
-
-
-
-
-
-
-
-
-
-
-
-.paso-container
-    background-color: $white
-    width: 100%
-    height: 100%
-    padding: 60px
-
-    @media (max-width: 600px)
-        padding: 30px
-
-    .icon
-        height: 141px
-        width: auto
-        margin-bottom: 20px
-        max-width: 100%
-
-        @media (max-width: 900px)
-            height: 100px
-
-    .title
-        margin-top: 0px
-        margin-bottom: 30px
-
-        span
-            font-weight: bold
-
-    .lead
-        margin-top: 0px
-        margin-bottom: 51px
-
-#contacto
-    padding: 80px 144px
-
-    @media (max-width: 900px)
-        padding: 40px
-
-    @media (max-width: 600px)
-        padding: 20px
-
-#contacto
-    background-color: $black
-
-    @media (max-width: 1200px)
-        .form-column
-            margin-bottom: 50px
-
-    .lead
-        margin-bottom: 20px
-
-    .contact-methods
-        list-style: none
-        margin-left: -40px
+//Import Pages
+@import 'index.sass'
