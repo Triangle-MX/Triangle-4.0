@@ -22,8 +22,6 @@ h1, h2, h3, h4, h5, h6 {
 a {
   text-decoration: none;
   color: #ffb61e;
-  -webkit-transition: 0.2s ease-in;
-  -o-transition: 0.2s ease-in;
   transition: 0.2s ease-in; }
   a:hover, a:active, a:visited {
     color: #1b1b1b;
@@ -53,23 +51,20 @@ img::-moz-selection {
 /* Hero */
 #hero {
   width: 100%;
-  min-height: 100vh;
   background-color: #ffffff;
   background-image: url("../img/City.svg");
   background-repeat: none;
   background-size: cover;
   background-position: bottom;
-  padding-top: 80px;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s; }
+  padding: 80px 0 200px 0;
+  animation-duration: 2s;
+  animation-delay: 0.5s; }
   @media (max-width: 600px) {
     #hero {
-      padding-top: 40px; } }
-  @media (max-width: 900px) {
+      padding: 40px 0 100px 0; } }
+  @media (min-width: 1440px) and (max-width: 1450px) and (height: 715px) {
     #hero {
-      padding-top: 60px; } }
+      min-height: 100vh; } }
   #hero #logo {
     width: 250px;
     margin-bottom: 10px; }
@@ -184,10 +179,8 @@ img::-moz-selection {
   background-position: bottom right;
   padding-bottom: 80px;
   padding-top: 80px;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  animation-duration: 1s;
+  animation-delay: 1s;
   /*&:hover
    * background-image: url('../img/City2.0.svg') */ }
   @media (max-width: 1200px) {
@@ -246,27 +239,17 @@ img::-moz-selection {
 /* Taxi Easter Egg */
 /* Taxi Animation on index.html */
 #taxi {
-  width: 150px;
+  width: 120px;
   z-index: 10;
-  position: relative;
-  left: -150px;
-  bottom: -139px;
-  -webkit-animation-name: taxi;
-          animation-name: taxi;
-  -webkit-animation-duration: 10s;
-          animation-duration: 10s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
-  cursor: pointer; }
-@-webkit-keyframes taxi {
-  40% {
-    margin-left: 770px; }
-  50% {
-    margin-left: 800px; }
-  100% {
-    margin-left: 1590px; } }
+  position: absolute;
+  left: -120px;
+  bottom: 0px;
+  animation-name: taxi;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-delay: 2s;
+  cursor: pointer;
+  display: none; }
 @keyframes taxi {
   40% {
     margin-left: 770px; }
@@ -274,12 +257,9 @@ img::-moz-selection {
     margin-left: 800px; }
   100% {
     margin-left: 1590px; } }
-  @media (min-width: 1450px) {
+  @media (min-width: 1440px) and (max-width: 1450px) and (height: 715px) {
     #taxi {
-      display: none; } }
-  @media (max-width: 1430px) {
-    #taxi {
-      display: none; } }
+      display: block; } }
 
 /* Taxi Hero (taxi.html) */
 /* Hero */
@@ -299,8 +279,7 @@ img::-moz-selection {
     #taxi-hero {
       padding-top: 60px; } }
   #taxi-hero .container-fluid {
-    -webkit-filter: grayscale(100%);
-            filter: grayscale(100%); }
+    filter: grayscale(100%); }
   #taxi-hero #logo {
     width: 250px;
     margin-bottom: 10px; }
@@ -344,8 +323,7 @@ img::-moz-selection {
 
 /* Menu */
 #triangle-menu {
-  -webkit-box-shadow: 0px 10px 10px 0px rgba(27, 27, 27, 0.1);
-          box-shadow: 0px 10px 10px 0px rgba(27, 27, 27, 0.1); }
+  box-shadow: 0px 10px 10px 0px rgba(27, 27, 27, 0.1); }
 
 #triangle-menu.navbar-default .navbar-brand {
   color: white;
@@ -372,8 +350,6 @@ img::-moz-selection {
 #triangle-menu.navbar-default .navbar-nav > li > a {
   color: white;
   background-color: #ffb61e;
-  -webkit-transition: 0.2s ease-in;
-  -o-transition: 0.2s ease-in;
   transition: 0.2s ease-in; }
 
 #triangle-menu.navbar-default .navbar-nav > li > a:hover,
@@ -406,8 +382,6 @@ img::-moz-selection {
 
 .navbar-toggle, .navbar-toggle:active, .navbar-toggle:visited {
   border: none !important;
-  -webkit-transition: 0.2s ease-in;
-  -o-transition: 0.2s ease-in;
   transition: 0.2s ease-in;
   border-radius: 25px; }
   .navbar-toggle .icon-bar, .navbar-toggle:active .icon-bar, .navbar-toggle:visited .icon-bar {
@@ -420,8 +394,7 @@ img::-moz-selection {
   margin-bottom: 0px;
   padding: 10px;
   text-align: center;
-  -webkit-box-shadow: 0px -10px 10px 0px rgba(27, 27, 27, 0.1);
-          box-shadow: 0px -10px 10px 0px rgba(27, 27, 27, 0.1); }
+  box-shadow: 0px -10px 10px 0px rgba(27, 27, 27, 0.1); }
   #footer .brand {
     font-family: "Montserrat", "Helvetica Neue", sans-serif;
     font-size: 140%; }
@@ -437,56 +410,24 @@ img::-moz-selection {
         font-size: 120%; } }
   #footer .facebook i {
     color: #3b5998;
-    -webkit-transition: 0.2s ease-in;
-    -o-transition: 0.2s ease-in;
     transition: 0.2s ease-in; }
     #footer .facebook i:hover {
       color: #ffb61e !important; }
   #footer .instagram i {
     color: #8a3ab9;
-    -webkit-transition: 0.2s ease-in;
-    -o-transition: 0.2s ease-in;
     transition: 0.2s ease-in; }
     #footer .instagram i:hover {
       color: #ffb61e !important; }
   #footer .github i {
     color: #333;
-    -webkit-transition: 0.2s ease-in;
-    -o-transition: 0.2s ease-in;
     transition: 0.2s ease-in; }
     #footer .github i:hover {
       color: #ffb61e !important; }
   #footer .daltonic i {
-    -webkit-animation-name: daltonic;
-            animation-name: daltonic;
-    -webkit-animation-duration: 5s;
-            animation-duration: 5s;
-    -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
+    animation-name: daltonic;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
     cursor: pointer; }
-@-webkit-keyframes daltonic {
-  0% {
-    color: #1b1b1b; }
-  10% {
-    color: yellow; }
-  20% {
-    color: #ffb61e; }
-  30% {
-    color: orange; }
-  40% {
-    color: #ff5959; }
-  50% {
-    color: #8a3ab9; }
-  60% {
-    color: #0071ce; }
-  70% {
-    color: aquamarine; }
-  80% {
-    color: green; }
-  90% {
-    color: #333; }
-  100% {
-    color: #1b1b1b; } }
 @keyframes daltonic {
   0% {
     color: #1b1b1b; }
@@ -512,8 +453,6 @@ img::-moz-selection {
     color: #1b1b1b; } }
   #footer .social-icons a, #footer .star-wars-icons a {
     color: #1b1b1b;
-    -webkit-transition: 0.2s ease-in;
-    -o-transition: 0.2s ease-in;
     transition: 0.2s ease-in;
     cursor: pointer; }
     #footer .social-icons a:hover, #footer .star-wars-icons a:hover {
@@ -538,8 +477,6 @@ img::-moz-selection {
   border: 3px solid #ffb61e;
   border-radius: 250px;
   font-size: 120%;
-  -webkit-transition: 0.2s ease-in;
-  -o-transition: 0.2s ease-in;
   transition: 0.2s ease-in; }
   @media (max-width: 600px) {
     .btn1, .btn1:visited, .btn1:active {
@@ -550,8 +487,6 @@ img::-moz-selection {
       border: 3px solid #ffb61e;
       border-radius: 250px;
       font-size: 110%;
-      -webkit-transition: 0.2s ease-in;
-      -o-transition: 0.2s ease-in;
       transition: 0.2s ease-in; } }
   .btn1:hover, .btn1:focus, .btn1:visited:hover, .btn1:visited:focus, .btn1:active:hover, .btn1:active:focus {
     background-color: #ffffff;
@@ -566,8 +501,6 @@ img::-moz-selection {
   border: 3px solid #266FEF;
   border-radius: 250px;
   font-size: 120%;
-  -webkit-transition: 0.2s ease-in;
-  -o-transition: 0.2s ease-in;
   transition: 0.2s ease-in; }
   @media (max-width: 600px) {
     .btn2, .btn2:visited, .btn2:active {
@@ -578,8 +511,6 @@ img::-moz-selection {
       border: 3px solid #ffb61e;
       border-radius: 250px;
       font-size: 110%;
-      -webkit-transition: 0.2s ease-in;
-      -o-transition: 0.2s ease-in;
       transition: 0.2s ease-in; } }
   .btn2:hover, .btn2:focus, .btn2:visited:hover, .btn2:visited:focus, .btn2:active:hover, .btn2:active:focus {
     background-color: #ffffff;
@@ -597,8 +528,6 @@ img::-moz-selection {
   color: #1b1b1b;
   border: 0px;
   border-bottom: 2px solid #1b1b1b;
-  -webkit-transition: 0.2s ease-in;
-  -o-transition: 0.2s ease-in;
   transition: 0.2s ease-in;
   border-radius: 0px; }
   #form input:active, #form input:focus, #form textarea:active, #form textarea:focus {
@@ -614,19 +543,10 @@ img::-moz-selection {
     height: 100vh;
     width: 100%;
     text-align: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     padding-top: 60px; }
     #main .header .icon {
@@ -673,14 +593,9 @@ img::-moz-selection {
 /* About */
 #equipo #equipo-flex {
   display: flexbox;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
   margin-top: 30px;
   margin-bottom: 30px; }
   #equipo #equipo-flex .miembro {
@@ -693,8 +608,6 @@ img::-moz-selection {
     min-width: 100px;
     min-height: 150px;
     padding: 20px;
-    -webkit-transition: 0.5s;
-    -o-transition: 0.5s;
     transition: 0.5s;
     background-color: #eeeeee; }
     #equipo #equipo-flex .miembro img {
@@ -716,22 +629,15 @@ img::-moz-selection {
   background-color: #eeeeee;
   overflow-x: hidden;
   text-align: center;
-  -webkit-transition: 0.2s ease-in;
-  -o-transition: 0.2s ease-in;
   transition: 0.2s ease-in;
   margin-bottom: 30px;
   cursor: pointer; }
   #projects-grid .project-card:hover {
-    -webkit-box-shadow: 0px 0px 10px 5px rgba(27, 27, 27, 0.15);
-            box-shadow: 0px 0px 10px 5px rgba(27, 27, 27, 0.15);
-    -webkit-transform: scale(1.05);
-        -ms-transform: scale(1.05);
-            transform: scale(1.05);
+    box-shadow: 0px 0px 10px 5px rgba(27, 27, 27, 0.15);
+    transform: scale(1.05);
     border-radius: 20px; }
   #projects-grid .project-card img {
     width: 100%;
-    -webkit-transition: 0.2s ease-in;
-    -o-transition: 0.2s ease-in;
     transition: 0.2s ease-in; }
   #projects-grid .project-card .project-info {
     padding: 20px; }
@@ -790,3 +696,5 @@ img::-moz-selection {
     color: #ffb61e; }
 .construction span {
   color: #ffb61e; }
+
+/*# sourceMappingURL=main.css.map */

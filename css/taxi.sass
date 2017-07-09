@@ -1,16 +1,17 @@
 /* Taxi Animation on index.html */
 #taxi
-    width: 150px
+    width: 120px
     z-index: 10
-    position: relative
-    left: -150px
-    bottom: -139px
+    position: absolute
+    left: -120px
+    bottom: 0px
     animation-name: taxi
     animation-duration: 10s
     animation-iteration-count: infinite
     animation-delay: 2s
     cursor: pointer
-    
+    display: none
+
     @keyframes taxi
         40%
             margin-left: 770px
@@ -18,13 +19,10 @@
             margin-left: 800px
         100%
             margin-left: 1590px
-    
-    @media (min-width: 1450px)
-        display: none
-        
-    @media (max-width: 1430px)
-        display: none
-        
+
+    @media (min-width: 1440px) and (max-width: 1450px) and (height: 715px)
+        display: block
+
 /* Taxi Hero (taxi.html) */
 
 /* Hero */
@@ -37,56 +35,56 @@
     background-size: cover
     background-position: bottom
     padding-top: 80px
-    
+
     @media (max-width: 600px)
         padding-top: 40px
-    
+
     @media (max-width: 900px)
         padding-top: 60px
-        
+
     .container-fluid
         filter: grayscale(100%)
-    
+
     #logo
         width: 250px
         margin-bottom: 10px
-        
+
         @media (min-width: 1300px)
             width: 400px
-    
+
     #title
         font-size: 450%
         font-family: $anton
         text-transform: uppercase
         color: $black
         margin: 0px
-        
+
         @media (min-width: 1400px)
             font-size: 400%
-        
+
         @media (max-width: 900px)
             font-size: 300%
-            
+
         @media (max-width: 500px)
             font-size: 250%
-        
+
         span
             color: $yellow
-    
+
     #lead
         font-size: 160%
         font-family: $lato
         color: $black
-        
+
         @media (min-width: 1400px)
             font-size: 200%
-        
+
         @media (max-width: 900px)
             font-size: 130%
-        
+
         @media (max-width: 500px)
             font-size: 110%
-        
+
         span
             color: $yellow
             font-weight: bold
