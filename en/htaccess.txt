@@ -1,0 +1,10 @@
+ErrorDocument 404 https://triangle.mx/files/404.php
+ErrorDocument 403 https://triangle.mx/files/403.html
+ErrorDocument 501 https://triangle.mx/files/501.html
+
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTP_HOST} ^www.triangle.mx [NC]
+RewriteRule ^(.*)$ https://triangle.mx/$1 [L,R=301]
+
+DefaultLanguage es

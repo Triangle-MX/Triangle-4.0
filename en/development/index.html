@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="es-MX">
+<html lang="en">
 <head>
-    <title>Triangle</title>
+    <title>Web Development</title>
 
     <!-- Important Metas -->
     <meta charset="UTF-8">
@@ -9,32 +9,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="icon" type="image/png" href="../../favicon.png">
 
     <!-- Description + Keywords Metas -->
-        <meta name="description" content="Somos Triangle y queremos cambiar al mundo, un proyecto increíble a la vez.">
-        <meta name="keywords" content="Triangle, Diseño Web, Desarrollo Web, Páginas Web, Sitios Web, México, Diseño Web México, Diseño Web Profesional, Diseño Web Responsive, Diseño Web Adaptable, Desarrollo Web México, Desarrollo Web Profesional, Desarrollo Web Responsive, Desarrollo Web Adaptable">
+        <meta name="description" content="We are Triangle and we want to change the world, one great project at the time.">
+        <meta name="keywords" content="Triangle, Web Design, Web Development, Websites, Website, México, Mexico, Diseño Web México, Diseño Web Profesional, Diseño Web Responsive, Diseño Web Adaptable, Desarrollo Web México, Desarrollo Web Profesional, Desarrollo Web Responsive, Desarrollo Web Adaptable">
 
     <!-- OpenGraph Metas-->
         <meta property="og:title" content="Triangle" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://triangle.mx/" />
-        <meta property="og:image" content="https://triangle.mx/tile.png" />
+        <meta property="og:url" content="https://triangle.mx/en" />
+        <meta property="og:image" content="https://res.cloudinary.com/triangle/image/upload/v1492639647/tile_jo3ljs.png" />
 
     <!-- Structured Data -->
         <script type="application/ld+json">
             {
             "@context": "http://schema.org",
             "@type": "Organization",
-            "name": "Triangle",
-            "url": "http://www.triangle.mx/",
-            "description": "Somos Triangle y queremos cambiar al mundo, un proyecto increíble a la vez."
-            "contactPoint": [{
-            "@type": "ContactPoint",
-            "email": "contacto@triangle.mx",
-            "url": "http://triangle.mx/#contacto/",
-            "contactType": "customer service"
-            }]
+            "name": "Triangle - Web Development",
+            "url": "http://www.triangle.mx/en/development",
+            "description": "Modern websites for everyone.. That is Triangle."
             }
         </script>
 
@@ -44,17 +38,17 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
         <!-- Main Styles -->
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="../../css/main.css">
 
         <!-- Icon -->
-        <link rel="stylesheet" href="fonts/css/icon.css">
+        <link rel="stylesheet" href="../../fonts/css/icon.css">
 
         <!-- animate.min.css -->
-        <link rel="stylesheet" href="css/animate.min.css">
+        <link rel="stylesheet" href="../../css/animate.min.css">
 </head>
 <body>
     <!-- WOW -->
-    <script src="js/wow.js"></script>
+    <script src="../../js/wow.js"></script>
     <script>
               new WOW().init();
     </script>
@@ -63,114 +57,93 @@
             <p class="browserupgrade">Estas usando una versión muy <strong>antigua</strong> de tu navegador. Por favor <a href="http://browsehappy.com/">actualiza tu navegador</a> para tener una mejor experiencia en la red.</p>
     <![endif]-->
 
-
-
-    <!-- Hero -->
-    <div id="hero" class="animated fadeIn">
-
-        <!-- Language -->
-        <a id="lang" href="en/" title="Página en Inglés">
-            <img src="img/USA-Flag.svg" alt="Bandera de EEUU" class="flag">
-        </a>
-
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-10 col-md-push-1">
-                    <img src="img/LogoYellow.svg" alt="Logo Triangle" id="logo">
-                    <h1 id="title">Es hora de <span>hacer</span><br>que te <span>vean</span></h1>
-                    <p id="lead">Somos <span>Triangle</span> y queremos cambiar al mundo, un <span>proyecto increíble</span> a la vez.</p>
-                </div>
-            </div>
+    <!-- Nav -->
+    <div id="triangle-menu" class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header"><a class="navbar-brand" href="../">Triangle</a>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+            </button>
         </div>
+        <div class="collapse navbar-collapse navbar-menubuilder">
+            <ul class="nav navbar-nav navbar-left">
+                <li><a href="../">Home</a></li>
 
-        <a onclick="horn()"><img src="img/Iconos/Taxi.svg" alt="Taxi Amarillo" id="taxi"></a>
-        <audio id="horn-honk" src="src/horn.mp3"></audio>
+                <li class="dropdown active">
+          <a  class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="../development/">Web Development</a></li>
+            <li><a href="../design/">Graphic Design</a></li>
+          </ul>
+        </li>
+                <li><a href="../about/">About Us</a></li>
+                <li><a href="../projects/">Projects</a></li>
+                <li><a href="../contact/">Contact</a></li>
+            </ul>
+        </div>
+    </div>
     </div>
 
-    <!-- Pasos -->
-    <div id="pasos">
-
-        <div id="desarrollo">
-            <div class="paso-container">
-                <img src="img/Iconos/Web-Development.svg" alt="Computadora" class="icon wow fadeIn" data-wow-delay=".3s">
-                <h1 class="title">Desarrollo <span>Web</span></h1>
-                <p class="lead">Una buena página web es un punto clave para dar a conocer tus ideas, productos, servicios, proyectos, etc... ya que ganarás credibilidad, y pondrá la información de tu negocio u organización a la disposición de casi 3 mil 500 millones de personas.</p>
-                <a href="desarrollo/" class="btn1">Descubre Más</a>
+    <!-- Main -->
+    <div id="main">
+        <div class="container-fluid wow fadeIn" data-wow-delay=".3s">>
+            <div class="header">
+                <img src="../../img/Iconos/Web-Development.svg" alt="Computer" class="icon">
+                <h1 class="title"><span>Web</span> Development</h1>
+                <p class="lead">Modern websites for everyone.. That is Triangle.</p>
             </div>
         </div>
 
-        <div id="diseño">
-            <div class="paso-container">
-                <img src="img/Iconos/Design.svg" alt="Foco de Luz" class="icon wow fadeIn" data-wow-delay=".3s">
-                <h1 class="title">Diseño <span>Gráfico</span></h1>
-                <p class="lead">Un buen logo, buenas tarjetas de presentación y en general un buen diseño de tu proyecto ayudará a llevar a dicho proyecto al siguente nivel, a que tenga mucha más credibilidad y a que capte más fácilmente la atención de a quien quieras llegar.</p>
-                <a href="diseno/" class="btn1">Descubre Más</a>
-            </div>
-        </div>
+            <div class="section">
 
-        <!--<div id="insight">
-            <div class="paso-container">
-                <img src="insight/img/Logo-B.svg" alt="Foco de Luz" class="icon wow fadeIn" data-wow-delay=".3s">
-                <h1 class="title">Proyecto <span>Insight</span></h1>
-                <p class="lead">Una buena estrategia lo es todo, pero muchas veces las estrategias que tu o tu equipo llega a crear no están basadas en datos, es por eso que decidimos crear Insight. Básicamente, creamos estrategias sólidas en base a datos reales.</p>
-                <a href="insight/" class="btn2">Descubre Más</a>
-            </div>
-        </div>-->
-
-        <!--<div id="otros">
-            <div class="paso-container">
-                <img src="img/Iconos/Other.svg" alt="Foco de Luz" class="icon wow fadeIn" data-wow-delay=".3s">
-                <h1 class="title">Otros <span>Servicios</span></h1>
-                <p class="lead">Un buen logo, buenas tarjetas de presentación y en general un buen diseño de tu proyecto ayudará a llevar a dicho proyecto al siguente nivel, a que tenga mucha más credibilidad y a que capte más fácilmente la atención de a quien quieras llegar.</p>
-                <a href="otros/" class="btn1">Descubre Más</a>
-            </div>
-        </div>-->
-
-        <div id="proyectos">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-7 col-md-push-1">
-                        <div class="title">Nuestros <span>Proyectos</span></div>
-                        <div class="lead">Observa algunos de los proyectos que hemos desarrollado para diferentes <span>negocios</span>, <span>organizaciones</span> u otros <span>proyectos</span>.</div>
-                        <a href="proyectos/" class="btn1">Ver Proyectos</a>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="container-fluid">
+                                <img src="../../img/Iconos/Coding.svg" alt="Programming" class="icon wow fadeIn" data-wow-delay=".3s">
+                                <h2 class="title">¿Cómo lo <span>hacemos</span>?</h2>
+                                <p class="lead">Planeamos, diseñamos, desarrollamos, probamos y corregimos tu página con las mejores herramientas y tecnologías de diseño/desarrollo web disponibles actualmente, y de esa manera adaptamos tu contenido para que sea rápido y se vea bien.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="container-fluid">
+                                <img src="../../img/Iconos/Responsive.svg" alt="Computer and Phone" class="icon wow fadeIn" data-wow-delay=".3s">
+                                <h2 class="title">¿Por qué <span>necesitas</span> una?</h2>
+                                <p class="lead">Una buena página web es un punto clave para dar a conocer tus ideas, productos, servicios, proyectos, etc... ya que ganarás credibilidad, y pondrá la información de tu proyecto a la disposición de casi 3 mil 500 millones de personas.</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="container-fluid">
+                                <img src="../../img/Iconos/Brainstorm.svg" alt="Brainstorm" class="icon wow fadeIn" data-wow-delay=".3s">
+                                <h2 class="title">¿Cómo la <span>consigues</span>?</h2>
+                                <p class="lead">Envíanos un mensaje por medio de la forma de la sección de contacto o mándanos un correo (<a href="mailto:contacto@triangle.mx"><i class="icon-mail"></i> contacto@triangle.mx</a>) y nos reuniremos contigo para empezar a planear cómo será, cómo se verá y cómo funcionará tu página web.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="container-fluid">
+                                <img src="../../img/Iconos/Testimonial.svg" alt="Pen" class="icon wow fadeIn" data-wow-delay=".3s">
+                                <h2 class="title">Un <span>Cliente</span> nuestro:</h2>
+                                <p class="lead" style="margin-bottom: 0"><i>"Rápido. Eficiente. Impresionante. Sin Problemas. Así fue nuestra experiencia cuando decidimos confiar en Triangle para diseñar y desarrollar nuestro sitio web."</i></p><br><p class="author">
+                                    <span class="lead">- Mary Carmen Cabrera, Directora General BusinessSenior</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
         </div>
-
-
-        <div id="nosotros">
-            <div class="paso-container">
-                <img src="img/Iconos/About.svg" alt="Equipo" class="icon wow fadeIn" data-wow-delay=".3s">
-                <h1 class="title">Sobre <span>Nosotros</span></h1>
-                <p class="lead">Triangle nació a inicios de 2016 con un sólo objetivo: Ayudar a pequeños negocios y organizaciones a llegar más fácilmente a su público objetivo. Decidimos que cambiaríamos el mundo, que lo mejoraríamos, un proyecto increíble a la vez.</p>
-                <a href="nosotros/" class="btn1">Descubre Más</a>
-            </div>
-        </div>
-
-        <!--<div id="faq">
-            <div class="paso-container">
-                <a class="roger-roger" onclick="roger()"><img src="img/Iconos/FAQ.svg" alt="Errorbot... Roger Roger" class="icon wow fadeIn" data-wow-delay=".3s"></a>
-                <audio id="roger" src="src/roger.mp3"></audio>
-                <h1 class="title"><span>Preguntas</span> Frecuentes</h1>
-                <p class="lead">Nos puedes pregunar lo que quieras (¿Quiénes somos?, ¿Qué hacemos?, ¿Por qué lo hacemos?, etc...) en la forma dentro de la sección de Contacto, pero de todos modos hemos decidido crear una colección con las preguntas más frecuentes.</p>
-                <a href="#" class="btn1">Descúbrelo</a>
-            </div>
-        </div>-->
 
     </div>
 
-    <!-- Contact -->
     <div id="contacto">
         <div class="paso-container">
-            <img src="img/Iconos/Contacto.svg" alt="Antena de Radio" class="icon wow fadeIn" data-wow-delay=".3s">
+            <img src="../../img/Iconos/Contacto.svg" alt="Antenna" class="icon wow fadeIn" data-wow-delay=".3s">
             <h1 class="title"><span>Contacto</span></h1>
-            <p class="lead">Ahora que sabes un poco de lo que hacemos, cómo lo hacemos y por qué lo hacemos, cuéntanos cómo podemos ayudarte a conseguir tus objetivos, o pregúntanos lo que quieras.</p>
+            <p class="lead">Ahora que sabes más sobre nosotros y nuestros servicios, háblanos sobre tí: Sobre tus ideas, tus proyectos, etc... Cuéntanos cómo podemos ayudarte a conseguir tus objetivos, o pregúntanos lo que quieras.</p>
             <div class="row">
                 <div class="col-lg-6 form-column">
                     <div id="form">
                         <form method="POST" action="http://formspree.io/form@triangle.mx">
-                            <input type="text" name="nombre" placeholder="Tu Nombre" required>
+                            <input type="name" name="nombre" placeholder="Tu Nombre" required>
                             <input type="email" name="email" placeholder="Tu Correo Electrónico" required>
                             <textarea name="message" placeholder="Tu Mensaje"></textarea>
                             <input type="hidden" name="_next" value="../files/thanks.html" />
@@ -194,7 +167,6 @@
             </div>
         </div>
     </div>
-
 
     <!-- Footer -->
     <div id="footer">
@@ -229,7 +201,7 @@
     <!-- Scripts -->
 
         <!-- jQuery -->
-        <script src="js/vendor/jquery-1.11.2.min.js"></script>
+        <script src="../../js/vendor/jquery-1.11.2.min.js"></script>
 
         <!-- Bootstrap JS -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -247,7 +219,7 @@
         </script>
 
         <!-- Scripts JS -->
-        <script src="js/scripts.js"></script>
+        <script src="../../js/scripts.js"></script>
         <script>
 		  var rellax = new Rellax('.rellax');
         </script>
@@ -256,7 +228,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 
         <!-- Angular -->
-        <script src="js/angular.js"></script>
+        <script src="../../js/angular.js"></script>
 
 </body>
 </html>

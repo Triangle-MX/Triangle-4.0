@@ -1,6 +1,5 @@
 app.controller('MainController', ['$scope', function($scope) {
-  $scope.dprojects =
-   [
+  $scope.dprojects = [
    {
     name: 'Astros',
     type: 'Desarrollo Web',
@@ -45,5 +44,51 @@ app.controller('MainController', ['$scope', function($scope) {
     thumb: '../img/Proyectos/Kida-Project.svg',
     link: 'http://kida.com.mx'
    }
+   ];
+   $scope.endprojects = [
+       {
+        name: 'Astros',
+        type: 'Web Development',
+        thumb: '../../img/Proyectos/Astros-Project.svg',
+        link: 'http://astros.triangle.mx/'
+       },
+       {
+        name: 'Learning English',
+        type: 'Collaboration',
+        thumb: '../../img/Proyectos/Learning-English-Project.svg',
+        link: 'http://learning-english.triangle.mx/'
+       },
+       {
+        name: 'BusinessSenior',
+        type: 'Web Development',
+        thumb: '../../img/Proyectos/BusinessSenior-Project.svg',
+        link: 'http://businesssenior.com.mx/'
+       },
+       {
+        name: 'Insight',
+        type: 'Web Development',
+        thumb: '../../img/Proyectos/Insight-Project.svg',
+        link: 'http://insight.triangle.mx'
+       },
+   ];
+   $scope.ennprojects = [
+       //{
+        //name: 'Kibo',
+        //type: 'Diseño Gráfico',
+        //thumb: '../img/Proyectos/Kibo-Project.svg',
+        //link: 'http://astros.triangle.mx/'
+       //},
+       //{
+        //name: 'Laafayette',
+        //type: 'Desarrollo Web',
+        //thumb: '../img/Proyectos/Lafayette-Project.svg',
+        //link: 'http://poligrafialafayette.com/'
+       //},
+       {
+        name: 'Kida',
+        type: 'Graphic Design',
+        thumb: '../../img/Proyectos/Kida-Project.svg',
+        link: 'http://kida.com.mx'
+       }
    ];
 }]);

@@ -236,6 +236,21 @@ img::-moz-selection {
       font-weight: bold;
       font-size: 100%; }
 
+#lang {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  display: block;
+  z-index: 2;
+  padding: 10px;
+  cursor: pointer;
+  opacity: 0.8; }
+  #lang .flag {
+    width: 30px; }
+    @media (max-width: 600px) {
+      #lang .flag {
+        width: 20px; } }
+
 /* Taxi Easter Egg */
 /* Taxi Animation on index.html */
 #taxi {
