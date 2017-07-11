@@ -23,7 +23,7 @@ app.controller('MainController', ['$scope', function($scope) {
     name: 'Insight',
     type: 'Desarrollo Web',
     thumb: '../img/Proyectos/Insight-Project.svg',
-    link: 'https://triangle.mx/insight'
+    link: 'http://insight.triangle.mx'
    },
    ];
   $scope.nprojects = [
@@ -32,7 +32,13 @@ app.controller('MainController', ['$scope', function($scope) {
     //type: 'Diseño Gráfico',
     //thumb: '../img/Proyectos/Kibo-Project.svg',
     //link: 'http://astros.triangle.mx/'
-   //}
+   //},
+   //{
+    //name: 'Laafayette',
+    //type: 'Desarrollo Web',
+    //thumb: '../img/Proyectos/Lafayette-Project.svg',
+    //link: 'http://poligrafialafayette.com/'
+   //},
    {
     name: 'Kida',
     type: 'Diseño Gráfico',
