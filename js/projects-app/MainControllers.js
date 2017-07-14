@@ -1,4 +1,5 @@
 app.controller('MainController', ['$scope', function($scope) {
+// Proyectos Destacados
   $scope.dprojects = [
    {
     name: 'Astros',
@@ -25,6 +26,7 @@ app.controller('MainController', ['$scope', function($scope) {
     link: 'http://insight.triangle.mx'
    },
    ];
+// Proyectos No Destacados
   $scope.nprojects = [
    //{
     //name: 'Kibo',
@@ -45,6 +47,7 @@ app.controller('MainController', ['$scope', function($scope) {
     link: 'http://kida.com.mx'
    }
    ];
+// English Featured Projects
    $scope.endprojects = [
        {
         name: 'Astros',
@@ -71,6 +74,7 @@ app.controller('MainController', ['$scope', function($scope) {
         link: 'http://insight.triangle.mx'
        },
    ];
+// English Non-Featured Projects
    $scope.ennprojects = [
        //{
         //name: 'Kibo',
