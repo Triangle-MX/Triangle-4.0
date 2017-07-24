@@ -1,3 +1,31 @@
+/* #btn-contacto */
+#btn-contacto
+    background-color: $black
+    color: $white
+    padding: 12px
+    border-radius: 250px
+    z-index: 99
+    position: fixed
+    bottom: 10px
+    right: 10px
+    cursor: pointer
+    text-decoration: none !important
+    box-shadow: $box-shadow
+    animation-duration: 2s
+    animation-delay: .7s
+    font-family: $montserrat
+
+    &:hover
+        background-color: $yellow
+
+    .label
+        display: none
+
+        @media (min-width: 600px)
+            display: inline-block
+            margin-left: -10px
+
+/* .btn-1 */
 .btn1, .btn1:visited, .btn1:active
     padding: 10px 42px
     background-color: $yellow
@@ -5,7 +33,7 @@
     cursor: pointer
     border: 3px solid $yellow
     border-radius: 250px
-    font-size: 120%
+    font-size: 110%
     transition: $transition
 
     @media (max-width: 600px)
@@ -15,7 +43,7 @@
         cursor: pointer
         border: 3px solid $yellow
         border-radius: 250px
-        font-size: 110%
+        font-size: 105%
         transition: $transition
 
 

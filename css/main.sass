@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css?family=Anton|Lato|Montserrat')
 
 // Variables
-
 $yellow: #ffb61e
 $black: #1b1b1b
 $white: #ffffff
@@ -52,6 +51,22 @@ a
         color: $black
         text-decoration: none
 
+/* Link Effect +/
+.link
+    display: inline-block
+    color: $black
+    text-decoration: none
+
+.link::after
+    content: ''
+    display: block
+    width: 0
+    height: 2px
+    background: $yellow
+    transition: width .3s
+
+.link:hover::after
+    width: 100%
 
 /* Selection */
 ::-moz-selection
@@ -72,6 +87,8 @@ img::selection
 
 img::-moz-selection
     background: transparent
+
+// Partials
 
 /* index.html */
 @import 'index.sass'
