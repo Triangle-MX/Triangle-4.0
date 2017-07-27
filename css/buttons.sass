@@ -12,7 +12,7 @@
     text-decoration: none !important
     box-shadow: $box-shadow
     animation-duration: 2s
-    animation-delay: .7s
+    animation-delay: .5s
     font-family: $montserrat
 
     &:hover
@@ -31,23 +31,24 @@
     background-color: $yellow
     color: $white
     cursor: pointer
-    border: 3px solid $yellow
     border-radius: 250px
     font-size: 110%
     transition: $transition
+    border: 3px solid $yellow
 
     @media (max-width: 600px)
         padding: 5px 21px
         background-color: $yellow
         color: $white
         cursor: pointer
-        border: 3px solid $yellow
         border-radius: 250px
         font-size: 105%
         transition: $transition
+        border: 3px solid $yellow
 
 
     &:hover, &:focus
-        background-color: $white
-        color: $yellow
+        background-color: $black
+        color: $white
         text-decoration: none !important
+        border: 3px solid $black

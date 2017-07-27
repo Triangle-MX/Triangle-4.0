@@ -75,7 +75,7 @@ img::-moz-selection {
   background-position: bottom;
   padding: 80px 0 200px 0;
   animation-duration: 2s;
-  animation-delay: 0.5s; }
+  animation-delay: 0.3s; }
   @media (max-width: 600px) {
     #hero {
       padding: 40px 0 100px 0; } }
@@ -296,66 +296,6 @@ img::-moz-selection {
       100% {
         margin-left: 1590px; } } }
 
-/* Taxi Hero (taxi.html) */
-/* Hero */
-#taxi-hero {
-  width: 100%;
-  min-height: 100vh;
-  background-color: #ffffff;
-  background-image: url("../img/CityB&W.svg");
-  background-repeat: none;
-  background-size: cover;
-  background-position: bottom;
-  padding-top: 80px; }
-  @media (max-width: 600px) {
-    #taxi-hero {
-      padding-top: 40px; } }
-  @media (max-width: 900px) {
-    #taxi-hero {
-      padding-top: 60px; } }
-  #taxi-hero .container-fluid {
-    filter: grayscale(100%); }
-  #taxi-hero #logo {
-    width: 250px;
-    margin-bottom: 10px; }
-    @media (min-width: 1300px) {
-      #taxi-hero #logo {
-        width: 400px; } }
-  #taxi-hero #title {
-    font-size: 450%;
-    font-family: "Anton", "Helvetica Neue", sans-serif;
-    text-transform: uppercase;
-    color: #1b1b1b;
-    margin: 0px; }
-    @media (min-width: 1400px) {
-      #taxi-hero #title {
-        font-size: 400%; } }
-    @media (max-width: 900px) {
-      #taxi-hero #title {
-        font-size: 300%; } }
-    @media (max-width: 500px) {
-      #taxi-hero #title {
-        font-size: 250%; } }
-    #taxi-hero #title span {
-      color: #ffb61e; }
-  #taxi-hero #lead {
-    font-size: 160%;
-    font-family: "Lato", "Helvetica Neue", sans-serif;
-    color: #1b1b1b; }
-    @media (min-width: 1400px) {
-      #taxi-hero #lead {
-        font-size: 200%; } }
-    @media (max-width: 900px) {
-      #taxi-hero #lead {
-        font-size: 130%; } }
-    @media (max-width: 500px) {
-      #taxi-hero #lead {
-        font-size: 110%; } }
-    #taxi-hero #lead span {
-      color: #ffb61e;
-      font-weight: bold;
-      font-size: 110%; }
-
 /* Menu */
 #triangle-menu {
   box-shadow: 0px 10px 10px 0px rgba(27, 27, 27, 0.1); }
@@ -436,72 +376,28 @@ img::-moz-selection {
     #footer .brand strong {
       color: #ffb61e;
       font-weight: bold; }
-  #footer .social-icons, #footer .star-wars-icons {
+  #footer .social-icons {
     text-align: center;
     font-size: 140%;
     margin-bottom: 0px; }
     @media (max-width: 600px) {
-      #footer .social-icons, #footer .star-wars-icons {
+      #footer .social-icons {
         font-size: 120%; } }
-  #footer .facebook i {
-    color: #3b5998;
-    transition: 0.2s ease-in; }
-    #footer .facebook i:hover {
-      color: #ffb61e !important; }
-  #footer .instagram i {
-    color: #8a3ab9;
-    transition: 0.2s ease-in; }
-    #footer .instagram i:hover {
-      color: #ffb61e !important; }
-  #footer .github i {
-    color: #333;
-    transition: 0.2s ease-in; }
-    #footer .github i:hover {
-      color: #ffb61e !important; }
   #footer .daltonic i {
-    animation-name: daltonic;
     animation-duration: 5s;
     animation-iteration-count: infinite;
     cursor: pointer; }
-@keyframes daltonic {
-  0% {
-    color: #1b1b1b; }
-  10% {
-    color: yellow; }
-  20% {
-    color: #ffb61e; }
-  30% {
-    color: orange; }
-  40% {
-    color: #ff5959; }
-  50% {
-    color: #8a3ab9; }
-  60% {
-    color: #0071ce; }
-  70% {
-    color: aquamarine; }
-  80% {
-    color: green; }
-  90% {
-    color: #333; }
-  100% {
-    color: #1b1b1b; } }
-  #footer .social-icons a, #footer .star-wars-icons a {
+  #footer .social-icons a {
     color: #1b1b1b;
     transition: 0.2s ease-in;
     cursor: pointer; }
-    #footer .social-icons a:hover, #footer .star-wars-icons a:hover {
+    #footer .social-icons a:hover {
       color: #ffb61e !important; }
   #footer .list-inline {
     padding-top: 3px;
     padding-left: 0;
     margin-left: -7px;
     list-style: none; }
-  #footer .star-wars-icons {
-    opacity: 0.05; }
-    @media (max-width: 1200px) {
-      #footer .star-wars-icons {
-        display: none; } }
 
 /* Buttons */
 /* #btn-contacto */
@@ -518,7 +414,7 @@ img::-moz-selection {
   text-decoration: none !important;
   box-shadow: 0px 10px 10px 0px rgba(27, 27, 27, 0.1);
   animation-duration: 2s;
-  animation-delay: 0.7s;
+  animation-delay: 0.5s;
   font-family: "Montserrat", "Helvetica Neue", sans-serif; }
   #btn-contacto:hover {
     background-color: #ffb61e; }
@@ -535,24 +431,25 @@ img::-moz-selection {
   background-color: #ffb61e;
   color: #ffffff;
   cursor: pointer;
-  border: 3px solid #ffb61e;
   border-radius: 250px;
   font-size: 110%;
-  transition: 0.2s ease-in; }
+  transition: 0.2s ease-in;
+  border: 3px solid #ffb61e; }
   @media (max-width: 600px) {
     .btn1, .btn1:visited, .btn1:active {
       padding: 5px 21px;
       background-color: #ffb61e;
       color: #ffffff;
       cursor: pointer;
-      border: 3px solid #ffb61e;
       border-radius: 250px;
       font-size: 105%;
-      transition: 0.2s ease-in; } }
+      transition: 0.2s ease-in;
+      border: 3px solid #ffb61e; } }
   .btn1:hover, .btn1:focus, .btn1:visited:hover, .btn1:visited:focus, .btn1:active:hover, .btn1:active:focus {
-    background-color: #ffffff;
-    color: #ffb61e;
-    text-decoration: none !important; }
+    background-color: #1b1b1b;
+    color: #ffffff;
+    text-decoration: none !important;
+    border: 3px solid #1b1b1b; }
 
 /* Form */
 #form input, #form textarea {

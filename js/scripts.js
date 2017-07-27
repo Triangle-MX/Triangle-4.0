@@ -1,10 +1,11 @@
-// Taxi
+// taxiSound
 function horn(){
        var taxiSound = document.getElementById("horn-honk");
        taxiSound.play();
+       console.log("Taxi: Beep!")
 };
 
-// Smooth Scroll
+// smoothScroll
 $(function() {
   $('a[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -21,19 +22,20 @@ $(function() {
 });
 
 // BTN-Contacto fadeOut
-$(function() {
+$(function btnContactoFadeOut() {
     $("#btn-contacto").click(function() {
         $(this).removeClass("fadeInRightBig");
         $(this).addClass("fadeOutRightBig");
+        console.log("BTN-Contacto: Desaparecido");
     });
 });
 
-// Home Redirection
+// goBack
 function goBack(){
     window.history.go(-2)
 };
 
-// Home Redirection
+// goHome
 function goHome(){
-    window.location.href = "https://www.triangle.mx";
+    window.location.href = "https://triangle.mx";
 };
