@@ -21,15 +21,6 @@ $(function() {
   });
 });
 
-// BTN-Contacto fadeOut
-$(function btnContactoFadeOut() {
-    $("#btn-contacto").click(function() {
-        $(this).removeClass("fadeInRightBig");
-        $(this).addClass("fadeOutRightBig");
-        console.log("BTN-Contacto: Desaparecido");
-    });
-});
-
 // goBack
 function goBack(){
     window.history.go(-2)
