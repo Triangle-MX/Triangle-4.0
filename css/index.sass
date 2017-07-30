@@ -8,18 +8,20 @@
     background-position: bottom
     padding: 80px 0 200px 0
     animation-duration: 2s
-    animation-delay: .3s
+    animation-delay: .4s
 
     @media (max-width: 600px)
         padding: 40px 0 100px 0
 
-    @media (min-width: 1440px) and (max-width: 1450px) and (height: 715px)
+    @media (min-width: 1440px) and (max-width: 1450px) and (min-height: 710px) and (max-height: 720px)
         min-height: 100vh
 
 
     #logo
         width: 250px
         margin-bottom: 10px
+        animation-duration: 1.5s
+        animation-delay: .5s
 
         @media (min-width: 1300px)
             width: 400px
@@ -30,6 +32,8 @@
         text-transform: uppercase
         color: $black
         margin: 0px
+        animation-duration: 1.5s
+        animation-delay: .5s
 
         @media (min-width: 1400px)
             font-size: 400%
@@ -47,6 +51,8 @@
         font-size: 160%
         font-family: $lato
         color: $black
+        animation-duration: 1.5s
+        animation-delay: .5s
 
         @media (min-width: 1400px)
             font-size: 200%
@@ -148,9 +154,6 @@
     padding-top: 80px
     animation-duration: 1s
     animation-delay: 1s
-
-    /*&:hover
-        background-image: url('../img/City2.0.svg')*/
 
     @media (max-width: 1200px)
         background-image: url('../img/City2.0.svg')
