@@ -99,7 +99,7 @@
                 <div class="col-lg-3 col-md-4 col-sm-6 wow fadeIn" data-wow-delay=".3s" ng-repeat="dproject in dprojects">
                     <a ng-href="{{ dproject.link }}" target="_blank">
                         <div class="project-card">
-                            <img ng-src="{{ dproject.thumb }}" alt="">
+                            <img ng-src="{{ dproject.thumb }}" ng-alt="{{ dproject.name }}">
                             <div class="project-info">
                                 <span class="project-title">{{ dproject.name }}</span>
                                 <span class="project-tags">{{ dproject.type }}</span>
@@ -111,7 +111,7 @@
                 <div class="col-lg-3 col-md-4 col-sm-6 mobile-disappear wow fadeIn" data-wow-delay=".3s" ng-repeat="nproject in nprojects">
                     <a ng-href="{{ nproject.link }}" target="_blank">
                         <div class="project-card">
-                            <img ng-src="{{ nproject.thumb }}" alt="">
+                            <img ng-src="{{ nproject.thumb }}" ng-alt="{{ dproject.name }}">
                             <div class="project-info">
                                 <span class="project-title">{{ nproject.name }}</span>
                                 <span class="project-tags">{{ nproject.type }}</span>

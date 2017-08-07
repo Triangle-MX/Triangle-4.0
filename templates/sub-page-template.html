@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-MX">
 <head>
     <title>Triangle</title>
 
@@ -12,27 +12,27 @@
     <link rel="icon" type="image/png" href="../favicon.png">
 
     <!-- Description + Keywords Metas -->
-        <meta name="description" content="We are Triangle and we want to change the world, one great project at the time.">
-        <meta name="keywords" content="Triangle, Web Design, Web Development, Websites, Website, México, Mexico, Diseño Web México, Diseño Web Profesional, Diseño Web Responsive, Diseño Web Adaptable, Desarrollo Web México, Desarrollo Web Profesional, Desarrollo Web Responsive, Desarrollo Web Adaptable">
+        <meta name="description" content="Triangle es un pequeño estudio de desarrollo web, en los que creamos páginas web únicas, para clientes únicos.">
+        <meta name="keywords" content="Triangle, Diseño Web, Desarrollo Web, Páginas Web, Sitios Web, México, Diseño Web México, Diseño Web Profesional, Diseño Web Responsive, Diseño Web Adaptable, Desarrollo Web México, Desarrollo Web Profesional, Desarrollo Web Responsive, Desarrollo Web Adaptable">
 
     <!-- OpenGraph Metas-->
         <meta property="og:title" content="Triangle" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://triangle.mx/en" />
-        <meta property="og:image" content="https://triangle.mx/tile.png" />
+        <meta property="og:url" content="https://triangle.mx" />
+        <meta property="og:image" content="https://res.cloudinary.com/triangle/image/upload/v1492639647/tile_jo3ljs.png" />
 
-    <!-- Structured Data -->
+        <!-- Structured Data -->
         <script type="application/ld+json">
             {
             "@context": "http://schema.org",
             "@type": "Organization",
             "name": "Triangle",
-            "url": "http://www.triangle.mx/en/",
-            "description": "We are Triangle and we want to change the world, one great project at the time."
+            "url": "http://www.triangle.mx/",
+            "description": "Somos Triangle y queremos cambiar al mundo, un proyecto increíble a la vez."
             "contactPoint": [{
             "@type": "ContactPoint",
-            "email": "contact@triangle.mx",
-            "url": "http://triangle.mx/en/#contacto/",
+            "email": "contacto@triangle.mx",
+            "url": "http://triangle.mx/#contacto/",
             "contactType": "customer service"
             }]
             }
@@ -63,110 +63,71 @@
             <p class="browserupgrade">Estas usando una versión muy <strong>antigua</strong> de tu navegador. Por favor <a href="http://browsehappy.com/">actualiza tu navegador</a> para tener una mejor experiencia en la red.</p>
     <![endif]-->
 
-    <!-- Hero -->
-    <div id="hero" class="animated fadeIn">
-
-        <!-- Language -->
-        <a id="lang" href="../"  title="Website in Spanish">
-            <img src="../img/Mexico-Flag.svg" alt="Mexico Flag" class="flag">
-        </a>
-
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-10 col-md-push-1">
-                    <img src="../img/LogoYellow.svg" alt="Triangle Logo" id="logo">
-                    <h1 id="title">It's time to <span>make</span><br>them <span>see you</span></h1>
-                    <p id="lead">We are <span>Triangle</span> and we want to change the world, one <span>great project</span> at the time.</p>
-                </div>
-            </div>
+    <!-- Nav -->
+    <div id="triangle-menu" class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header"><a class="navbar-brand" href="../">Triangle</a>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+            </button>
         </div>
+        <div class="collapse navbar-collapse navbar-menubuilder">
+            <ul class="nav navbar-nav navbar-left">
+                <li><a href="../">Principal</a></li>
 
-        <a onclick="horn()"><img src="../img/Iconos/Taxi.svg" alt="Yellow Cab" id="taxi"></a>
-        <audio id="horn-honk" src="../src/horn.mp3"></audio>
+                <li class="dropdown">
+          <a  class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Servicios<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="../desarrollo/">Desarrollo Web</a></li>
+            <li><a href="../diseno/">Diseño Gráfico</a></li>
+          </ul>
+        </li>
+                <li><a href="../nosotros/">Nosotros</a></li>
+                <li><a href="../proyectos/">Proyectos</a></li>
+                <li><a href="../contacto/">Contacto</a></li>
+            </ul>
+        </div>
+    </div>
     </div>
 
-    <!-- Pasos -->
-    <div id="pasos">
-
-        <div id="desarrollo">
-            <div class="paso-container">
-                <img src="../img/Iconos/Web-Development.svg" alt="Computer" class="icon wow fadeIn" data-wow-delay=".3s">
-                <h1 class="title"><span>Web</span> Development</h1>
-                <p class="lead">A good website is a key point to publicize your ideas, products, services, projects, etc ... since you will gain credibility, and it will make the information of your business or organization available to almost 3.5 billion people around the globe.</p>
-                <a href="development/" class="btn1">Learn More</a>
+    <!-- Main -->
+    <div id="main">
+        <div class="container-fluid wow fadeIn" data-wow-delay=".3s">
+            <div class="header">
+                <img src="../img/Iconos/Contacto.svg" alt="Antena de Radio" class="icon">
+                <h1 class="title"> El <span>Título</span></h1>
+                <p class="lead">Texto Lead</p>
             </div>
         </div>
 
-        <div id="diseño">
-            <div class="paso-container">
-                <img src="../img/Iconos/Design.svg" alt="Lightbulb" class="icon wow fadeIn" data-wow-delay=".3s">
-                <h1 class="title">Graphic <span>Design</span></h1>
-                <p class="lead">A great logo, great business cards and generally speaking a great design of your project will help you take that project to the next level, to gain more credibility and to easily capture the attention of whoever you want to reach, whoever is your target.</p>
-                <a href="design/" class="btn1">Learn More</a>
-            </div>
-        </div>
-
-        <div id="proyectos">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-7 col-md-push-1">
-                        <div class="title">Our <span>Projects</span></div>
-                        <div class="lead">Look at some of the projects we have developed for different <span>businesses</span> and <span>organizations</span>, plus other types of projects.</div>
-                        <a href="projects/" class="btn1">See Projects</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <div id="nosotros">
-            <div class="paso-container">
-                <img src="../img/Iconos/About.svg" alt="Team" class="icon wow fadeIn" data-wow-delay=".3s">
-                <h1 class="title">About <span>Us</span></h1>
-                <p class="lead">Triangle was born in early 2016 with only one goal: to help small businesses and organizations reach more easily their target audience. We decided that we would change the world, that we would improve it, one great project at the time.</p>
-                <a href="about/" class="btn1">Learn More</a>
-            </div>
-        </div>
-
-        <!--<div id="faq">
-            <div class="paso-container">
-                <a class="roger-roger" onclick="roger()"><img src="img/Iconos/FAQ.svg" alt="Errorbot... Roger Roger" class="icon wow fadeIn" data-wow-delay=".3s"></a>
-                <audio id="roger" src="src/roger.mp3"></audio>
-                <h1 class="title"><span>Preguntas</span> Frecuentes</h1>
-                <p class="lead">Nos puedes pregunar lo que quieras (¿Quiénes somos?, ¿Qué hacemos?, ¿Por qué lo hacemos?, etc...) en la forma dentro de la sección de Contacto, pero de todos modos hemos decidido crear una colección con las preguntas más frecuentes.</p>
-                <a href="#" class="btn1">Descúbrelo</a>
-            </div>
-        </div>-->
-
+        <div class="section"></div>
     </div>
 
-    <!-- Contact -->
     <div id="contacto">
         <div class="paso-container">
-            <img src="../img/Iconos/Contacto.svg" alt="Antenna" class="icon wow fadeIn" data-wow-delay=".3s">
-            <h1 class="title"><span>Contact</span></h1>
-            <p class="lead">Now that you know a little bit about what we do, how we do it and why we do it, tell us how we can help you achieve your goals, or ask us whatever you want.</p>
+            <img src="../img/Iconos/Contacto.svg" alt="Antena de Radio" class="icon wow fadeIn" data-wow-delay=".3s">
+            <h1 class="title"><span>Contacto</span></h1>
+            <p class="lead">Ahora que sabes más sobre nosotros y nuestra historia háblanos sobre tí: Sobre tus ideas, tus proyectos, etc... Cuéntanos cómo podemos ayudarte a conseguir tus objetivos, o pregúntanos lo que quieras.</p>
             <div class="row">
                 <div class="col-lg-6 form-column">
                     <div id="form">
                         <form method="POST" action="http://formspree.io/form@triangle.mx">
-                            <input type="text" name="nombre" placeholder="Your Name" required>
-                            <input type="email" name="email" placeholder="Your e-Mail" required>
-                            <textarea name="message" placeholder="Your Message"></textarea>
+                            <input type="name" name="nombre" placeholder="Tu Nombre" required>
+                            <input type="email" name="email" placeholder="Tu Correo Electrónico" required>
+                            <textarea name="message" placeholder="Tu Mensaje"></textarea>
                             <input type="hidden" name="_next" value="../files/thanks.html" />
-                            <input type="hidden" name="_subject" value="Nuevo Mensaje desde triangle.mx/en" />
-                            <input type="hidden" name="_language" value="en" />
+                            <input type="hidden" name="_subject" value="Nuevo Mensaje desde triangle.mx" />
+                            <input type="hidden" name="_language" value="es" />
                             <input type="text" name="_gotcha" style="display:none" />
                             <input type="hidden" name="_cc" value="jpiglesias@triangle.mx" />
                             <br>
-                            <button type="submit" class="btn1">Send</button>
+                            <button type="submit" class="btn1">Enviar</button>
                         </form>
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <p class="lead">If you do not want to use the contact form, you can use the following means to contact us:</p>
+                    <p class="lead">Si no deseas utilizar la forma de contacto, puedes utilizar los siguentes medios para contactarnos:</p>
                     <ul class="contact-methods">
-                        <li><a class="link" href="mailto:contact@triangle.mx"><i class="icon-mail"></i> contact@triangle.mx</a></li>
+                        <li><a class="link" href="mailto:contacto@triangle.mx"><i class="icon-mail"></i> contacto@triangle.mx</a></li>
                         <li><a href=""><i class="icon-"></i></a></li>
                         <li><a href=""><i class="icon-"></i></a></li>
                     </ul>
@@ -175,11 +136,10 @@
         </div>
     </div>
 
-
     <!-- Footer -->
     <div id="footer">
         <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-4"><span class="brand">We are <strong>Triangle</strong></span></div>
+            <div class="col-lg-4 col-md-4 col-sm-4"><span class="brand">Somos <strong>Triangle</strong></span></div>
             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
                 <ul class="social-icons list-inline">
                     <li><a href="https://www.facebook.com/trianglewebmexico/" target="_blank" class="facebook" title="Facebook"><i class="icon-facebook"></i></a></li>
@@ -226,11 +186,17 @@
 
         </script>
 
+        <!-- Zendesk Chat-->
+        <script type="text/javascript">
+            window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+            d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+            _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
+            $.src="https://v2.zopim.com/?4zOXg3eJtp8EuPGyxOlbkROZbCWsO7I3";z.t=+new Date;$.
+            type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
+        </script>
+
         <!-- Scripts JS -->
         <script src="../js/scripts.js"></script>
-        <script>
-		  var rellax = new Rellax('.rellax');
-        </script>
 
         <!-- Modernizr -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>

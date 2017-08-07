@@ -8,7 +8,7 @@ Last version of the Triangle Site (which can be viewed <a href="https://triangle
 
 The new concept is more **human**, more **personal**. We don't want to be seen like <i>machines doing websites</i>, but instead we want to be look like <i>humans helping businesses, organizations and other projects to get awesome websites</i>.
 
-The redesign includes subtle **animations**, which will help to create a more **human** look.
+The redesign includes subtle **animations**, which will help us to create a more **human** look.
 
 ## Accesibility
 
@@ -35,12 +35,16 @@ To get a **human** look, we need to make our site more accessible. We are going 
     |-->Contacto (contacto/)
     |
     |-->files/
-        |->Error 403 (403.html)
-        |->Error 404 (404.php)
-        |->Error 501 (501.html)
-        |->Construction (construction.html)
-        |->Impressum (impressum.html)
-        |->Thanks (thanks.html)
+    |   |->Error 403 (403.html)
+    |   |->Error 404 (404.php)
+    |   |->Error 501 (501.html)
+    |   |->En Construcción (construction.html)
+    |   |->Impressum (impressum.html)
+    |   |->Thanks (thanks.html)
+    |
+    |-->templates/
+        |->Sub Page Template (sub-page-template.html)
+        |->Error Template (error-template.html)
 
 ## Easter Eggs
 
