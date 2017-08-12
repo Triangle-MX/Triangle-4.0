@@ -96,7 +96,7 @@
         <div class="section" id="projects-grid" ng-controller="MainController">
             <div class="row">
                <!-- Destacados -->
-                <div class="col-lg-3 col-md-4 col-sm-6 wow fadeIn" data-wow-delay=".3s" ng-repeat="dproject in dprojects">
+                <div class="col-lg-3 col-md-4 col-sm-6 wow fadeIn"data-wow-delay=".3s" ng-repeat="dproject in dprojects">
                     <a ng-href="{{ dproject.link }}" target="_blank">
                         <div class="project-card">
                             <img ng-src="{{ dproject.thumb }}" ng-alt="{{ dproject.name }}">
@@ -108,7 +108,7 @@
                     </a>
                 </div>
                <!-- No destacados -->
-                <div class="col-lg-3 col-md-4 col-sm-6 mobile-disappear wow fadeIn" data-wow-delay=".3s" ng-repeat="nproject in nprojects">
+                <div class="col-lg-3 col-md-4 col-sm-6 mobile-disappear wow fadeIn" data-speed-x="100" data-speed-y="10" data-wow-delay=".3s" ng-repeat="nproject in nprojects">
                     <a ng-href="{{ nproject.link }}" target="_blank">
                         <div class="project-card">
                             <img ng-src="{{ nproject.thumb }}" ng-alt="{{ dproject.name }}">
@@ -228,6 +228,8 @@
         <!-- Projects App -->
         <script src="../js/projects-app/app.js"></script>
         <script src="../js/projects-app/MainControllers.js"></script>
+
+        
 
 </body>
 </html>

@@ -18,6 +18,12 @@ app.controller('MainController', ['$scope', function($scope) {
     type: 'Desarrollo Web',
     thumb: '../img/Proyectos/BusinessSenior-Project.svg',
     link: 'http://businesssenior.com.mx/'
+   },
+   {
+    name: 'CIM',
+    type: 'Desarrollo Web',
+    thumb: '../img/Proyectos/CIM-Project.svg',
+    link: 'http://comerciointernacionalmexicano.com.mx/'
    }
    ];
 // Proyectos No Destacados
