@@ -131,15 +131,12 @@
             <div class="row">
                 <div class="col-lg-6 form-column">
                     <div id="form">
-                        <form method="POST" action="http://formspree.io/form@triangle.mx">
-                            <input type="name" name="nombre" placeholder="Tu Nombre" required>
+                        <form netlify name="formProyectos" netlify-honeypot="_gotcha" action="https://triangle.mx/files/thanks.html">
+                            <input type="text" name="nombre" placeholder="Tu Nombre" required>
                             <input type="email" name="email" placeholder="Tu Correo Electrónico" required>
                             <textarea name="message" placeholder="Tu Mensaje"></textarea>
-                            <input type="hidden" name="_next" value="../files/thanks.html" />
-                            <input type="hidden" name="_subject" value="Nuevo Mensaje desde triangle.mx" />
                             <input type="hidden" name="_language" value="es" />
                             <input type="text" name="_gotcha" style="display:none" />
-                            <input type="hidden" name="_cc" value="jpiglesias@triangle.mx" />
                             <br>
                             <button type="submit" class="btn1">Enviar</button>
                         </form>
@@ -229,7 +226,7 @@
         <script src="../js/projects-app/app.js"></script>
         <script src="../js/projects-app/MainControllers.js"></script>
 
-        
+
 
 </body>
 </html>

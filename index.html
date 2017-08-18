@@ -145,11 +145,11 @@
                 <div class="col-lg-6 form-column">
                     <div id="form">
                         <form netlify name="formHome" netlify-honeypot="_gotcha" action="https://triangle.mx/files/thanks.html">
-                        <!-- <form method="POST" action="http://formspree.io/form@triangle.mx"> -->
                             <input type="text" name="nombre" placeholder="Tu Nombre" required>
                             <input type="email" name="email" placeholder="Tu Correo Electrónico" required>
                             <textarea name="message" placeholder="Tu Mensaje"></textarea>
-                            <input type="hidden" name="_language" value="es"/>
+                            <input type="hidden" name="_language" value="es" />
+                            <input type="text" name="_gotcha" style="display:none" />
                             <br>
                             <button type="submit" class="btn1">Enviar</button>
                         </form>
