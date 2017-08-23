@@ -52,11 +52,11 @@
         <!-- animate.min.css -->
         <link rel="stylesheet" href="css/animate.min.css">
 </head>
-<body>
+<body onload="securityChecker()">
     <!-- WOW -->
     <script src="js/wow.js"></script>
     <script>
-              new WOW().init();
+        new WOW().init();
     </script>
 
     <!--[if lt IE 8]>
@@ -205,7 +205,6 @@
 
               ga('create', 'UA-74662952-3', 'auto');
               ga('send', 'pageview');
-
         </script>
 
         <!-- Zendesk Chat-->
@@ -223,9 +222,12 @@
         <!-- Modernizr -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 
-        <!-- Netlify is Working. Wohoo! -->
+        <!-- SecurityChecker -->
         <script>
-            console.log('')
+            function securityChecker(){
+                console.log('Netlify is Working');
+                console.log('HTTPS - SSL Certificate');
+            };
         </script>
 
 </body>
