@@ -16,8 +16,8 @@
             min-width: 100px
             min-height: 150px
             padding: 20px
-            transition: .5s
-
+            transition: $transition
+            border-radius: $border-radius
 
             img
                 width: 100%
@@ -34,3 +34,12 @@
                 display: block
                 font-size: 80%
                 color: #333
+
+            &:hover
+                transform: scale(1.05)
+                box-shadow: $box-shadow2
+                background-color: $yellow
+
+            &:hover > .puesto, &:hover > .nombre
+                transition: .1s
+                color: white !important

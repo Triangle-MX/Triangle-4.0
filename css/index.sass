@@ -74,6 +74,8 @@
     width: 100%
     height: 100%
     padding: 60px
+    border-radius: $border-radius
+    transition: $transition
 
     @media (max-width: 600px)
         padding: 30px
@@ -106,6 +108,10 @@
 
     @media (max-width: 600px)
         padding: 20px
+
+    &:hover > .paso-container
+        transform: scale(1.01)
+        box-shadow: $box-shadow
 
 #doodle
     background-color: $black
