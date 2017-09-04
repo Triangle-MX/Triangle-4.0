@@ -123,7 +123,30 @@
     background-color: $grey
 
 #insight
-    background-color: $black
+    background-color: $blue
+
+    .icon
+        height: 100px
+
+    /* Selection */
+    ::-moz-selection
+        text-shadow: none
+        background: $yellow
+        color: $white
+        text-shadow: 10px 10px 10px rgba(27, 27, 27, 0.1)
+
+    ::selection
+        text-shadow: none
+        background: $yellow
+
+    img::-moz-selection
+        background: transparent
+
+    img::selection
+        background: transparent
+
+    img::-moz-selection
+        background: transparent
 
 #nosotros
     background-color: $grey
