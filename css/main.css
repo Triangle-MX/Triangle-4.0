@@ -70,15 +70,6 @@ img::selection {
 img::-moz-selection {
   background: transparent; }
 
-.chart::-moz-selection {
-  background: transparent; }
-
-.chart::selection {
-  background: transparent; }
-
-.chart::-moz-selection {
-  background: transparent; }
-
 /* index.html */
 /* Hero */
 #hero {
@@ -207,7 +198,24 @@ img::-moz-selection {
   background-color: #EEEEEE; }
 
 #insight {
-  background-color: #1B1B1B; }
+  background-color: #1E81FF;
+  /* Selection */ }
+  #insight .icon {
+    height: 100px; }
+  #insight ::-moz-selection {
+    text-shadow: none;
+    background: #FFB61E;
+    color: #FFFFFF;
+    text-shadow: 10px 10px 10px rgba(27, 27, 27, 0.1); }
+  #insight ::selection {
+    text-shadow: none;
+    background: #FFB61E; }
+  #insight img::-moz-selection {
+    background: transparent; }
+  #insight img::selection {
+    background: transparent; }
+  #insight img::-moz-selection {
+    background: transparent; }
 
 #nosotros {
   background-color: #EEEEEE; }
@@ -502,6 +510,36 @@ img::-moz-selection {
     color: #FFFFFF;
     text-decoration: none !important;
     border: 3px solid #1B1B1B; }
+
+/* .btn-2 */
+.btn2, .btn2:visited, .btn2:active {
+  padding: 10px 42px;
+  background-color: #1E81FF;
+  color: #FFFFFF;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 110%;
+  -webkit-transition: 0.2s ease-in;
+  -o-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+  border: 3px solid #1E81FF; }
+  @media (max-width: 600px) {
+    .btn2, .btn2:visited, .btn2:active {
+      padding: 5px 21px;
+      background-color: #1E81FF;
+      color: #FFFFFF;
+      cursor: pointer;
+      border-radius: 5px;
+      font-size: 105%;
+      -webkit-transition: 0.2s ease-in;
+      -o-transition: 0.2s ease-in;
+      transition: 0.2s ease-in;
+      border: 3px solid #1E81FF; } }
+  .btn2:hover, .btn2:focus, .btn2:visited:hover, .btn2:visited:focus, .btn2:active:hover, .btn2:active:focus {
+    background-color: #0C0D19;
+    color: #FFFFFF;
+    text-decoration: none !important;
+    border: 3px solid #0C0D19; }
 
 /* Form */
 #form input, #form textarea {
