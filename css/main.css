@@ -189,7 +189,7 @@ img::-moz-selection {
             box-shadow: 5px 5px 100px 0px rgba(27, 27, 27, 0.1); }
 
 #doodle {
-  background-color: #1B1B1B; }
+  background-color: #f3476d; }
 
 #desarrollo {
   background-color: #FFB61E; }
@@ -481,7 +481,7 @@ img::-moz-selection {
         display: inline-block;
         margin-left: -10px; } }
 
-/* .btn-1 */
+/* .btn1 */
 .btn1, .btn1:visited, .btn1:active {
   padding: 10px 42px;
   background-color: #FFB61E;
@@ -540,6 +540,36 @@ img::-moz-selection {
     color: #FFFFFF;
     text-decoration: none !important;
     border: 3px solid #0C0D19; }
+
+/* .btnDoodle */
+.btnDoodle, .btnDoodle:visited, .btnDoodle:active {
+  padding: 10px 42px;
+  background-color: #f3476d;
+  color: #FFFFFF;
+  cursor: pointer;
+  border-radius: 250px;
+  font-size: 110%;
+  -webkit-transition: 0.2s ease-in;
+  -o-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+  border: 3px solid #f3476d; }
+  @media (max-width: 600px) {
+    .btnDoodle, .btnDoodle:visited, .btnDoodle:active {
+      padding: 5px 21px;
+      background-color: #f3476d;
+      color: #FFFFFF;
+      cursor: pointer;
+      border-radius: 250px;
+      font-size: 105%;
+      -webkit-transition: 0.2s ease-in;
+      -o-transition: 0.2s ease-in;
+      transition: 0.2s ease-in;
+      border: 3px solid #f3476d; } }
+  .btnDoodle:hover, .btnDoodle:focus, .btnDoodle:visited:hover, .btnDoodle:visited:focus, .btnDoodle:active:hover, .btnDoodle:active:focus {
+    background-color: #1B1B1B;
+    color: #FFFFFF;
+    text-decoration: none !important;
+    border: 3px solid #1B1B1B; }
 
 /* Form */
 #form input, #form textarea {
