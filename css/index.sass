@@ -116,6 +116,26 @@
 #doodle
     background-color: $doodle
 
+    /* Selection */
+    ::-moz-selection
+        text-shadow: none
+        background: $doodle
+        color: $white
+        text-shadow: 10px 10px 10px rgba(27, 27, 27, 0.1)
+
+    ::selection
+        text-shadow: none
+        background: $doodle
+
+    img::-moz-selection
+        background: transparent
+
+    img::selection
+        background: transparent
+
+    img::-moz-selection
+        background: transparent
+
 #desarrollo
     background-color: $yellow
 
@@ -131,13 +151,13 @@
     /* Selection */
     ::-moz-selection
         text-shadow: none
-        background: $yellow
+        background: $blue
         color: $white
         text-shadow: 10px 10px 10px rgba(27, 27, 27, 0.1)
 
     ::selection
         text-shadow: none
-        background: $yellow
+        background: $blue
 
     img::-moz-selection
         background: transparent

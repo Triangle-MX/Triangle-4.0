@@ -51,13 +51,13 @@ a {
 /* Selection */
 ::-moz-selection {
   text-shadow: none;
-  background: #1E81FF;
+  background: #FFB61E;
   color: #FFFFFF;
   text-shadow: 10px 10px 10px rgba(27, 27, 27, 0.1); }
 
 ::selection {
   text-shadow: none;
-  background: #1E81FF;
+  background: #FFB61E;
   color: #FFFFFF;
   text-shadow: 10px 10px 10px rgba(27, 27, 27, 0.1); }
 
@@ -189,7 +189,22 @@ img::-moz-selection {
             box-shadow: 5px 5px 100px 0px rgba(27, 27, 27, 0.1); }
 
 #doodle {
-  background-color: #f3476d; }
+  background-color: #f3476d;
+  /* Selection */ }
+  #doodle ::-moz-selection {
+    text-shadow: none;
+    background: #f3476d;
+    color: #FFFFFF;
+    text-shadow: 10px 10px 10px rgba(27, 27, 27, 0.1); }
+  #doodle ::selection {
+    text-shadow: none;
+    background: #f3476d; }
+  #doodle img::-moz-selection {
+    background: transparent; }
+  #doodle img::selection {
+    background: transparent; }
+  #doodle img::-moz-selection {
+    background: transparent; }
 
 #desarrollo {
   background-color: #FFB61E; }
@@ -204,12 +219,12 @@ img::-moz-selection {
     height: 100px; }
   #insight ::-moz-selection {
     text-shadow: none;
-    background: #FFB61E;
+    background: #1E81FF;
     color: #FFFFFF;
     text-shadow: 10px 10px 10px rgba(27, 27, 27, 0.1); }
   #insight ::selection {
     text-shadow: none;
-    background: #FFB61E; }
+    background: #1E81FF; }
   #insight img::-moz-selection {
     background: transparent; }
   #insight img::selection {
@@ -487,7 +502,7 @@ img::-moz-selection {
   background-color: #FFB61E;
   color: #FFFFFF;
   cursor: pointer;
-  border-radius: 250px;
+  border-radius: 5px;
   font-size: 110%;
   -webkit-transition: 0.2s ease-in;
   -o-transition: 0.2s ease-in;
@@ -499,7 +514,7 @@ img::-moz-selection {
       background-color: #FFB61E;
       color: #FFFFFF;
       cursor: pointer;
-      border-radius: 250px;
+      border-radius: 5px;
       font-size: 105%;
       -webkit-transition: 0.2s ease-in;
       -o-transition: 0.2s ease-in;
@@ -547,7 +562,7 @@ img::-moz-selection {
   background-color: #f3476d;
   color: #FFFFFF;
   cursor: pointer;
-  border-radius: 250px;
+  border-radius: 5px;
   font-size: 110%;
   -webkit-transition: 0.2s ease-in;
   -o-transition: 0.2s ease-in;
@@ -559,7 +574,7 @@ img::-moz-selection {
       background-color: #f3476d;
       color: #FFFFFF;
       cursor: pointer;
-      border-radius: 250px;
+      border-radius: 5px;
       font-size: 105%;
       -webkit-transition: 0.2s ease-in;
       -o-transition: 0.2s ease-in;
