@@ -1,37 +1,37 @@
-#projects-grid
+.projects-grid
+    
     .project-card
         width: 100%
-        background-color: $grey
+        background-color: $white
         overflow-x: hidden
         text-align: center
         transition: $transition
         margin-bottom: 30px
         cursor: pointer
-        
+
         &:hover
             box-shadow: 0px 0px 10px 5px rgba(27,27,27,0.15)
             transform: scale(1.05)
             border-radius: 20px
-        
+
         img
             width: 100%
             transition: $transition
-            
+
         .project-info
             padding: 20px
-            
+
             .project-title
                 font-family: $montserrat
                 display: block
                 font-size: 110%
                 color: $black
-                
+
             .project-tags
                 font-family: $lato
                 display: block
                 font-size: 90%
                 color: #333
-            
-@media (max-width: 600px)
-    .mobile-disappear
-        display: none !important
+
+.projects-container-1
+    background-color: $yellow
