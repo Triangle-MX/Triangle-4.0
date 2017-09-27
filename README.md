@@ -36,11 +36,12 @@ To get a **human** look, we need to make our site more accessible. We are going 
     |
     |-->files/
     |   |->Error 403 (403.html)
-    |   |->Error 404 (404.php)
     |   |->Error 501 (501.html)
     |   |->En Construcción (construction.html)
     |   |->Impressum (impressum.html)
     |   |->Thanks (thanks.html)
+    |
+    |-->Error 404 (404.html)
     |
     |-->templates/
         |->Sub Page Template (sub-page-template.html)
