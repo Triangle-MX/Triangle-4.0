@@ -169,7 +169,7 @@ img::-moz-selection {
       padding: 20px; } }
   #desarrollo:hover > .paso-container, #diseño:hover > .paso-container, #insight:hover > .paso-container, #nosotros:hover > .paso-container, #faq:hover > .paso-container, #contacto:hover > .paso-container, #doodle:hover > .paso-container {
     transform: scale(1.01);
-    box-shadow: 5px 5px 100px 0px rgba(27, 27, 27, 0.1); }
+    box-shadow: 5px 5px 100px 0px rgba(27, 27, 27, 0.16); }
 
 #doodle {
   background-color: #f3476d;
@@ -326,7 +326,7 @@ img::-moz-selection {
 
 /* Menu */
 #triangle-menu {
-  box-shadow: 5px 5px 100px 0px rgba(27, 27, 27, 0.1); }
+  box-shadow: 5px 5px 100px 0px rgba(27, 27, 27, 0.16); }
 
 #triangle-menu.navbar-default .navbar-brand {
   color: white;
@@ -386,7 +386,7 @@ img::-moz-selection {
 .navbar-toggle, .navbar-toggle:active, .navbar-toggle:visited {
   border: none !important;
   transition: 0.2s ease-in;
-  border-radius: 25px; }
+  border-radius: 5px; }
   .navbar-toggle .icon-bar, .navbar-toggle:active .icon-bar, .navbar-toggle:visited .icon-bar {
     background-color: #FFFFFF !important; }
 
@@ -440,7 +440,7 @@ img::-moz-selection {
   right: 10px;
   cursor: pointer;
   text-decoration: none !important;
-  box-shadow: 5px 5px 100px 0px rgba(27, 27, 27, 0.1);
+  box-shadow: 5px 5px 100px 0px rgba(27, 27, 27, 0.16);
   animation-duration: 2s;
   animation-delay: 0.5s;
   font-family: "Montserrat", "Helvetica Neue", sans-serif; }
@@ -637,7 +637,7 @@ img::-moz-selection {
       color: #333; }
     #equipo #equipo-flex .miembro:hover {
       transform: scale(1.05);
-      box-shadow: 7px 7px 100px 0px rgba(27, 27, 27, 0.1);
+      box-shadow: 7px 7px 100px 0px rgba(27, 27, 27, 0.16);
       background-color: #FFB61E; }
     #equipo #equipo-flex .miembro:hover > .puesto, #equipo #equipo-flex .miembro:hover > .nombre {
       transition: 0.1s;
@@ -665,11 +665,15 @@ img::-moz-selection {
         margin: 40px 0px; } }
     .projects-section .project-card:hover {
       transform: scale(1.05) rotate(-1deg);
-      box-shadow: 5px 5px 100px 0px rgba(27, 27, 27, 0.1);
-      z-index: 99 !important; }
+      box-shadow: 5px 5px 100px 0px rgba(27, 27, 27, 0.16);
+      z-index: 99 !important;
+      cursor: pointer; }
       @media (max-width: 750px) {
         .projects-section .project-card:hover {
           transform: scale(1.01) rotate(1deg); } }
+    .projects-section .project-card a, .projects-section .project-card a:hover, .projects-section .project-card a:visited, .projects-section .project-card a:active, .projects-section .project-card a:focus {
+      text-decoration: none !important;
+      color: #1B1B1B; }
     .projects-section .project-card .project-thumb {
       width: 100%; }
     .projects-section .project-card .project-info {
@@ -678,6 +682,47 @@ img::-moz-selection {
       .projects-section .project-card .project-info .project-title {
         font-size: 110%;
         font-family: "Montserrat", "Helvetica Neue", sans-serif; }
+  .projects-section .fade {
+    background-color: #FFB61E; }
+  @media (min-width: 1180px) {
+    .projects-section .modal-dialog {
+      width: 960px !important; } }
+  @media (max-width: 770px) {
+    .projects-section .modal-dialog {
+      margin-left: 25px !important; } }
+  .projects-section .modal-content {
+    border-radius: 5px !important;
+    border: 0 !important;
+    box-shadow: 7px 7px 100px 0px rgba(27, 27, 27, 0.16) !important;
+    text-align: justify; }
+    .projects-section .modal-content .modal-logo {
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 40px; }
+      .projects-section .modal-content .modal-logo img {
+        display: inline-block;
+        width: 90%;
+        max-width: 400px; }
+    .projects-section .modal-content .modal-img {
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 40px; }
+      .projects-section .modal-content .modal-img img {
+        display: inline-block;
+        width: 80%;
+        max-width: 300px;
+        opacity: 0.8; }
+  .projects-section .modal-header {
+    border: 0 !important; }
+    .projects-section .modal-header .close {
+      transition: 0.2s ease-in; }
+    .projects-section .modal-header .modal-title {
+      font-weight: bold; }
+  .projects-section .modal-footer {
+    border: 0 !important;
+    padding-top: 0px !important;
+    padding: 40px;
+    text-align: center; }
 
 .projects-1 {
   background-color: #EEEEEE; }

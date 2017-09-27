@@ -8,6 +8,8 @@
     @media (max-width: 600px)
         padding: 20px
 
+
+    // Project Cards
     .project-card
         background-color: $white
         padding: 0
@@ -23,9 +25,14 @@
             transform: scale(1.05) rotate(-1deg)
             box-shadow: $box-shadow
             z-index: 99 !important
+            cursor: pointer
 
             @media (max-width: 750px)
                 transform: scale(1.01) rotate(1deg)
+
+        a, a:hover, a:visited, a:active, a:focus
+            text-decoration: none !important
+            color: $black
 
         .project-thumb
             width: 100%
@@ -38,10 +45,64 @@
                 font-size: 110%
                 font-family: $montserrat
 
-// Colors
+
+
+    // Project Modals
+    .fade
+        background-color: $yellow
+
+    .modal-dialog
+        // margin-top: 10%
+
+        @media (min-width: 1180px)
+            width: 960px !important
+
+        @media (max-width: 770px)
+            margin-left: 25px !important
+
+    .modal-content
+        border-radius: 5px !important
+        border: 0 !important
+        box-shadow: $box-shadow2 !important
+        text-align: justify
+
+        .modal-logo
+            text-align: center
+            margin-top: 20px
+            margin-bottom: 40px
+
+            img
+                display: inline-block
+                width: 90%
+                max-width: 400px
+
+        .modal-img
+            text-align: center
+            margin-top: 20px
+            margin-bottom: 40px
+
+            img
+                display: inline-block
+                width: 80%
+                max-width: 300px
+                opacity: .8
+
+
+    .modal-header
+        border: 0 !important
+
+        .close
+            transition: $transition
+
+        .modal-title
+            font-weight: bold
+
+    .modal-footer
+        border: 0 !important
+        padding-top: 0px !important
+        padding: 40px
+        text-align: center
+
+// Section Colors
 .projects-1
     background-color: $grey
-
-// Anim
-.project-anim-1
-    &:hover
