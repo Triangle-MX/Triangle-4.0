@@ -635,13 +635,6 @@ img::-moz-selection {
       display: block;
       font-size: 80%;
       color: #333; }
-    #equipo #equipo-flex .miembro:hover {
-      transform: scale(1.05);
-      box-shadow: 7px 7px 100px 0px rgba(27, 27, 27, 0.16);
-      background-color: #FFB61E; }
-    #equipo #equipo-flex .miembro:hover > .puesto, #equipo #equipo-flex .miembro:hover > .nombre {
-      transition: 0.1s;
-      color: white !important; }
 
 /* Proyectos */
 .projects-section {
@@ -684,12 +677,15 @@ img::-moz-selection {
         font-family: "Montserrat", "Helvetica Neue", sans-serif; }
   .projects-section .fade {
     background-color: #FFB61E; }
-  @media (min-width: 1180px) {
-    .projects-section .modal-dialog {
-      width: 960px !important; } }
-  @media (max-width: 770px) {
-    .projects-section .modal-dialog {
-      margin-left: 25px !important; } }
+  .projects-section .modal-dialog {
+    margin-top: 50px;
+    margin-bottom: 50px; }
+    @media (min-width: 1180px) {
+      .projects-section .modal-dialog {
+        width: 960px !important; } }
+    @media (max-width: 770px) {
+      .projects-section .modal-dialog {
+        margin-left: 25px !important; } }
   .projects-section .modal-content {
     border-radius: 5px !important;
     border: 0 !important;
@@ -715,7 +711,11 @@ img::-moz-selection {
   .projects-section .modal-header {
     border: 0 !important; }
     .projects-section .modal-header .close {
-      transition: 0.2s ease-in; }
+      transition: 0.2s ease-in;
+      transform: scale(2);
+      transform-origin: top right; }
+      .projects-section .modal-header .close:hover {
+        opacity: 1; }
     .projects-section .modal-header .modal-title {
       font-weight: bold; }
   .projects-section .modal-footer {

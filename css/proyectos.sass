@@ -52,7 +52,8 @@
         background-color: $yellow
 
     .modal-dialog
-        // margin-top: 10%
+        margin-top: 50px
+        margin-bottom: 50px
 
         @media (min-width: 1180px)
             width: 960px !important
@@ -93,6 +94,11 @@
 
         .close
             transition: $transition
+            transform: scale(2)
+            transform-origin: top right
+
+            &:hover
+                opacity: 1
 
         .modal-title
             font-weight: bold
