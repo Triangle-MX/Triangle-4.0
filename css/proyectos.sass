@@ -1,37 +1,47 @@
-.projects-grid
-    
+.projects-section
+    width: 100%
+    padding: 70px 120px
+
+    @media (max-width: 1180px)
+        padding: 40px
+
+    @media (max-width: 600px)
+        padding: 20px
+
     .project-card
-        width: 100%
         background-color: $white
-        overflow-x: hidden
-        text-align: center
+        padding: 0
+        overflow: hidden
+        border-radius: 5px
         transition: $transition
-        margin-bottom: 30px
-        cursor: pointer
+        z-index: 1
+
+        @media (max-width: 750px)
+            margin: 40px 0px
 
         &:hover
-            box-shadow: 0px 0px 10px 5px rgba(27,27,27,0.15)
-            transform: scale(1.05)
-            border-radius: 20px
+            transform: scale(1.05) rotate(-1deg)
+            box-shadow: $box-shadow
+            z-index: 99 !important
 
-        img
+            @media (max-width: 750px)
+                transform: scale(1.01) rotate(1deg)
+
+        .project-thumb
             width: 100%
-            transition: $transition
 
         .project-info
-            padding: 20px
+            text-align: center
+            padding: 10px
 
             .project-title
-                font-family: $montserrat
-                display: block
                 font-size: 110%
-                color: $black
+                font-family: $montserrat
 
-            .project-tags
-                font-family: $lato
-                display: block
-                font-size: 90%
-                color: #333
+// Colors
+.projects-1
+    background-color: $grey
 
-.projects-container-1
-    background-color: $yellow
+// Anim
+.project-anim-1
+    &:hover
