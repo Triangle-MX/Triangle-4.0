@@ -6,11 +6,11 @@ function horn(){
 };
 
 // pop()
-    //function pop(){
-    //    var popSound = document.getElementById('pop-sound');
-    //    popSound.play();
-    //    console.log('Something Clicked!');
-    //};
+//function pop(){
+//    var popSound = document.getElementById('pop-sound');
+//    popSound.play();
+//    console.log('Something Clicked!');
+//};
 
 // smoothScroll
 $(function() {
@@ -35,5 +35,5 @@ function goBack(){
 
 // goHome
 function goHome(){
-    window.location.href = "https://triangle.mx";
+    window.location.href = "https://triangle.mx/";
 };
