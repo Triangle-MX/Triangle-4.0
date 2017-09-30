@@ -651,6 +651,10 @@ img::-moz-selection {
   text-align: center; }
   #compromiso-social h1 {
     font-size: 180%; }
+  #compromiso-social a {
+    transition: 0.2s ease-in; }
+    #compromiso-social a:hover {
+      transform: scale(1.01); }
 
 /* Proyectos */
 #projects-grid .project-card {
