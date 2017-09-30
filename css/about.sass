@@ -56,7 +56,11 @@
         font-size: 180%
 
     a
-        transition: $transition
+        img
+            transition: $transition
 
-        &:hover
-            transform: scale(1.01)
+            @media (max-width: 768px)
+                margin-bottom: 20px
+
+            &:hover
+                transform: scale(1.05)
