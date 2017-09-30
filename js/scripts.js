@@ -1,9 +1,16 @@
-// taxiSound
+// horn()
 function horn(){
        var taxiSound = document.getElementById("horn-honk");
        taxiSound.play();
-       console.log("Taxi: Beep!")
+       console.log('Taxi: Beep!')
 };
+
+// pop()
+    //function pop(){
+    //    var popSound = document.getElementById('pop-sound');
+    //    popSound.play();
+    //    console.log('Something Clicked!');
+    //};
 
 // smoothScroll
 $(function() {

@@ -22,15 +22,6 @@
         @media (max-width: 750px)
             margin: 40px 0px
 
-        &:hover
-            transform: scale(1.05) rotate(-1deg)
-            box-shadow: $box-shadow
-            z-index: 99 !important
-            cursor: pointer
-
-            @media (max-width: 750px)
-                transform: scale(1.01) rotate(1deg)
-
         a, a:hover, a:visited, a:active, a:focus
             text-decoration: none !important
             color: $black
@@ -113,3 +104,26 @@
 // Section Colors
 .projects-1
     background-color: $grey
+
+// Hover Animations
+.project-anim-1
+
+    &:hover
+        transform: scale(1.05) rotate(-1deg)
+        box-shadow: $box-shadow
+        z-index: 99 !important
+        cursor: pointer
+
+        @media (max-width: 750px)
+            transform: scale(1.01) rotate(1deg)
+
+.project-anim-2
+
+    &:hover
+        transform: scale(1.05) rotate(1deg)
+        box-shadow: $box-shadow
+        z-index: 99 !important
+        cursor: pointer
+
+        @media (max-width: 750px)
+            transform: scale(1.01) rotate(-1deg)

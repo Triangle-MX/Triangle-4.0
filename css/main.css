@@ -657,14 +657,6 @@ img::-moz-selection {
     @media (max-width: 750px) {
       .projects-section .project-card {
         margin: 40px 0px; } }
-    .projects-section .project-card:hover {
-      transform: scale(1.05) rotate(-1deg);
-      box-shadow: 5px 5px 100px 0px rgba(27, 27, 27, 0.16);
-      z-index: 99 !important;
-      cursor: pointer; }
-      @media (max-width: 750px) {
-        .projects-section .project-card:hover {
-          transform: scale(1.01) rotate(1deg); } }
     .projects-section .project-card a, .projects-section .project-card a:hover, .projects-section .project-card a:visited, .projects-section .project-card a:active, .projects-section .project-card a:focus {
       text-decoration: none !important;
       color: #1B1B1B; }
@@ -727,6 +719,24 @@ img::-moz-selection {
 
 .projects-1 {
   background-color: #EEEEEE; }
+
+.project-anim-1:hover {
+  transform: scale(1.05) rotate(-1deg);
+  box-shadow: 5px 5px 100px 0px rgba(27, 27, 27, 0.16);
+  z-index: 99 !important;
+  cursor: pointer; }
+  @media (max-width: 750px) {
+    .project-anim-1:hover {
+      transform: scale(1.01) rotate(1deg); } }
+
+.project-anim-2:hover {
+  transform: scale(1.05) rotate(1deg);
+  box-shadow: 5px 5px 100px 0px rgba(27, 27, 27, 0.16);
+  z-index: 99 !important;
+  cursor: pointer; }
+  @media (max-width: 750px) {
+    .project-anim-2:hover {
+      transform: scale(1.01) rotate(-1deg); } }
 
 /* 404.html + Under Construction */
 #error-message {
