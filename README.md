@@ -18,7 +18,7 @@ To get a **human** look, we need to make our site more accessible. We are going 
 
 - **Ultra Responsiveness**: Nearly 60% percent of our CSS code is dedicating to make out page mobile friendly and ultra responsive.
 
-- **Fast Loading**: The site is ultra fast and runs smoothly thanks to some JavaScript tweaks and minimized files (It even loads faster than Google when tested on certain servers).
+- **Blazing-Fast Loading**: The site is ultra fast and runs smoothly thanks to some JavaScript tweaks and minimized files (It even loads faster than Google when tested on certain servers). Also, the site runs on **Netlify's CDN**.
 
 ## Sitemap
 
