@@ -585,7 +585,7 @@ img::-moz-selection {
         #main .header .lead {
           font-size: 100%; } }
   #main .section {
-    padding: 80px 144px; }
+    padding: 40px 144px; }
     @media (max-width: 900px) {
       #main .section {
         padding: 40px; } }
@@ -641,13 +641,16 @@ img::-moz-selection {
       display: block;
       font-size: 80%;
       color: #333; }
-    #equipo #equipo-flex .miembro:hover {
-      transform: scale(1.05);
-      box-shadow: 7px 7px 100px 0px rgba(27, 27, 27, 0.1);
-      background-color: #FFB61E; }
-    #equipo #equipo-flex .miembro:hover > .puesto, #equipo #equipo-flex .miembro:hover > .nombre {
-      transition: 0.1s;
-      color: white !important; }
+
+#compromiso-social {
+  background-image: url("../img/About/CompromisoSocialBG.png");
+  background-color: rgba(32, 32, 32, 0.6);
+  background-blend-mode: overlay;
+  background-attachment: fixed;
+  color: #FFFFFF !important;
+  text-align: center; }
+  #compromiso-social h1 {
+    font-size: 180%; }
 
 /* Proyectos */
 #projects-grid .project-card {
