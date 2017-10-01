@@ -644,6 +644,7 @@ img::-moz-selection {
 
 #compromiso-social {
   background-image: url("../img/About/CompromisoSocialBG.png");
+  background-size: cover;
   background-color: rgba(32, 32, 32, 0.6);
   background-blend-mode: overlay;
   background-attachment: fixed;
