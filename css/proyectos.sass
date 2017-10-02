@@ -1,37 +1,129 @@
-#projects-grid
+.projects-section
+    width: 100%
+    padding: 70px 120px
+
+    @media (max-width: 1180px)
+        padding: 40px
+
+    @media (max-width: 600px)
+        padding: 20px
+
+
+    // Project Cards
     .project-card
-        width: 100%
-        background-color: $grey
-        overflow-x: hidden
-        text-align: center
+        background-color: $white
+        padding: 0
+        overflow: hidden
+        border-radius: 5px
         transition: $transition
-        margin-bottom: 30px
-        cursor: pointer
-        
-        &:hover
-            box-shadow: 0px 0px 10px 5px rgba(27,27,27,0.15)
-            transform: scale(1.05)
-            border-radius: 20px
-        
-        img
+        z-index: 1
+        margin: 15px 0px
+
+        @media (max-width: 750px)
+            margin: 40px 0px
+
+        a, a:hover, a:visited, a:active, a:focus
+            text-decoration: none !important
+            color: $black
+
+        .project-thumb
             width: 100%
-            transition: $transition
-            
+
         .project-info
-            padding: 20px
-            
+            text-align: center
+            padding: 10px
+
             .project-title
-                font-family: $montserrat
-                display: block
                 font-size: 110%
-                color: $black
-                
-            .project-tags
-                font-family: $lato
-                display: block
-                font-size: 90%
-                color: #333
-            
-@media (max-width: 600px)
-    .mobile-disappear
-        display: none !important
+                font-family: $montserrat
+
+
+
+    // Project Modals
+    .fade
+        background-color: $yellow
+
+    .modal-dialog
+        margin-top: 50px
+        margin-bottom: 50px
+
+        @media (min-width: 1180px)
+            width: 960px !important
+
+        @media (max-width: 770px)
+            margin-left: 25px !important
+
+    .modal-content
+        border-radius: 5px !important
+        border: 0 !important
+        box-shadow: $box-shadow2 !important
+        text-align: justify
+
+        .modal-logo
+            text-align: center
+            margin-top: 20px
+            margin-bottom: 40px
+
+            img
+                display: inline-block
+                width: 90%
+                max-width: 400px
+
+        .modal-img
+            text-align: center
+            margin-top: 20px
+            margin-bottom: 40px
+
+            img
+                display: inline-block
+                width: 80%
+                max-width: 300px
+                opacity: .8
+
+
+    .modal-header
+        border: 0 !important
+
+        .close
+            transition: $transition
+            transform: scale(2)
+            transform-origin: top right
+
+            &:hover
+                opacity: 1
+
+        .modal-title
+            font-weight: bold
+
+    .modal-footer
+        border: 0 !important
+        padding-top: 0px !important
+        padding: 40px
+        text-align: center
+
+// Section Colors
+.projects-1
+    background-color: $grey
+
+// Hover Animations
+.project-anim-1
+
+    &:hover
+        transform: scale(1.05) rotate(-1deg)
+        box-shadow: $box-shadow
+        z-index: 99 !important
+        cursor: pointer
+
+        @media (max-width: 750px)
+            transform: scale(1.01) rotate(1deg)
+
+.project-anim-2
+
+    &:hover
+        transform: scale(1.05) rotate(1deg)
+        box-shadow: $box-shadow
+        z-index: 99 !important
+        cursor: pointer
+
+        @media (max-width: 750px)
+            transform: scale(1.01) rotate(-1deg)

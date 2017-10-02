@@ -8,7 +8,7 @@ Last version of the Triangle Site (which can be viewed <a href="https://triangle
 
 The new concept is more **human**, more **personal**. We don't want to be seen like <i>machines doing websites</i>, but instead we want to be look like <i>humans helping businesses, organizations and other projects to get awesome websites</i>.
 
-The redesign includes subtle **animations**, which will help us to create a more **human** look.
+The redesign includes subtle **animations**, which will help us to create a more **human** look. It is also **blazing-fast** thanks to the new **Netlify** hosting solution *and* Content Delivery Network (CDN).
 
 ## Accesibility
 
@@ -21,6 +21,7 @@ To get a **human** look, we need to make our site more accessible. We are going 
 - **Blazing-Fast Loading**: The site is ultra fast and runs smoothly thanks to some JavaScript tweaks and minimized files (It even loads faster than Google when tested on certain servers). Also, the site runs on **Netlify's CDN**.
 
 ## Sitemap
+You can view the full sitemap in the ```sitemap.xml``` file.
 
     Principal/Home (/)
     |
@@ -38,8 +39,9 @@ To get a **human** look, we need to make our site more accessible. We are going 
     |   |->Error 403 (403.html)
     |   |->Error 501 (501.html)
     |   |->En Construcción (construction.html)
-    |   |->Impressum (impressum.html)
+    |   |->Impressum & Credits (impressum.html)
     |   |->Thanks (thanks.html)
+    |   |->Privacy Policy (privacidad.html)
     |
     |-->Error 404 (404.html)
     |
@@ -62,7 +64,7 @@ The new version of the site includes several easter eggs:
 - **Santiago Gutiérrez**: Corrections
 
 ### Other Credits
-- Some icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC 3.0 BY</a>
+- See ```impressum.html``` for resource credits.
 
 ## License
 
