@@ -20,8 +20,8 @@
     #logo
         width: 250px
         margin-bottom: 10px
-        animation-duration: 1.5s
-        animation-delay: .5s
+        animation-duration: 1.2s
+        animation-delay: .0s
 
         @media (min-width: 1300px)
             width: 400px
@@ -32,8 +32,8 @@
         text-transform: uppercase
         color: $black
         margin: 0px
-        animation-duration: 1.5s
-        animation-delay: .5s
+        animation-duration: 1.2s
+        animation-delay: .4s
 
         @media (min-width: 1400px)
             font-size: 400%
@@ -51,8 +51,8 @@
         font-size: 160%
         font-family: $lato
         color: $black
-        animation-duration: 1.5s
-        animation-delay: .5s
+        animation-duration: 1.2s
+        animation-delay: .6s
 
         @media (min-width: 1400px)
             font-size: 200%
@@ -101,13 +101,13 @@
         margin-bottom: 51px
 
 #desarrollo, #diseño, #insight, #nosotros, #faq, #contacto, #doodle
-    padding: 70px 120px
+    padding: 70px 120px !important
 
     @media (max-width: 1180px)
-        padding: 40px
+        padding: 40px !important
 
     @media (max-width: 600px)
-        padding: 20px
+        padding: 20px !important
 
     &:hover > .paso-container
         transform: scale(1.01)
@@ -138,12 +138,15 @@
 
 #desarrollo
     background-color: $yellow
+    text-align: center
 
 #diseño
     background-color: $grey
+    text-align: center
 
 #insight
     background-color: $blue
+    text-align: center
 
     .icon
         height: 100px
@@ -170,6 +173,7 @@
 
 #nosotros
     background-color: $grey
+    text-align: center
 
 #faq
     background-color: $black

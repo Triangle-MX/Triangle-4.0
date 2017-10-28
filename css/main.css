@@ -47,13 +47,13 @@ a {
 /* Selection */
 ::-moz-selection {
   text-shadow: none;
-  background: #FFB61E;
+  background: #1E81FF;
   color: #FFFFFF;
   text-shadow: 10px 10px 10px rgba(27, 27, 27, 0.1); }
 
 ::selection {
   text-shadow: none;
-  background: #FFB61E;
+  background: #1E81FF;
   color: #FFFFFF;
   text-shadow: 10px 10px 10px rgba(27, 27, 27, 0.1); }
 
@@ -87,8 +87,8 @@ img::-moz-selection {
   #hero #logo {
     width: 250px;
     margin-bottom: 10px;
-    animation-duration: 1.5s;
-    animation-delay: 0.5s; }
+    animation-duration: 1.2s;
+    animation-delay: 0s; }
     @media (min-width: 1300px) {
       #hero #logo {
         width: 400px; } }
@@ -98,8 +98,8 @@ img::-moz-selection {
     text-transform: uppercase;
     color: #1B1B1B;
     margin: 0px;
-    animation-duration: 1.5s;
-    animation-delay: 0.5s; }
+    animation-duration: 1.2s;
+    animation-delay: 0.4s; }
     @media (min-width: 1400px) {
       #hero #title {
         font-size: 400%; } }
@@ -115,8 +115,8 @@ img::-moz-selection {
     font-size: 160%;
     font-family: "Lato", "Helvetica Neue", sans-serif;
     color: #1B1B1B;
-    animation-duration: 1.5s;
-    animation-delay: 0.5s; }
+    animation-duration: 1.2s;
+    animation-delay: 0.6s; }
     @media (min-width: 1400px) {
       #hero #lead {
         font-size: 200%; } }
@@ -160,13 +160,13 @@ img::-moz-selection {
     margin-bottom: 51px; }
 
 #desarrollo, #diseño, #insight, #nosotros, #faq, #contacto, #doodle {
-  padding: 70px 120px; }
+  padding: 70px 120px !important; }
   @media (max-width: 1180px) {
     #desarrollo, #diseño, #insight, #nosotros, #faq, #contacto, #doodle {
-      padding: 40px; } }
+      padding: 40px !important; } }
   @media (max-width: 600px) {
     #desarrollo, #diseño, #insight, #nosotros, #faq, #contacto, #doodle {
-      padding: 20px; } }
+      padding: 20px !important; } }
   #desarrollo:hover > .paso-container, #diseño:hover > .paso-container, #insight:hover > .paso-container, #nosotros:hover > .paso-container, #faq:hover > .paso-container, #contacto:hover > .paso-container, #doodle:hover > .paso-container {
     transform: scale(1.01);
     box-shadow: 5px 5px 100px 0px rgba(27, 27, 27, 0.16); }
@@ -190,13 +190,16 @@ img::-moz-selection {
     background: transparent; }
 
 #desarrollo {
-  background-color: #FFB61E; }
+  background-color: #FFB61E;
+  text-align: center; }
 
 #diseño {
-  background-color: #EEEEEE; }
+  background-color: #EEEEEE;
+  text-align: center; }
 
 #insight {
   background-color: #1E81FF;
+  text-align: center;
   /* Selection */ }
   #insight .icon {
     height: 100px; }
@@ -216,7 +219,8 @@ img::-moz-selection {
     background: transparent; }
 
 #nosotros {
-  background-color: #EEEEEE; }
+  background-color: #EEEEEE;
+  text-align: center; }
 
 #faq {
   background-color: #1B1B1B; }
