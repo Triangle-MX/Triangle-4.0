@@ -4,7 +4,7 @@ Triangle Site 4.0 is the new version of Triangle's site which includes a major r
 
 ## The new concept
 
-Last version of the Triangle Site (which can be viewed <a href="https://triangle-mx.github.io/Triangle-3.0">here</a>) was kind of **monotonous** and **boring**, that is why we decided to redesign completely it.
+Last version of the Triangle Site (which can be viewed <a href="https://triangle-mx.github.io/Triangle-3.0">here</a>) was kind of **monotonous**, **boring**, and **slow**, that is why we decided to redesign completely it.
 
 The new concept is more **human**, more **personal**. We don't want to be seen like <i>machines doing websites</i>, but instead we want to be look like <i>humans helping businesses, organizations and other projects to get awesome websites</i>.
 
@@ -33,12 +33,10 @@ You can view the full sitemap in the ```sitemap.xml``` file.
     |
     |-->Sobre Nosotros (nosotros/)
     |
-    |-->Contacto (contacto/)
-    |
     |-->files/
     |   |->Error 403 (403.html)
     |   |->Error 501 (501.html)
-    |   |->En Construcción (construction.html)
+    |   |->Under Construction (construction.html)
     |   |->Impressum & Credits (impressum.html)
     |   |->Thanks (thanks.html)
     |   |->Privacy Policy (privacidad.html)
@@ -64,7 +62,7 @@ The new version of the site includes several easter eggs:
 - **Santiago Gutiérrez**: Corrections
 
 ### Other Credits
-- See ```impressum.html``` for resource credits.
+- See the ```impressum.html``` file for all the resource credits.
 
 ## License
 
