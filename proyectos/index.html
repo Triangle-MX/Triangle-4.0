@@ -45,6 +45,8 @@
 
         <!-- animate.min.css -->
         <link rel="stylesheet" href="../css/animate.min.css">
+
+
 </head>
 <body>
     <!-- WOW -->
@@ -52,6 +54,10 @@
     <script>
               new WOW().init();
     </script>
+
+    <!-- Masonry -->
+    <!-- Masonry -->
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 
     <!--[if lt IE 8]>
             <p class="browserupgrade">Estas usando una versión muy <strong>antigua</strong> de tu navegador. Por favor <a href="http://browsehappy.com/">actualiza tu navegador</a> para tener una mejor experiencia en la red.</p>
@@ -96,10 +102,10 @@
         </div>
 
     <div class="projects-section projects-1">
-        <div class="row">
+        <div class="row"  data-masonry='{ "itemSelector": ".project-card-cont", "columnWidth": ".project-card-cont"}'>
 
             <!-- Astros Card -->
-            <div class="col-md-3 col-sm-6">
+            <div class="col-md-3 col-sm-6 project-card-cont">
                 <div class="project-card project-anim-1 wow bounceIn" data-wow-duration="1.3s" data-wow-delay=".05s">
                     <a data-toggle="modal" data-target="#astrosModal" title="Astros">
                         <img src="../img/Proyectos/Astros-Project.svg" alt="Astros" class="project-thumb">
@@ -139,7 +145,7 @@
             </div>
 
             <!-- Learning English Card -->
-            <!--<div class="col-md-3 col-sm-6">
+            <!--<div class="col-md-3 col-sm-6 project-card-cont">
                 <div class="project-card project-anim-2 wow bounceIn" data-wow-duration="1.3s" data-wow-delay=".05s">
                     <a data-toggle="modal" data-target="#learningEnglishModal" title="Learning English">
                         <img src="../img/Proyectos/Learning-English-Project.svg" alt="Learning-English" class="project-thumb">
@@ -173,8 +179,8 @@
             </div>-->
 
             <!-- SismoMX Card -->
-            <div class="col-md-3 col-sm-6">
-                <div class="project-card project-anim-1 wow bounceIn" data-wow-duration="1.3s" data-wow-delay=".15s">
+            <div class="col-md-3 col-sm-6 project-card-cont">
+                <div class="project-card project-anim-2 wow bounceIn" data-wow-duration="1.3s" data-wow-delay=".15s">
                     <a data-toggle="modal" data-target="#sismomxModal" title="SismoMX">
                         <img src="../img/Proyectos/SismoMX-Project.svg" alt="SismoMX" class="project-thumb">
                         <div class="project-info">
@@ -212,8 +218,8 @@
             </div>
 
             <!-- Cómo Ayudar Card -->
-            <div class="col-md-3 col-sm-6">
-                <div class="project-card project-anim-2 wow bounceIn" data-wow-duration="1.3s" data-wow-delay=".25s">
+            <div class="col-md-3 col-sm-6 project-card-cont">
+                <div class="project-card project-anim-1 wow bounceIn" data-wow-duration="1.3s" data-wow-delay=".25s">
                     <a data-toggle="modal" data-target="#comoayudarModal" title="Cómo Ayudar">
                         <img src="../img/Proyectos/Como-Ayudar-Project.svg" alt="Cómo Ayudar" class="project-thumb">
                         <div class="project-info">
@@ -251,7 +257,7 @@
             </div>
 
             <!-- BusinessSenior Card -->
-            <div class="col-md-3 col-sm-6">
+            <div class="col-md-3 col-sm-6 project-card-cont">
                 <div class="project-card project-anim-2 wow bounceIn" data-wow-duration="1.3s" data-wow-delay=".35s">
                     <a data-toggle="modal" data-target="#businessSeniorModal" title="BusinessSenior">
                         <img src="../img/Proyectos/BusinessSenior-Project.svg" alt="BusinessSenior" class="project-thumb">
@@ -287,12 +293,12 @@
             </div>
 
             <!-- CIM Card -->
-            <div class="col-md-3 col-sm-6">
+            <div class="col-md-3 col-sm-6 project-card-cont">
                 <div class="project-card project-anim-1 wow bounceIn" data-wow-duration="1.3s" data-wow-delay=".45s">
                     <a data-toggle="modal" data-target="#cimModal" title="Comercio Internacional Mexicano">
                         <img src="../img/Proyectos/CIM-Project.svg" alt="CIM" class="project-thumb">
                         <div class="project-info">
-                            <span class="project-title">CIM</span>
+                            <span class="project-title">Comercio Internacional Mexicano</span>
                         </div>
                     </a>
                 </div>
@@ -318,6 +324,40 @@
                         <div class="modal-footer">
                             <!--<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
                             <a href="http://comerciointernacionalmexicano.com.mx/" target="_blank" class="btn1">Descubre Más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Libro Card -->
+            <div class="col-md-3 col-sm-6 project-card-cont">
+                <div class="project-card project-anim-2 wow bounceIn" data-wow-duration="1.3s" data-wow-delay=".55s">
+                    <a data-toggle="modal" data-target="#libroModal" title="El Pequeño Libro de Negocios para Niños">
+                        <img src="../img/Proyectos/Libro-Project.svg" alt="El Pequeño Libro de Negocios para Niños" class="project-thumb">
+                        <div class="project-info">
+                            <span class="project-title">El Pequeño Libro de Negocios para Niños</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Libro Modal -->
+            <div class="modal fade" id="libroModal" role="dialog" aria-labelledby="libroModal">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <!--<h1 class="modal-title" id="astrosModalTitle">Astros</h4>-->
+                        </div>
+                        <div class="modal-body lead">
+                            <div class="modal-logo">
+                                <img src="../img/Proyectos/Libro/Libro-Logo.svg" alt="Logo El Pequeño Libro de Negocios para Niños">
+                            </div>
+                            Ahhh… El mundo de los negocios... Un lugar lleno de términos extraños y complicados… Un lugar donde solo algunos se atreven aventurarse… <b>Esto cambia hoy</b>. <br><br> <b>El Pequeño Libro de Negocios</b> escrito por José Pablo Iglesias que explica conceptos de negocios en un lenguaje sencillo.
+                        </div>
+                        <div class="modal-footer">
+                            <!--<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
+                            <a href="https://jpiglesias.com/" target="_blank" class="btn1">Descubre Más</a>
                         </div>
                     </div>
                 </div>
@@ -407,7 +447,6 @@
 
         <!-- Modernizr -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-
 
 </body>
 </html>

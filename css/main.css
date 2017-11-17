@@ -681,7 +681,8 @@ img::-moz-selection {
     border-radius: 5px;
     transition: 0.2s ease-in;
     z-index: 1;
-    margin: 15px 0px; }
+    margin: 15px 0px;
+    vertical-align: middle; }
     @media (max-width: 750px) {
       .projects-section .project-card {
         margin: 40px 0px; } }
