@@ -5,12 +5,12 @@ function horn(){
        console.log('Taxi: Beep!')
 };
 
-// pop()
-//function pop(){
-//    var popSound = document.getElementById('pop-sound');
-//    popSound.play();
-//    console.log('Something Clicked!');
-//};
+// bells()
+function bells(){
+       var sledSound = document.getElementById("bells-sound");
+       sledSound.play();
+       console.log('Christmas Bells')
+};
 
 // smoothScroll
 $(function() {

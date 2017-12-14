@@ -1,0 +1,28 @@
+<svg id="Group_2850" data-name="Group 2850" xmlns="http://www.w3.org/2000/svg" viewBox="-1360 -3169 1366 767">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f5fbff;
+      }
+
+      .cls-2 {
+        fill: #cce5f2;
+      }
+
+      .cls-3 {
+        fill: #acd7f2;
+      }
+
+      .cls-4 {
+        fill: #deeef9;
+      }
+    </style>
+  </defs>
+  <rect id="Rectangle_50" data-name="Rectangle 50" class="cls-1" width="1366" height="767" transform="translate(-1360 -3169)"/>
+  <g id="Group_2846" data-name="Group 2846">
+    <path id="Path_7253" data-name="Path 7253" class="cls-2" d="M613.9,328.932S444.868,277.268,0,247.093v84.49l205.132,52.564L613.9,361.758V328.932Z" transform="translate(-1360 -2862.578)"/>
+    <path id="Path_7254" data-name="Path 7254" class="cls-3" d="M1366,307.443C762.722,285.716,486.731,373.828,0,331.583v48.28l534.039,90.522L1366,397.968Z" transform="translate(-1360 -2900.578)"/>
+    <path id="Path_7255" data-name="Path 7255" class="cls-2" d="M792.608,431.458S451.308,382.277,0,379.863V509.422H350.531l442.074-34.206V431.458Z" transform="translate(-1360 -2911.578)"/>
+    <path id="Path_7256" data-name="Path 7256" class="cls-4" d="M1146.854,397.968S630.522,387.925,131.385,509.422H1146.854Z" transform="translate(-1140.854 -2911.578)"/>
+  </g>
+</svg>
