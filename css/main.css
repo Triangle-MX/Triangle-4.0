@@ -22,7 +22,7 @@ h1, h2, h3, h4, h5, h6 {
 a {
   text-decoration: none;
   color: #FFB61E;
-  transition: 0.2s ease-in; }
+  transition: 0.2s cubic-bezier(1, 0.55, 0, 0.87); }
   a:hover, a:active, a:visited {
     color: #1B1B1B;
     text-decoration: none; }
@@ -141,7 +141,8 @@ img::-moz-selection {
   background-position: bottom;
   padding: 80px 0 200px 0;
   animation-duration: 2s;
-  animation-delay: 0.4s; }
+  animation-delay: 0.4s;
+  /* Snow */ }
   @media (max-width: 600px) {
     #hero-christmas {
       padding: 40px 0 100px 0; } }
@@ -212,7 +213,7 @@ img::-moz-selection {
   height: 100%;
   padding: 60px;
   border-radius: 5px;
-  transition: 0.2s ease-in; }
+  transition: 0.2s cubic-bezier(1, 0.55, 0, 0.87); }
   @media (max-width: 600px) {
     .paso-container {
       padding: 30px; } }
@@ -431,7 +432,7 @@ img::-moz-selection {
 #triangle-menu.navbar-default .navbar-nav > li > a {
   color: white;
   background-color: #ffb61e;
-  transition: 0.2s ease-in; }
+  transition: 0.2s cubic-bezier(1, 0.55, 0, 0.87); }
 
 #triangle-menu.navbar-default .navbar-nav > li > a:hover,
 #triangle-menu.navbar-default .navbar-nav > li > a:focus {
@@ -463,7 +464,7 @@ img::-moz-selection {
 
 .navbar-toggle, .navbar-toggle:active, .navbar-toggle:visited {
   border: none !important;
-  transition: 0.2s ease-in;
+  transition: 0.2s cubic-bezier(1, 0.55, 0, 0.87);
   border-radius: 5px; }
   .navbar-toggle .icon-bar, .navbar-toggle:active .icon-bar, .navbar-toggle:visited .icon-bar {
     background-color: #FFFFFF !important; }
@@ -495,7 +496,7 @@ img::-moz-selection {
     cursor: pointer; }
   #footer .social-icons a {
     color: #1B1B1B;
-    transition: 0.2s ease-in;
+    transition: 0.2s cubic-bezier(1, 0.55, 0, 0.87);
     cursor: pointer; }
     #footer .social-icons a:hover {
       color: #FFB61E !important; }
@@ -539,7 +540,7 @@ img::-moz-selection {
   cursor: pointer;
   border-radius: 5px;
   font-size: 110%;
-  transition: 0.2s ease-in;
+  transition: 0.2s cubic-bezier(1, 0.55, 0, 0.87);
   border: 3px solid #FFB61E; }
   @media (max-width: 600px) {
     .btn1, .btn1:visited, .btn1:active {
@@ -549,7 +550,7 @@ img::-moz-selection {
       cursor: pointer;
       border-radius: 5px;
       font-size: 105%;
-      transition: 0.2s ease-in;
+      transition: 0.2s cubic-bezier(1, 0.55, 0, 0.87);
       border: 3px solid #FFB61E; } }
   .btn1:hover, .btn1:focus, .btn1:visited:hover, .btn1:visited:focus, .btn1:active:hover, .btn1:active:focus {
     background-color: #1B1B1B;
@@ -565,7 +566,7 @@ img::-moz-selection {
   cursor: pointer;
   border-radius: 5px;
   font-size: 110%;
-  transition: 0.2s ease-in;
+  transition: 0.2s cubic-bezier(1, 0.55, 0, 0.87);
   border: 3px solid #1E81FF; }
   @media (max-width: 600px) {
     .btn2, .btn2:visited, .btn2:active {
@@ -575,7 +576,7 @@ img::-moz-selection {
       cursor: pointer;
       border-radius: 5px;
       font-size: 105%;
-      transition: 0.2s ease-in;
+      transition: 0.2s cubic-bezier(1, 0.55, 0, 0.87);
       border: 3px solid #1E81FF; } }
   .btn2:hover, .btn2:focus, .btn2:visited:hover, .btn2:visited:focus, .btn2:active:hover, .btn2:active:focus {
     background-color: #0C0D19;
@@ -591,7 +592,7 @@ img::-moz-selection {
   cursor: pointer;
   border-radius: 5px;
   font-size: 110%;
-  transition: 0.2s ease-in;
+  transition: 0.2s cubic-bezier(1, 0.55, 0, 0.87);
   border: 3px solid #44C2A7; }
   @media (max-width: 600px) {
     .btnDoodle, .btnDoodle:visited, .btnDoodle:active {
@@ -601,7 +602,7 @@ img::-moz-selection {
       cursor: pointer;
       border-radius: 5px;
       font-size: 105%;
-      transition: 0.2s ease-in;
+      transition: 0.2s cubic-bezier(1, 0.55, 0, 0.87);
       border: 3px solid #44C2A7; } }
   .btnDoodle:hover, .btnDoodle:focus, .btnDoodle:visited:hover, .btnDoodle:visited:focus, .btnDoodle:active:hover, .btnDoodle:active:focus {
     background-color: #1B1B1B;
@@ -618,13 +619,14 @@ img::-moz-selection {
   width: 100%;
   max-width: 100%;
   color: #1B1B1B;
-  border: 0px;
-  border-bottom: 2px solid #1B1B1B;
-  transition: 0.2s ease-in;
-  border-radius: 0px; }
+  border: 2px solid #FFFFFF;
+  transition: 0.2s cubic-bezier(1, 0.55, 0, 0.87);
+  border-radius: 5px; }
   #form input:active, #form input:focus, #form textarea:active, #form textarea:focus {
     outline: none;
-    border-bottom: 2px solid #FFB61E; }
+    border: 2px solid transparent;
+    transform: scale(1.05);
+    box-shadow: 5px 5px 100px 0px rgba(27, 27, 27, 0.16); }
 #form textarea {
   min-height: 100px; }
 
@@ -705,7 +707,7 @@ img::-moz-selection {
     min-width: 100px;
     min-height: 150px;
     padding: 20px;
-    transition: 0.2s ease-in;
+    transition: 0.2s cubic-bezier(1, 0.55, 0, 0.87);
     border-radius: 5px; }
     #equipo #equipo-flex .miembro img {
       width: 100%;
@@ -731,7 +733,7 @@ img::-moz-selection {
   #compromiso-social h1 {
     font-size: 180%; }
   #compromiso-social a img {
-    transition: 0.2s ease-in; }
+    transition: 0.2s cubic-bezier(1, 0.55, 0, 0.87); }
     @media (max-width: 768px) {
       #compromiso-social a img {
         margin-bottom: 20px; } }
@@ -753,7 +755,7 @@ img::-moz-selection {
     padding: 0;
     overflow: hidden;
     border-radius: 5px;
-    transition: 0.2s ease-in;
+    transition: 0.2s cubic-bezier(1, 0.55, 0, 0.87);
     z-index: 1;
     margin: 15px 0px;
     vertical-align: middle; }
@@ -807,7 +809,7 @@ img::-moz-selection {
   .projects-section .modal-header {
     border: 0 !important; }
     .projects-section .modal-header .close {
-      transition: 0.2s ease-in;
+      transition: 0.2s cubic-bezier(1, 0.55, 0, 0.87);
       transform: scale(2);
       transform-origin: top right; }
       .projects-section .modal-header .close:hover {
