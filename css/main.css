@@ -226,10 +226,11 @@ img::-moz-selection {
       .paso-container .icon {
         height: 100px; } }
   .paso-container .title {
+    font-family: "Montserrat", "Helvetica Neue", sans-serif;
     margin-top: 0px;
     margin-bottom: 30px; }
     .paso-container .title span {
-      font-weight: bold; }
+      font-weight: 700 !important; }
   .paso-container .lead {
     margin-top: 0px;
     margin-bottom: 51px; }
@@ -272,35 +273,12 @@ img::-moz-selection {
   background-color: #EEEEEE;
   text-align: center; }
 
-#insight {
-  background-color: #1E81FF;
-  text-align: center;
-  /* Selection */ }
-  #insight .icon {
-    height: 100px; }
-  #insight ::-moz-selection {
-    text-shadow: none;
-    background: #1E81FF;
-    color: #FFFFFF;
-    text-shadow: 10px 10px 10px rgba(27, 27, 27, 0.1); }
-  #insight ::selection {
-    text-shadow: none;
-    background: #1E81FF; }
-  #insight img::-moz-selection {
-    background: transparent; }
-  #insight img::selection {
-    background: transparent; }
-  #insight img::-moz-selection {
-    background: transparent; }
-
 #nosotros {
   background-color: #EEEEEE;
   text-align: center; }
 
 #faq {
   background-color: #1B1B1B; }
-  #faq .roger-roger {
-    cursor: pointer; }
 
 #contacto {
   background-color: #FFB61E; }

