@@ -69,3 +69,82 @@
 
     .icon-bar
         background-color: $white !important
+
+
+
+// index.html Navbar
+#triangle-menu-1
+    box-shadow: $box-shadow
+    animation-delay: .5s
+    animation-duration: .2s
+
+.sticky
+    position: sticky
+    margin-bottom: 0px !important
+
+#triangle-menu-1.navbar-default .navbar-brand
+    color: rgba(255, 255, 255, 1)
+    font-family: $montserrat
+    font-weight: bold
+    font-size: 120%
+
+#triangle-menu-1 li .dropdown-menu
+    background-color: $black
+    border: 0px
+
+    a
+        color: $white
+
+    li a
+        font-size: 18px
+
+        &:hover
+            background-color: $black !important
+
+#triangle-menu-1.navbar-default
+    font-size: 18px
+    background-color: $black
+    border-width: 0px
+    border-radius: 0px
+
+#triangle-menu-1.navbar-default .navbar-nav>li>a
+    color: rgba(255, 255, 255, 1)
+    background-color: $black
+    transition: $transition
+
+#triangle-menu-1.navbar-default .navbar-nav>li>a:hover,
+#triangle-menu-1.navbar-default .navbar-nav>li>a:focus
+    color: rgba(255, 255, 255, 1)
+    background-color: $yellow
+
+
+#triangle-menu-1.navbar-default .navbar-nav>.active>a,
+#triangle-menu-1.navbar-default .navbar-nav>.active>a:hover,
+#triangle-menu-1.navbar-default .navbar-nav>.active>a:focus
+    color: rgba(255, 255, 255, 1)
+    background-color: $yellow
+
+#triangle-menu-1.navbar-default .navbar-toggle
+    border-color: $black
+
+#triangle-menu-1.navbar-default .navbar-toggle:hover,
+#triangle-menu-1.navbar-default .navbar-toggle:focus
+    background-color: $black
+
+#triangle-menu-1.navbar-default .navbar-toggle .icon-bar
+    background-color: $black
+
+#triangle-menu-1.navbar-default .navbar-toggle:hover .icon-bar,
+#triangle-menu-1.navbar-default .navbar-toggle:focus .icon-bar
+    background-color: $black
+
+#triangle-menu-1.navbar-default .navbar-collapse, .navbar-default .navbar-form
+    border: 0px
+
+#triangle-menu-1.navbar-toggle, .navbar-toggle:active, .navbar-toggle:visited
+    border: none !important
+    transition: $transition
+    border-radius: 5px
+
+    .icon-bar
+        background-color: $white !important
