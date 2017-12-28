@@ -1,870 +1,96 @@
-@charset "UTF-8";
-/* Fonts */
-@import url("https://fonts.googleapis.com/css?family=Anton|Nunito|Montserrat");
-/* Componentes Basicos */
-body {
-  background-color: #FFFFFF;
-  overflow-x: hidden;
-  font-family: "Lato", "Helvetica Neue", sans-serif;
-  font-size: 18px;
-  color: #1B1B1B;
-  font-weight: 500; }
+/*
+Error: Undefined variable: "$red".
+        on line 32 of error.sass
+        from line 104 of main.sass
 
-@media (max-width: 600px) {
-  body {
-    font-size: 16px; } }
-@media (max-width: 1500px) {
-  body {
-    font-size: 20px; } }
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Montserrat", "Helvetica Neue", sans-serif; }
+27: $box-shadow2: 7px 7px 100px 0px rgba(27,27,27,0.16)
+28: 
+29: // Border Variables
+30: $border-radius: 5px
+31: 
+32: // Basic Components
+33: body
+34:     background-color: $white
+35:     overflow-x: hidden
+36:     font-family: $lato
+37:     font-size: $normal-size
 
-a {
-  text-decoration: none;
-  color: #FFB61E;
-  transition: 0.2s cubic-bezier(1, 0.55, 0, 0.87); }
-  a:hover, a:active, a:visited {
-    color: #1B1B1B;
-    text-decoration: none; }
-
-/* Link Effect +/ */
-.link {
-  display: inline-block;
-  color: #1B1B1B;
-  text-decoration: none; }
-
-.link::after {
-  content: "";
-  display: block;
-  width: 0;
-  height: 2px;
-  background: #FFB61E;
-  transition: width 0.3s; }
-
-.link:hover::after {
-  width: 100%; }
-
-/* Selection */
-::-moz-selection {
-  text-shadow: none;
-  background: #1E81FF;
-  color: #FFFFFF;
-  text-shadow: 10px 10px 10px rgba(27, 27, 27, 0.1); }
-
-::selection {
-  text-shadow: none;
-  background: #1E81FF;
-  color: #FFFFFF;
-  text-shadow: 10px 10px 10px rgba(27, 27, 27, 0.1); }
-
-img::-moz-selection {
-  background: transparent; }
-
-img::selection {
-  background: transparent; }
-
-img::-moz-selection {
-  background: transparent; }
-
-/* index.html */
-/* Hero */
-#hero {
-  width: 100%;
-  background-color: #FFFFFF;
-  background-image: url("../img/City.svg");
-  background-repeat: none;
-  background-size: cover;
-  background-position: bottom;
-  padding: 80px 0 200px 0;
-  animation-duration: 2s;
-  animation-delay: 0.4s;
-  margin-top: 50px; }
-  @media (max-width: 600px) {
-    #hero {
-      padding: 40px 0 100px 0; } }
-  @media (min-width: 1440px) and (max-width: 1450px) and (min-height: 710px) and (max-height: 720px) {
-    #hero {
-      min-height: 100vh; } }
-  #hero #logo {
-    width: 250px;
-    margin-bottom: 10px;
-    animation-duration: 1.2s;
-    animation-delay: 0s; }
-    @media (min-width: 1300px) {
-      #hero #logo {
-        width: 400px; } }
-  #hero #title {
-    font-size: 450%;
-    font-family: "Anton", "Helvetica Neue", sans-serif;
-    text-transform: uppercase;
-    color: #1B1B1B;
-    margin: 0px;
-    animation-duration: 1.2s;
-    animation-delay: 0.4s; }
-    @media (min-width: 1400px) {
-      #hero #title {
-        font-size: 400%; } }
-    @media (max-width: 900px) {
-      #hero #title {
-        font-size: 300%; } }
-    @media (max-width: 500px) {
-      #hero #title {
-        font-size: 250%; } }
-    #hero #title span {
-      color: #FFB61E; }
-  #hero #lead {
-    font-size: 160%;
-    font-family: "Lato", "Helvetica Neue", sans-serif;
-    color: #1B1B1B;
-    animation-duration: 1.2s;
-    animation-delay: 0.6s; }
-    @media (min-width: 1400px) {
-      #hero #lead {
-        font-size: 200%; } }
-    @media (max-width: 900px) {
-      #hero #lead {
-        font-size: 130%; } }
-    @media (max-width: 500px) {
-      #hero #lead {
-        font-size: 110%; } }
-    #hero #lead span {
-      color: #FFB61E;
-      font-weight: bold;
-      font-size: 110%; }
-
-/* Hero Christmas */
-#hero-christmas {
-  width: 100%;
-  background-color: #F5FBFF;
-  background-image: url("../img/Christmas.svg");
-  background-repeat: none;
-  background-size: cover;
-  background-position: bottom;
-  padding: 80px 0 200px 0;
-  animation-duration: 2s;
-  animation-delay: 0.4s;
-  margin-top: 50px;
-  /* Snow */ }
-  @media (max-width: 600px) {
-    #hero-christmas {
-      padding: 40px 0 100px 0; } }
-  @media (min-width: 1440px) and (max-width: 1450px) and (min-height: 710px) and (max-height: 720px) {
-    #hero-christmas {
-      min-height: 100vh; } }
-  #hero-christmas #logo {
-    width: 250px;
-    margin-bottom: 10px;
-    animation-duration: 1.2s;
-    animation-delay: 0s; }
-    @media (min-width: 1300px) {
-      #hero-christmas #logo {
-        width: 400px; } }
-  #hero-christmas #title {
-    font-size: 450%;
-    font-family: "Anton", "Helvetica Neue", sans-serif;
-    text-transform: uppercase;
-    color: #1B1B1B;
-    margin: 0px;
-    animation-duration: 1.2s;
-    animation-delay: 0.4s; }
-    @media (min-width: 1400px) {
-      #hero-christmas #title {
-        font-size: 400%; } }
-    @media (max-width: 900px) {
-      #hero-christmas #title {
-        font-size: 300%; } }
-    @media (max-width: 500px) {
-      #hero-christmas #title {
-        font-size: 250%; } }
-    #hero-christmas #title span {
-      color: #44C2A7; }
-  #hero-christmas #lead {
-    font-size: 160%;
-    font-family: "Lato", "Helvetica Neue", sans-serif;
-    color: #1B1B1B;
-    animation-duration: 1.2s;
-    animation-delay: 0.6s; }
-    @media (min-width: 1400px) {
-      #hero-christmas #lead {
-        font-size: 200%; } }
-    @media (max-width: 900px) {
-      #hero-christmas #lead {
-        font-size: 130%; } }
-    @media (max-width: 500px) {
-      #hero-christmas #lead {
-        font-size: 110%; } }
-    #hero-christmas #lead span {
-      color: #44C2A7;
-      font-weight: bold;
-      font-size: 110%; }
-  #hero-christmas .snow {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: none;
-    z-index: 9999; }
-    @media (min-width: 1440px) and (max-width: 1450px) and (min-height: 710px) and (max-height: 720px) {
-      #hero-christmas .snow {
-        display: block; } }
-
-/* Pasos */
-.paso-container {
-  background-color: #FFFFFF;
-  width: 100%;
-  height: 100%;
-  padding: 60px;
-  border-radius: 5px;
-  transition: 0.2s cubic-bezier(1, 0.55, 0, 0.87); }
-  @media (max-width: 600px) {
-    .paso-container {
-      padding: 30px; } }
-  .paso-container .icon {
-    height: 141px;
-    width: auto;
-    margin-bottom: 20px;
-    max-width: 100%; }
-    @media (max-width: 900px) {
-      .paso-container .icon {
-        height: 100px; } }
-  .paso-container .title {
-    font-family: "Montserrat", "Helvetica Neue", sans-serif;
-    margin-top: 0px;
-    margin-bottom: 30px; }
-    .paso-container .title span {
-      font-weight: 700 !important; }
-  .paso-container .lead {
-    margin-top: 0px;
-    margin-bottom: 51px; }
-
-#desarrollo, #diseño, #insight, #nosotros, #faq, #contacto, #doodle {
-  padding: 70px 120px !important; }
-  @media (max-width: 1180px) {
-    #desarrollo, #diseño, #insight, #nosotros, #faq, #contacto, #doodle {
-      padding: 40px !important; } }
-  @media (max-width: 600px) {
-    #desarrollo, #diseño, #insight, #nosotros, #faq, #contacto, #doodle {
-      padding: 20px !important; } }
-  #desarrollo:hover > .paso-container, #diseño:hover > .paso-container, #insight:hover > .paso-container, #nosotros:hover > .paso-container, #faq:hover > .paso-container, #contacto:hover > .paso-container, #doodle:hover > .paso-container {
-    transform: scale(1.01);
-    box-shadow: 5px 5px 100px 0px rgba(27, 27, 27, 0.16); }
-
-#doodle {
-  background-color: #44C2A7;
-  /* Selection */ }
-  #doodle ::-moz-selection {
-    text-shadow: none;
-    background: #44C2A7;
-    color: #FFFFFF;
-    text-shadow: 10px 10px 10px rgba(27, 27, 27, 0.1); }
-  #doodle ::selection {
-    text-shadow: none;
-    background: #44C2A7; }
-  #doodle img::-moz-selection {
-    background: transparent; }
-  #doodle img::selection {
-    background: transparent; }
-  #doodle img::-moz-selection {
-    background: transparent; }
-
-#desarrollo {
-  background-color: #FFB61E;
-  text-align: center; }
-
-#diseño {
-  background-color: #EEEEEE;
-  text-align: center; }
-
-#nosotros {
-  background-color: #EEEEEE;
-  text-align: center; }
-
-#faq {
-  background-color: #1B1B1B; }
-
-#contacto {
-  background-color: #FFB61E; }
-  @media (max-width: 1200px) {
-    #contacto .form-column {
-      margin-bottom: 50px; } }
-  #contacto .lead {
-    margin-bottom: 20px; }
-  #contacto .contact-methods {
-    list-style: none;
-    margin-left: -40px; }
-
-#proyectos {
-  width: 100%;
-  min-height: 500px;
-  background-color: #FFFFFF;
-  background-image: url("../img/City2.0.svg");
-  background-repeat: none;
-  background-size: cover;
-  background-position: bottom right;
-  padding-bottom: 80px;
-  padding-top: 80px;
-  animation-duration: 1s;
-  animation-delay: 1s; }
-  @media (max-width: 1200px) {
-    #proyectos {
-      background-image: url("../img/City2.0.svg"); } }
-  @media (max-width: 600px) {
-    #proyectos {
-      padding-top: 40px;
-      padding-bottom: 40px; } }
-  @media (max-width: 900px) {
-    #proyectos {
-      padding-top: 60px;
-      padding-bottom: 40px; } }
-  @media (max-width: 400px) {
-    #proyectos {
-      background-image: url("../img/City2.0C.svg");
-      padding-bottom: 80px; }
-      #proyectos:hover {
-        background-image: url("../img/City2.0C.svg"); } }
-  #proyectos .title {
-    font-size: 450%;
-    font-family: "Anton", "Helvetica Neue", sans-serif;
-    text-transform: uppercase;
-    color: #1B1B1B;
-    margin: 0px; }
-    @media (min-width: 1400px) {
-      #proyectos .title {
-        font-size: 450%; } }
-    @media (max-width: 1300px) {
-      #proyectos .title {
-        font-size: 280%; } }
-    @media (max-width: 500px) {
-      #proyectos .title {
-        font-size: 200%; } }
-    #proyectos .title span {
-      color: #FFB61E; }
-  #proyectos .lead {
-    font-size: 110%;
-    font-family: "Lato", "Helvetica Neue", sans-serif;
-    color: #1B1B1B;
-    margin-bottom: 30px; }
-    @media (min-width: 1400px) {
-      #proyectos .lead {
-        font-size: 120%; } }
-    @media (max-width: 900px) {
-      #proyectos .lead {
-        font-size: 110%; } }
-    @media (max-width: 500px) {
-      #proyectos .lead {
-        font-size: 100%; } }
-    #proyectos .lead span {
-      color: #FFB61E;
-      font-weight: bold;
-      font-size: 100%; }
-
-/* Taxi Easter Egg */
-/* Taxi Animation on index.html */
-#taxi {
-  display: none; }
-  @media (min-width: 1440px) and (max-width: 1450px) and (min-height: 710px) and (max-height: 720px) {
-    #taxi {
-      width: 120px;
-      z-index: 10;
-      position: absolute;
-      left: -120px;
-      bottom: 0px;
-      animation-name: taxi;
-      animation-duration: 10s;
-      animation-iteration-count: infinite;
-      animation-delay: 2s;
-      cursor: pointer;
-      display: block; }
-    @keyframes taxi {
-      40% {
-        margin-left: 770px; }
-      50% {
-        margin-left: 800px; }
-      100% {
-        margin-left: 1590px; } } }
-
-/* Menu */
-#triangle-menu {
-  box-shadow: 5px 5px 100px 0px rgba(27, 27, 27, 0.16);
-  animation-delay: 0.5s;
-  animation-duration: 0.2s; }
-
-#triangle-menu.navbar-default .navbar-brand {
-  color: white;
-  font-family: "Montserrat", "Helvetica Neue", sans-serif;
-  font-weight: bold;
-  font-size: 120%; }
-
-#triangle-menu li .dropdown-menu {
-  background-color: #FFB61E;
-  border: 0px; }
-  #triangle-menu li .dropdown-menu a {
-    color: #FFFFFF; }
-  #triangle-menu li .dropdown-menu li a {
-    font-size: 18px; }
-    #triangle-menu li .dropdown-menu li a:hover {
-      background-color: #1B1B1B !important; }
-
-#triangle-menu.navbar-default {
-  font-size: 18px;
-  background-color: #ffb61e;
-  border-width: 0px;
-  border-radius: 0px; }
-
-#triangle-menu.navbar-default .navbar-nav > li > a {
-  color: white;
-  background-color: #ffb61e;
-  transition: 0.2s cubic-bezier(1, 0.55, 0, 0.87); }
-
-#triangle-menu.navbar-default .navbar-nav > li > a:hover,
-#triangle-menu.navbar-default .navbar-nav > li > a:focus {
-  color: white;
-  background-color: #1b1b1b; }
-
-#triangle-menu.navbar-default .navbar-nav > .active > a,
-#triangle-menu.navbar-default .navbar-nav > .active > a:hover,
-#triangle-menu.navbar-default .navbar-nav > .active > a:focus {
-  color: white;
-  background-color: #1b1b1b; }
-
-#triangle-menu.navbar-default .navbar-toggle {
-  border-color: #1b1b1b; }
-
-#triangle-menu.navbar-default .navbar-toggle:hover,
-#triangle-menu.navbar-default .navbar-toggle:focus {
-  background-color: #1b1b1b; }
-
-#triangle-menu.navbar-default .navbar-toggle .icon-bar {
-  background-color: #1b1b1b; }
-
-#triangle-menu.navbar-default .navbar-toggle:hover .icon-bar,
-#triangle-menu.navbar-default .navbar-toggle:focus .icon-bar {
-  background-color: #ffb61e; }
-
-.navbar-default .navbar-collapse, .navbar-default .navbar-form {
-  border: 0px; }
-
-.navbar-toggle, .navbar-toggle:active, .navbar-toggle:visited {
-  border: none !important;
-  transition: 0.2s cubic-bezier(1, 0.55, 0, 0.87);
-  border-radius: 5px; }
-  .navbar-toggle .icon-bar, .navbar-toggle:active .icon-bar, .navbar-toggle:visited .icon-bar {
-    background-color: #FFFFFF !important; }
-
-/* Footer */
-/* Footer */
-#footer {
-  background-color: #ffffff;
-  margin-bottom: 0px;
-  padding: 10px;
-  text-align: center;
-  box-shadow: 0px -10px 30px 0px rgba(27, 27, 27, 0.1); }
-  #footer .brand {
-    font-family: "Montserrat", "Helvetica Neue", sans-serif;
-    font-size: 140%; }
-    #footer .brand strong {
-      color: #FFB61E;
-      font-weight: bold; }
-  #footer .social-icons {
-    text-align: center;
-    font-size: 140%;
-    margin-bottom: 0px; }
-    @media (max-width: 600px) {
-      #footer .social-icons {
-        font-size: 120%; } }
-  #footer .daltonic i {
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    cursor: pointer; }
-  #footer .social-icons a {
-    color: #1B1B1B;
-    transition: 0.2s cubic-bezier(1, 0.55, 0, 0.87);
-    cursor: pointer; }
-    #footer .social-icons a:hover {
-      color: #FFB61E !important; }
-  #footer .list-inline {
-    padding-top: 3px;
-    padding-left: 0;
-    margin-left: -7px;
-    list-style: none; }
-
-/* Buttons */
-/* #btn-contacto */
-#btn-contacto {
-  background-color: #1B1B1B;
-  color: #FFFFFF;
-  padding: 12px;
-  border-radius: 250px;
-  z-index: 99;
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
-  cursor: pointer;
-  text-decoration: none !important;
-  box-shadow: 5px 5px 100px 0px rgba(27, 27, 27, 0.16);
-  animation-duration: 2s;
-  animation-delay: 0.5s;
-  font-family: "Montserrat", "Helvetica Neue", sans-serif; }
-  #btn-contacto:hover {
-    background-color: #FFB61E; }
-  #btn-contacto .label {
-    display: none; }
-    @media (min-width: 600px) {
-      #btn-contacto .label {
-        display: inline-block;
-        margin-left: -10px; } }
-
-/* .btn1 */
-.btn1, .btn1:visited, .btn1:active {
-  padding: 10px 42px;
-  background-color: #FFB61E;
-  color: #FFFFFF;
-  cursor: pointer;
-  border-radius: 5px;
-  font-size: 110%;
-  transition: 0.2s cubic-bezier(1, 0.55, 0, 0.87);
-  border: 3px solid #FFB61E; }
-  @media (max-width: 600px) {
-    .btn1, .btn1:visited, .btn1:active {
-      padding: 5px 21px;
-      background-color: #FFB61E;
-      color: #FFFFFF;
-      cursor: pointer;
-      border-radius: 5px;
-      font-size: 105%;
-      transition: 0.2s cubic-bezier(1, 0.55, 0, 0.87);
-      border: 3px solid #FFB61E; } }
-  .btn1:hover, .btn1:focus, .btn1:visited:hover, .btn1:visited:focus, .btn1:active:hover, .btn1:active:focus {
-    background-color: #1B1B1B;
-    color: #FFFFFF;
-    text-decoration: none !important;
-    border: 3px solid #1B1B1B; }
-
-/* .btn-2 */
-.btn2, .btn2:visited, .btn2:active {
-  padding: 10px 42px;
-  background-color: #1E81FF;
-  color: #FFFFFF;
-  cursor: pointer;
-  border-radius: 5px;
-  font-size: 110%;
-  transition: 0.2s cubic-bezier(1, 0.55, 0, 0.87);
-  border: 3px solid #1E81FF; }
-  @media (max-width: 600px) {
-    .btn2, .btn2:visited, .btn2:active {
-      padding: 5px 21px;
-      background-color: #1E81FF;
-      color: #FFFFFF;
-      cursor: pointer;
-      border-radius: 5px;
-      font-size: 105%;
-      transition: 0.2s cubic-bezier(1, 0.55, 0, 0.87);
-      border: 3px solid #1E81FF; } }
-  .btn2:hover, .btn2:focus, .btn2:visited:hover, .btn2:visited:focus, .btn2:active:hover, .btn2:active:focus {
-    background-color: #0C0D19;
-    color: #FFFFFF;
-    text-decoration: none !important;
-    border: 3px solid #0C0D19; }
-
-/* .btnDoodle */
-.btnDoodle, .btnDoodle:visited, .btnDoodle:active {
-  padding: 10px 42px;
-  background-color: #44C2A7;
-  color: #FFFFFF;
-  cursor: pointer;
-  border-radius: 5px;
-  font-size: 110%;
-  transition: 0.2s cubic-bezier(1, 0.55, 0, 0.87);
-  border: 3px solid #44C2A7; }
-  @media (max-width: 600px) {
-    .btnDoodle, .btnDoodle:visited, .btnDoodle:active {
-      padding: 5px 21px;
-      background-color: #44C2A7;
-      color: #FFFFFF;
-      cursor: pointer;
-      border-radius: 5px;
-      font-size: 105%;
-      transition: 0.2s cubic-bezier(1, 0.55, 0, 0.87);
-      border: 3px solid #44C2A7; } }
-  .btnDoodle:hover, .btnDoodle:focus, .btnDoodle:visited:hover, .btnDoodle:visited:focus, .btnDoodle:active:hover, .btnDoodle:active:focus {
-    background-color: #1B1B1B;
-    color: #FFFFFF;
-    text-decoration: none !important;
-    border: 3px solid #1B1B1B; }
-
-/* Form */
-#form input, #form textarea {
-  padding: 10px;
-  display: block;
-  margin-bottom: 20px;
-  background-color: #FAFAFA;
-  width: 100%;
-  max-width: 100%;
-  color: #1B1B1B;
-  border: 2px solid #FFFFFF;
-  transition: 0.2s cubic-bezier(1, 0.55, 0, 0.87);
-  border-radius: 5px; }
-  #form input:active, #form input:focus, #form textarea:active, #form textarea:focus {
-    outline: none;
-    border: 2px solid transparent;
-    transform: scale(1.05);
-    box-shadow: 5px 5px 100px 0px rgba(27, 27, 27, 0.16); }
-#form textarea {
-  min-height: 100px; }
-
-/* Sub-Pages */
-#main {
-  min-height: 100vh; }
-  #main .header {
-    height: 100vh;
-    width: 100%;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding-top: 60px; }
-    #main .header .icon {
-      width: 100%;
-      max-width: 450px;
-      max-height: 380px; }
-    @media (max-width: 600px) {
-      #main .header #design-icon {
-        height: 270px; } }
-    #main .header .title {
-      font-size: 200%; }
-      @media (max-width: 600px) {
-        #main .header .title {
-          font-size: 160%; } }
-      #main .header .title span {
-        font-size: 110%;
-        font-weight: bold;
-        color: #FFB61E; }
-    #main .header .lead {
-      font-size: 110%; }
-      @media (max-width: 600px) {
-        #main .header .lead {
-          font-size: 100%; } }
-  #main .section {
-    padding: 70px 120px; }
-    @media (max-width: 1180px) {
-      #main .section {
-        padding: 40px; } }
-    @media (max-width: 600px) {
-      #main .section {
-        padding: 20px; } }
-    #main .section .title {
-      font-size: 160%; }
-      @media (max-width: 600px) {
-        #main .section .title {
-          font-size: 130%; } }
-      #main .section .title span {
-        font-size: 110%;
-        font-weight: bold;
-        color: #FFB61E; }
-    #main .section .author {
-      margin-top: -20px;
-      text-align: right;
-      font-weight: 300;
-      line-height: 0px; }
-    #main .section .icon {
-      height: 141px;
-      margin-top: 30px; }
-
-/* About */
-#equipo #equipo-flex {
-  display: flexbox;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 30px auto; }
-  #equipo #equipo-flex .miembro {
-    text-align: center;
-    overflow: hidden;
-    padding: 0px;
-    margin: 5px;
-    max-width: 250px;
-    max-height: 450px;
-    min-width: 100px;
-    min-height: 150px;
-    padding: 20px;
-    transition: 0.2s cubic-bezier(1, 0.55, 0, 0.87);
-    border-radius: 5px; }
-    #equipo #equipo-flex .miembro img {
-      width: 100%;
-      margin-bottom: 10px; }
-    #equipo #equipo-flex .miembro .nombre {
-      display: block;
-      font-size: 100%;
-      font-family: "Montserrat", "Helvetica Neue", sans-serif;
-      font-weight: bold; }
-    #equipo #equipo-flex .miembro .puesto {
-      display: block;
-      font-size: 80%;
-      color: #333; }
-
-#compromiso-social {
-  background-image: url("../img/About/CompromisoSocialBG.png");
-  background-size: cover;
-  background-color: rgba(32, 32, 32, 0.6);
-  background-blend-mode: overlay;
-  background-attachment: fixed;
-  color: #FFFFFF !important;
-  text-align: center; }
-  #compromiso-social h1 {
-    font-size: 180%; }
-  #compromiso-social a img {
-    transition: 0.2s cubic-bezier(1, 0.55, 0, 0.87); }
-    @media (max-width: 768px) {
-      #compromiso-social a img {
-        margin-bottom: 20px; } }
-    #compromiso-social a img:hover {
-      transform: scale(1.05); }
-
-/* Proyectos */
-.projects-section {
-  width: 100%;
-  padding: 70px 120px; }
-  @media (max-width: 1180px) {
-    .projects-section {
-      padding: 40px; } }
-  @media (max-width: 600px) {
-    .projects-section {
-      padding: 20px; } }
-  .projects-section .project-card {
-    background-color: #FFFFFF;
-    padding: 0;
-    overflow: hidden;
-    border-radius: 5px;
-    transition: 0.2s cubic-bezier(1, 0.55, 0, 0.87);
-    z-index: 1;
-    margin: 15px 0px;
-    vertical-align: middle; }
-    @media (max-width: 750px) {
-      .projects-section .project-card {
-        margin: 40px 0px; } }
-    .projects-section .project-card a, .projects-section .project-card a:hover, .projects-section .project-card a:visited, .projects-section .project-card a:active, .projects-section .project-card a:focus {
-      text-decoration: none !important;
-      color: #1B1B1B; }
-    .projects-section .project-card .project-thumb {
-      width: 100%; }
-    .projects-section .project-card .project-info {
-      text-align: center;
-      padding: 10px; }
-      .projects-section .project-card .project-info .project-title {
-        font-size: 110%;
-        font-family: "Montserrat", "Helvetica Neue", sans-serif; }
-  .projects-section .fade {
-    background-color: #FFB61E; }
-  .projects-section .modal-dialog {
-    margin-top: 50px;
-    margin-bottom: 50px; }
-    @media (min-width: 1180px) {
-      .projects-section .modal-dialog {
-        width: 960px !important; } }
-    @media (max-width: 770px) {
-      .projects-section .modal-dialog {
-        margin-left: 25px !important; } }
-  .projects-section .modal-content {
-    border-radius: 5px !important;
-    border: 0 !important;
-    box-shadow: 7px 7px 100px 0px rgba(27, 27, 27, 0.16) !important;
-    text-align: justify; }
-    .projects-section .modal-content .modal-logo {
-      text-align: center;
-      margin-top: 20px;
-      margin-bottom: 40px; }
-      .projects-section .modal-content .modal-logo img {
-        display: inline-block;
-        width: 90%;
-        max-width: 400px; }
-    .projects-section .modal-content .modal-img {
-      text-align: center;
-      margin-top: 20px;
-      margin-bottom: 40px; }
-      .projects-section .modal-content .modal-img img {
-        display: inline-block;
-        width: 80%;
-        max-width: 300px;
-        opacity: 0.8; }
-  .projects-section .modal-header {
-    border: 0 !important; }
-    .projects-section .modal-header .close {
-      transition: 0.2s cubic-bezier(1, 0.55, 0, 0.87);
-      transform: scale(2);
-      transform-origin: top right; }
-      .projects-section .modal-header .close:hover {
-        opacity: 1; }
-    .projects-section .modal-header .modal-title {
-      font-weight: bold; }
-  .projects-section .modal-footer {
-    border: 0 !important;
-    padding-top: 0px !important;
-    padding: 40px;
-    text-align: center; }
-
-.projects-1 {
-  background-color: #EEEEEE; }
-
-.project-anim-1:hover {
-  transform: scale(1.05) rotate(-1deg);
-  box-shadow: 5px 5px 100px 0px rgba(27, 27, 27, 0.16);
-  z-index: 99 !important;
-  cursor: pointer; }
-  @media (max-width: 750px) {
-    .project-anim-1:hover {
-      transform: scale(1.01) rotate(1deg); } }
-
-.project-anim-2:hover {
-  transform: scale(1.05) rotate(1deg);
-  box-shadow: 5px 5px 100px 0px rgba(27, 27, 27, 0.16);
-  z-index: 99 !important;
-  cursor: pointer; }
-  @media (max-width: 750px) {
-    .project-anim-2:hover {
-      transform: scale(1.01) rotate(-1deg); } }
-
-/* 404.html + Under Construction */
-#error-message {
-  width: 100%;
-  min-height: 100vh;
-  text-align: center;
-  padding-top: 70px; }
-  @media (max-width: 600px) {
-    #error-message {
-      padding-top: 80px; } }
-  #error-message .icon {
-    margin-bottom: 10px;
-    height: 250px; }
-  #error-message .title {
-    font-size: 350%;
-    margin: 0; }
-    @media (max-width: 650px) {
-      #error-message .title {
-        font-size: 250%; } }
-  #error-message .lead {
-    margin-bottom: 20px; }
-  #error-message span {
-    font-size: 110%;
-    font-weight: bold; }
-
-.error .btn1 {
-  background-color: #FF5959;
-  border-color: #FF5959; }
-  .error .btn1:hover {
-    background-color: #FFFFFF;
-    color: #FF5959; }
-.error span {
-  color: #FF5959; }
-
-.construction .btn1 {
-  background-color: #FFB61E;
-  border-color: #FFB61E; }
-  .construction .btn1:hover {
-    background-color: #FFFFFF;
-    color: #FFB61E; }
-.construction span {
-  color: #FFB61E; }
-
-/*# sourceMappingURL=main.css.map */
+Backtrace:
+error.sass:32
+main.sass:104
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/script/tree/variable.rb:49:in `_perform'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/script/tree/node.rb:58:in `perform'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `block in with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/stack.rb:115:in `with_frame'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:433:in `map'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `block in with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/stack.rb:115:in `with_frame'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:433:in `map'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `block in with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/stack.rb:115:in `with_frame'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:328:in `block (2 levels) in visit_import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:328:in `map'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:328:in `block in visit_import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/stack.rb:88:in `block in with_import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/stack.rb:115:in `with_frame'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/stack.rb:88:in `with_import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:325:in `visit_import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `block in with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/stack.rb:115:in `with_frame'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:52:in `map'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:159:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/engine.rb:381:in `_render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/engine.rb:298:in `render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:209:in `each'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:331:in `block in watch'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/vendor/listen/lib/listen/listener.rb:252:in `call'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/vendor/listen/lib/listen/listener.rb:252:in `on_change'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/vendor/listen/lib/listen/adapters/polling.rb:48:in `call'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$red\".\A         on line 32 of error.sass\A         from line 104 of main.sass\A \A 27: $box-shadow2: 7px 7px 100px 0px rgba(27,27,27,0.16)\A 28: \A 29: // Border Variables\A 30: $border-radius: 5px\A 31: \A 32: // Basic Components\A 33: body\A 34:     background-color: $white\A 35:     overflow-x: hidden\A 36:     font-family: $lato\A 37:     font-size: $normal-size"; }

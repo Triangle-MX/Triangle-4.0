@@ -1,31 +1,35 @@
-/* Fonts */
+// Triangle Parsec Alpha v0.2
+
+// Fonts
 @import url('https://fonts.googleapis.com/css?family=Anton|Nunito|Montserrat')
 
-// Variables
+// Color Variables
 $yellow: #FFB61E
 $black: #1B1B1B
 $white: #FFFFFF
 $grey: #EEEEEE
-$red: #FF5959
 $blue: #1E81FF
+$doodle: #FFB61E
 
-$doodle: #44C2A7
-
+// Typography Variables
 $anton: "Anton", "Helvetica Neue", sans-serif
 $montserrat: "Montserrat", "Helvetica Neue", sans-serif
 $lato: "Lato", "Helvetica Neue", sans-serif
-
 $normal-size: 18px
 $mobile-size: 16px
 $big-size: 20px
 
+// Transition Variable
 $transition: .2s cubic-bezier(1,.55,0,.87)
+
+// Shadow Variables
 $box-shadow: 5px 5px 100px 0px rgba(27,27,27,0.16)
 $box-shadow2: 7px 7px 100px 0px rgba(27,27,27,0.16)
 
+// Border Variables
 $border-radius: 5px
 
-/* Componentes Basicos */
+// Basic Components
 body
     background-color: $white
     overflow-x: hidden
@@ -48,31 +52,15 @@ h1,h2,h3,h4,h5,h6
 
 a
     text-decoration: none
-    color: $yellow
+    color: $blue // Sometimes we use $yellow instead
     transition: $transition
 
     &:hover, &:active, &:visited
         color: $black
         text-decoration: none
 
-/* Link Effect +/
-.link
-    display: inline-block
-    color: $black
-    text-decoration: none
 
-.link::after
-    content: ''
-    display: block
-    width: 0
-    height: 2px
-    background: $yellow
-    transition: width .3s
-
-.link:hover::after
-    width: 100%
-
-/* Selection */
+// Selection
 ::-moz-selection
     text-shadow: none
     background: $blue
@@ -94,29 +82,23 @@ img::selection
 img::-moz-selection
     background: transparent
 
+
 // Partials
 
-/* index.html */
+// Index
 @import 'index.sass'
-/* Taxi Easter Egg */
+
+// Components
+@import 'menu.sass'
+@import 'footer.sass'
+@import 'buttons.sass'
+@import 'form.sass'
 @import 'taxi.sass'
 
-/* Menu */
-@import 'menu.sass'
-/* Footer */
-@import 'footer.sass'
-/* Buttons */
-@import 'buttons.sass'
-/* Form */
-@import 'form.sass'
-
-
-/* Sub-Pages */
+// Sub-Pages
 @import 'sub-pages.sass'
-/* About */
 @import 'about.sass'
-/* Proyectos */
 @import 'proyectos.sass'
 
-/* 404.html + Under Construction */
+// Errors
 @import 'error.sass'
