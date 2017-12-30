@@ -3,7 +3,7 @@
 Triangle 4.0
 ===
 
-The new version of our site which includes a major redesign in the site's design, and has had tons of interactivity and responsiveness added to it. Built with <a href="https://triangle-mx.github.io/Parsec">Parsec</a>.
+The new version of our site which includes a major redesign in the site's design, and has had tons of interactivity and responsiveness added to it. Built with <a href="https://github.com/Triangle-MX/Parsec">Parsec</a>.
 
 ## The new concept
 
