@@ -56,7 +56,8 @@ img::-moz-selection {
   background-position: bottom;
   padding: 80px 0 200px 0;
   animation-duration: 2s;
-  animation-delay: 0.4s; }
+  animation-delay: 0.4s;
+  margin-bottom: -1px; }
   @media (max-width: 600px) {
     #hero {
       padding: 40px 0 100px 0; } }
@@ -409,6 +410,7 @@ img::-moz-selection {
   animation-duration: 0.2s; }
 
 .sticky {
+  margin-top: -1px;
   position: sticky;
   margin-bottom: 0px !important; }
 
@@ -426,7 +428,7 @@ img::-moz-selection {
   #triangle-menu-1 li .dropdown-menu li a {
     font-size: 18px; }
     #triangle-menu-1 li .dropdown-menu li a:hover {
-      background-color: #1B1B1B !important; }
+      background-color: #FFB61E !important; }
 
 #triangle-menu-1.navbar-default {
   font-size: 18px;
