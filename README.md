@@ -1,6 +1,9 @@
-# Triangle 4.0
+<img src="https://triangle.mx/img/LogoYellow.svg" alt="Triangle Logo">
 
-Triangle Site 4.0 is the new version of Triangle's site which includes a major redesign in the site's design, and has had tons of interactivity and responsiveness added to it.
+Triangle 4.0
+===
+
+The new version of our site which includes a major redesign in the site's design, and has had tons of interactivity and responsiveness added to it. Built with <a href="https://github.com/Triangle-MX/Parsec">Parsec</a>.
 
 ## The new concept
 
@@ -19,39 +22,6 @@ To get a **human** look, we need to make our site more accessible. We are going 
 - **Ultra Responsiveness**: Nearly 60% percent of our CSS code is dedicating to make out page mobile friendly and ultra responsive.
 
 - **Blazing-Fast Loading**: The site is ultra fast and runs smoothly thanks to some JavaScript tweaks and minimized files (It even loads faster than Google when tested on certain servers). Also, the site runs on **Netlify's CDN**.
-
-## Sitemap
-You can view the full sitemap in the ```sitemap.xml``` file.
-
-    Principal/Home (/)
-    |
-    |-->Desarrolo Web (desarrollo/)
-    |
-    |-->Diseño Gráfico (diseno/)
-    |
-    |-->Proyectos (proyectos/)
-    |
-    |-->Sobre Nosotros (nosotros/)
-    |
-    |-->files/
-    |   |->Error 403 (403.html)
-    |   |->Error 501 (501.html)
-    |   |->Under Construction (construction.html)
-    |   |->Impressum & Credits (impressum.html)
-    |   |->Thanks (thanks.html)
-    |   |->Privacy Policy (privacidad.html)
-    |
-    |-->Error 404 (404.html)
-    |
-    |-->templates/
-        |->Sub Page Template (sub-page-template.html)
-        |->Error Template (error-template.html)
-
-## Easter Eggs
-
-The new version of the site includes several easter eggs:
-
-- Taxi (13" Macbooks | Other 1440px wide screens): When you click it a Horn sound plays.
 
 ## Credits
 

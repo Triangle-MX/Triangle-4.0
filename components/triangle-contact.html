@@ -1,0 +1,52 @@
+<link rel="import"  href="https://polygit.org/components/polymer/polymer-element.html">
+
+<dom-module id="triangle-contact">
+
+    <template>
+        <!-- Styles -->
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="../fonts/css/icon.css">
+        <link rel="stylesheet" href="css/animate.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <!-- Contact -->
+        <div id="contacto">
+            <div class="paso-container">
+                <img src="../img/Iconos/Contacto.svg" alt="Antena de Radio" class="icon wow bounceIn" data-wow-duration="1s" data-wow-delay=".05s">
+                <h1 class="title"><span>Contacto</span></h1>
+                <p class="lead">Ahora que sabes un poco de lo que hacemos, cómo lo hacemos y por qué lo hacemos, cuéntanos cómo podemos ayudarte a conseguir tus objetivos, o pregúntanos lo que quieras.</p>
+                <div class="row">
+                    <div class="col-lg-6 form-column">
+                        <div id="form">
+                            <form netlify name="formHome" netlify-honeypot="_gotcha" action="https://triangle.mx/files/thanks.html">
+                                <input type="text" name="nombre" placeholder="Tu Nombre" required>
+                                <input type="email" name="email" placeholder="Tu Correo Electrónico" required>
+                                <textarea name="message" placeholder="Tu Mensaje"></textarea>
+                                <input type="hidden" name="_language" value="es" />
+                                <input type="text" name="_gotcha" style="display:none" />
+                                <br>
+                                <button type="submit" class="btn1">Enviar</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <p class="lead">Si no deseas utilizar la forma de contacto, puedes utilizar los siguentes medios para contactarnos:</p>
+                        <ul class="contact-methods">
+                            <li><a class="link" href="mailto:contacto@triangle.mx"><i class="icon-mail"></i> contacto@triangle.mx</a></li>
+                            <li><a href=""><i class="icon-"></i></a></li>
+                            <li><a href=""><i class="icon-"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <script>
+        class triangleContact extends Polymer.Element {
+          static get is() { return "triangle-contact"; }
+        }
+        customElements.define(triangleContact.is, triangleContact);
+    </script>
+
+</dom-module>

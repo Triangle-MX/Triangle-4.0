@@ -1,14 +1,13 @@
 /* Hero */
 #hero
     width: 100%
-    background-color: $white
-    background-image: url('../img/City.svg')
     background-repeat: none
     background-size: cover
     background-position: bottom
     padding: 80px 0 200px 0
     animation-duration: 2s
     animation-delay: .4s
+    margin-bottom: -1px
 
     @media (max-width: 600px)
         padding: 40px 0 100px 0
@@ -138,17 +137,75 @@
             font-weight: bold
             font-size: 110%
 
-    /* Snow */
-    .snow
-        position: absolute
-        top: 0
-        left: 0
-        width: 100%
-        display: none
-        z-index: 9999
+/* Hero 2018 */
+#hero-2018
+    width: 100%
+    background-color: $black
+    background-image: url('../img/City-Night.svg')
+    background-repeat: none
+    background-size: cover
+    background-position: bottom
+    padding: 80px 0 200px 0
+    animation-duration: 2s
+    animation-delay: .4s
 
-        @media (min-width: 1440px) and (max-width: 1450px) and (min-height: 710px) and (max-height: 720px)
-            display: block
+    @media (max-width: 600px)
+        padding: 40px 0 100px 0
+
+    @media (min-width: 1440px) and (max-width: 1450px) and (min-height: 710px) and (max-height: 720px)
+        min-height: 100vh
+
+
+    #logo
+        width: 250px
+        margin-bottom: 10px
+        animation-duration: 1.2s
+        animation-delay: .0s
+
+        @media (min-width: 1300px)
+            width: 400px
+
+    #title
+        font-size: 450%
+        font-family: $anton
+        text-transform: uppercase
+        color: $white
+        margin: 0px
+        animation-duration: 1.2s
+        animation-delay: .4s
+
+        @media (min-width: 1400px)
+            font-size: 400%
+
+        @media (max-width: 900px)
+            font-size: 300%
+
+        @media (max-width: 500px)
+            font-size: 250%
+
+        span
+            color: $doodle
+
+    #lead
+        font-size: 160%
+        font-family: $lato
+        color: $white
+        animation-duration: 1.2s
+        animation-delay: .6s
+
+        @media (min-width: 1400px)
+            font-size: 200%
+
+        @media (max-width: 900px)
+            font-size: 130%
+
+        @media (max-width: 500px)
+            font-size: 110%
+
+        span
+            color: $doodle
+            font-weight: bold
+            font-size: 110%
 
 /* Pasos */
 .paso-container
@@ -172,11 +229,12 @@
             height: 100px
 
     .title
+        font-family: $montserrat
         margin-top: 0px
         margin-bottom: 30px
 
         span
-            font-weight: bold
+            font-weight: 700 !important
 
     .lead
         margin-top: 0px
@@ -226,42 +284,12 @@
     background-color: $grey
     text-align: center
 
-#insight
-    background-color: $blue
-    text-align: center
-
-    .icon
-        height: 100px
-
-    /* Selection */
-    ::-moz-selection
-        text-shadow: none
-        background: $blue
-        color: $white
-        text-shadow: 10px 10px 10px rgba(27, 27, 27, 0.1)
-
-    ::selection
-        text-shadow: none
-        background: $blue
-
-    img::-moz-selection
-        background: transparent
-
-    img::selection
-        background: transparent
-
-    img::-moz-selection
-        background: transparent
-
 #nosotros
     background-color: $grey
     text-align: center
 
 #faq
     background-color: $black
-
-    .roger-roger
-        cursor: pointer
 
 #contacto
     background-color: $yellow
@@ -276,6 +304,7 @@
     .contact-methods
         list-style: none
         margin-left: -40px
+        font-weight: 300
 
 #proyectos
     width: 100%
