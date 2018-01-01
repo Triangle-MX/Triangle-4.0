@@ -1,8 +1,6 @@
 /* Hero */
 #hero
     width: 100%
-    background-color: $white
-    background-image: url('../img/City.svg')
     background-repeat: none
     background-size: cover
     background-position: bottom
@@ -139,17 +137,75 @@
             font-weight: bold
             font-size: 110%
 
-    /* Snow */
-    .snow
-        position: absolute
-        top: 0
-        left: 0
-        width: 100%
-        display: none
-        z-index: 9999
+/* Hero 2018 */
+#hero-2018
+    width: 100%
+    background-color: $black
+    background-image: url('../img/City-Night.svg')
+    background-repeat: none
+    background-size: cover
+    background-position: bottom
+    padding: 80px 0 200px 0
+    animation-duration: 2s
+    animation-delay: .4s
 
-        @media (min-width: 1440px) and (max-width: 1450px) and (min-height: 710px) and (max-height: 720px)
-            display: block
+    @media (max-width: 600px)
+        padding: 40px 0 100px 0
+
+    @media (min-width: 1440px) and (max-width: 1450px) and (min-height: 710px) and (max-height: 720px)
+        min-height: 100vh
+
+
+    #logo
+        width: 250px
+        margin-bottom: 10px
+        animation-duration: 1.2s
+        animation-delay: .0s
+
+        @media (min-width: 1300px)
+            width: 400px
+
+    #title
+        font-size: 450%
+        font-family: $anton
+        text-transform: uppercase
+        color: $white
+        margin: 0px
+        animation-duration: 1.2s
+        animation-delay: .4s
+
+        @media (min-width: 1400px)
+            font-size: 400%
+
+        @media (max-width: 900px)
+            font-size: 300%
+
+        @media (max-width: 500px)
+            font-size: 250%
+
+        span
+            color: $doodle
+
+    #lead
+        font-size: 160%
+        font-family: $lato
+        color: $white
+        animation-duration: 1.2s
+        animation-delay: .6s
+
+        @media (min-width: 1400px)
+            font-size: 200%
+
+        @media (max-width: 900px)
+            font-size: 130%
+
+        @media (max-width: 500px)
+            font-size: 110%
+
+        span
+            color: $doodle
+            font-weight: bold
+            font-size: 110%
 
 /* Pasos */
 .paso-container
