@@ -592,29 +592,29 @@ img::-moz-selection {
 
 /* .btn1 */
 .btn1, .btn1:visited, .btn1:active {
-  padding: 10px 42px;
-  background-color: #FFB61E;
-  color: #FFFFFF;
-  cursor: pointer;
-  border-radius: 5px;
-  font-size: 110%;
-  transition: 0.2s cubic-bezier(1, 0.55, 0, 0.87);
-  border: 3px solid #FFB61E; }
+  padding: 10px 42px !important;
+  background-color: #FFB61E !important;
+  color: #FFFFFF !important;
+  cursor: pointer !important;
+  border-radius: 250px !important;
+  font-size: 110% !important;
+  transition: 0.2s cubic-bezier(1, 0.55, 0, 0.87) !important;
+  border: 3px solid #FFB61E !important; }
   @media (max-width: 600px) {
     .btn1, .btn1:visited, .btn1:active {
-      padding: 5px 21px;
-      background-color: #FFB61E;
-      color: #FFFFFF;
-      cursor: pointer;
-      border-radius: 5px;
-      font-size: 105%;
-      transition: 0.2s cubic-bezier(1, 0.55, 0, 0.87);
-      border: 3px solid #FFB61E; } }
+      padding: 7px 21px !important;
+      background-color: #FFB61E !important;
+      color: #FFFFFF !important;
+      cursor: pointer !important;
+      border-radius: 250px !important;
+      font-size: 105% !important;
+      transition: 0.2s cubic-bezier(1, 0.55, 0, 0.87) !important;
+      border: 3px solid #FFB61E !important; } }
   .btn1:hover, .btn1:focus, .btn1:visited:hover, .btn1:visited:focus, .btn1:active:hover, .btn1:active:focus {
-    background-color: #1B1B1B;
-    color: #FFFFFF;
+    background-color: #1B1B1B !important;
+    color: #FFFFFF !important;
     text-decoration: none !important;
-    border: 3px solid #1B1B1B; }
+    border: 3px solid #1B1B1B !important; }
 
 /* .btn-2 */
 .btn2, .btn2:visited, .btn2:active {
@@ -622,17 +622,17 @@ img::-moz-selection {
   background-color: #1E81FF;
   color: #FFFFFF;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 250px;
   font-size: 110%;
   transition: 0.2s cubic-bezier(1, 0.55, 0, 0.87);
   border: 3px solid #1E81FF; }
   @media (max-width: 600px) {
     .btn2, .btn2:visited, .btn2:active {
-      padding: 5px 21px;
+      padding: 250px 21px;
       background-color: #1E81FF;
       color: #FFFFFF;
       cursor: pointer;
-      border-radius: 5px;
+      border-radius: 250px;
       font-size: 105%;
       transition: 0.2s cubic-bezier(1, 0.55, 0, 0.87);
       border: 3px solid #1E81FF; } }
@@ -642,31 +642,31 @@ img::-moz-selection {
     text-decoration: none !important;
     border: 3px solid #0C0D19; }
 
-/* .btnDoodle */
-.btnDoodle, .btnDoodle:visited, .btnDoodle:active {
+/* .btn-3 */
+.btn3, .btn3:visited, .btn3:active {
   padding: 10px 42px;
-  background-color: #FFB61E;
+  background-color: #1E81FF;
   color: #FFFFFF;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 250px;
   font-size: 110%;
   transition: 0.2s cubic-bezier(1, 0.55, 0, 0.87);
-  border: 3px solid #FFB61E; }
+  border: 3px solid #1E81FF; }
   @media (max-width: 600px) {
-    .btnDoodle, .btnDoodle:visited, .btnDoodle:active {
-      padding: 5px 21px;
-      background-color: #FFB61E;
+    .btn3, .btn3:visited, .btn3:active {
+      padding: 250px 21px;
+      background-color: #1E81FF;
       color: #FFFFFF;
       cursor: pointer;
-      border-radius: 5px;
+      border-radius: 250px;
       font-size: 105%;
       transition: 0.2s cubic-bezier(1, 0.55, 0, 0.87);
-      border: 3px solid #FFB61E; } }
-  .btnDoodle:hover, .btnDoodle:focus, .btnDoodle:visited:hover, .btnDoodle:visited:focus, .btnDoodle:active:hover, .btnDoodle:active:focus {
-    background-color: #1B1B1B;
+      border: 3px solid #1E81FF; } }
+  .btn3:hover, .btn3:focus, .btn3:visited:hover, .btn3:visited:focus, .btn3:active:hover, .btn3:active:focus {
+    background-color: #0C0D19;
     color: #FFFFFF;
     text-decoration: none !important;
-    border: 3px solid #1B1B1B; }
+    border: 3px solid #0C0D19; }
 
 #form input, #form textarea {
   padding: 10px;
@@ -769,6 +769,16 @@ img::-moz-selection {
     #main .section .icon {
       height: 141px;
       margin-top: 30px; }
+
+#micro-projects {
+  background-image: url("../img/Proyectos/micro-projects/micro-projects-bg.jpg");
+  background-size: cover;
+  background-color: rgba(32, 32, 32, 0.6);
+  background-blend-mode: overlay;
+  background-attachment: fixed;
+  color: #FFFFFF !important; }
+  #micro-projects h1 {
+    font-size: 180%; }
 
 #equipo #equipo-flex {
   display: flexbox;
@@ -920,6 +930,16 @@ img::-moz-selection {
   @media (max-width: 750px) {
     .project-anim-2:hover {
       transform: scale(1.01) rotate(-1deg); } }
+
+#micro-contact {
+  background-image: url("../img/Contacto/micro-contact.jpg");
+  background-size: cover;
+  background-color: rgba(32, 32, 32, 0.6);
+  background-blend-mode: overlay;
+  background-attachment: fixed;
+  color: #FFFFFF !important; }
+  #micro-contact h1 {
+    font-size: 180%; }
 
 #error-message {
   width: 100%;
