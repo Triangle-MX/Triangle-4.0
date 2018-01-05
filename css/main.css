@@ -845,7 +845,7 @@ img::-moz-selection {
     border-radius: 5px;
     transition: 0.2s cubic-bezier(1, 0.55, 0, 0.87);
     z-index: 1;
-    margin: 15px 0px;
+    margin: 15px 0;
     vertical-align: middle; }
     @media (max-width: 750px) {
       .projects-section .project-card {
@@ -857,7 +857,8 @@ img::-moz-selection {
       width: 100%; }
     .projects-section .project-card .project-info {
       text-align: center;
-      padding: 10px; }
+      padding: 10px;
+      display: none; }
       .projects-section .project-card .project-info .project-title {
         font-size: 110%;
         font-family: "Montserrat", "Helvetica Neue", sans-serif; }
@@ -894,6 +895,14 @@ img::-moz-selection {
         width: 80%;
         max-width: 300px;
         opacity: 0.8; }
+    .projects-section .modal-content .modal-img-big {
+      text-align: center;
+      margin-top: 10px;
+      margin-bottom: 10px; }
+      .projects-section .modal-content .modal-img-big img {
+        display: inline-block;
+        width: 100%;
+        opacity: 1; }
   .projects-section .modal-header {
     border: 0 !important; }
     .projects-section .modal-header .close {
