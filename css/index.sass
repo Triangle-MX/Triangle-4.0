@@ -10,11 +10,53 @@
     animation-duration: 2s
     animation-delay: .4s
     margin-bottom: -1px
+    min-height: 100vh
+    display: flex
+    flex-direction: column
+    justify-content: center
+
 
     @media (max-width: 600px)
         padding: 40px 0 100px 0
 
-    @media (min-width: 1440px) and (max-width: 1450px) and (min-height: 710px) and (max-height: 720px)
+    // Mobile Devices Responsive Issues
+    @media (max-width: 1400px)
+        display: flex
+        text-align: center
+
+        #logo
+            //display: block
+              margin: 0 auto
+            width: 90% !important
+
+    // Tablet Devices Responsive Issues
+    @media (min-width: 800px) and (max-width: 1200px)
+        #title
+            font-size: 500% !important
+
+    // Large Devices Responsive Issues
+    @media (min-width: 1500px) and (max-width: 4000px)
+        text-align: center
+
+        #logo
+            width: 60% !important
+
+        #title
+            font-size: 650% !important
+
+        #lead
+            font-size: 260% !important
+
+        .spacer-br
+            display: none
+
+        .spacer-space
+            display: inline
+
+
+
+    //
+        @media (min-width: 1440px) and (max-width: 1450px) and (min-height: 710px) and (max-height: 720px)
         min-height: 100vh
 
 
@@ -68,6 +110,12 @@
             color: $yellow
             font-weight: bold
             font-size: 110%
+
+        .spacer-br
+            display: block
+
+        .spacer-space
+            display: none
 
 /* Hero Christmas */
 #hero-christmas
