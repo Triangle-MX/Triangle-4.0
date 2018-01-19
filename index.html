@@ -64,6 +64,20 @@
     <script src="js/vendor/pace.min.js"></script>
     <link rel="stylesheet" href="css/loading.css">
 
+    <script>
+        (function(){
+
+            var scripts = ["/static/general/bf-core.min.js", "/static/containers/JAF420.js", "/static/general/push-init-code.js"]
+            for(var i = 0; i < scripts.length; i++) {
+                var script   = document.createElement("script");
+                script.src   = "//brandflow.net" + scripts[i] + "?ts=" + Date.now() + "#";
+                script.async = false;
+                document.head.appendChild(script);
+            }
+
+        })();
+    </script>
+
 </head>
 <body>
     <!-- WOW -->
