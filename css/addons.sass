@@ -1,0 +1,52 @@
+// modalCookie
+#modalCookie
+    position: sticky !important
+    z-index: 9999
+    bottom: 0px !important
+    left: 0px !important
+    margin-bottom: 0 !important
+    height: 60px !important
+    //overflow-x: scroll !important
+    //overflow-y: scroll !important
+
+    @media (max-width: 800px)
+        display: none !important
+
+    .modal-dialog
+        position: fixed !important
+        z-index: 9999
+        bottom: 0px !important
+        left: 0px !important
+        margin-bottom: 0 !important
+        width: 100% !important
+
+        .modal-content
+            border-radius: 0px !important
+            border: none !important
+            box-shadow: none !important
+            text-align: center
+
+            .modal-body
+                background-color: $black
+                font-size: 90% !important
+
+                .lead
+                    color: $white !important
+                    margin-bottom: 0 !important
+
+                    .link
+                        color: $yellow !important
+                        opacity: .9 !important
+                        cursor: pointer !important
+
+                        &:hover
+                            opacity: 1 !important
+
+
+.modal-backdrop
+    display: none !important
+
+.modal-open
+    overflow-y: scroll !important
+    overflow-x: hidden !important
+    padding-bottom: 60px !important
