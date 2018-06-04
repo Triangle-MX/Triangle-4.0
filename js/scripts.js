@@ -38,5 +38,61 @@ function goHome() {
     window.location.href = "https://triangle.mx/";
 };
 
-// Micron.js
-document.addEventListener("DOMContentLoaded",function(){window.addEventListener("click",function(o){var e=o.target,n=e.dataset.micron,r=e.dataset.micronDuration,t=e.dataset.micronTiming,i=e.dataset.micronBind,a=e.dataset.micronId;if(void 0===n)return!1;if("true"===i){if(void 0===a)return console.log("%c Micron Error : add data-micron-id to bind an interaction","color:red"),!1;if(void 0===(c=document.getElementById(a))||null===c)return console.log("%c Micron Error : None of the DOM element reference to the declared ID","color:red"),!1;var s=c.cloneNode(!0);c.parentNode.replaceChild(s,c),s.classList.add("mjs-"+n)}else{var c;s=(c=e).cloneNode(!0);c.parentNode.replaceChild(s,c),s.classList.add("mjs-"+n)}void 0!==r?isNaN(r)?(console.log("%c Micron Error : data-micron-duration can only be number or decimal","color:red"),console.log("%c Micron Fallback : data-micron-duration set to default","color:orange"),s.style.animationDuration=".30s"):s.style.animationDuration=r+"s":s.style.animationDuration=".45s",void 0!==t?"linear"===t||"ease-in"===t||"ease-out"===t||"ease-in-out"===t?s.classList.add("mjs-"+t):(console.log("%c Micron Error : data-micron-timing currently supports linear, ease-in, ease-out and ease-in-out only","color:red"),console.log("%c Micron Fallback : data-micron-timing set to default","color:orange"),s.classList.add("mjs-ease-in-out")):s.classList.add("mjs-ease-in-out")})});var Micron=function(){var o,e;return{getEle:function(n){return void 0!=(o=document.querySelector(n))&&null!=o?(e=o.cloneNode("true"),o.parentNode.replaceChild(e,o),this):(console.log("%c Micron Error : None of the DOM element reference to the argument which is passed to getEle() method","color:red"),this)},interaction:function(o){if(void 0!==e&&null!==e){if(void 0!=o&&null!=o&&-1==o.indexOf(" ")){var n="mjs-"+o;return e.classList.add(n),this}return console.log("%c Micron Error : either you are missing an argument or trying to pass an argument with spaces to animation() method","color:red"),this}return this},duration:function(o){return void 0!=e&&null!=e?0==isNaN(o)?(e.style.animationDuration=o+"s",this):(console.log("%c Micron Error : you can only pass number or decimal as arguments to duration() method","color:red"),this):this},timing:function(o){if(void 0!=e&&null!=e){if("linear"==o||"ease-in"==o||"ease-out"==o||"ease-in-out"==o){var n="mjs-"+o;return e.classList.add(n),this}return console.log("%c Micron Error : you can only pass linear, ease-in, ease-out and ease-in-out as arguments to timing() method","color:red"),this}return this}}},micron=Micron();
+// Typewriter
+//made by vipul mirajkar thevipulm.appspot.com
+var TxtType = function(el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+    };
+
+    TxtType.prototype.tick = function() {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
+
+        if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        this.el.innerHTML = '<span class="typer">'+this.txt+'</span>';
+
+        var that = this;
+        var delta = 200 - Math.random() * 100;
+
+        if (this.isDeleting) { delta /= 2; }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
+        }
+
+        setTimeout(function() {
+        that.tick();
+        }, delta);
+    };
+
+    window.onload = function() {
+        var elements = document.getElementsByClassName('typewrite');
+        for (var i=0; i<elements.length; i++) {
+            var toRotate = elements[i].getAttribute('data-type');
+            var period = elements[i].getAttribute('data-period');
+            if (toRotate) {
+              new TxtType(elements[i], JSON.parse(toRotate), period);
+            }
+        }
+        // INJECT CSS
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML = ".typewrite > .typer { border-right: 0.08em solid #ffb61e}";
+        document.body.appendChild(css);
+    };

@@ -14,6 +14,7 @@
     display: flex
     flex-direction: column
     justify-content: center
+    text-align: center
 
 
     @media (max-width: 600px)
@@ -22,7 +23,7 @@
     // Mobile Devices Responsive Issues
     @media (max-width: 1400px)
         display: flex
-        text-align: center
+        //text-align: center
 
         #logo
             //display: block
@@ -31,27 +32,16 @@
 
     // Tablet Devices Responsive Issues
     @media (min-width: 800px) and (max-width: 1200px)
-        #title
-            font-size: 500% !important
 
     // Large Devices Responsive Issues
     @media (min-width: 1500px) and (max-width: 4000px)
-        text-align: center
+        //text-align: center
 
         #logo
             width: 60% !important
 
-        #title
-            font-size: 650% !important
-
         #lead
-            font-size: 260% !important
-
-        .spacer-br
-            display: none
-
-        .spacer-space
-            display: inline
+            font-size: 200% !important
 
     //
         @media (min-width: 1440px) and (max-width: 1450px) and (min-height: 710px) and (max-height: 720px)
@@ -59,44 +49,26 @@
 
 
     #logo
-        width: 250px
-        margin-bottom: 10px
+        width: 80%
         animation-duration: 1.2s
         animation-delay: .0s
+        display: inline-block
 
         @media (min-width: 1300px)
-            width: 400px
-
-    #title
-        font-size: 450%
-        font-family: $anton
-        text-transform: uppercase
-        color: $black
-        margin: 0px
-        animation-duration: 1.2s
-        animation-delay: .4s
-
-        @media (min-width: 1400px)
-            font-size: 400%
-
-        @media (max-width: 900px)
-            font-size: 300%
-
-        @media (max-width: 500px)
-            font-size: 250%
-
-        span
-            color: $yellow
+            width: 500px
+            margin: 0 auto
 
     #lead
-        font-size: 160%
-        font-family: $lato
+        font-size: 120%
+        font-family: $montserrat
         color: $black
         animation-duration: 1.2s
         animation-delay: .6s
+        display: block
+        margin-top: 15px
 
         @media (min-width: 1400px)
-            font-size: 200%
+            font-size: 150%
 
         @media (max-width: 900px)
             font-size: 130%
@@ -105,9 +77,9 @@
             font-size: 110%
 
         span
-            color: $yellow
+            //color: $yellow
             font-weight: bold
-            font-size: 110%
+            font-size: 100%
 
         .spacer-br
             display: block
@@ -115,145 +87,6 @@
         .spacer-space
             display: none
 
-/* Hero Christmas */
-#hero-christmas
-    width: 100%
-    background-color: #F5FBFF
-    background-image: url('../img/Christmas.svg')
-    background-repeat: none
-    background-size: cover
-    background-position: bottom
-    padding: 80px 0 200px 0
-    animation-duration: 2s
-    animation-delay: .4s
-
-    @media (max-width: 600px)
-        padding: 40px 0 100px 0
-
-    @media (min-width: 1440px) and (max-width: 1450px) and (min-height: 710px) and (max-height: 720px)
-        min-height: 100vh
-
-
-    #logo
-        width: 250px
-        margin-bottom: 10px
-        animation-duration: 1.2s
-        animation-delay: .0s
-
-        @media (min-width: 1300px)
-            width: 400px
-
-    #title
-        font-size: 450%
-        font-family: $anton
-        text-transform: uppercase
-        color: $black
-        margin: 0px
-        animation-duration: 1.2s
-        animation-delay: .4s
-
-        @media (min-width: 1400px)
-            font-size: 400%
-
-        @media (max-width: 900px)
-            font-size: 300%
-
-        @media (max-width: 500px)
-            font-size: 250%
-
-        span
-            color: $doodle
-
-    #lead
-        font-size: 160%
-        font-family: $lato
-        color: $black
-        animation-duration: 1.2s
-        animation-delay: .6s
-
-        @media (min-width: 1400px)
-            font-size: 200%
-
-        @media (max-width: 900px)
-            font-size: 130%
-
-        @media (max-width: 500px)
-            font-size: 110%
-
-        span
-            color: $doodle
-            font-weight: bold
-            font-size: 110%
-
-/* Hero 2018 */
-#hero-2018
-    width: 100%
-    background-color: $black
-    background-image: url('../img/City-Night.svg')
-    background-repeat: none
-    background-size: cover
-    background-position: bottom
-    padding: 80px 0 200px 0
-    animation-duration: 2s
-    animation-delay: .4s
-
-    @media (max-width: 600px)
-        padding: 40px 0 100px 0
-
-    @media (min-width: 1440px) and (max-width: 1450px) and (min-height: 710px) and (max-height: 720px)
-        min-height: 100vh
-
-
-    #logo
-        width: 250px
-        margin-bottom: 10px
-        animation-duration: 1.2s
-        animation-delay: .0s
-
-        @media (min-width: 1300px)
-            width: 400px
-
-    #title
-        font-size: 450%
-        font-family: $anton
-        text-transform: uppercase
-        color: $white
-        margin: 0px
-        animation-duration: 1.2s
-        animation-delay: .4s
-
-        @media (min-width: 1400px)
-            font-size: 400%
-
-        @media (max-width: 900px)
-            font-size: 300%
-
-        @media (max-width: 500px)
-            font-size: 250%
-
-        span
-            color: $doodle
-
-    #lead
-        font-size: 160%
-        font-family: $lato
-        color: $white
-        animation-duration: 1.2s
-        animation-delay: .6s
-
-        @media (min-width: 1400px)
-            font-size: 200%
-
-        @media (max-width: 900px)
-            font-size: 130%
-
-        @media (max-width: 500px)
-            font-size: 110%
-
-        span
-            color: $doodle
-            font-weight: bold
-            font-size: 110%
 
 /* Pasos */
 .paso-container
@@ -288,7 +121,7 @@
         margin-top: 0px
         margin-bottom: 51px
 
-#desarrollo, #diseño, #insight, #nosotros, #faq, #contacto, #doodle
+#proceso, #diseño, #insight, #nosotros, #faq, #contacto, #doodle
     padding: 70px 120px !important
 
     @media (max-width: 1180px)
@@ -324,7 +157,7 @@
     img::-moz-selection
         background: transparent
 
-#desarrollo
+#proceso
     background-color: $yellow
     text-align: center
 
@@ -424,3 +257,38 @@
             color: $yellow
             font-weight: bold
             font-size: 100%
+
+#steps
+    padding: 70px
+    text-align: center
+
+    .step-item
+        text-align: center
+
+        @media (max-width: 500px)
+            margin-bottom: 50px
+
+        .step-icon
+            width: 60%
+            max-width: 300px
+            display: block
+            margin: 0 auto
+            margin-bottom: 20px
+
+            @media (max-width: 500px)
+                width: 100%
+
+        .step-number
+            font-family: $montserrat
+            text-transform: uppercase
+            font-weight: 900
+            color: $yellow
+
+        .step-title
+            font-family: $montserrat
+            font-weight: 1000
+            margin-top: -3px
+            margin-bottom: 1px
+
+        .step-paragraph
+            font-weight: 300
