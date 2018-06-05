@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="430 337 310 199.25">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #1b1b1b;
+      }
+
+      .cls-3 {
+        fill: #1e81ff;
+      }
+
+      .cls-4 {
+        fill: #ffb61e;
+      }
+
+      .cls-5 {
+        fill: #eee;
+      }
+    </style>
+  </defs>
+  <g id="Capa_1" data-name="Capa 1" transform="translate(430 305)">
+    <rect id="Rectangle_1" data-name="Rectangle 1" class="cls-1" width="310" height="199.25" transform="translate(0 32)"/>
+    <circle id="Ellipse_1" data-name="Ellipse 1" class="cls-2" cx="35.28" cy="35.28" r="35.28" transform="translate(0.75 100.34)"/>
+    <circle id="Ellipse_2" data-name="Ellipse 2" class="cls-3" cx="35.28" cy="35.28" r="35.28" transform="translate(119.72 100.34)"/>
+    <circle id="Ellipse_3" data-name="Ellipse 3" class="cls-4" cx="35.28" cy="35.28" r="35.28" transform="translate(238.69 100.34)"/>
+    <path id="Path_1" data-name="Path 1" class="cls-5" d="M117.32,136.35l-9.9,7.29c-.44.32-1-.08-1-.73v-3.59H74.92a1.19,1.19,0,0,1-1-1.3v-4.79a1.19,1.19,0,0,1,1-1.3h31.5v-3.59c0-.65.56-1,1-.73l9.9,7.29a1,1,0,0,1,0,1.45Z"/>
+    <path id="Path_2" data-name="Path 2" class="cls-5" d="M236.29,136.35l-9.9,7.29c-.44.32-1-.08-1-.73v-3.59H193.9a1.18,1.18,0,0,1-1-1.3v-4.79a1.18,1.18,0,0,1,1-1.3h31.5v-3.59c0-.65.55-1,1-.73l9.9,7.29a1,1,0,0,1-.01,1.45Z"/>
+  </g>
+</svg>

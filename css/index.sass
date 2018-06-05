@@ -50,6 +50,7 @@
 
     #logo
         width: 80%
+        max-width: 700px
         animation-duration: 1.2s
         animation-delay: .0s
         display: inline-block
@@ -100,6 +101,9 @@
     @media (max-width: 600px)
         padding: 30px
 
+        .lead
+            font-size: 90%
+
     .icon
         height: 141px
         width: auto
@@ -133,29 +137,6 @@
     &:hover > .paso-container
         transform: scale(1.01)
         box-shadow: $box-shadow
-
-#doodle
-    background-color: $doodle
-
-    /* Selection */
-    ::-moz-selection
-        text-shadow: none
-        background: $doodle
-        color: $white
-        text-shadow: 10px 10px 10px rgba(27, 27, 27, 0.1)
-
-    ::selection
-        text-shadow: none
-        background: $doodle
-
-    img::-moz-selection
-        background: transparent
-
-    img::selection
-        background: transparent
-
-    img::-moz-selection
-        background: transparent
 
 #proceso
     background-color: $yellow
