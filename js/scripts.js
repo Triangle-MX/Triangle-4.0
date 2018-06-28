@@ -96,9 +96,3 @@ var TxtType = function(el, toRotate, period) {
         css.innerHTML = ".typewrite > .typer { border-right: 0.08em solid #ffb61e}";
         document.body.appendChild(css);
     };
-
-// Animations
-
-// -Desarrollo Web
-// --JPIglesias-Astronaut
-
