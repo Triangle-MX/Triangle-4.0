@@ -44,7 +44,7 @@ var TxtType = function(el, toRotate, period) {
         this.toRotate = toRotate;
         this.el = el;
         this.loopNum = 0;
-        this.period = parseInt(period, 10) || 2000;
+        this.period = parseInt(period, 100) || 2000;
         this.txt = '';
         this.tick();
         this.isDeleting = false;
@@ -96,3 +96,9 @@ var TxtType = function(el, toRotate, period) {
         css.innerHTML = ".typewrite > .typer { border-right: 0.08em solid #ffb61e}";
         document.body.appendChild(css);
     };
+
+// Animations
+
+// -Desarrollo Web
+// --JPIglesias-Astronaut
+
