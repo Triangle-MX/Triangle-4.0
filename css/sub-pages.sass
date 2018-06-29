@@ -37,7 +37,6 @@
                 color: $black
 
         .lead
-            font-size: 110%
 
             @media (max-width: 600px)
                 font-size: 100%
@@ -73,5 +72,46 @@
             height: 200px
             margin-top: 30px
 
-#micro-projects
-    background-color: $grey
+#micro-projects    
+    background-color: $white
+    
+    .col-md-3 
+        @media (max-width: 1200px)
+            margin-bottom: 30px
+        
+        .lead
+            text-align: justify
+    
+        .title
+            margin-bottom: 30px !important
+            @media (max-width: 1200px)
+                margin-bottom: 10px !important
+            
+            b
+                font-weight: 900
+        
+    .micro-project
+        @media (max-width: 992px)
+            margin-bottom: 30px
+                
+            
+        .img
+            border-radius: $border-radius
+            transition: $transition
+            
+            &:hover
+                transform: scale(1.05)
+                box-shadow: $box-shadow
+            
+        .name
+            font-weight: 900 !important
+        
+        .lead
+            text-align: justify
+            
+            @media (max-width: 992px)
+                display: none
+                
+    .micro-project-nonimportant
+        @media (max-width: 992px)
+                display: none
