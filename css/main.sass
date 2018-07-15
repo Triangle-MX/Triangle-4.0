@@ -82,6 +82,12 @@ img::selection
 
 img::-moz-selection
     background: transparent
+    
+.lead 
+    font-size: 1.5em !important
+    
+    @media(max-width: 1500px)
+        font-size: 1em !important
 
 
 // Partials
@@ -90,11 +96,12 @@ img::-moz-selection
 @import 'index.sass'
 
 // Components
-@import 'menu.sass'
 @import 'footer.sass'
 @import 'buttons.sass'
 @import 'form.sass'
 @import 'taxi.sass'
+@import 'menu.css'
+@import 'timeline.css'
 
 // Sub-Pages
 @import 'sub-pages.sass'
