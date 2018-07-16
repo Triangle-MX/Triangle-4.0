@@ -97,6 +97,9 @@ var TxtType = function(el, toRotate, period) {
         document.body.appendChild(css);
     };
 
+// Menu-Open
+var mainContent = $('#main');
+
 
 // Menu
 jQuery(document).ready(function(){
@@ -110,11 +113,13 @@ jQuery(document).ready(function(){
 			stretchyNavTrigger.on('click', function(event){
 				event.preventDefault();
 				stretchyNav.toggleClass('nav-is-visible');
+                mainContent.toggleClass('menu-open');
 			});
 		});
 
 		$(document).on('click', function(event){
-			( !$(event.target).is('.cd-nav-trigger') && !$(event.target).is('.cd-nav-trigger span') ) && stretchyNavs.removeClass('nav-is-visible');
+			( !$(event.target).is('.cd-nav-trigger') && !$(event.target).is('.cd-nav-trigger span') ) && stretchyNavs.removeClass('nav-is-visible') && mainContent.removeClass('menu-open');
+            
 		});
 	}
 });
