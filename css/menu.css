@@ -135,8 +135,8 @@ li {
   color: rgba(32,32,32,.8);
   -webkit-transition: color 0.2s;
   -moz-transition: color 0.2s;
-  transition: color 0.2s;
-  text-shadow: 0px 0px 10px rgba(255, 255, 255, 1) !important;
+  transition: 0.3s ease-in-out;
+  text-shadow: 0px 0px 5px rgba(255, 255, 255, .5) !important;
 }
 
 @media(max-width: 800px) {
@@ -148,6 +148,7 @@ li {
 .cd-stretchy-nav ul a:hover, .cd-stretchy-nav ul .active {
   color: rgba(32,32,32, 1);
     text-shadow: 0px 0px 10px rgba(255, 255, 255, .5) !important;
+    font-weight: 900;
 }
 
 .cd-stretchy-nav ul a:hover {

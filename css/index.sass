@@ -3,15 +3,15 @@
     width: 101%
     background-repeat: none !important
     background-color: $white
-    background-image: url('../img/Space.svg')
+    background-image: url('../img/SpaceCUTTED.jpg')
     background-size: cover
     background-position: bottom
-    padding: 200px 0 200px 0
+    padding: 5px 0 200px 0
     margin-left: -1px
     animation-duration: 2s
     animation-delay: .4s
     margin-bottom: 0px
-    min-height: 100vh
+    min-height: 127vh
     display: flex
     flex-direction: column
     justify-content: center
@@ -19,8 +19,12 @@
     color: $white !important
 
     @media (max-width: 600px)
-        padding: 40px 0 100px 0
-        background-image: url('../img/SpaceMOBILE.svg')
+        padding: -20px 0 100px 0
+        background-image: url('../img/SpaceMOBcutted.jpg')
+        
+    @media (min-width: 1600px)
+        background-image: url('../img/SpaceCUTTEDlarge.jpg')
+        padding: -20px 0 200px 0
 
     // Mobile Devices Responsive Issues
     @media (max-width: 1400px)
