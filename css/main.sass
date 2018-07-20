@@ -1,7 +1,7 @@
 // Triangle Parsec Alpha v0.2
 
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Anton|Nunito|Montserrat')
+@import url('https://fonts.googleapis.com/css?family=Lato|Montserrat')
 
 // Color Variables
 $yellow: #FFB61E
@@ -13,7 +13,6 @@ $red: #FF5959
 $doodle: #FFB61E
 
 // Typography Variables
-$anton: "Anton", "Helvetica Neue", sans-serif
 $montserrat: "Montserrat", "Helvetica Neue", sans-serif
 $lato: "Lato", "Helvetica Neue", sans-serif
 $normal-size: 18px
@@ -87,16 +86,19 @@ img::-moz-selection
     font-size: 1.5em !important
     
     @media(max-width: 1500px)
-        font-size: 1em !important
+        font-size: 1.2em !important
         
 #main
     opacity: 1
     transition: $transition 
 
 .menu-open
-    opacity: .4 !important
-    filter: blur(5px)
-    overflow: none !important
+    opacity: .2 !important
+    overflow: hidden
+    transform: scale(.9)
+    border-radius: 20px
+    box-shadow: $box-shadow
+
 
 
 // Partials
