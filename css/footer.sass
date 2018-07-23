@@ -1,71 +1,67 @@
 /* Footer */
 #footer
-    background-color: #ffffff
-    margin-bottom: 0px
-    padding: 10px
-    text-align: center
-    box-shadow: 0px -10px 30px 0px rgba(27,27,27,0.1)
-    margin: 0
+    padding: 50px 0
+    padding-top: 70px 
+    background-color: $white
+    font-family: $montserrat
 
-    .brand
-        font-family: $montserrat
-        font-size: 140%
-
-        strong
-            color: $yellow
-            font-weight: bold
+    .brand-content
+        text-align: center
 
     .social-icons
-        text-align: center
-        font-size: 140%
-        margin-bottom: 0px
+        padding: 0px !important
+        margin-left: -17px
+        margin-top: 20px
 
-        @media (max-width: 600px)
-            font-size: 120%
+        @media(max-width: 600px)
+            margin-left: -3px
 
-    .footer-content
-        margin-left: 0
+        li
+            display: inline-block
 
-        .brand-container
-            margin-left: -7px
-            padding: 0
+            a
+                color: $black 
+                font-size: 200%
 
-    // .facebook i
-        color: #3b5998
-        transition: $transition
+                &:hover
+                    color: $yellow
 
-    //    &:hover
-            color: $yellow !important
+    .brand
+        margin-bottom: 20px
 
-    // .instagram i
-        color: #8a3ab9
-        transition: $transition
-
-    //    &:hover
-            color: $yellow !important
-
-    //.github i
-        color: #333
-        transition: $transition
-
-    //    &:hover
-            color: $yellow !important
-
-    .daltonic i
-        animation-duration: 5s
-        animation-iteration-count: infinite
-        cursor: pointer
-
-    .social-icons a
+    .footer-mail
         color: $black
+        font-size: 90%
+        font-weight: 300
         transition: $transition
-        cursor: pointer
 
         &:hover
-            color: $yellow !important
+            font-weight: 400
 
-    .list-inline
-        padding-top: 3px
-        padding-left: 0
-        margin-left: -7px
-        list-style: none
+    .footer-links
+        padding-left: 0px !important
+
+        li 
+            a 
+                color: $black
+                font-size: 90%
+                font-weight: 300
+                transition: $transition
+
+                &:hover
+                    font-weight: 700
+
+            .active
+                font-weight: 700
+    
+    @media(max-width: 990px)
+        text-align: center
+
+        .brand
+            margin-top: 20px
+            display: block
+            margin: 0 auto
+            width: 50%
+
+        .non-important
+            display: none
