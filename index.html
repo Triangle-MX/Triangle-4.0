@@ -92,7 +92,7 @@
 
     <!-- Hero Original -->
     
-    <nav id="nav" class="cd-stretchy-nav wow fadeIn" data-wow-delay=".5s">
+    <nav id="nav" class="cd-stretchy-nav animated fadeIn" style="animation-delay: .5s">
 		<a class="cd-nav-trigger" href="#0">
 			
 			<span aria-hidden="true"></span>
@@ -140,7 +140,7 @@
     <div id="servicios">
 
         <!-- Title + Lead -->
-        <div class="text">
+        <div class="text wow fadeIn" data-wow-delay=".1s">
             <h1 class="title">¿Qué <span>Hacemos</span>?</h1>
             <p class="lead">
                 Diseñamos y construimos todo lo que necesitas para <b>llevar tu negocio al siguiente nivel</b>.
@@ -151,10 +151,10 @@
         <div class="servicio row servicio-web">
             <!-- Imagen -->
             <div class="col-sm-4" style="text-align: center">
-                <img class="wow fadeInLeft" src="img/index-icons/Development-Icon.svg" alt="Desarrollo Web">
+                <img class="wow fadeInLeft" data-wow-delay=".5s" src="img/index-icons/Development-Icon.svg" alt="Desarrollo Web">
             </div>
             <!-- Texto -->
-            <div class="col-sm-8 content wow fadeIn">
+            <div class="col-sm-8 content wow fadeInRight" data-wow-delay=".3s">
                 <h2 class="title">Desarrollo Web</h2>
                 <p class="description">
                     Para tener un <b>negocio exitoso</b> en la época moderna, es necesario que <b>esté a la mano de todos</b>. Por eso, <b>una página web es esencial</b>.
@@ -167,10 +167,10 @@
         <div class="servicio row">
                 <!-- Imagen -->
                 <div class="col-sm-4 col-sm-push-8" style="text-align: center">
-                    <img class="wow fadeInRight diseño-img" src="img/index-icons/Design-Icon.svg" alt="Diseño Gráfico">
+                    <img class="wow fadeInRight diseño-img" data-wow-delay=".5s" src="img/index-icons/Design-Icon.svg" alt="Diseño Gráfico">
                 </div>
                 <!-- Texto -->
-                <div class="col-sm-8 col-sm-pull-4 content content-design wow fadeIn">
+                <div class="col-sm-8 col-sm-pull-4 content content-design wow fadeInLeft" data-wow-delay=".3s">
                     <h2 class="title">Diseño Gráfico</h2>
                     <p class="description">
                         Incluso los mejores productos <b>no pegan</b> si no tienen un <b>gran diseño</b>. Te ayudamos con <b>logo</b>, <b>branding</b>, <b>papelería</b> y mucho más...
@@ -182,7 +182,30 @@
 
     </div>
 
+    <!-- Contacto -->
+    <div id="contacto">
 
+        <!-- Title + Lead -->
+        <div class="text wow fadeIn" data-wow-delay=".1s">
+            <h1 class="title"><span>Creemos</span> algo juntos</h1>
+            <p class="lead">
+                Diseñamos y construimos todo lo que necesitas para <b>llevar tu negocio al siguiente nivel</b>.
+            </p>
+        </div>
+
+        <!-- Form -->
+        <div id="form">
+            <form action="https://send.pageclip.co/cSlAvftlvHMqbuXyEU3bnhZzJtTYoLjI/contact-form" class="pageclip-form" method="post">
+                <input class="wow fadeInUp" data-wow-delay=".3s" type="text" name="nombre" placeholder="Tu Nombre" required>
+                <input class="wow fadeInUp" data-wow-delay=".5s" type="email" name="email" placeholder="Tu Correo Electrónico" required>
+                <textarea class="wow fadeInUp" data-wow-delay=".7s" name="message" placeholder="Tu Mensaje"></textarea>
+                <input type="hidden" name="_language" value="es" />
+                <input type="text" name="_gotcha" style="display:none" />
+                <br>
+                <button type="submit" class="pageclip-form__submit btn1blur wow fadeInUp" data-wow-delay=".9s" data-micron="tada">&nbsp;&nbsp;Enviar&nbsp;&nbsp;</button>
+            </form>
+        </div>
+    </div>
 
     <!-- Footer -->
     <div id="footer" style="max-width:100%">

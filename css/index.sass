@@ -121,12 +121,18 @@
         @media (min-width: 1000px) and (max-width: 1200px)
             top: 600px
             left: 800px
+        
+        @media (min-height: 800px)
+            top: 700px
 
     .yellow
         position: absolute
         top: 400px
         left: 125px
         height: 300px
+
+        @media (min-height: 800px)
+            top: 580px
     
     .purple
         position: absolute
@@ -166,7 +172,7 @@
     background-color: $white
     margin: auto
     margin-top: 30px
-    margin-bottom: 156px
+    margin-bottom: 50px
     padding: 20px
     max-width: 80%
     z-index: 19
@@ -182,6 +188,7 @@
 
         @media(max-width: 768px)
             max-width: 100%
+            padding: 10px
 
         .title
             font-size: 280%
@@ -190,7 +197,7 @@
                 font-size: 200% !important
 
             span
-                font-weight: 900
+                font-weight: 700
 
     .servicio
         width: 90%
@@ -234,66 +241,4 @@
 
             
 
-// Contact-Pasos
-.paso-container
-    background-color: $white
-    width: 100%
-    height: 100%
-    padding: 60px
-    border-radius: $border-radius
-    transition: $transition
-
-    @media (max-width: 600px)
-        padding: 30px
-
-        .lead
-            font-size: 90%
-
-    .icon
-        height: 141px
-        width: auto
-        margin-bottom: 20px
-        max-width: 100%
-
-        @media (max-width: 900px)
-            height: 100px
-
-    .title
-        font-family: $montserrat
-        margin-top: 0px
-        margin-bottom: 30px
-
-        span
-            font-weight: 700 !important
-
-    .lead
-        margin-top: 0px
-        margin-bottom: 51px
-
-#proceso, #diseño, #insight, #nosotros, #faq, #contacto, #doodle
-    padding: 70px 120px !important
-
-    @media (max-width: 1180px)
-        padding: 40px !important
-
-    @media (max-width: 600px)
-        padding: 20px !important
-
-    &:hover > .paso-container
-        transform: scale(1.01)
-        box-shadow: $box-shadow
-
 #contacto
-    background-color: $yellow
-
-    @media (max-width: 1200px)
-        .form-column
-            margin-bottom: 50px
-
-    .lead
-        margin-bottom: 20px
-
-    .contact-methods
-        list-style: none
-        margin-left: -40px
-        font-weight: 300
