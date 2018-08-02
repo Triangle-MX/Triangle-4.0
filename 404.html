@@ -8,6 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+
     <!-- Description + Keywords Metas -->
         <meta name="description" content="Triangle es un pequeño estudio de desarrollo web, en los que creamos páginas web únicas, para clientes únicos.">
         <meta name="keywords" content="Triangle, Diseño Web, Desarrollo Web, Páginas Web, Sitios Web, México, Diseño Web México, Diseño Web Profesional, Diseño Web Responsive, Diseño Web Adaptable, Desarrollo Web México, Desarrollo Web Profesional, Desarrollo Web Responsive, Desarrollo Web Adaptable">
@@ -36,187 +39,114 @@
 
         <!-- Main Styles -->
         <link rel="stylesheet" href="../css/main.css">
+
+        <!-- Animate CSS -->
+        <link rel="stylesheet" href="../css/animate.min.css">
 </head>
-<body onload="setTimeout(goBack, 5000)">
-
-    <!--[if lt IE 8]>
-            <p class="browserupgrade">Estas usando una versión muy <strong>antigua</strong> de tu navegador. Por favor <a href="http://browsehappy.com/">actualiza tu navegador</a> para tener una mejor experiencia en la red.</p>
-    <![endif]-->
-
-    <canvas id="myCanvas" width="480" height="320"></canvas>
+<body>
+    <!-- WOW -->
+    <script src="../js/wow.js"></script>
     <script>
-        //Java code goes here
-        var canvas = document.getElementById("myCanvas");
-        var ctx = canvas.getContext("2d");
-        var ballRadius = 10;
-        var x = canvas.width / 2;
-        var y = canvas.height - 30;
-        var dx = 2;
-        var dy = -2;
-        var paddleHeight = 10;
-        var paddleWidth = 75;
-        var paddleX = (canvas.width - paddleWidth) / 2;
-        var rightPressed = false;
-        var leftPressed = false;
-        var brickRowCount = 5;
-        var brickColumnCount = 3;
-        var brickWidth = 75;
-        var brickHeight = 20;
-        var brickPadding = 10;
-        var brickOffsetTop = 30;
-        var brickOffsetLeft = 30;
-        var score = 0;
-        var lives = 3;
-        var bricks = [];
-        for (var c = 0; c < brickColumnCount; c++) {
-            bricks[c] = [];
-            for (var r = 0; r < brickRowCount; r++) {
-                bricks[c][r] = {
-                    x: 0
-                    , y: 0
-                    , status: 1
-                };
-            }
-        }
-        document.addEventListener("keydown", keyDownHandler, false);
-        document.addEventListener("keyup", keyUpHandler, false);
-        document.addEventListener("mousemove", mouseMoveHandler, false);
-
-        function keyDownHandler(e) {
-            if (e.keyCode == 39) {
-                rightPressed = true;
-            }
-            else if (e.keyCode == 37) {
-                leftPressed = true;
-            }
-        }
-
-        function keyUpHandler(e) {
-            if (e.keyCode == 39) {
-                rightPressed = false;
-            }
-            else if (e.keyCode == 37) {
-                leftPressed = false;
-            }
-        }
-
-        function mouseMoveHandler(e) {
-            var relativeX = e.clientX - canvas.offsetLeft;
-            if (relativeX > 0 && relativeX < canvas.width) {
-                paddleX = relativeX - paddleWidth / 2;
-            }
-        }
-
-        function collisionDetection() {
-            for (var c = 0; c < brickColumnCount; c++) {
-                for (var r = 0; r < brickRowCount; r++) {
-                    var b = bricks[c][r];
-                    if (b.status == 1) {
-                        if (x > b.x && x < b.x + brickWidth && y > b.y && y < b.y + brickHeight) {
-                            dy = -dy;
-                            b.status = 0;
-                            score++;
-                            if (score == brickRowCount * brickColumnCount) {
-                                alert("YOU WIN, CONGRATS!");
-                                document.location.reload();
-                            }
-                        }
-                    }
-                }
-            }
-        }
-
-        function drawBall() {
-            ctx.beginPath();
-            ctx.arc(x, y, ballRadius, 0, Math.PI * 2);
-            ctx.fillStyle = "#FFB61E";
-            ctx.fill();
-            ctx.closePath();
-        }
-
-        function drawPaddle() {
-            ctx.beginPath();
-            ctx.rect(paddleX, canvas.height - paddleHeight, paddleWidth, paddleHeight);
-            ctx.fillStyle = "#FFB61E";
-            ctx.fill();
-            ctx.closePath();
-        }
-
-        function drawBricks() {
-            for (var c = 0; c < brickColumnCount; c++) {
-                for (var r = 0; r < brickRowCount; r++) {
-                    if (bricks[c][r].status == 1) {
-                        var brickX = (r * (brickWidth + brickPadding)) + brickOffsetLeft;
-                        var brickY = (c * (brickHeight + brickPadding)) + brickOffsetTop;
-                        bricks[c][r].x = brickX;
-                        bricks[c][r].y = brickY;
-                        ctx.beginPath();
-                        ctx.rect(brickX, brickY, brickWidth, brickHeight);
-                        ctx.fillStyle = "#FFB61E";
-                        ctx.fill();
-                        ctx.closePath();
-                    }
-                }
-            }
-        }
-
-        function drawScore() {
-            ctx.font = "16px Arial";
-            ctx.fillStyle = "#FFB61E";
-            ctx.fillText("Score: " + score, 8, 20);
-        }
-
-        function drawLives() {
-            ctx.font = "16px Arial";
-            ctx.fillStyle = "#FFB61E";
-            ctx.fillText("Lives: " + lives, canvas.width - 65, 20);
-        }
-
-        function draw() {
-            ctx.clearRect(0, 0, canvas.width, canvas.height);
-            drawBricks();
-            drawBall();
-            drawPaddle();
-            drawScore();
-            drawLives();
-            collisionDetection();
-            if (x + dx > canvas.width - ballRadius || x + dx < ballRadius) {
-                dx = -dx;
-            }
-            if (y + dy < ballRadius) {
-                dy = -dy;
-            }
-            else if (y + dy > canvas.height - ballRadius) {
-                if (x > paddleX && x < paddleX + paddleWidth) {
-                    dy = -dy;
-                }
-                else {
-                    lives--;
-                    if (!lives) {
-                        alert("GAME OVER");
-                        document.location.reload();
-                    }
-                    else {
-                        x = canvas.width / 2;
-                        y = canvas.height - 30;
-                        dx = 3;
-                        dy = -3;
-                        paddleX = (canvas.width - paddleWidth) / 2;
-                    }
-                }
-            }
-            if (rightPressed && paddleX < canvas.width - paddleWidth) {
-                paddleX += 7;
-            }
-            else if (leftPressed && paddleX > 0) {
-                paddleX -= 7;
-            }
-            x += dx;
-            y += dy;
-            requestAnimationFrame(draw);
-        }
-        draw();
+        new WOW().init();
     </script>
+
+    <!-- Nav -->
+    <nav id="nav" class="cd-stretchy-nav animated fadeIn" style="animation-delay: .5s">
+		<a class="cd-nav-trigger" href="#0">
+
+			<span aria-hidden="true"></span>
+		</a>
+
+		<ul>
+			<li><a href="#" class="active"><span>Principal</span></a></li>
+			<li><a href="desarrollo/"><span>Páginas Web</span></a></li>
+			<li><a href="diseno/"><span>Diseño Gráfico</span></a></li>
+			<li><a href="proyectos/"><span>Proyectos</span></a></li>
+			<li><a href="nosotros/"><span>Sobre Nosotros</span></a></li>
+			<li><a href="#contacto"><span>Contacto</span></a></li>
+		</ul>
+
+		<span aria-hidden="true" class="stretchy-nav-bg"></span>
+	</nav>
+
+    <div id="main">
+        <!--[if lt IE 8]>
+                <p class="browserupgrade">Estas usando una versión muy <strong>antigua</strong> de tu navegador. Por favor <a href="http://browsehappy.com/">actualiza tu navegador</a> para tener una mejor experiencia en la red.</p>
+        <![endif]-->
+
+        <!-- Header -->
+        <div class="error-header">
+            <img src="img/gifs/elon-perdido.gif" alt="Elon Perdido" class="icon wow fadeInUp" data-wow-delay=".3s">
+            <h1 class="title wow fadeInUp" data-wow-delay=".7s">Error 404<br>¿Te <span>Perdiste</span>?</h1>
+            <p class="lead wow fadeInUp" data-wow-delay="1s">Esta no es la página que estás buscando, pero ya que estás aquí...</p>
+        </div>
+
+        <!-- Game -->
+        <canvas id="breakdown" width="480" height="320"></canvas>
+
+        <!-- Contacto -->
+        <div id="contacto">
+
+            <!-- Title + Lead -->
+            <div class="text wow fadeIn" data-wow-delay=".1s">
+                <h1 class="title"><span>Creemos</span> algo juntos</h1>
+                <p class="lead">
+                    ¿Tienes un <b>negocio</b>? ¿un <b>proyecto</b>? Nosotros te ayudamos a <b>llevarlo al siguiente nivel</b>.
+                </p>
+            </div>
+
+            <!-- Form -->
+            <div id="form">
+                <form action="https://send.pageclip.co/cSlAvftlvHMqbuXyEU3bnhZzJtTYoLjI/contact-form" class="pageclip-form" method="post">
+                    <input class="wow fadeInUp" data-wow-delay=".3s" type="text" name="nombre" placeholder="Tu Nombre" required>
+                    <input class="wow fadeInUp" data-wow-delay=".5s" type="email" name="email" placeholder="Tu Correo Electrónico" required>
+                    <textarea class="wow fadeInUp" data-wow-delay=".7s" name="message" placeholder="Tu Mensaje"></textarea>
+                    <input type="hidden" name="_language" value="es" />
+                    <input type="text" name="_gotcha" style="display:none" />
+                    <br>
+                    <button type="submit" class="pageclip-form__submit btn1blur wow fadeInUp" data-wow-delay=".9s" data-micron="tada">&nbsp;&nbsp;Enviar&nbsp;&nbsp;</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div id="footer" style="max-width:100%">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 brand-content" style="margin-bottom: 20px">
+                        <img src="img/LogoWhite.svg" alt="" class="brand">
+                        <span><a href="mailto:contacto@triangle.mx" class="footer-mail">contacto@triangle.mx</a></span>
+                        <ul class="social-icons">
+                            <li><a href="https://www.facebook.com/somos.triangle/" target="_blank"><i class="icon-facebook"></i></a></li>
+                            <li><a href="https://www.instagram.com/triangle.mexico/" target="_blank"><i class="icon-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3"></div>
+                    <div class="col-md-3" style="margin-bottom: 20px">
+                        <ul class="footer-links">
+                            <li><a href="/">Principal</a></li>
+                            <li><a href="desarrollo/">Desarrollo Web</a></li>
+                            <li><a href="diseno/">Diseño Gráfico</a></li>
+                            <li><a href="proyectos/">Proyectos</a></li>
+                            <li><a href="nosotros/">Sobre Nosotros</a></li>
+                            <li><a href="#contacto">Contacto</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <ul class="footer-links">
+                            <li><a class="non-important" href="https://triangle-mx.github.io/carbon-framework/" target="_blank">Carbon</a></li>
+                            <li><a class="non-important" href="#">Insight</a></li>
+                            <li><a class="non-important" href="jobs/">Trabaja en Triangle</a></li>
+                            <br>
+                            <li><a href="#">Política de Privacidad</a></li>
+                            <li><a href="#">Términos y Condiciones</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
 
     <!-- Scripts -->
 
