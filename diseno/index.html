@@ -27,8 +27,8 @@
             "@context": "http://schema.org",
             "@type": "Organization",
             "name": "Triangle - Diseño Gráfico",
-            "url": "http://www.triangle.mx/diseno",
-            "description": "Diseño Gráfico moderno para todos. Eso es Triangle."
+            "url": "http://www.triangle.mx/desarrollo",
+            "description": "Páginas Web modernas para todos. Eso es Triangle."
             }
         </script>
 
@@ -53,6 +53,9 @@
     <!-- Pageclip -->
     <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
     <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
+    
+    <!-- Animations -->
+    <script src="../scripts/vendor/lottie.js" type="text/javascript"></script>
 
 </head>
 <body>
@@ -66,39 +69,32 @@
             <p class="browserupgrade">Estas usando una versión muy <strong>antigua</strong> de tu navegador. Por favor <a href="http://browsehappy.com/">actualiza tu navegador</a> para tener una mejor experiencia en la red.</p>
     <![endif]-->
 
-    <!-- Nav -->
-    <div id="triangle-menu" class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container-fluid">
-      <div class="navbar-header"><a class="navbar-brand" href="../"><img src="../img/LogoWhite.svg" alt="Logo Triangle" style="width: 100%; max-width: 120px; margin-top: 2px;"></a>
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-          </button>
-      </div>
-        <div class="collapse navbar-collapse navbar-menubuilder">
-            <ul class="nav navbar-nav navbar-left">
-                <li><a href="../">Principal</a></li>
+     <!-- Navbar -->
+    <nav class="cd-stretchy-nav" id="nav">
+		<a class="cd-nav-trigger" href="#0">
+			
+			<span aria-hidden="true"></span>
+		</a>
 
-                <li class="dropdown active">
-          <a  class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Servicios<span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="../desarrollo/">Desarrollo Web</a></li>
-            <li><a href="../diseno/">Diseño Gráfico</a></li>
-          </ul>
-        </li>
-                <li><a href="../nosotros/">Nosotros</a></li>
-                <li><a href="../proyectos/">Proyectos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </div>
-    </div>
-    </div>
+		<ul>
+			<li><a href="../"><span>Principal</span></a></li>
+			<li><a href="../desarrollo/"><span>Páginas Web</span></a></li>
+			<li><a href="../diseno/" class="active"><span>Diseño Gráfico</span></a></li>
+			<li><a href="../proyectos/"><span>Proyectos</span></a></li>
+			<li><a href="../nosotros/"><span>Sobre Nosotros</span></a></li>
+			<li><a href="#contacto"><span>Contacto</span></a></li>
+		</ul>
+
+		<span aria-hidden="true" class="stretchy-nav-bg"></span>
+	</nav>
 
     <!-- Main -->
     <div id="main">
         <div class="container-fluid wow bounceInLeft" data-wow-duration="1s" data-wow-delay=".05s">
             <div class="header">
-                <img src="../img/Iconos/Design.svg" alt="Foco de Luz" class="icon" id="design-icon">
+                <img src="../img/index-icons/Design-Icon.svg" alt="Computadora con software de Diseño" class="icon">
                 <h1 class="title"><span>Diseño</span> Gráfico</h1>
-                <p class="lead">Haz que tu negocio sea y se vea impactante.</p>
+                <p class="lead">Llega a todas partes. A <b>todas</b> partes.</p>
             </div>
         </div>
 
@@ -107,104 +103,118 @@
                     <div class="row">
                         <div class="col-md-6">
                             <div class="container-fluid">
-                                <img src="../img/Iconos/Planning.svg" alt="Plano y Lápiz" class="icon wow bounceIn" data-wow-duration="1s" data-wow-delay=".05s">
-                                <h2 class="title">¿Qué <span>hacemos</span>?</h2>
-                                <p class="lead">Diseñamos <strong>logos</strong>, <strong>volantes</strong>, <strong>tarjetas de presentación</strong>, y <strong>mucho más...</strong> Todo para que tu proyecto llegue al siguente nivel.</p>
+                                <!-- Animación/Ilustración del JPIglesias Astronauta -->
+                                <img src="../img/gifs/jpiglesias-astronaut.gif" alt="JPIglesias Astronauta" class="icon wow bounceIn" data-wow-duration="1s" data-wow-delay=".5s">
+                                <h2 class="title">Llega a <span>todas</span> partes</h2>
+                                <p class="lead"><b>Olvídate de un negocio local</b>. Con una página web puedes llevar tu negocio a <b>todo el mundo (y sus alrededores)</b> sin necesidad de salir de tu casa.</p>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="container-fluid">
-                                <img src="../img/Iconos/Launch.svg" alt="Cohete Espacial" class="icon wow bounceIn" data-wow-duration="1s" data-wow-delay=".05s">
-                                <h2 class="title">¿Cómo lo <span>hacemos</span>?</h2>
-                                <p class="lead">Primero platicamos contigo para conocer <strong>la personalidad de tu proyecto</strong>, y después la plasmamos de manera moderna e impactante en lo que necesites.</p>
+                                <!-- Animación/Ilustración del Max Emprendedor -->
+                                <img src="../img/gifs/max-emprendedor.gif" alt="Max Emprendedor" class="icon wow bounceIn" data-wow-duration="1s" data-wow-delay="1s">
+                                <h2 class="title"><span>Aumenta</span> tus ventas</h2>
+                                <p class="lead">Con una página web, <b>tu negocio este al alcance de todos</b>. Esto te permite mostrarles más fácilmente tu producto o servicios y de esta manera <b>aumentar tus ventas</b>.</p>
                             </div>
                         </div>
                     </div>
-                    <!--<div class="row">
-                        <div class="col-md-6">
-                            <div class="container-fluid">
-                                <img src="../img/Iconos/Book.svg" alt="Libro" class="icon wow bounceIn" data-wow-duration="1s" data-wow-delay=".05s">
-                                <h2 class="title">¿Cómo la <span>consigues</span>?</h2>
-                                <p class="lead">Envíanos un mensaje por medio de la forma de la sección de contacto o mándanos un correo (<a class="link" href="mailto:contacto@triangle.mx"><i class="icon-mail"></i> contacto@triangle.mx</a>) y nos reuniremos contigo para empezar a planear cómo se verá tu logo u cualquier otro diseño.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="container-fluid">
-                                <img src="../img/Iconos/Testimonial.svg" alt="Bolígrafo" class="icon wow bounceIn" data-wow-duration="1s" data-wow-delay=".05s">
-                                <h2 class="title">Un <span>Cliente</span> nuestro:</h2>
-                                <p class="lead" style="margin-bottom: 0"><i>"Me dejo sin aliento el producto final. Todo entregado en los tiempos acordados previamente y ningún problema durante el proceso de creación de mi proyecto"</i></p><br><p class="author">
-                                    <span class="lead">- Mary Carmen Cabrera, Directora General BusinessSenior</span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>-->
 
         </div>
 
         <div class="section" id="micro-projects">
-            <h1>¿Por qué necesitas un buen <strong>diseño gráfico</strong>?</h1>
+            <div class="row">
+                    <div class="col-md-3 col-xs-12">
+                        <h1 class="title">Nuestros Proyectos de Desarrollo Web</b></h1>
+                        <p class="lead">Estos son algunos de los proyectos de <b>Desarrollo Web</b> en los que hemos trabajado.</p>
+                        <a href="../proyectos/" class="btn1">Ver Más</a>
+                        <br><br>
+                    </div>
+                    
+                    <div class="col-md-3 col-xs-6 micro-project micro-project-nonimportant">
+                    <a href="https://triangle-mx.github.io/Astros/" class="img-link wow bounceIn" data-wow-duration="1s" data-wow-delay="1s"><img src="../img/Proyectos/Astros/astros-micro.svg" alt="Logo Cardalimp" class="img"></a>
+                    <h2 class="name">Astros</h2>
+                    <p class="lead"><b>Cambiar el mundo</b> es muy importante para nosotros, y es por eso que <b>buscamos participar en proyectos educativos</b>.</p>
+                </div>
+                
+                    <div class="col-md-3 col-xs-6 micro-project">
+                    <a href="http://sismomexico.org/" class="img-link wow bounceIn" data-wow-duration="1s" data-wow-delay=".75s"><img src="../img/Proyectos/SismoMX/sismomx-micro.svg" alt="Logo Cardalimp" class="img"></a>
+                    <h2 class="name">SismoMX</h2>
+                    <p class="lead">Colaboramos con <b>Codeando México</b> en esta plataforma para ayudar durante la crisis del <b>19S</b>.</p>
+                </div>
+                <div class="col-md-3 col-xs-6 micro-project">
+                        <a href="https://cardalimp.com/" class="img-link wow bounceIn" data-wow-duration="1s" data-wow-delay=".5s"><img src="../img/Proyectos/Cardalimp/cardalimp-micro.svg" alt="Logo Cardalimp" class="img"></a>
+                        <h2 class="name">Cardalimp</h2>
+                        <p class="lead">Página Web para <b>Cardalimp</b>, empresa 100% mexicana de <b>limpieza profesional</b>.</p>
+                    </div>
+                </div>
+            
+        </div>
+
+    
+
+    
+    <!-- Contacto -->
+    <div id="contacto">
+
+        <!-- Title + Lead -->
+        <div class="text wow fadeIn" data-wow-delay=".1s">
+            <h1 class="title"><span>Creemos</span> algo juntos</h1>
             <p class="lead">
-                Hoy en día hay que captar la atención de la gente de manera <strong>rápida</strong> y <strong>eficaz</strong>. Aún con un <strong>proyecto genial</strong>, esto puede resultar muy difícil si no se cuenta con una <strong>imagen adecuada a tu proyecto</strong>. Nosotros podemos ayudarte a <strong>llevar tu proyecto al siguente nivel</strong>, solo necesitas contactarnos.
-                <br><br>
-                <a href="../proyectos/" class="btn1" data-micron="tada">Ver Proyectos</a>
+                ¿Tienes un <b>negocio</b>? ¿un <b>proyecto</b>? Nosotros te ayudamos a <b>llevarlo al siguiente nivel</b>.
             </p>
         </div>
 
+        <!-- Form -->
+        <div id="form">
+            <form action="https://send.pageclip.co/cSlAvftlvHMqbuXyEU3bnhZzJtTYoLjI/contact-form" class="pageclip-form" method="post">
+                <input class="wow fadeInUp" data-wow-delay=".3s" type="text" name="nombre" placeholder="Tu Nombre" required>
+                <input class="wow fadeInUp" data-wow-delay=".5s" type="email" name="email" placeholder="Tu Correo Electrónico" required>
+                <textarea class="wow fadeInUp" data-wow-delay=".7s" name="message" placeholder="Tu Mensaje"></textarea>
+                <input type="hidden" name="_language" value="es" />
+                <input type="text" name="_gotcha" style="display:none" />
+                <br>
+                <button type="submit" class="pageclip-form__submit btn1blur wow fadeInUp" data-wow-delay=".9s" data-micron="tada">&nbsp;&nbsp;Enviar&nbsp;&nbsp;</button>
+            </form>
+        </div>
     </div>
-
-    <!-- Contact -->
-    <!-- Contact -->
-    <div id="contacto">
-        <div class="paso-container">
-            <img src="../img/Iconos/Contacto.svg" alt="Antena de Radio" class="icon wow bounceIn" data-wow-duration="1s" data-wow-delay=".05s">
-            <h1 class="title"><span>Contacto</span></h1>
-            <p class="lead">Ahora que sabes un poco de lo que hacemos, cómo lo hacemos y por qué lo hacemos, cuéntanos cómo podemos ayudarte a conseguir tus objetivos, o pregúntanos lo que quieras.</p>
+    
+    <!-- Footer -->
+    <div id="footer" style="max-width:100%">
+        <div class="container">
             <div class="row">
-                <div class="col-lg-6 form-column">
-                    <div id="form">
-                        <form action="https://send.pageclip.co/cSlAvftlvHMqbuXyEU3bnhZzJtTYoLjI/contact-form" class="pageclip-form" method="post">
-                            <input type="text" name="nombre" placeholder="Tu Nombre" required>
-                            <input type="email" name="email" placeholder="Tu Correo Electrónico" required>
-                            <textarea name="message" placeholder="Tu Mensaje"></textarea>
-                            <input type="hidden" name="_language" value="es" />
-                            <input type="text" name="_gotcha" style="display:none" />
-                            <br>
-                            <button type="submit" class="pageclip-form__submit btn1" data-micron="tada">Enviar</button>
-                        </form>
-                    </div>
+                <div class="col-md-3 brand-content" style="margin-bottom: 20px">
+                    <img src="../img/LogoWhite.svg" alt="" class="brand">
+                    <span><a href="mailto:contacto@triangle.mx" class="footer-mail">contacto@triangle.mx</a></span>
+                    <ul class="social-icons">
+                        <li><a href="https://www.facebook.com/somos.triangle/" target="_blank"><i class="icon-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/triangle.mexico/" target="_blank"><i class="icon-instagram"></i></a></li>
+                    </ul>
                 </div>
-                <div class="col-lg-6">
-                    <p class="lead">Si no deseas utilizar la forma de contacto, puedes utilizar los siguentes medios para contactarnos:</p>
-                    <ul class="contact-methods">
-                        <li><a class="link" href="mailto:contacto@triangle.mx"><i class="icon-mail"></i> contacto@triangle.mx</a></li>
-                        <li><a href=""><i class="icon-"></i></a></li>
-                        <li><a href=""><i class="icon-"></i></a></li>
+                <div class="col-md-3"></div>
+                <div class="col-md-3" style="margin-bottom: 20px">
+                    <ul class="footer-links">
+                        <li><a href="../">Principal</a></li>
+                        <li><a href="../desarrollo/">Desarrollo Web</a></li>
+                        <li><a class="active" href="../diseno/">Diseño Gráfico</a></li>
+                        <li><a href="../proyectos/">Proyectos</a></li>
+                        <li><a href="../nosotros/">Sobre Nosotros</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul class="footer-links">
+                        <li><a class="non-important" href="https://triangle-mx.github.io/carbon-framework/" target="_blank">Carbon</a></li>
+                        <li><a class="non-important" href="#">Insight</a></li>
+                        <li><a class="non-important" href="../jobs/">Trabaja en Triangle</a></li>
+                        <br>
+                        <li><a href="#">Política de Privacidad</a></li>
+                        <li><a href="#">Términos y Condiciones</a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Footer -->
-    <div id="footer" style="max-width:100%">
-        <div class="row footer-content">
-            <div class="col-lg-4 col-md-4 col-sm-4 brand-container"><span class="brand">Somos <img style="display: inline; height: 100%; max-height: 25px; margin-top: -4px; max-width: 100%;" src="../img/LogoYellow.svg" alt="Logo Triangle"></span></div>
-            <div class="col-lg-4 col-md-4 col-sm-4">
-                <ul class="social-icons list-inline">
-                    <li><a href="https://www.facebook.com/trianglewebmexico/" target="_blank" class="facebook" title="Facebook"><i class="icon-facebook"></i></a></li>
-                    <li><a href="https://www.instagram.com/trianglewebsmex/" target="_blank" class="instagram" title="Instagram"><i class="icon-instagram"></i></a></li>
-                    <li><a href="https://github.com/Triangle-MX" target="_blank" class="github" title="GitHub"><i class="icon-github"></i></a></li>
-
-                    <li><a href="javascript:(function(){var s=document.getElementById(&quot;colourblind-styling&quot;);var x=document.getElementById(&quot;colourblind-filters&quot;);if(!s){s=document.createElement(&quot;style&quot;);document.body.appendChild(s)}if(!x){x=document.createElement(&quot;div&quot;);x.setAttribute(&quot;style&quot;,&quot;height: 0; padding: 0; margin: 0; line-height: 0;&quot;);x.innerHTML=&#39;&lt;svg id=&quot;colorblind-filters&quot; style=&quot;display: none&quot;&gt; &lt;defs&gt; &lt;filter id=&quot;protanopia&quot;&gt; &lt;feColorMatrix type=&quot;matrix&quot; values=&quot;0.567,0.433,0,0,0 0.558,0.442,0,0,0 0 0.242,0.758,0,0 0,0,0,1,0&quot; in=&quot;SourceGraphic&quot; /&gt; &lt;/filter&gt; &lt;filter id=&quot;protanomaly&quot;&gt; &lt;feColorMatrix type=&quot;matrix&quot; values=&quot;0.817,0.183,0,0,0 0.333,0.667,0,0,0 0,0.125,0.875,0,0 0,0,0,1,0&quot; in=&quot;SourceGraphic&quot; /&gt; &lt;/filter&gt; &lt;filter id=&quot;deuteranopia&quot;&gt; &lt;feColorMatrix type=&quot;matrix&quot; values=&quot;0.625,0.375,0,0,0 0.7,0.3,0,0,0 0,0.3,0.7,0,0 0,0,0,1,0&quot; in=&quot;SourceGraphic&quot; /&gt; &lt;/filter&gt; &lt;filter id=&quot;deuteranomaly&quot;&gt; &lt;feColorMatrix type=&quot;matrix&quot; values=&quot;0.8,0.2,0,0,0 0.258,0.742,0,0,0 0,0.142,0.858,0,0 0,0,0,1,0&quot; in=&quot;SourceGraphic&quot; /&gt; &lt;/filter&gt; &lt;filter id=&quot;tritanopia&quot;&gt; &lt;feColorMatrix type=&quot;matrix&quot; values=&quot;0.95,0.05,0,0,0 0,0.433,0.567,0,0 0,0.475,0.525,0,0 0,0,0,1,0&quot; in=&quot;SourceGraphic&quot; /&gt; &lt;/filter&gt; &lt;filter id=&quot;tritanomaly&quot;&gt; &lt;feColorMatrix type=&quot;matrix&quot; values=&quot;0.967,0.033,0,0,0 0,0.733,0.267,0,0 0,0.183,0.817,0,0 0,0,0,1,0&quot; in=&quot;SourceGraphic&quot; /&gt; &lt;/filter&gt; &lt;filter id=&quot;achromatopsia&quot;&gt; &lt;feColorMatrix type=&quot;matrix&quot; values=&quot;0.299,0.587,0.114,0,0 0.299,0.587,0.114,0,0 0.299,0.587,0.114,0,0 0,0,0,1,0&quot; in=&quot;SourceGraphic&quot; /&gt; &lt;/filter&gt; &lt;filter id=&quot;achromatomaly&quot;&gt; &lt;feColorMatrix type=&quot;matrix&quot; values=&quot;0.618,0.320,0.062,0,0 0.163,0.775,0.062,0,0 0.163,0.320,0.516,0,0 0,0,0,1,0&quot; in=&quot;SourceGraphic&quot; /&gt; &lt;/filter&gt; &lt;/defs&gt; &lt;/svg&gt;&#39;;document.body.appendChild(x)}var l=[&quot;protanopia&quot;,&quot;protanomaly&quot;,&quot;deuteranopia&quot;,&quot;deuteranomaly&quot;,&quot;tritanopia&quot;,&quot;tritanomaly&quot;,&quot;achromatopsia&quot;,&quot;achromatomaly&quot;];var p=&quot;&quot;;for(var i in l)p+=parseInt(i)+1+&quot;: &quot;+l[i]+&quot;; &quot;;var c=parseInt(prompt(&quot;0: off; &quot;+p))-1;if(isNaN(c))return;if(c&gt;=l.length)return;if(c==-1){s.innerHTML=&quot;body{-webkit-filter:none;-moz-filter:none;-ms-filter:none;-o-filter:none;filter:none;}&quot;;return}c=l[c];if(document.getElementById(c))s.innerHTML=&quot;body{-webkit-filter:!!;-moz-filter:!!;-ms-filter:!!;-o-filter:!!;filter:!!;}&quot;.replace(/!!/g,&quot;url(#&quot;+c+&quot;)&quot;);else s.innerHTML=&quot;body{-webkit-filter:none;-moz-filter:none;-ms-filter:none;-o-filter:none;filter:none;}&quot;})();" title="Filtro para Daltónicos" class="daltonic"><i class="icon-eye"></i></a>
-                    </li>
-
-                    <li style="">
-                        <a href="https://triangle.mx/files/privacidad.html"><i title="Política de Privacidad" class="icon-lock"></i></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
     </div>
-
 
     <!-- Scripts -->
 
@@ -228,6 +238,8 @@
 
         <!-- Scripts JS -->
         <script src="../js/scripts.js"></script>
+        
+        
 
 </body>
 </html>

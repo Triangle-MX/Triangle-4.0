@@ -67,37 +67,31 @@
             <p class="browserupgrade">Estas usando una versión muy <strong>antigua</strong> de tu navegador. Por favor <a href="http://browsehappy.com/">actualiza tu navegador</a> para tener una mejor experiencia en la red.</p>
     <![endif]-->
 
-    <!-- Nav -->
-    <div id="triangle-menu" class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container-fluid">
-      <div class="navbar-header"><a class="navbar-brand" href="../"><img src="../img/LogoWhite.svg" alt="Logo Triangle" style="width: 100%; max-width: 120px; margin-top: 2px;"></a>
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-          </button>
-      </div>
-        <div class="collapse navbar-collapse navbar-menubuilder">
-            <ul class="nav navbar-nav navbar-left">
-                <li><a href="../">Principal</a></li>
+    <!-- Navbar -->
+    <nav class="cd-stretchy-nav" id="nav">
+		<a class="cd-nav-trigger" href="#0">
+			
+			<span aria-hidden="true"></span>
+		</a>
 
-                <li class="dropdown">
-          <a  class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Servicios<span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="../desarrollo/">Desarrollo Web</a></li>
-            <li><a href="../diseno/">Diseño Gráfico</a></li>
-          </ul>
-        </li>
-                <li class="active"><a href="../nosotros/">Nosotros</a></li>
-                <li><a href="../proyectos/">Proyectos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </div>
-    </div>
-    </div>
+		<ul>
+			<li><a href="../"><span>Principal</span></a></li>
+			<li><a href="../desarrollo/"><span>Páginas Web</span></a></li>
+			<li><a href="../diseno/"><span>Diseño Gráfico</span></a></li>
+			<li><a href="../proyectos/"><span>Proyectos</span></a></li>
+			<li><a href="../nosotros/" class="active"><span>Sobre Nosotros</span></a></li>
+			<li><a href="#contacto"><span>Contacto</span></a></li>
+		</ul>
+
+		<span aria-hidden="true" class="stretchy-nav-bg"></span>
+	</nav>
+
 
     <!-- Main -->
     <div id="main">
         <div class="container-fluid wow bounceInLeft" data-wow-duration="1s" data-wow-delay=".05s">
             <div class="header">
-                <img src="../img/Iconos/About.svg" alt="Equipo" class="icon">
+                <img src="../img/Iconos/Team.svg" alt="Equipo" class="icon">
                 <h1 class="title">Sobre <span>Nosotros</span></h1>
                 <p class="lead">Nuestro objetivo: Cambiar el mundo, un proyecto increíble a la vez.</p>
             </div>
@@ -109,18 +103,119 @@
                         <div class="col-md-6" id="historia">
                             <div class="container-fluid">
                                 <h2 class="title">Nuestra <span>Historia</span></h2>
-                                <p class="lead">Triangle nació a principios de 2016 con el objetivo de cambiar el mundo, un proyecto inbreíble a la vez. Ahora ayudamos a que startups, PyMES, organizaciones y otros proyectos tengan páginas web únicas y especiales. Queremos conectar tus ideas, tus proyectos, etc... con tu público.</p>
+                                <p class="lead">En Triangle siempre ponemos la accesibilidad delante de todo en  nuestros proyectos. ¿Se ve bien en dispositivos móviles?¿Su tiempo de carga es menor a 5 segundos?¿Ya tiene el filtro para daltónicos? Estas son algunas de la cosas que hacemos en cada uno de nuestros proyectos.</p>                              
                             </div>
                         </div>
-                        <div class="col-md-6" id="compromiso">
+                         <div class="col-md-6" id="historia">
                             <div class="container-fluid">
-                                <h2 class="title">Nuestro <span>Compromiso</span></h2>
-                                <p class="lead">En Triangle siempre ponemos la accesibilidad delante de todo en  nuestros proyectos. ¿Se ve bien en dispositivos móviles?¿Su tiempo de carga es menor a 5 segundos?¿Ya tiene el filtro para daltónicos? Estas son algunas de la cosas que hacemos en cada uno de nuestros proyectos.</p>
+                                <h2 class="title">Nuestra <span>Historia</span></h2>
+                                <p class="lead">En Triangle siempre ponemos la accesibilidad delante de todo en  nuestros proyectos. ¿Se ve bien en dispositivos móviles?¿Su tiempo de carga es menor a 5 segundos?¿Ya tiene el filtro para daltónicos? Estas son algunas de la cosas que hacemos en cada uno de nuestros proyectos.</p>                              
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="container-fluid">
+                                <section class="cd-horizontal-timeline wow fadeInRight hidden-sm hidden-xs" style="margin-bottom: -40px">
+	<div class="timeline">
+		<div class="events-wrapper">
+			<div class="events">
+				<ol>
+					<li><a href="#" data-date="26/01/2016" class="selected">ene/16</a></li>
+					<li><a href="#" data-date="04/06/2016">jun/16</a></li>
+					<li><a href="#" data-date="26/01/2017">ene/17</a></li>
+					<li><a href="#" data-date="30/03/2017">mar/17</a></li>
+					<li><a href="#" data-date="03/06/2017">jun/17</a></li>
+					<li><a href="#" data-date="19/09/2017">sep/17</a></li>
+					<li><a href="#" data-date="26/01/2018">ene/18</a></li>
+					<li><a href="#" data-date="21/04/2018">abr/18</a></li>
+				</ol>
+
+				<span class="filling-line" aria-hidden="true"></span>
+			</div> <!-- .events -->
+		</div> <!-- .events-wrapper -->
+			
+		<ul class="cd-timeline-navigation">
+			<li><a href="#0" class="prev inactive">Prev</a></li>
+			<li><a href="#0" class="next">Next</a></li>
+		</ul> <!-- .cd-timeline-navigation -->
+	</div> <!-- .timeline -->
+
+	<div class="events-content">
+		<ol>
+		
+			<li class="selected" data-date="26/01/2016">
+				<h2>Fundación de Triangle</h2>
+				<em>26 de Enero de 2016</em>
+				<p>	
+					Este día, <b>José Pablo Iglesias</b> fundó <b>Triangle</b>, con el objetivo de apoyar a pequeñas y medianas empresas (<b>PyMES</b>) para obtuvieran más clientes. 
+				</p>
+			</li>
+			
+			<li  data-date="04/06/2016">
+				<h2>Ganamos Shark Innovation</h2>
+				<em>4 de Junio de 2016</em>
+				<p>	
+					Competimos en <b>Shark</b>, un desafío de tecnología y emprendimiento para jóvenes, donde ganamos el premio <b>Shark Innovation</b>, por la <b>calidad e innovación</b> que había en nuestros productos.
+				</p>
+			</li>
+			
+			<li data-date="26/01/2017">
+				<h2>1er Aniversario de Triangle</h2>
+				<em>26 de Enero de 2017</em>
+				<p>	
+					Celebramos <b>1 año</b> de fundación con todo el equipo, comprometiéndonos a trabajar para <b>alcanzar nuestras metas</b> y <b>apoyar a nuestros clientes</b>.
+				</p>
+			</li>
+			
+			<li  data-date="30/03/2017">
+				<h2>XII Congreso de los Jóvenes</h2>
+				<em>29, 30 y 31 de Marzo de 2017</em>
+				<p>	
+					Colaboramos con la <b>Sociedad de Alumnos</b> de la <b>PrepaUP</b> y con la <b>Universidad Panamericana</b> para desarrollar la imagen y página web del <b>XII Congreso de los Jóvenes</b>. Fuimos además <b>patrocinadores</b> del evento.
+				</p>
+			</li>
+			
+			<li  data-date="03/06/2017">
+				<h2>Ganamos Shark Innovation (otra vez)</h2>
+				<em>4 de Junio de 2016</em>
+				<p>	
+					Competimos de nuevo en <b>Shark</b> donde ganamos por <b>segundo año consecutivo</b> el premio <b>Shark Innovation</b>, por la <b>calidad e innovación</b> que había en nuestro producto de ese año, <b>Astros</b>. También participamos con otro proyecto (Learning English), que obtuvo una <b>Mención Honorífica</b>.
+				</p>
+			</li>
+			
+			<li  data-date="19/09/2017">
+				<h2>Sismo en la Ciudad de México</h2>
+				<em>19 de Septiembre de 2017</em>
+				<p>	
+					Después de que un sismo azotara la ciudad en la que vivimos y trabajamos, desarrollamos de la mano de <b>Codeando México</b> las plataformas <b>SismoMX</b> y <b>Cómo Ayudar</b>, para dar una mano en esos tiempos de necesidad.
+				</p>
+			</li>
+			
+			<li data-date="26/01/2018">
+				<h2>2do Aniversario de Triangle</h2>
+				<em>26 de Enero de 2018</em>
+				<p>	
+					Celebramos <b>2 años</b> de fundación con un <b>rediseño moderno e innovador de nuestra marca</b>.
+				</p>
+			</li>
+			
+			<li  data-date="21/04/2018">
+				<h2>Entrevista con Revista Cambio</h2>
+				<em>21 de Abril de 2018</em>
+				<p>	
+					<b>Roger Vela</b> de la revista mexicana <b>Cambio</b> le hizo una entrevista a nuestro CEO y Fundador <b>José Pablo Iglesias</b>, donde discutió temas como el emprendimiento infantil, <b>los retos que enfrenta la generación Z</b>, Cambridge Analytica, ser emprendedor en México e incluso sobre las <b>Elecciones de 2018 en México</b>. Puedes encontrar la entrevista <a class="timeline-link" href="http://www.revistacambio.com.mx/archivo/emprende-kids/">aquí</a>.
+				</p>
+			</li>
+			
+		</ol>
+	</div> <!-- .events-content -->
+</section>
                             </div>
                         </div>
                     </div>
 
             </div>
+            
+            
 
             <div class="section" id="equipo">
                 <div class="container-fluid">
@@ -128,45 +223,50 @@
                 <p class="lead">Triangle sería solo un nombre, una idea, si no fuera por nuestro increíble equipo, por eso es que queremos que conozcas a este grupo de expertos que te ayudarán a <strong>Obtener tu Idea</strong>, <strong>Crear tu Marca</strong> y <strong>Expandir tu Proyecto</strong>.</p>
                 <div id="equipo-flex">
                     <div class="miembro wow bounceIn" data-wow-duration="1s" data-wow-delay=".05s">
-                        <img src="../img/About/JPIglesias.png" alt="José Pablo">
+                        <img src="../img/About/JPIglesias.jpg" alt="JPIglesias">
                         <span class="nombre">José Pablo Iglesias</span>
-                        <span class="puesto">CEO y Programador Senior</span>
+                        <span class="puesto">Director General</span>
                     </div>
                     <div class="miembro wow bounceIn" data-wow-duration="1s" data-wow-delay=".05s">
-                        <img src="../img/About/Alvaro.png" alt="Alvaro">
-                        <span class="nombre">Alvaro López</span>
-                        <span class="puesto">Co-CEO y Programador</span>
+                        <img src="../img/About/Álvaro.jpg" alt="Álvaro">
+                        <span class="nombre">Álvaro López</span>
+                        <span class="puesto">Director de Operaciones</span>
                     </div>
                     <div class="miembro wow bounceIn" data-wow-duration="1s" data-wow-delay=".05s">
-                        <img src="../img/About/Max.png" alt="Máximo">
+                        <img src="../img/About/Max.jpg" alt="Max">
                         <span class="nombre">Máximo Sánchez</span>
-                        <span class="puesto">Diseñador Senior</span>
+                        <span class="puesto">Director de Reputación</span>
                     </div>
                     <div class="miembro wow bounceIn" data-wow-duration="1s" data-wow-delay=".05s">
-                        <img src="../img/About/Marianovski.png" alt="Mariano">
+                        <img src="../img/About/Mariano.jpg" alt="Mariano">
                         <span class="nombre">Mariano García</span>
-                        <span class="puesto">Programador</span>
+                        <span class="puesto">Programador Senior</span>
                     </div>
                     <div class="miembro wow bounceIn" data-wow-duration="1s" data-wow-delay=".05s">
-                        <img src="../img/About/Rata.png" alt="Santiago">
+                        <img src="../img/About/Santi.jpg" alt="Santiago">
                         <span class="nombre">Santiago Gutiérrez</span>
+                        <span class="puesto">Director de Marketing</span>
+                    </div>
+                    <div class="miembro wow bounceIn" data-wow-duration="1s" data-wow-delay=".05s">
+                        <img src="../img/About/Sánchez.jpg" alt="Santiago">
+                        <span class="nombre">Santiago Sánchez</span>
+                        <span class="puesto">Director Comercial</span>
+                    </div>
+                    <div class="miembro wow bounceIn" data-wow-duration="1s" data-wow-delay=".05s">
+                        <img src="../img/About/Héctor.jpg" alt="Héctor">
+                        <span class="nombre">Héctor Mariscal</span>
                         <span class="puesto">Director de Finanzas</span>
                     </div>
-                    <div class="miembro wow bounceIn" data-wow-duration="1s" data-wow-delay=".05s">
-                        <img src="../img/About/Sanchez.png" alt="Santiago">
-                        <span class="nombre">Santiago Sánchez</span>
-                        <span class="puesto">Director de Ventas</span>
-                    </div>
-                    <div class="miembro wow bounceIn" data-wow-duration="1s" data-wow-delay=".05s">
-                        <img src="../img/About/Elon.png" alt="Elon">
-                        <span class="nombre">Elon</span>
-                        <span class="puesto">Mascota Senior</span>
-                    </div>
+                    <!--<div class="miembro wow bounceIn" data-wow-duration="1s" data-wow-delay=".05s">
+                        <img src="../img/About/Castillo.jpg" alt="Santiago">
+                        <span class="nombre">José Manuel Castillo</span>
+                        <span class="puesto">Director de Mercancía</span>
+                    </div>-->
                 </div>
                 </div>
             </div>
 
-            <div class="section" id="compromiso-social">
+           <!--<div class="section" id="compromiso-social">
                 <h1>Nuestro <strong>Compromiso Social</strong></h1>
                 <p class="lead">
                     En <strong>Triangle</strong> queremos cambiar el mundo un proyecto increíble a la vez, es por eso que hemos decidido trabajar con diferentes grupos y empresas para apoyar a nuestro mundo, a través de proyectos educativos entre otras cosas. <br><br>
@@ -193,62 +293,71 @@
                     </div>
 
                 </div>
-            </div>
+            </div>-->
+    
+
+    <!-- Contacto -->
+    <div id="contacto">
+
+        <!-- Title + Lead -->
+        <div class="text wow fadeIn" data-wow-delay=".1s">
+            <h1 class="title"><span>Creemos</span> algo juntos</h1>
+            <p class="lead">
+                ¿Tienes un <b>negocio</b>? ¿un <b>proyecto</b>? Nosotros te ayudamos a <b>llevarlo al siguiente nivel</b>.
+            </p>
+        </div>
+
+        <!-- Form -->
+        <div id="form">
+            <form action="https://send.pageclip.co/cSlAvftlvHMqbuXyEU3bnhZzJtTYoLjI/contact-form" class="pageclip-form" method="post">
+                <input class="wow fadeInUp" data-wow-delay=".3s" type="text" name="nombre" placeholder="Tu Nombre" required>
+                <input class="wow fadeInUp" data-wow-delay=".5s" type="email" name="email" placeholder="Tu Correo Electrónico" required>
+                <textarea class="wow fadeInUp" data-wow-delay=".7s" name="message" placeholder="Tu Mensaje"></textarea>
+                <input type="hidden" name="_language" value="es" />
+                <input type="text" name="_gotcha" style="display:none" />
+                <br>
+                <button type="submit" class="pageclip-form__submit btn1blur wow fadeInUp" data-wow-delay=".9s" data-micron="tada">&nbsp;&nbsp;Enviar&nbsp;&nbsp;</button>
+            </form>
+        </div>
     </div>
 
-    <!-- Contact -->
-    <!-- Contact -->
-    <div id="contacto">
-        <div class="paso-container">
-            <img src="../img/Iconos/Contacto.svg" alt="Antena de Radio" class="icon wow bounceIn" data-wow-duration="1s" data-wow-delay=".05s">
-            <h1 class="title"><span>Contacto</span></h1>
-            <p class="lead">Ahora que sabes un poco de lo que hacemos, cómo lo hacemos y por qué lo hacemos, cuéntanos cómo podemos ayudarte a conseguir tus objetivos, o pregúntanos lo que quieras.</p>
+    <!-- Footer -->
+    <div id="footer" style="max-width:100%">
+        <div class="container">
             <div class="row">
-                <div class="col-lg-6 form-column">
-                    <div id="form">
-                        <form action="https://send.pageclip.co/cSlAvftlvHMqbuXyEU3bnhZzJtTYoLjI/contact-form" class="pageclip-form" method="post">
-                            <input type="text" name="nombre" placeholder="Tu Nombre" required>
-                            <input type="email" name="email" placeholder="Tu Correo Electrónico" required>
-                            <textarea name="message" placeholder="Tu Mensaje"></textarea>
-                            <input type="hidden" name="_language" value="es" />
-                            <input type="text" name="_gotcha" style="display:none" />
-                            <br>
-                            <button type="submit" class="pageclip-form__submit btn1" data-micron="tada">Enviar</button>
-                        </form>
-                    </div>
+                <div class="col-md-3 brand-content" style="margin-bottom: 20px">
+                    <img src="../img/LogoWhite.svg" alt="" class="brand">
+                    <span><a href="mailto:contacto@triangle.mx" class="footer-mail">contacto@triangle.mx</a></span>
+                    <ul class="social-icons">
+                        <li><a href="https://www.facebook.com/somos.triangle/" target="_blank"><i class="icon-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/triangle.mexico/" target="_blank"><i class="icon-instagram"></i></a></li>
+                    </ul>
                 </div>
-                <div class="col-lg-6">
-                    <p class="lead">Si no deseas utilizar la forma de contacto, puedes utilizar los siguentes medios para contactarnos:</p>
-                    <ul class="contact-methods">
-                        <li><a class="link" href="mailto:contacto@triangle.mx"><i class="icon-mail"></i> contacto@triangle.mx</a></li>
-                        <li><a href=""><i class="icon-"></i></a></li>
-                        <li><a href=""><i class="icon-"></i></a></li>
+                <div class="col-md-3"></div>
+                <div class="col-md-3" style="margin-bottom: 20px">
+                    <ul class="footer-links">
+                        <li><a href="../">Principal</a></li>
+                        <li><a href="../desarrollo/">Desarrollo Web</a></li>
+                        <li><a href="../diseno/">Diseño Gráfico</a></li>
+                        <li><a href="../proyectos/">Proyectos</a></li>
+                        <li><a class="active" href="../nosotros/">Sobre Nosotros</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul class="footer-links">
+                        <li><a class="non-important" href="https://triangle-mx.github.io/carbon-framework/" target="_blank">Carbon</a></li>
+                        <li><a class="non-important" href="#">Insight</a></li>
+                        <li><a class="non-important" href="../jobs/">Trabaja en Triangle</a></li>
+                        <br>
+                        <li><a href="#">Política de Privacidad</a></li>
+                        <li><a href="#">Términos y Condiciones</a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Footer -->
-    <div id="footer" style="max-width:100%">
-        <div class="row footer-content">
-            <div class="col-lg-4 col-md-4 col-sm-4 brand-container"><span class="brand">Somos <img style="display: inline; height: 100%; max-height: 25px; margin-top: -4px; max-width: 100%;" src="../img/LogoYellow.svg" alt="Logo Triangle"></span></div>
-            <div class="col-lg-4 col-md-4 col-sm-4">
-                <ul class="social-icons list-inline">
-                    <li><a href="https://www.facebook.com/trianglewebmexico/" target="_blank" class="facebook" title="Facebook"><i class="icon-facebook"></i></a></li>
-                    <li><a href="https://www.instagram.com/trianglewebsmex/" target="_blank" class="instagram" title="Instagram"><i class="icon-instagram"></i></a></li>
-                    <li><a href="https://github.com/Triangle-MX" target="_blank" class="github" title="GitHub"><i class="icon-github"></i></a></li>
-
-                    <li><a href="javascript:(function(){var s=document.getElementById(&quot;colourblind-styling&quot;);var x=document.getElementById(&quot;colourblind-filters&quot;);if(!s){s=document.createElement(&quot;style&quot;);document.body.appendChild(s)}if(!x){x=document.createElement(&quot;div&quot;);x.setAttribute(&quot;style&quot;,&quot;height: 0; padding: 0; margin: 0; line-height: 0;&quot;);x.innerHTML=&#39;&lt;svg id=&quot;colorblind-filters&quot; style=&quot;display: none&quot;&gt; &lt;defs&gt; &lt;filter id=&quot;protanopia&quot;&gt; &lt;feColorMatrix type=&quot;matrix&quot; values=&quot;0.567,0.433,0,0,0 0.558,0.442,0,0,0 0 0.242,0.758,0,0 0,0,0,1,0&quot; in=&quot;SourceGraphic&quot; /&gt; &lt;/filter&gt; &lt;filter id=&quot;protanomaly&quot;&gt; &lt;feColorMatrix type=&quot;matrix&quot; values=&quot;0.817,0.183,0,0,0 0.333,0.667,0,0,0 0,0.125,0.875,0,0 0,0,0,1,0&quot; in=&quot;SourceGraphic&quot; /&gt; &lt;/filter&gt; &lt;filter id=&quot;deuteranopia&quot;&gt; &lt;feColorMatrix type=&quot;matrix&quot; values=&quot;0.625,0.375,0,0,0 0.7,0.3,0,0,0 0,0.3,0.7,0,0 0,0,0,1,0&quot; in=&quot;SourceGraphic&quot; /&gt; &lt;/filter&gt; &lt;filter id=&quot;deuteranomaly&quot;&gt; &lt;feColorMatrix type=&quot;matrix&quot; values=&quot;0.8,0.2,0,0,0 0.258,0.742,0,0,0 0,0.142,0.858,0,0 0,0,0,1,0&quot; in=&quot;SourceGraphic&quot; /&gt; &lt;/filter&gt; &lt;filter id=&quot;tritanopia&quot;&gt; &lt;feColorMatrix type=&quot;matrix&quot; values=&quot;0.95,0.05,0,0,0 0,0.433,0.567,0,0 0,0.475,0.525,0,0 0,0,0,1,0&quot; in=&quot;SourceGraphic&quot; /&gt; &lt;/filter&gt; &lt;filter id=&quot;tritanomaly&quot;&gt; &lt;feColorMatrix type=&quot;matrix&quot; values=&quot;0.967,0.033,0,0,0 0,0.733,0.267,0,0 0,0.183,0.817,0,0 0,0,0,1,0&quot; in=&quot;SourceGraphic&quot; /&gt; &lt;/filter&gt; &lt;filter id=&quot;achromatopsia&quot;&gt; &lt;feColorMatrix type=&quot;matrix&quot; values=&quot;0.299,0.587,0.114,0,0 0.299,0.587,0.114,0,0 0.299,0.587,0.114,0,0 0,0,0,1,0&quot; in=&quot;SourceGraphic&quot; /&gt; &lt;/filter&gt; &lt;filter id=&quot;achromatomaly&quot;&gt; &lt;feColorMatrix type=&quot;matrix&quot; values=&quot;0.618,0.320,0.062,0,0 0.163,0.775,0.062,0,0 0.163,0.320,0.516,0,0 0,0,0,1,0&quot; in=&quot;SourceGraphic&quot; /&gt; &lt;/filter&gt; &lt;/defs&gt; &lt;/svg&gt;&#39;;document.body.appendChild(x)}var l=[&quot;protanopia&quot;,&quot;protanomaly&quot;,&quot;deuteranopia&quot;,&quot;deuteranomaly&quot;,&quot;tritanopia&quot;,&quot;tritanomaly&quot;,&quot;achromatopsia&quot;,&quot;achromatomaly&quot;];var p=&quot;&quot;;for(var i in l)p+=parseInt(i)+1+&quot;: &quot;+l[i]+&quot;; &quot;;var c=parseInt(prompt(&quot;0: off; &quot;+p))-1;if(isNaN(c))return;if(c&gt;=l.length)return;if(c==-1){s.innerHTML=&quot;body{-webkit-filter:none;-moz-filter:none;-ms-filter:none;-o-filter:none;filter:none;}&quot;;return}c=l[c];if(document.getElementById(c))s.innerHTML=&quot;body{-webkit-filter:!!;-moz-filter:!!;-ms-filter:!!;-o-filter:!!;filter:!!;}&quot;.replace(/!!/g,&quot;url(#&quot;+c+&quot;)&quot;);else s.innerHTML=&quot;body{-webkit-filter:none;-moz-filter:none;-ms-filter:none;-o-filter:none;filter:none;}&quot;})();" title="Filtro para Daltónicos" class="daltonic"><i class="icon-eye"></i></a>
-                    </li>
-
-                    <li style="">
-                        <a href="https://triangle.mx/files/privacidad.html"><i title="Política de Privacidad" class="icon-lock"></i></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
     </div>
-
 
     <!-- Scripts -->
 

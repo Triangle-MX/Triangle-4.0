@@ -15,8 +15,9 @@
 
         .icon
             width: 100%
-            max-width: 450px
-            max-height: 380px
+            max-width: 350px
+            max-height: 350px
+            margin-bottom: 30px
 
         #design-icon
             @media (max-width: 600px)
@@ -32,11 +33,10 @@
 
             span
                 font-size: 110%
-                font-weight: bold
-                color: $yellow
+                font-weight: 900
+                color: $black
 
         .lead
-            font-size: 110%
 
             @media (max-width: 600px)
                 font-size: 100%
@@ -59,8 +59,8 @@
 
             span
                 font-size: 110%
-                font-weight: bold
-                color: $yellow
+                font-weight: 900
+                color: $black
 
         .author
             margin-top: -20px
@@ -69,16 +69,51 @@
             line-height: 0px
 
         .icon
-            height: 141px
+            height: 200px
             margin-top: 30px
 
-#micro-projects
-    background-image: url('../img/Proyectos/micro-projects/micro-projects-bg.jpg')
-    background-size: cover
-    background-color: rgba(32,32,32,.6)
-    background-blend-mode: overlay
-    background-attachment: fixed
-    color: $white !important
-
-    h1
-        font-size: 180%
+#micro-projects    
+    background-color: $white
+    
+    .col-md-3 
+        @media (max-width: 1200px)
+            margin-bottom: 30px
+        
+        .lead
+            text-align: justify
+    
+        .title
+            margin-bottom: 30px !important
+            
+            @media (max-width: 1200px)
+                margin-bottom: 10px !important
+            
+            b
+                font-weight: 900
+        
+    .micro-project
+        @media (max-width: 992px)
+            margin-bottom: 30px
+                
+            
+        .img
+            border-radius: $border-radius
+            transition: $transition
+            
+            &:hover
+                transform: scale(1.05)
+                box-shadow: $box-shadow
+            
+        .name
+            font-weight: 900 !important
+            
+            @media (max-width: 992px)
+                display: none
+        
+        .lead
+            @media (max-width: 992px)
+                display: none
+                
+    .micro-project-nonimportant
+        @media (max-width: 992px)
+                display: none
