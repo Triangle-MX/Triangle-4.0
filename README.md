@@ -1,9 +1,6 @@
-<img src="https://triangle.mx/img/LogoYellow.svg" alt="Triangle Logo">
+<img src="https://triangle.mx/img/LogoYellow.svg" alt="Triangle Logo" width="350px">
 
-Triangle 4.0
-===
-
-The new version of our site which includes a major redesign in the site's design, and has had tons of interactivity and responsiveness added to it. Built with <a href="https://github.com/Triangle-MX/Parsec">Parsec</a> and secured with JScrambler.
+The new version of our site which includes a major redesign in the site's design, and has had tons of interactivity and responsiveness added to it.
 
 ## Credits
 
