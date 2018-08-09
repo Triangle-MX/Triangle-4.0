@@ -271,41 +271,64 @@
             margin-bottom: 70px
 
 // MKT Block
+.web-mkt
+    background-color: #07093B
+    clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%)
+    background-attachment: fixed
+    background-image: url('../img/MKT-Block-Space-BG.svg')
+    background-repeat: no-repeat
+    background-size: cover
+
 .mkt-block
-    margin-top: 40px
-    background-color: #FBFBFB
-    padding: 60px 0
-    padding-top: 40px
+    margin: 80px 0
+    padding: 120px 0
+    padding-top: 100px
 
     .container
         width: 80%
 
     .row
-        display: block
         text-align: center
 
-        @media(min-width: 768px)
+        //@media(min-width: 768px)
             display: flex
             align-items: center
-            text-align: left
+            text-align: center
 
         .title
+            color: $white
+
             span
                 font-weight: 700
 
         .description
-            width: 90%
+            color: $white
+            margin-bottom: 12px
 
         .btn1blur
 
-        img
+        .side-by-side-block
             max-width: 60%
             margin: 0 auto
             display: inline-block
             transition: $transition
+            position: relative
 
             @media(max-width: 1000px)
                 max-width: 100%
+
+            @media(max-width: 768px)
+                max-width: 35% !important
+
+        .centered-block
+            max-width: 15%
+            display: inline-block
+            transition: $transition
+            position: relative
+            margin-bottom: 20px
+
+            @media(max-width: 1000px)
+                max-width: 50%
 
             @media(max-width: 768px)
                 max-width: 35% !important
