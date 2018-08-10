@@ -256,6 +256,7 @@
                 margin-bottom: 0px !important
 
             .description
+                font-weight: 300
 
             .btn1
                 margin-top: 0px !important
@@ -280,7 +281,7 @@
     background-size: cover
 
 .mkt-block
-    margin: 80px 0
+    margin: 150px 0
     padding: 120px 0
     padding-top: 100px
 
@@ -297,6 +298,7 @@
 
         .title
             color: $white
+            margin-bottom: 1px
 
             span
                 font-weight: 700
@@ -304,6 +306,7 @@
         .description
             color: $white
             margin-bottom: 12px
+            font-weight: 300
 
         .btn1blur
 
@@ -328,10 +331,44 @@
             margin-bottom: 20px
 
             @media(max-width: 1000px)
+                max-width: 25%
+
+            @media(max-width: 800px)
                 max-width: 50%
 
             @media(max-width: 768px)
                 max-width: 35% !important
 
+#multi-item-section
+    margin: 120px 0
 
-#contacto
+    .row
+        text-align: center
+        display: block
+
+        @media(min-width: 994px)
+            display: flex
+            align-items: center
+            text-align: center
+
+        .item
+            padding: 0 20px
+
+            img
+                display: inline-block
+                width: 40%
+
+            .title
+                margin-bottom: 1px
+
+                span
+                    font-weight: 700
+
+            .description
+                font-weight: 300
+
+            .btn1blur
+
+        .item-1
+            @media(max-width: 990px)
+                margin-bottom: 50px
