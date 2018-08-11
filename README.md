@@ -12,9 +12,6 @@ The redesign includes subtle **animations**, which will help us to create a more
 
 ## Accesibility
 
-To get a **human** look, we need to make our site more accessible. We are going to make this in three different ways:
-
-- **Colorblindness Filters**: Thanks to Github User <a href="https://github.com/Altreus">Altreus</a> we managed to get some filters for people with eight different types of color blindness. To access this filters you just need to click on the eye icon at the footer of each page.
 
 - **Ultra Responsiveness**: Nearly 60% percent of our CSS code is dedicating to make out page mobile friendly and ultra responsive.
 
