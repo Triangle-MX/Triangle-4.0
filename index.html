@@ -43,6 +43,9 @@
         <!-- Bootstrap 3 -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Montserrat:400,700" rel="stylesheet">
+
         <!-- Main Styles -->
         <link rel="stylesheet" href="css/main.css">
 
@@ -84,14 +87,12 @@
         new WOW().init();
     </script>
 
-
-
     <!--[if lt IE 8]>
             <p class="browserupgrade">Estas usando una versión muy <strong>antigua</strong> de tu navegador. Por favor <a href="http://browsehappy.com/">actualiza tu navegador</a> para tener una mejor experiencia en la red.</p>
     <![endif]-->
 
     <!-- Nav -->
-    <nav id="nav" class="cd-stretchy-nav animated fadeIn" style="animation-delay: .5s">
+    <nav id="nav" class="cd-stretchy-nav">
 		<a class="cd-nav-trigger" href="#0">
 
 			<span aria-hidden="true"></span>
@@ -109,17 +110,17 @@
 		<span aria-hidden="true" class="stretchy-nav-bg"></span>
 	</nav>
 
-    <div id="main">
+<div id="main">
         <!--<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="96px" height="16px" viewBox="0 0 96 16">-->
 
     <!-- Balls -->
     <div id="balls">
-        <img src="img/Balls/BlueBall.png" alt="Pelota Azul" class="ball blue rellax wow fadeIn" data-wow-delay=".9s" data-wow-duration=".5s" data-rellax-speed="2">
-        <img src="img/Balls/RedBall.png" alt="Pelota Roja" class="ball red rellax wow fadeIn" data-wow-delay="1.3s" data-wow-duration=".5s" data-rellax-speed="-2">
-        <img src="img/Balls/YellowBall.png" alt="Pelota Amarilla" class="ball yellow rellax wow fadeIn" data-wow-delay=".8s" data-wow-duration=".5s" data-rellax-speed="-2">
-        <img src="img/Balls/GreenBall.png" alt="Pelota Verde" class="ball green rellax wow fadeIn" data-wow-delay="1s" data-wow-duration=".5s" data-rellax-speed="-1">
-        <img src="img/Balls/PurpleBall.png" alt="Pelota Morada" class="ball purple rellax wow fadeIn" data-wow-delay="1.2s" data-wow-duration=".5s" data-rellax-speed="3">
-        <img src="img/Balls/OrangeBall.png" alt="Pelota Naranja" class="ball orange rellax wow fadeIn" data-wow-delay="1.1s" data-wow-duration=".5s" data-rellax-speed="7">
+        <img src="img/Balls/BlueBall.svg" alt="Pelota Azul" class="ball blue rellax wow fadeIn" data-wow-delay=".9s" data-wow-duration=".5s" data-rellax-speed="2">
+        <img src="img/Balls/RedBall.svg" alt="Pelota Roja" class="ball red rellax wow fadeIn" data-wow-delay="1.3s" data-wow-duration=".5s" data-rellax-speed="-2">
+        <img src="img/Balls/YellowBall.svg" alt="Pelota Amarilla" class="ball yellow rellax wow fadeIn" data-wow-delay=".8s" data-wow-duration=".5s" data-rellax-speed="-2">
+        <img src="img/Balls/GreenBall.svg" alt="Pelota Verde" class="ball green rellax wow fadeIn" data-wow-delay="1s" data-wow-duration=".5s" data-rellax-speed="-1">
+        <img src="img/Balls/PurpleBall.svg" alt="Pelota Morada" class="ball purple rellax wow fadeIn" data-wow-delay="1.2s" data-wow-duration=".5s" data-rellax-speed="3">
+        <img src="img/Balls/OrangeBall.svg" alt="Pelota Naranja" class="ball orange rellax wow fadeIn" data-wow-delay="1.1s" data-wow-duration=".5s" data-rellax-speed="7">
     </div>
 
     <!-- Hero -->
@@ -133,7 +134,6 @@
         </div>
 
     </div>
-
 
     <!-- ¿Qué hacemos? -->
     <div id="servicios">
@@ -179,6 +179,58 @@
 
         </div>
 
+    </div>
+
+    <!-- MKT Block - ¿Por qué necesitas una página web? -->
+    <div class="mkt-block web-mkt">
+        <div class="container">
+            <div class="row">
+
+            <!-- Side by Side -->
+            <!--
+
+                <div class="col-sm-4 col-sm-push-8 wow fadeInRight rellax" data-wow-delay=".3s">
+                    <img src="img/index-icons/Responsive-Icon.svg" alt="Llega a todas partes">
+                </div>
+
+                <div class="col-sm-8 col-sm-pull-4 wow fadeInLeft" data-wow-delay=".5s">
+                    <h2 class="title">¿Por qué <span>necesitas una página web</span>?</h2>
+                    <p class="description"><b>Descubre 5 razones</b> por las que tu proyecto <b>necesita una página web</b> para crecer y llegar <b>al siguiente nivel</b>.</p>
+                    <a href="#" class="btn1blur">Descubre Más</a>
+                </div>
+
+            -->
+
+            <!-- Centered -->
+            <div class="centered-block-container">
+                <img class="centered-block wow fadeInUp" data-wow-delay=".3s" src="img/index-icons/Responsive-Icon.svg" alt="Llega a todas partes">
+                <h2 class="title wow fadeInUp" data-wow-delay=".5s">¿Por qué <span>necesitas una página web</span>?</h2>
+                <p class="description wow fadeInUp" data-wow-delay=".7s"><b>Descubre 5 razones</b> por las que tu proyecto <b>necesita una página web</b> para crecer y llegar <b>al siguiente nivel</b>.</p>
+                <a href="#" class="btn1blur wow fadeInUp" data-wow-delay="1s">Descubre Más</a>
+            </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Multi Item Section (Sobre Nosotros + Proyectos) -->
+    <div id="multi-item-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-push-6 item item-1">
+                    <img src="img/index-icons/Projects-Icon.svg" alt="Nuestro Equipo" class="wow fadeInRight" data-wow-delay=".2s">
+                    <h2 class="title wow fadeInRight" data-wow-delay=".4s">Nuestros <span>Proyectos</span></h2>
+                    <p class="description wow fadeInRight" data-wow-delay=".6s">Cuidamos <b>cada pequeño detalle de tu proyecto</b>, manteniendo y definiendo <b>tu estilo a la perfección</b>.</p>
+                    <a href="/proyectos" class="btn1blur wow fadeInRight" data-wow-delay=".8s">Descubre Más</a>
+                </div>
+                <div class="col-md-6 col-md-pull-6 item">
+                    <img src="img/index-icons/About-Icon.svg" alt="Nuestro Equipo" class="wow fadeInLeft" data-wow-delay=".3s">
+                    <h2 class="title wow fadeInLeft" data-wow-delay=".5s">Sobre <span>Nosotros</span></h2>
+                    <p class="description wow fadeInLeft" data-wow-delay=".7s">Somos un grupo de <b>jóvenes comprometidos</b> con nuestro trabajo: <b>construir experiencias</b> para nuestros clientes.</p>
+                    <a href="/nosotros" class="btn1blur wow fadeInLeft" data-wow-delay=".9s">Descubre Más</a>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Contacto -->
@@ -232,7 +284,7 @@
                 <div class="col-md-3">
                     <ul class="footer-links">
                         <li><a class="non-important" href="https://triangle-mx.github.io/carbon-framework/" target="_blank">Carbon</a></li>
-                        <li><a class="non-important" href="#">Insight</a></li>
+                        <li><a class="non-important" href="https://triangle.mx/pagos">Pagos</a></li>
                         <li><a class="non-important" href="jobs/">Trabaja en Triangle</a></li>
                         <br>
                         <li><a href="#">Política de Privacidad</a></li>
@@ -243,7 +295,7 @@
         </div>
     </div>
 
-    </div>
+</div>
 
     <!-- Scripts -->
 

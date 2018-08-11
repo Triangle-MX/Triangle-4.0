@@ -1,16 +1,16 @@
 /* Hero */
 #hero
-    width: 101%
+    width: 100%
     background-repeat: none !important
     background-color: $white
-    background-image: url('../img/SpaceCUTTED.jpg')
+    background-image: url('../img/SpaceCUTTED.svg')
     background-size: cover
     background-position: bottom
     padding: 5px 0 200px 0
-    margin-left: -1px
+    margin-left: 0x
     animation-duration: 1s
     animation-delay: .5s
-    margin-bottom: 0px
+    margin-bottom: -10px
     min-height: 127vh
     display: flex
     flex-direction: column
@@ -21,17 +21,19 @@
 
     @media (max-width: 600px)
         padding: -20px 0 100px 0
-        background-image: url('../img/SpaceMOBcutted.jpg')
+        background-image: url('../img/SpaceMOBcutted.svg')
+        width: 100%
+        height: 110vh
 
     // Balls
-    @media (min-width: 1200px) and (max-width: 1600px)
-        background-image: url('../img/SpaceBALLS.jpg')
+    @media (min-width: 1000px) and (max-width: 1600px)
+        background-image: url('../img/SpaceBALLS.svg')
         //background-image: url('../img/SpaceBALLSalt.jpg')
         //-webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%)
         //clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%)
 
     @media (min-width: 1601px)
-        background-image: url('../img/SpaceCUTTEDlarge.jpg')
+        background-image: url('../img/SpaceCUTTEDlarge.svg')
         padding: -20px 0 200px 0
 
     // Mobile Devices Responsive Issues
@@ -107,10 +109,10 @@
 #balls
     position: absolute
     z-index: 20
-    display: none
+    display: block
 
-    @media (min-width: 1200px) and (max-width: 1600px)
-        display: block
+    @media (max-width: 1000px)
+        display: none
 
     .blue
         position: absolute
@@ -131,6 +133,15 @@
         left: 125px
         height: 300px
 
+        @media(max-width: 600px)
+            top: 420px
+            height: 220px
+            left: -50px
+
+        @media(max-width: 1200px)
+            top: 450px
+            left: 70px
+
         @media (min-height: 800px)
             top: 580px
 
@@ -140,11 +151,17 @@
         left: -10px
         height: 120px
 
+        @media (max-width: 1199px)
+            display: none
+
     .green
         position: absolute
         top: -5px
         left: 200px
         height: 200px
+
+        @media (max-width: 1150px)
+            left: 50px
 
     .red
         position: absolute
@@ -152,9 +169,12 @@
         left: 900px
         height: 250px
 
-        @media (min-width: 1000px) and (max-width: 1200px)
+        @media (min-width: 1051px) and (max-width: 1100px)
             top: -40px
             left: 600px
+
+        @media (max-width: 1200px)
+            left: 800px
 
     .orange
         position: absolute
@@ -162,6 +182,9 @@
         left: 1200px
         height: 250px
         transform: rotate(270deg)
+
+        @media(max-width: 1220px)
+            display: none
 
         @media (min-width: 1000px) and (max-width: 1220px)
             top: 230px
@@ -199,6 +222,15 @@
             span
                 font-weight: 700
 
+    .row
+        display: block
+        text-align: center
+
+        @media(min-width: 768px)
+            display: flex
+            align-items: center
+            text-align: left
+
     .servicio
         width: 90%
         margin: 60px auto 0 auto!important
@@ -224,6 +256,7 @@
                 margin-bottom: 0px !important
 
             .description
+                font-weight: 300
 
             .btn1
                 margin-top: 0px !important
@@ -238,7 +271,104 @@
         @media(max-width: 768px)
             margin-bottom: 70px
 
+// MKT Block
+.web-mkt
+    background-color: #07093B
+    clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%)
+    background-attachment: fixed
+    background-image: url('../img/MKT-Block-Space-BG.svg')
+    background-repeat: no-repeat
+    background-size: cover
 
+.mkt-block
+    margin: 150px 0
+    padding: 120px 0
+    padding-top: 100px
 
+    .container
+        width: 80%
 
-#contacto
+    .row
+        text-align: center
+
+        //@media(min-width: 768px)
+            display: flex
+            align-items: center
+            text-align: center
+
+        .title
+            color: $white
+            margin-bottom: 1px
+
+            span
+                font-weight: 700
+
+        .description
+            color: $white
+            margin-bottom: 12px
+            font-weight: 300
+
+        .btn1blur
+
+        .side-by-side-block
+            max-width: 60%
+            margin: 0 auto
+            display: inline-block
+            transition: $transition
+            position: relative
+
+            @media(max-width: 1000px)
+                max-width: 100%
+
+            @media(max-width: 768px)
+                max-width: 35% !important
+
+        .centered-block
+            max-width: 15%
+            display: inline-block
+            transition: $transition
+            position: relative
+            margin-bottom: 20px
+
+            @media(max-width: 1000px)
+                max-width: 25%
+
+            @media(max-width: 800px)
+                max-width: 50%
+
+            @media(max-width: 768px)
+                max-width: 35% !important
+
+#multi-item-section
+    margin: 120px 0
+
+    .row
+        text-align: center
+        display: block
+
+        @media(min-width: 994px)
+            display: flex
+            align-items: center
+            text-align: center
+
+        .item
+            padding: 0 20px
+
+            img
+                display: inline-block
+                width: 40%
+
+            .title
+                margin-bottom: 1px
+
+                span
+                    font-weight: 700
+
+            .description
+                font-weight: 300
+
+            .btn1blur
+
+        .item-1
+            @media(max-width: 990px)
+                margin-bottom: 50px

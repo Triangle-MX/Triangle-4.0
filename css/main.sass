@@ -1,7 +1,4 @@
-// Triangle 4.0
-
-// Fonts
-@import url('https://fonts.googleapis.com/css?family=Lato|Montserrat:300,400,700')
+// Font Import
 
 // Color Variables
 $yellow: #FFB61E
@@ -13,8 +10,8 @@ $red: #FF5959
 $doodle: #FFB61E
 
 // Typography Variables
-$montserrat: "Montserrat", "Helvetica Neue", sans-serif
-$lato: "Lato", "Helvetica Neue", sans-serif
+$montserrat: "Montserrat", "Helvetica Neue"
+$lato: "Lato", "Helvetica Neue"
 $normal-size: 18px
 $mobile-size: 18px
 $big-size: 20px
@@ -33,7 +30,8 @@ $border-radius: 7px
 body
     background-color: $white
     overflow-x: hidden !important
-    font-family: $lato
+    width: 100% !important
+    font-family: $lato !important
     font-size: $normal-size
     color: $black
     font-weight: 500
@@ -48,7 +46,7 @@ body
         font-size: $big-size
 
 h1,h2,h3,h4,h5,h6
-    font-family: $montserrat
+    font-family: $montserrat !important
 
 a, .link
     text-decoration: none
@@ -93,7 +91,7 @@ img::-moz-selection
     transition: $transition
 
 .menu-open
-    opacity: .2 !important
+    opacity: .05 !important
 
 
 
