@@ -12,6 +12,7 @@ The redesign includes subtle **animations**, which will help us to create a more
 
 ## Accesibility
 
+To get a near perfect **human** look, we need to make our site more accessible. We are going to make this in three different ways:
 
 - **Ultra Responsiveness**: Nearly 60% percent of our CSS code is dedicating to make out page mobile friendly and ultra responsive.
 
