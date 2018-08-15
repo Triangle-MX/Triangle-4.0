@@ -86,7 +86,6 @@ var TxtType = function(el, toRotate, period) {
 // Menu-Open
 var mainContent = $('#main');
 
-
 // Menu
 jQuery(document).ready(function(){
 	if( $('.cd-stretchy-nav').length > 0 ) {
