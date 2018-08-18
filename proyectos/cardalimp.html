@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es-MX">
 <head>
-    <title>Triangle | Proyectos</title>
+    <title>Triangle | Cardalimp</title>
 
     <!-- Important Metas -->
     <meta charset="UTF-8">
@@ -26,9 +26,9 @@
             {
             "@context": "http://schema.org",
             "@type": "Organization",
-            "name": "Triangle -  Proyectos",
-            "url": "http://www.triangle.mx/proyectos",
-            "description": "Cuidamos cada pequeño detalle de tu proyecto, manteniendo y definiendo tu estilo a la perfección."
+            "name": "Triangle -  Cardalimp",
+            "url": "http://www.triangle.mx/proyectos/cardalimp",
+            "description": "Rediseño y Página Web para Cardalimp."
             }
         </script>
 
@@ -81,7 +81,7 @@
 			<li><a href="../"><span>Principal</span></a></li>
 			<li><a href="../desarrollo/"><span>Páginas Web</span></a></li>
 			<li><a href="../diseno/"><span>Diseño Gráfico</span></a></li>
-			<li><a href="../proyectos/" class="active"><span>Proyectos</span></a></li>
+			<li><a href="../proyectos/"><span>Proyectos</span></a></li>
 			<li><a href="../nosotros/"><span>Sobre Nosotros</span></a></li>
 			<li><a href="#contacto"><span>Contacto</span></a></li>
 		</ul>
@@ -91,23 +91,32 @@
 
     <!-- Main -->
     <div id="main">
+
         <div class="container-fluid" data-wow-duration="1s" data-wow-delay=".05s">
             <div class="header">
-                <img src="../img/index-icons/Projects-Icon.svg" alt="Proyectos" class="icon wow fadeInUp" data-wow-delay=".3s">
-                <h1 class="title wow fadeInUp" data-wow-delay=".7s">Nuestros <span>Proyectos</span></h1>
-                <p class="lead wow fadeInUp" data-wow-delay="1s">Cuidamos <b>cada pequeño detalle de tu proyecto</b>, manteniendo y definiendo <b>tu estilo a la perfección</b>.</p>
+                <img src="../img/projects/logos/cardalimp.svg" alt="Logo Cardalimp" class="icon wow fadeInUp" data-wow-delay=".3s">
+                <h1 class="title wow fadeInUp" data-wow-delay=".7s"><span>Cardalimp</span></h1>
+                <p class="lead wow fadeInUp" data-wow-delay="1s"><b>Rediseño</b> y una <b>Página Web</b> para una <b>empresa líder</b> en el sector de <b>Limpieza Empresarial</b>.</p>
             </div>
         </div>
 
-    <div class="projects-section projects-1 section" >
-        <div class="row" id="projects-app">
-            <div v-for="project in projects" class="project-card col-md-4 col-sm-4 col-xs-6">
-                <a v-bind:href="project.linkSource" v-bind:target="project.linkTarget" class="wow fadeInUp" data-wow-delay=".3s">
-                    <img v-bind:src="project.thumbnailSource" v-bind:alt="'Proyecto:' + project.name">
-                </a>
+        <div class="article-content">
+            <div class="container">
+                <p>
+
+                    <h3>1- Te ayuda a <b>conseguir más clientes</b>:</h3> Tener una página web con un buen diseño y bien elaborada en todos los sentidos te dará mas proyección hacia el mundo, lo cual te ayudará a conseguir más clientes.
+                    <br><br>
+                    <h3>2- Te ayuda a <b>modernizar tu negocio</b>:</h3> Con una página web puedes darle ese toque de modernidad que necesita tu negocio para integrarse a este mundo lleno de tecnología en el cual es esencial tener un espacio en Internet donde puedas te puedan contactar.
+                    <br><br>
+                    <h3>3- Tu negocio se ve <b>más profesional</b>:</h3> Una página web te ayudará a darle más profesionalismo a tu negocio, adaptándote a las nuevas maneras en las que este mundo funciona.
+                    <br><br>
+                    <h3>4- <b>Acelera el crecimiento</b> de tu negocio:</h3> Combinando las razones anteriores puedes hacer que tu negocio crezca más rápido ya que con una buena página web y con un buen diseño atrapas la atención de nuevos posibles clientes.
+                    <br><br>
+                    <h3>5- Atrae <b>clientes de todo el mundo</b>:</h3> Teniendo una página web, no sólo puedes tener clientes del país en el que vives, sino que puedes llegar a gente de cualquier parte del mundo, ya que estando en la red tu negocio está al alcance del mundo.
+
+                </p>
             </div>
         </div>
-    </div>
 
     <!-- Contacto -->
     <div id="contacto">
@@ -194,12 +203,5 @@
 
         <!-- Scripts JS -->
         <script src="../js/scripts.js"></script>
-
-        <!-- Projects App -->
-            <!-- VueJS -->
-            <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-
-            <!-- App -->
-            <script src="projects_app/app.js" charset="utf-8"></script>
 </body>
 </html>
