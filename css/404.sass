@@ -1,0 +1,39 @@
+// 404.html Styles
+
+.error-header
+    text-align: center
+    background-color: $white
+    min-height: 100vh
+    display: flex
+    flex-direction: column
+    justify-content: center
+    text-align: center
+
+    .icon
+        max-width: 15%
+        margin: 0 auto
+        display: inline-block
+        transition: $transition
+
+        @media(max-width: 1000px)
+            max-width: 20%
+
+        @media(max-width: 780px)
+            max-width: 40% !important
+
+    .title
+        font-size: 280%
+
+        @media(max-width: 1000px)
+            font-size: 200% !important
+
+        span
+            font-weight: 700 !important
+
+#breakdown
+    display: block
+    margin: 70px auto !important
+    background-color: pink
+
+    @media (max-width: 800px)
+        display: none

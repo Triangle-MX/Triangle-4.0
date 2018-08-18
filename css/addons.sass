@@ -1,11 +1,11 @@
 // modalCookie
 #modalCookie
-    position: sticky !important
+    position: fixed !important
     z-index: 9999
     bottom: 0px !important
     left: 0px !important
     margin-bottom: 0 !important
-    height: 60px !important
+    height: 50px !important
     //overflow-x: scroll !important
     //overflow-y: scroll !important
 
@@ -21,13 +21,14 @@
         width: 100% !important
 
         .modal-content
+            font-family: $montserrat
             border-radius: 0px !important
             border: none !important
             box-shadow: none !important
             text-align: center
 
             .modal-body
-                background-color: $black
+                background-color: $yellow
                 font-size: 90% !important
 
                 .lead
@@ -35,12 +36,15 @@
                     margin-bottom: 0 !important
 
                     .link
-                        color: $yellow !important
-                        opacity: .9 !important
+                        color: $white !important
+                        opacity: 1 !important
                         cursor: pointer !important
+                        font-weight: 500
+                        transition: $transition
 
                         &:hover
                             opacity: 1 !important
+                            text-decoration: underline
 
 
 .modal-backdrop

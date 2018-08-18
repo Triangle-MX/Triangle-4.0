@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 2160 1212.826">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-SpaceBALLS);
+      }
+
+      .cls-2 {
+        fill: #07093b;
+      }
+
+      .cls-3 {
+        fill: #aa01dd;
+      }
+
+      .cls-3, .cls-4 {
+        opacity: 0.1;
+      }
+
+      .cls-4 {
+        fill: #0320ff;
+      }
+
+      .cls-5 {
+        fill: #03e2ff;
+        opacity: 0.07;
+      }
+
+      .cls-6 {
+        fill: #fff;
+      }
+    </style>
+    <clipPath id="clip-SpaceBALLS">
+      <rect width="2160" height="1212.826"/>
+    </clipPath>
+  </defs>
+  <g id="SpaceBALLS" class="cls-1">
+    <rect id="Rectangle_3" data-name="Rectangle 3" class="cls-2" width="2160" height="1173"/>
+    <ellipse id="Ellipse_17" data-name="Ellipse 17" class="cls-3" cx="149.55" cy="149.55" rx="149.55" ry="149.55" transform="translate(369.644 353.757)"/>
+    <circle id="Ellipse_18" data-name="Ellipse 18" class="cls-4" cx="104.068" cy="104.068" r="104.068" transform="translate(1405.702 581.937)"/>
+    <ellipse id="as" class="cls-4" cx="81.713" cy="81.713" rx="81.713" ry="81.713" transform="translate(1088.101 150.246)"/>
+    <circle id="Ellipse_20" data-name="Ellipse 20" class="cls-4" cx="125.653" cy="125.653" r="125.653" transform="translate(118.338 790.073)"/>
+    <ellipse id="Ellipse_21" data-name="Ellipse 21" class="cls-5" cx="54.732" cy="54.732" rx="54.732" ry="54.732" transform="translate(953.968 998.21)"/>
+    <circle id="Ellipse_22" data-name="Ellipse 22" class="cls-5" cx="157.259" cy="157.259" r="157.259" transform="translate(1909.909 151.629) rotate(-59)"/>
+    <path id="White" class="cls-6" d="M831.357,2091.193s437.231,193.739,890.116,198.5,958.242-89.669,1394.958-232.721c53.7,214.926,49.363,417.627,49.363,417.627H831.357Z" transform="translate(-911 -1141.243)"/>
+  </g>
+</svg>

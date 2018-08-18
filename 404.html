@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="es-MX">
 <head>
-    <title>Error 404</title>
+    <title>Triangle | Error 404</title>
 
     <!-- Important Metas -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
 
     <!-- Description + Keywords Metas -->
         <meta name="description" content="Triangle es un pequeño estudio de desarrollo web, en los que creamos páginas web únicas, para clientes únicos.">
@@ -34,24 +37,152 @@
         <!-- Bootstrap 3 -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Montserrat:400,700" rel="stylesheet">
+
         <!-- Main Styles -->
         <link rel="stylesheet" href="../css/main.css">
+
+        <!-- Icon -->
+        <link rel="stylesheet" href="fonts/css/icon.css">
+
+        <!-- Animate CSS -->
+        <link rel="stylesheet" href="../css/animate.min.css">
+
+        <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="b887a8d3-66db-4d65-9bf2-019e05d6042d";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
 </head>
-<body onload="setTimeout(goBack, 5000)">
+<body>
+    <!-- WOW -->
+    <script src="../js/wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 
-    <!--[if lt IE 8]>
-            <p class="browserupgrade">Estas usando una versión muy <strong>antigua</strong> de tu navegador. Por favor <a href="http://browsehappy.com/">actualiza tu navegador</a> para tener una mejor experiencia en la red.</p>
-    <![endif]-->
+    <!-- Nav -->
+    <nav id="nav" class="cd-stretchy-nav animated fadeIn" style="animation-delay: .5s">
+		<a class="cd-nav-trigger" href="#0">
 
-    <div id="error-message" class="error">
-        <div class="row">
-            <div class="col-md-8 col-md-push-2">
-                <img src="../img/Iconos/Stop.svg" alt="Alerta" class="icon">
-                <h1 class="title">Error <span>404</span></h1>
-                <div class="lead">Lo sentimos, la página que estás tratando de buscar <span>no existe</span>. Porfavor checa que la <span>dirección URL</span> sea la correcta.</div>
-                <a class="btn1" onclick="goBack()">Regresar</a>
+			<span aria-hidden="true"></span>
+		</a>
+
+		<ul>
+			<li><a href="index.html"><span>Principal</span></a></li>
+			<li><a href="desarrollo/"><span>Páginas Web</span></a></li>
+			<li><a href="diseno/"><span>Diseño Gráfico</span></a></li>
+			<li><a href="proyectos/"><span>Proyectos</span></a></li>
+			<li><a href="nosotros/"><span>Sobre Nosotros</span></a></li>
+			<li><a href="#contacto"><span>Contacto</span></a></li>
+		</ul>
+
+		<span aria-hidden="true" class="stretchy-nav-bg"></span>
+	</nav>
+
+    <div id="main">
+        <!--[if lt IE 8]>
+                <p class="browserupgrade">Estas usando una versión muy <strong>antigua</strong> de tu navegador. Por favor <a href="http://browsehappy.com/">actualiza tu navegador</a> para tener una mejor experiencia en la red.</p>
+        <![endif]-->
+
+        <!-- Header -->
+        <div class="error-header">
+            <img src="img/gifs/elon-perdido.gif" alt="Elon Perdido" class="icon wow fadeInUp" data-wow-delay=".3s">
+            <h1 class="title wow fadeInUp" data-wow-delay=".7s">Error 404<br>¿Te <span>Perdiste</span>?</h1>
+            <p class="lead wow fadeInUp" data-wow-delay="1s">Esta <b>no es la página que estás buscando</b>, pero ya que estás aquí por qué no checas esto:</p>
+        </div>
+
+        <!-- MKT Block - ¿Por qué necesitas una página web? -->
+        <div class="mkt-block web-mkt">
+            <div class="container">
+                <div class="row">
+
+                <!-- Side by Side -->
+                <!--
+
+                    <div class="col-sm-4 col-sm-push-8 wow fadeInRight rellax" data-wow-delay=".3s">
+                        <img src="img/index-icons/Responsive-Icon.svg" alt="Llega a todas partes">
+                    </div>
+
+                    <div class="col-sm-8 col-sm-pull-4 wow fadeInLeft" data-wow-delay=".5s">
+                        <h2 class="title">¿Por qué <span>necesitas una página web</span>?</h2>
+                        <p class="description"><b>Descubre 5 razones</b> por las que tu proyecto <b>necesita una página web</b> para crecer y llegar <b>al siguiente nivel</b>.</p>
+                        <a href="#" class="btn1blur">Descubre Más</a>
+                    </div>
+
+                -->
+
+                <!-- Centered -->
+                <div class="centered-block-container">
+                    <img class="centered-block wow fadeInUp" data-wow-delay=".3s" src="img/index-icons/Responsive-Icon.svg" alt="Llega a todas partes">
+                    <h2 class="title wow fadeInUp" data-wow-delay=".5s">¿Por qué <span>necesitas una página web</span>?</h2>
+                    <p class="description wow fadeInUp" data-wow-delay=".7s"><b>Descubre 5 razones</b> por las que tu proyecto <b>necesita una página web</b> para crecer y llegar <b>al siguiente nivel</b>.</p>
+                    <a href="/desarrollo/por-que-necesitas-pagina-web.html" class="btn1blur wow fadeInUp" data-wow-delay="1s">Descubre Más</a>
+                </div>
+
+                </div>
             </div>
         </div>
+
+        <!-- Contacto -->
+        <div id="contacto">
+
+            <!-- Title + Lead -->
+            <div class="text wow fadeIn" data-wow-delay=".1s">
+                <h1 class="title"><span>Creemos</span> algo juntos</h1>
+                <p class="lead">
+                    ¿Tienes un <b>negocio</b>? ¿un <b>proyecto</b>? Nosotros te ayudamos a <b>llevarlo al siguiente nivel</b>.
+                </p>
+            </div>
+
+            <!-- Form -->
+            <div id="form">
+                <form action="https://send.pageclip.co/cSlAvftlvHMqbuXyEU3bnhZzJtTYoLjI/contact-form" class="pageclip-form" method="post">
+                    <input class="wow fadeInUp" data-wow-delay=".3s" type="text" name="nombre" placeholder="Tu Nombre" required>
+                    <input class="wow fadeInUp" data-wow-delay=".5s" type="email" name="email" placeholder="Tu Correo Electrónico" required>
+                    <textarea class="wow fadeInUp" data-wow-delay=".7s" name="message" placeholder="Tu Mensaje"></textarea>
+                    <input type="hidden" name="_language" value="es" />
+                    <input type="text" name="_gotcha" style="display:none" />
+                    <br>
+                    <button type="submit" class="pageclip-form__submit btn1blur wow fadeInUp" data-wow-delay=".9s" data-micron="tada">&nbsp;&nbsp;Enviar&nbsp;&nbsp;</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div id="footer" style="max-width:100%">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 brand-content" style="margin-bottom: 20px">
+                        <img src="img/LogoWhite.svg" alt="" class="brand">
+                        <span><a href="mailto:contacto@triangle.mx" class="footer-mail">contacto@triangle.mx</a></span>
+                        <ul class="social-icons">
+                            <li><a href="https://www.facebook.com/somos.triangle/" target="_blank"><i class="icon-facebook"></i></a></li>
+                            <li><a href="https://www.instagram.com/triangle.mexico/" target="_blank"><i class="icon-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3"></div>
+                    <div class="col-md-3" style="margin-bottom: 20px">
+                        <ul class="footer-links">
+                            <li><a href="/">Principal</a></li>
+                            <li><a href="desarrollo/">Desarrollo Web</a></li>
+                            <li><a href="diseno/">Diseño Gráfico</a></li>
+                            <li><a href="proyectos/">Proyectos</a></li>
+                            <li><a href="nosotros/">Sobre Nosotros</a></li>
+                            <li><a href="#contacto">Contacto</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <ul class="footer-links">
+                            <li><a class="non-important" href="https://triangle-mx.github.io/carbon-framework/" target="_blank">Carbon</a></li>
+                            <li><a class="non-important" href="https://triangle.mx/pagos">Pagos</a></li>
+                            <li><a class="non-important" href="jobs/">Trabaja en Triangle</a></li>
+                            <br>
+                            <li><a href="#">Política de Privacidad</a></li>
+                            <li><a href="#">Términos y Condiciones</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 
     <!-- Scripts -->

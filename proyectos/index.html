@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es-MX">
 <head>
-    <title>Proyectos</title>
+    <title>Triangle | Proyectos</title>
 
     <!-- Important Metas -->
     <meta charset="UTF-8">
@@ -28,7 +28,7 @@
             "@type": "Organization",
             "name": "Triangle -  Proyectos",
             "url": "http://www.triangle.mx/proyectos",
-            "description": "La constante en nuestros Proyectos: La calidad."
+            "description": "Cuidamos cada pequeño detalle de tu proyecto, manteniendo y definiendo tu estilo a la perfección."
             }
         </script>
 
@@ -36,6 +36,9 @@
 
         <!-- Bootstrap 3 -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Montserrat:400,700" rel="stylesheet">
 
         <!-- Main Styles -->
         <link rel="stylesheet" href="../css/main.css">
@@ -54,6 +57,7 @@
     <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
     <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
 
+    <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="b887a8d3-66db-4d65-9bf2-019e05d6042d";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
 </head>
 <body>
     <!-- WOW -->
@@ -62,302 +66,111 @@
               new WOW().init();
     </script>
 
-    <!-- Masonry -->
-    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-
     <!--[if lt IE 8]>
             <p class="browserupgrade">Estas usando una versión muy <strong>antigua</strong> de tu navegador. Por favor <a href="http://browsehappy.com/">actualiza tu navegador</a> para tener una mejor experiencia en la red.</p>
     <![endif]-->
 
-    <!-- Nav -->
-    <div id="triangle-menu" class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container-fluid">
-      <div class="navbar-header"><a class="navbar-brand" href="../"><img src="../img/LogoWhite.svg" alt="Logo Triangle" style="width: 100%; max-width: 120px; margin-top: 2px;"></a>
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-          </button>
-      </div>
-        <div class="collapse navbar-collapse navbar-menubuilder">
-            <ul class="nav navbar-nav navbar-left">
-                <li><a href="../">Principal</a></li>
+    <!-- Navbar -->
+    <nav class="cd-stretchy-nav" id="nav">
+		<a class="cd-nav-trigger" href="#0">
 
-                <li class="dropdown">
-          <a  class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Servicios<span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="../desarrollo">Desarrollo Web</a></li>
-            <li><a href="../diseno">Diseño Gráfico</a></li>
-          </ul>
-        </li>
-                <li><a href="../nosotros/">Nosotros</a></li>
-                <li class="active"><a href="../proyectos/">Proyectos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </div>
-    </div>
-    </div>
+			<span aria-hidden="true"></span>
+		</a>
 
-    <!--<audio id="pop-sound" src="../src/pop.mp3"></audio>-->
+		<ul>
+			<li><a href="../"><span>Principal</span></a></li>
+			<li><a href="../desarrollo/"><span>Páginas Web</span></a></li>
+			<li><a href="../diseno/"><span>Diseño Gráfico</span></a></li>
+			<li><a href="../proyectos/" class="active"><span>Proyectos</span></a></li>
+			<li><a href="../nosotros/"><span>Sobre Nosotros</span></a></li>
+			<li><a href="#contacto"><span>Contacto</span></a></li>
+		</ul>
+
+		<span aria-hidden="true" class="stretchy-nav-bg"></span>
+	</nav>
 
     <!-- Main -->
     <div id="main">
-        <div class="container-fluid wow bounceInLeft" data-wow-duration="1s" data-wow-delay=".05s">
+        <div class="container-fluid" data-wow-duration="1s" data-wow-delay=".05s">
             <div class="header">
-                <img src="../img/Iconos/Projects.svg" alt="Construcción" class="icon">
-                <h1 class="title">Nuestros <span>Proyectos</span></h1>
-                <p class="lead">La constante en nuestros Proyectos: La calidad.</p>
+                <img src="../img/index-icons/Projects-Icon.svg" alt="Proyectos" class="icon wow fadeInUp" data-wow-delay=".3s">
+                <h1 class="title wow fadeInUp" data-wow-delay=".7s">Nuestros <span>Proyectos</span></h1>
+                <p class="lead wow fadeInUp" data-wow-delay="1s">Cuidamos <b>cada pequeño detalle de tu proyecto</b>, manteniendo y definiendo <b>tu estilo a la perfección</b>.</p>
             </div>
         </div>
 
-    <div class="projects-section projects-1 section" id="projects-dynamic">
-
-        <div class="row"  data-masonry='{ "itemSelector": ".project-card-container", "columnWidth": ".project-card-sizer"}'>
-
-            <!-- Triangle Card -->
-            <div class="col-md-6 col-sm-6 col-xs-12 project-card-container">
-                <div class="project-card project-anim-1 wow bounceIn" data-wow-duration="1.3s" data-wow-delay=".05s">
-                    <a href="https://medium.com/@jpiglesias/redesigning-triangle-d48a95a7527d" target="_blank" title="Triangle">
-                        <img src="../img/Proyectos/Triangle-Project.jpg" alt="Triangle" class="project-thumb">
-                        <div class="project-info">
-                            <span class="project-title">Triangle</span>
-                        </div>
-                    </a>
-                </div>
+    <div class="projects-section projects-1 section" >
+        <div class="row" id="projects-app">
+            <div v-for="project in projects" class="project-card col-md-4 col-sm-4 col-xs-6">
+                <a v-bind:href="project.linkSource" v-bind:target="project.linkTarget" class="wow fadeInUp" data-wow-delay=".3s">
+                    <img v-bind:src="project.thumbnailSource" v-bind:alt="'Proyecto:' + project.name">
+                </a>
             </div>
-
-            <!-- Triangle Modal
-            <div class="modal fade" id="triangleModal" role="dialog" aria-labelledby="triangleModal">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        </div>
-                        <div class="modal-body lead">
-                            <div class="modal-logo">
-                                <img src="../img/LogoBlack.svg" alt="Logo Triangle">
-                            </div>
-                            <br>
-                            <div class="modal-img-big">
-                                <img src="../img/Proyectos/Triangle/BusinessCard.png" alt="Logo Triangle">
-                            </div>
-
-                        </div>
-                        <div class="modal-footer">
-                            <a href="https://triangle-mx.github.io/Astros/" target="_blank" class="btn1">Descubre Más</a>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-
-            <!-- Fierce Card -->
-            <div class="col-md-3 col-sm-6 col-xs-12 project-card-container">
-                <div class="project-card project-anim-2 wow bounceIn" data-wow-duration="1.3s" data-wow-delay=".35s">
-                    <a href="https://fierceracing.com.mx/" target="_blank" title="Fierce Racing">
-                        <img src="../img/Proyectos/Fierce-Project.svg" alt="Fierce Racing" class="project-thumb">
-                        <div class="project-info">
-                            <span class="project-title">Fierce Racing</span>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-            <!-- UP Channel Card -->
-            <div class="col-md-3 col-sm-6 col-xs-12 project-card-container">
-                <div class="project-card project-anim-2 wow bounceIn" data-wow-duration="1.3s" data-wow-delay=".35s">
-                    <a href="https://youtube.com/channel/UC2Cik6jjDSTdnfHdmunbAlw" target="_blank" title="UP Channel">
-                        <img src="../img/Proyectos/UPC-Project.svg" alt="UP Channel" class="project-thumb">
-                        <div class="project-info">
-                            <span class="project-title">UP Channel</span>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-            <!-- Quantum Card -->
-            <div class="col-md-3 col-sm-6 col-xs-12 project-card-container">
-                <div class="project-card project-anim-2 wow bounceIn" data-wow-duration="1.3s" data-wow-delay=".35s">
-                    <a href="#" target="_blank" title="Quantum">
-                        <img src="../img/Proyectos/Quantum-Project.svg" alt="Quantum" class="project-thumb">
-                        <div class="project-info">
-                            <span class="project-title">Quantum</span>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-            <!-- Astros Card -->
-            <div class="col-md-3 col-sm-6 col-xs-12 project-card-container project-card-sizer">
-                <div class="project-card project-anim-1 wow bounceIn" data-wow-duration="1.3s" data-wow-delay=".05s">
-                    <a href="https://triangle-mx.github.io/Astros/" target="_blank" title="Astros">
-                        <img src="../img/Proyectos/Astros-Project.svg" alt="Astros" class="project-thumb">
-                        <div class="project-info">
-                            <span class="project-title">Astros</span>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-            <!-- Learning English Card -->
-            <!--<div class="col-md-3 col-sm-6 col-xs-12 project-card-container">
-                <div class="project-card project-anim-2 wow bounceIn" data-wow-duration="1.3s" data-wow-delay=".05s">
-                    <a data-toggle="modal" data-target="#learningEnglishModal" title="Learning English">
-                        <img src="../img/Proyectos/Learning-English-Project.svg" alt="Learning-English" class="project-thumb">
-                        <div class="project-info">
-                            <span class="project-title">Learning English</span>
-                        </div>
-                    </a>
-                </div>
-            </div>-->
-
-            <!-- Learning English Modal -->
-            <!--<div class="modal fade" id="learningEnglishModal" role="dialog" aria-labelledby="learningEnglishModal">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" a><span aria-hidden="true">&times;</span></button>
-
-                        </div>
-                        <div class="modal-body lead">
-                            <div class="modal-logo">
-                                <img src="../img/Proyectos/Learning-English/Learning-English-Logo.svg" alt="Logo Learning English">
-                            </div>
-                            Hello, it's me... I was wondering if after all this years...
-                        </div>
-                        <div class="modal-footer">
-
-                            <a href="http://learning-english.triangle.mx" target="_blank" class="btn1">Descubre Más</a>
-                        </div>
-                    </div>
-                </div>
-            </div>-->
-
-            <!-- SismoMX Card -->
-            <div class="col-md-3 col-sm-6 col-xs-12 project-card-container">
-                <div class="project-card project-anim-2 wow bounceIn" data-wow-duration="1.3s" data-wow-delay=".15s">
-                    <a href="http://sismomexico.org/" target="_blank" title="SismoMX">
-                        <img src="../img/Proyectos/SismoMX-Project.svg" alt="SismoMX" class="project-thumb">
-                        <div class="project-info">
-                            <span class="project-title">SismoMX</span>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-            <!-- Cómo Ayudar Card -->
-            <div class="col-md-3 col-sm-6 col-xs-12 project-card-container">
-                <div class="project-card project-anim-1 wow bounceIn" data-wow-duration="1.3s" data-wow-delay=".25s">
-                    <a href="http://comoayudar.mx/" target="_blank" title="Cómo Ayudar">
-                        <img src="../img/Proyectos/Como-Ayudar-Project.svg" alt="Cómo Ayudar" class="project-thumb">
-                        <div class="project-info">
-                            <span class="project-title">¿Cómo Ayudar?</span>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-            <!-- BusinessSenior Card
-            <div class="col-md-3 col-sm-6 col-xs-12 project-card-container">
-                <div class="project-card project-anim-2 wow bounceIn" data-wow-duration="1.3s" data-wow-delay=".35s">
-                    <a href="https://businesssenior.com.mx/" target="_blank" title="BusinessSenior">
-                        <img src="../img/Proyectos/BusinessSenior-Project.svg" alt="BusinessSenior" class="project-thumb">
-                        <div class="project-info">
-                            <span class="project-title">BusinessSenior</span>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            -->
-
-            <!-- Libro Card -->
-            <div class="col-md-6 col-sm-6 col-xs-12 project-card-container">
-                <div class="project-card project-anim-2 wow bounceIn" data-wow-duration="1.3s" data-wow-delay=".55s">
-                    <a href="https://jpiglesias.com/" target="_blank" title="El Pequeño Libro de Negocios para Niños">
-                        <img src="../img/Proyectos/Libro/Libro-Mockup.jpg" alt="El Pequeño Libro de Negocios para Niños" class="project-thumb">
-                        <div class="project-info">
-                            <span class="project-title">El Pequeño Libro de Negocios para Niños</span>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-            <!-- CIM Card -->
-            <div class="col-md-3 col-sm-6 col-xs-12 project-card-container">
-                <div class="project-card project-anim-1 wow bounceIn" data-wow-duration="1.3s" data-wow-delay=".45s">
-                    <a href="http://comerciointernacionalmexicano.com.mx/" target="_blank" title="Comercio Internacional Mexicano">
-                        <img src="../img/Proyectos/CIM-Project.svg" alt="CIM" class="project-thumb">
-                        <div class="project-info">
-                            <span class="project-title">Comercio Internacional Mexicano</span>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
         </div>
-
     </div>
 
-    <div class="section" id="micro-contact">
-        <h1><strong>Tu proyecto</strong> puede ser el siguente en esta sección</h1>
-        <p class="lead">
-            Nos encantaría trabajar para <strong>llevar tu proyecto al siguente nivel</strong>, desarrollar tu <strong>página web</strong>, diseñar tu <strong>logo</strong> y tu <strong>papelería</strong>. Te ayudaremos a <strong>captar la atención</strong> de tu <strong>público objetivo</strong>. Todo esto y más está a tu <strong>alcance y disposición</strong>. Lo único que tienes que hacer es contactarnos.
-            <br><br>
-            <a href="../proyectos/" class="btn1" data-micron="tada">Contáctanos</a>
-        </p>
-    </div>
-
-    </div>
-
-    <!-- Contact -->
-    <!-- Contact -->
+    <!-- Contacto -->
     <div id="contacto">
-        <div class="paso-container">
-            <img src="../img/Iconos/Contacto.svg" alt="Antena de Radio" class="icon wow bounceIn" data-wow-duration="1s" data-wow-delay=".05s">
-            <h1 class="title"><span>Contacto</span></h1>
-            <p class="lead">Ahora que sabes un poco de lo que hacemos, cómo lo hacemos y por qué lo hacemos, cuéntanos cómo podemos ayudarte a conseguir tus objetivos, o pregúntanos lo que quieras.</p>
+
+        <!-- Title + Lead -->
+        <div class="text wow fadeIn" data-wow-delay=".1s">
+            <h1 class="title"><span>Creemos</span> algo juntos</h1>
+            <p class="lead">
+                ¿Tienes un <b>negocio</b>? ¿un <b>proyecto</b>? Nosotros te ayudamos a <b>llevarlo al siguiente nivel</b>.
+            </p>
+        </div>
+
+        <!-- Form -->
+        <div id="form">
+            <form action="https://send.pageclip.co/cSlAvftlvHMqbuXyEU3bnhZzJtTYoLjI/contact-form" class="pageclip-form" method="post">
+                <input class="wow fadeInUp" data-wow-delay=".3s" type="text" name="nombre" placeholder="Tu Nombre" required>
+                <input class="wow fadeInUp" data-wow-delay=".5s" type="email" name="email" placeholder="Tu Correo Electrónico" required>
+                <textarea class="wow fadeInUp" data-wow-delay=".7s" name="message" placeholder="Tu Mensaje"></textarea>
+                <input type="hidden" name="_language" value="es" />
+                <input type="text" name="_gotcha" style="display:none" />
+                <br>
+                <button type="submit" class="pageclip-form__submit btn1blur wow fadeInUp" data-wow-delay=".9s" data-micron="tada">&nbsp;&nbsp;Enviar&nbsp;&nbsp;</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer" style="max-width:100%">
+        <div class="container">
             <div class="row">
-                <div class="col-lg-6 form-column">
-                    <div id="form">
-                        <form action="https://send.pageclip.co/cSlAvftlvHMqbuXyEU3bnhZzJtTYoLjI/contact-form" class="pageclip-form" method="post">
-                            <input type="text" name="nombre" placeholder="Tu Nombre" required>
-                            <input type="email" name="email" placeholder="Tu Correo Electrónico" required>
-                            <textarea name="message" placeholder="Tu Mensaje"></textarea>
-                            <input type="hidden" name="_language" value="es" />
-                            <input type="text" name="_gotcha" style="display:none" />
-                            <br>
-                            <button type="submit" class="pageclip-form__submit btn1" data-micron="tada">Enviar</button>
-                        </form>
-                    </div>
+                <div class="col-md-3 brand-content" style="margin-bottom: 20px">
+                    <img src="../img/LogoWhite.svg" alt="" class="brand">
+                    <span><a href="mailto:contacto@triangle.mx" class="footer-mail">contacto@triangle.mx</a></span>
+                    <ul class="social-icons">
+                        <li><a href="https://www.facebook.com/somos.triangle/" target="_blank"><i class="icon-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/triangle.mexico/" target="_blank"><i class="icon-instagram"></i></a></li>
+                    </ul>
                 </div>
-                <div class="col-lg-6">
-                    <p class="lead">Si no deseas utilizar la forma de contacto, puedes utilizar los siguentes medios para contactarnos:</p>
-                    <ul class="contact-methods">
-                        <li><a class="link" href="mailto:contacto@triangle.mx"><i class="icon-mail"></i> contacto@triangle.mx</a></li>
-                        <li><a href=""><i class="icon-"></i></a></li>
-                        <li><a href=""><i class="icon-"></i></a></li>
+                <div class="col-md-3"></div>
+                <div class="col-md-3" style="margin-bottom: 20px">
+                    <ul class="footer-links">
+                        <li><a href="../">Principal</a></li>
+                        <li><a href="../desarrollo/">Desarrollo Web</a></li>
+                        <li><a href="../diseno/">Diseño Gráfico</a></li>
+                        <li><a class="active" href="../proyectos/">Proyectos</a></li>
+                        <li><a href="../nosotros/">Sobre Nosotros</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul class="footer-links">
+                        <li><a class="non-important" href="https://triangle-mx.github.io/carbon-framework/" target="_blank">Carbon</a></li>
+                        <li><a class="non-important" href="pagos.html">Pagos</a></li>
+                        <li><a class="non-important" href="#">Trabaja en Triangle</a></li>
+                        <br>
+                        <li><a href="privacidad.html">Política de Privacidad</a></li>
+                        <li><a href="terminos.html">Términos y Condiciones</a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Footer -->
-    <div id="footer" style="max-width:100%">
-        <div class="row footer-content">
-            <div class="col-lg-4 col-md-4 col-sm-4 brand-container"><span class="brand">Somos <img style="display: inline; height: 100%; max-height: 25px; margin-top: -4px; max-width: 100%;" src="../img/LogoYellow.svg" alt="Logo Triangle"></span></div>
-            <div class="col-lg-4 col-md-4 col-sm-4">
-                <ul class="social-icons list-inline">
-                    <li><a href="https://www.facebook.com/trianglewebmexico/" target="_blank" class="facebook" title="Facebook"><i class="icon-facebook"></i></a></li>
-                    <li><a href="https://www.instagram.com/trianglewebsmex/" target="_blank" class="instagram" title="Instagram"><i class="icon-instagram"></i></a></li>
-                    <li><a href="https://github.com/Triangle-MX" target="_blank" class="github" title="GitHub"><i class="icon-github"></i></a></li>
-
-                    <li><a href="javascript:(function(){var s=document.getElementById(&quot;colourblind-styling&quot;);var x=document.getElementById(&quot;colourblind-filters&quot;);if(!s){s=document.createElement(&quot;style&quot;);document.body.appendChild(s)}if(!x){x=document.createElement(&quot;div&quot;);x.setAttribute(&quot;style&quot;,&quot;height: 0; padding: 0; margin: 0; line-height: 0;&quot;);x.innerHTML=&#39;&lt;svg id=&quot;colorblind-filters&quot; style=&quot;display: none&quot;&gt; &lt;defs&gt; &lt;filter id=&quot;protanopia&quot;&gt; &lt;feColorMatrix type=&quot;matrix&quot; values=&quot;0.567,0.433,0,0,0 0.558,0.442,0,0,0 0 0.242,0.758,0,0 0,0,0,1,0&quot; in=&quot;SourceGraphic&quot; /&gt; &lt;/filter&gt; &lt;filter id=&quot;protanomaly&quot;&gt; &lt;feColorMatrix type=&quot;matrix&quot; values=&quot;0.817,0.183,0,0,0 0.333,0.667,0,0,0 0,0.125,0.875,0,0 0,0,0,1,0&quot; in=&quot;SourceGraphic&quot; /&gt; &lt;/filter&gt; &lt;filter id=&quot;deuteranopia&quot;&gt; &lt;feColorMatrix type=&quot;matrix&quot; values=&quot;0.625,0.375,0,0,0 0.7,0.3,0,0,0 0,0.3,0.7,0,0 0,0,0,1,0&quot; in=&quot;SourceGraphic&quot; /&gt; &lt;/filter&gt; &lt;filter id=&quot;deuteranomaly&quot;&gt; &lt;feColorMatrix type=&quot;matrix&quot; values=&quot;0.8,0.2,0,0,0 0.258,0.742,0,0,0 0,0.142,0.858,0,0 0,0,0,1,0&quot; in=&quot;SourceGraphic&quot; /&gt; &lt;/filter&gt; &lt;filter id=&quot;tritanopia&quot;&gt; &lt;feColorMatrix type=&quot;matrix&quot; values=&quot;0.95,0.05,0,0,0 0,0.433,0.567,0,0 0,0.475,0.525,0,0 0,0,0,1,0&quot; in=&quot;SourceGraphic&quot; /&gt; &lt;/filter&gt; &lt;filter id=&quot;tritanomaly&quot;&gt; &lt;feColorMatrix type=&quot;matrix&quot; values=&quot;0.967,0.033,0,0,0 0,0.733,0.267,0,0 0,0.183,0.817,0,0 0,0,0,1,0&quot; in=&quot;SourceGraphic&quot; /&gt; &lt;/filter&gt; &lt;filter id=&quot;achromatopsia&quot;&gt; &lt;feColorMatrix type=&quot;matrix&quot; values=&quot;0.299,0.587,0.114,0,0 0.299,0.587,0.114,0,0 0.299,0.587,0.114,0,0 0,0,0,1,0&quot; in=&quot;SourceGraphic&quot; /&gt; &lt;/filter&gt; &lt;filter id=&quot;achromatomaly&quot;&gt; &lt;feColorMatrix type=&quot;matrix&quot; values=&quot;0.618,0.320,0.062,0,0 0.163,0.775,0.062,0,0 0.163,0.320,0.516,0,0 0,0,0,1,0&quot; in=&quot;SourceGraphic&quot; /&gt; &lt;/filter&gt; &lt;/defs&gt; &lt;/svg&gt;&#39;;document.body.appendChild(x)}var l=[&quot;protanopia&quot;,&quot;protanomaly&quot;,&quot;deuteranopia&quot;,&quot;deuteranomaly&quot;,&quot;tritanopia&quot;,&quot;tritanomaly&quot;,&quot;achromatopsia&quot;,&quot;achromatomaly&quot;];var p=&quot;&quot;;for(var i in l)p+=parseInt(i)+1+&quot;: &quot;+l[i]+&quot;; &quot;;var c=parseInt(prompt(&quot;0: off; &quot;+p))-1;if(isNaN(c))return;if(c&gt;=l.length)return;if(c==-1){s.innerHTML=&quot;body{-webkit-filter:none;-moz-filter:none;-ms-filter:none;-o-filter:none;filter:none;}&quot;;return}c=l[c];if(document.getElementById(c))s.innerHTML=&quot;body{-webkit-filter:!!;-moz-filter:!!;-ms-filter:!!;-o-filter:!!;filter:!!;}&quot;.replace(/!!/g,&quot;url(#&quot;+c+&quot;)&quot;);else s.innerHTML=&quot;body{-webkit-filter:none;-moz-filter:none;-ms-filter:none;-o-filter:none;filter:none;}&quot;})();" title="Filtro para Daltónicos" class="daltonic"><i class="icon-eye"></i></a>
-                    </li>
-
-                    <li style="">
-                        <a href="https://triangle.mx/files/privacidad.html"><i title="Política de Privacidad" class="icon-lock"></i></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
     </div>
-
 
     <!-- Scripts -->
 
@@ -382,6 +195,11 @@
         <!-- Scripts JS -->
         <script src="../js/scripts.js"></script>
 
+        <!-- Projects App -->
+            <!-- VueJS -->
+            <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 
+            <!-- App -->
+            <script src="projects_app/app.js" charset="utf-8"></script>
 </body>
 </html>

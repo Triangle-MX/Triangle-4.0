@@ -1,7 +1,4 @@
-// Triangle Parsec Alpha v0.2
-
-// Fonts
-@import url('https://fonts.googleapis.com/css?family=Anton|Nunito|Montserrat')
+// Font Import
 
 // Color Variables
 $yellow: #FFB61E
@@ -13,35 +10,35 @@ $red: #FF5959
 $doodle: #FFB61E
 
 // Typography Variables
-$anton: "Anton", "Helvetica Neue", sans-serif
-$montserrat: "Montserrat", "Helvetica Neue", sans-serif
-$lato: "Lato", "Helvetica Neue", sans-serif
+$montserrat: "Montserrat", "Helvetica Neue"
+$lato: "Lato", "Helvetica Neue"
 $normal-size: 18px
-$mobile-size: 16px
+$mobile-size: 18px
 $big-size: 20px
 
 // Transition Variable
-$transition: .2s cubic-bezier(1,.55,0,.87)
+$transition: .3s cubic-bezier(1,.55,0,.87)
 
 // Shadow Variables
-$box-shadow: 5px 5px 100px 0px rgba(27,27,27,0.16)
-$box-shadow2: 7px 7px 100px 0px rgba(27,27,27,0.16)
+$box-shadow: 5px 5px 50px 0px rgba(27,27,27,0.20)
+$box-shadow2: 7px 7px 50px 0px rgba(27,27,27,0.20)
 
 // Border Variables
-$border-radius: 5px
+$border-radius: 7px
 
 // Basic Components
 body
     background-color: $white
     overflow-x: hidden !important
-    font-family: $lato
+    width: 100% !important
+    font-family: $lato !important
     font-size: $normal-size
     color: $black
     font-weight: 500
 
 @media (max-width: 600px)
     body
-        font-size: $mobile-size
+        font-size: $mobile-size !important
 
 
 @media (max-width: 1500px)
@@ -49,7 +46,7 @@ body
         font-size: $big-size
 
 h1,h2,h3,h4,h5,h6
-    font-family: $montserrat
+    font-family: $montserrat !important
 
 a, .link
     text-decoration: none
@@ -83,6 +80,28 @@ img::selection
 img::-moz-selection
     background: transparent
 
+.lead
+    font-size: 1.5em !important
+
+    @media(max-width: 1500px)
+        font-size: 1.2em !important
+
+#main
+    opacity: 1
+    transition: $transition
+
+.menu-open
+    opacity: .05 !important
+
+// Vertical Align Elements
+.valing-elements
+    display: block
+    text-align: center
+
+    @media(min-width: 768px)
+        display: flex
+        align-items: center
+        text-align: left
 
 // Partials
 
@@ -90,11 +109,10 @@ img::-moz-selection
 @import 'index.sass'
 
 // Components
-@import 'menu.sass'
 @import 'footer.sass'
 @import 'buttons.sass'
 @import 'form.sass'
-@import 'taxi.sass'
+@import 'menu.css'
 
 // Sub-Pages
 @import 'sub-pages.sass'
@@ -103,6 +121,7 @@ img::-moz-selection
 
 // Errors
 @import 'error.sass'
+@import '404.sass'
 
 // Addons
 @import 'addons.sass'

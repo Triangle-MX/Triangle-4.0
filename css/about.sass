@@ -25,14 +25,15 @@
 
             .nombre
                 display: block
-                font-size: 100%
+                font-size: 110%
                 font-family: $montserrat
-                font-weight: bold
+                font-weight: 900
 
 
             .puesto
                 display: block
-                font-size: 80%
+                font-family: $montserrat !important
+                font-size: 90%
                 color: #333
 
             //&:hover
@@ -43,25 +44,3 @@
             //&:hover > .puesto, &:hover > .nombre
                 transition: .1s
                 color: white !important
-
-#compromiso-social
-    background-image: url('../img/About/CompromisoSocialBG.png')
-    background-size: cover
-    background-color: rgba(32,32,32,.6)
-    background-blend-mode: overlay
-    background-attachment: fixed
-    color: $white !important
-    text-align: center
-
-    h1
-        font-size: 180%
-
-    a
-        img
-            transition: $transition
-
-            @media (max-width: 768px)
-                margin-bottom: 20px
-
-            &:hover
-                transform: scale(1.05)

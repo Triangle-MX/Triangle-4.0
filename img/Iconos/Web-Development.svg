@@ -1,52 +1,43 @@
-<svg id="Group_2925" data-name="Group 2925" xmlns="http://www.w3.org/2000/svg" viewBox="-2884.528 1872.207 647.324 497.793">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: #283139;
-      }
-
-      .cls-2 {
-        fill: #ff5959;
-      }
-
-      .cls-3 {
-        fill: #0071ce;
-      }
-
-      .cls-4 {
-        fill: #ffb61e;
-      }
-
-      .cls-5 {
-        fill: #2ecc71;
-      }
-
-      .cls-6 {
-        fill: #333e48;
-      }
-
-      .cls-7 {
-        fill: #f2f2f2;
-      }
-    </style>
-  </defs>
-  <path id="Path_7022" data-name="Path 7022" class="cls-1" d="M346.159,374.677l-20.2,82.085H178.748l20.2-82.085Z" transform="translate(-2840.967 1889.027)"/>
-  <path id="Path_7024" data-name="Path 7024" class="cls-1" d="M225.653,540.425s-3.06,17.394-.746,20.347a12.213,12.213,0,0,0,9.61,4.679H478.361a12.211,12.211,0,0,0,0-24.422H397.3Z" transform="translate(-2887.736 1804.549)"/>
-  <path id="Path_7018" data-name="Path 7018" class="cls-2" d="M644.061,109.237v21.132H49.584V109.237A34.487,34.487,0,0,1,84.066,74.755H609.58A34.477,34.477,0,0,1,644.061,109.237Z" transform="translate(-2881.266 1797.452)"/>
-  <g id="Group_2785" data-name="Group 2785" transform="translate(-2831.682 1927.815)">
-    <rect id="Rectangle_429" data-name="Rectangle 429" class="cls-3" width="66.782" height="68.817"/>
-    <rect id="Rectangle_430" data-name="Rectangle 430" class="cls-3" width="66.782" height="64.926" transform="translate(0 67.817)"/>
-    <rect id="Rectangle_431" data-name="Rectangle 431" class="cls-3" width="66.782" height="85.91" transform="translate(0 111.744)"/>
-  </g>
-  <g id="Group_2786" data-name="Group 2786" transform="translate(-2339.151 1927.815)">
-    <rect id="Rectangle_433" data-name="Rectangle 433" class="cls-4" width="101.948" height="206.22" transform="translate(0 63.709)"/>
-    <rect id="Rectangle_432" data-name="Rectangle 432" class="cls-5" width="101.948" height="79.709"/>
-  </g>
-  <path id="Path_7019" data-name="Path 7019" class="cls-6" d="M325.27,248.186l-7.506-71.48Z" transform="translate(-2797.594 1829.26)"/>
-  <path id="Path_7020" data-name="Path 7020" class="cls-7" d="M542.114,196.853v190.22H49.584V315.8h66.782V117.145H542.114Z" transform="translate(-2881.266 1810.677)"/>
-  <path id="Path_7023" data-name="Path 7023" class="cls-6" d="M646.048,322.882v33.473a34.545,34.545,0,0,1-34.6,34.482H84.181a34.555,34.555,0,0,1-34.6-34.482V322.882H646.048Z" transform="translate(-2883.253 1874.867)"/>
-  <path id="Path_7025" data-name="Path 7025" class="cls-6" d="M364.244,195.785l-46.321-27.506a6.27,6.27,0,0,0-9.436,6.046l5.629,53.578a6.269,6.269,0,0,0,11.612,2.569l8.675-14.463,15,23.411a6.27,6.27,0,0,0,10.559-6.765l-15-23.411,16.765-1.837a6.269,6.269,0,0,0,2.517-11.623Z" transform="translate(-2780.31 1826.778)"/>
-  <path id="Path_7026" data-name="Path 7026" class="cls-6" d="M322.445,167.4h-151.4a12.211,12.211,0,1,0,0,24.422h151.4a12.211,12.211,0,0,0,0-24.422Z" transform="translate(-2847.18 1826.357)"/>
-  <path id="Path_7027" data-name="Path 7027" class="cls-6" d="M322.445,200.226h-151.4a12.211,12.211,0,1,0,0,24.422h151.4a12.211,12.211,0,0,0,0-24.422Z" transform="translate(-2847.18 1836.599)"/>
-  <path id="Path_7021" data-name="Path 7021" class="cls-1" d="M49.274,74.756H96.633a34.487,34.487,0,0,0-34.482,34.482V433.771a34.5,34.5,0,0,0,34.482,34.482H49.274A39.979,39.979,0,0,1,9.305,428.269V114.74A39.979,39.979,0,0,1,49.274,74.756Z" transform="translate(-2893.833 1797.452)"/>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Group_2925" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 647.3 497.8" style="enable-background:new 0 0 647.3 497.8;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#283139;}
+	.st1{fill:#FF5959;}
+	.st2{fill:#0071CE;}
+	.st3{fill:#FFB61E;}
+	.st4{fill:#2ECC71;}
+	.st5{fill:#333E48;}
+	.st6{fill:#F2F2F2;}
+</style>
+<g>
+	<path id="Path_7022" class="st0" d="M389.7,391.5l-20.2,82.1H222.3l20.2-82.1H389.7z"/>
+	<path id="Path_7024" class="st0" d="M222.4,472.8c0,0-3.1,17.4-0.7,20.3c2.3,3,5.9,4.7,9.6,4.7h243.8c6.7,0,12.2-5.5,12.2-12.2
+		c0-6.7-5.5-12.2-12.2-12.2h-81.1L222.4,472.8z"/>
+	<path id="Path_7018" class="st1" d="M647.3,34.5v21.1H52.8V34.5C52.8,15.4,68.3,0,87.3,0h525.5C631.9,0,647.3,15.4,647.3,34.5
+		C647.3,34.5,647.3,34.5,647.3,34.5z"/>
+	<g id="Group_2785" transform="translate(-2831.682 1927.815)">
+		<rect id="Rectangle_429" x="2884.5" y="-1872.2" class="st2" width="66.8" height="68.8"/>
+		<rect id="Rectangle_430" x="2884.5" y="-1804.4" class="st2" width="66.8" height="64.9"/>
+		<rect id="Rectangle_431" x="2884.5" y="-1760.5" class="st2" width="66.8" height="85.9"/>
+	</g>
+	<g id="Group_2786" transform="translate(-2339.151 1927.815)">
+		<rect id="Rectangle_433" x="2884.5" y="-1808.5" class="st3" width="101.9" height="206.2"/>
+		<rect id="Rectangle_432" x="2884.5" y="-1872.2" class="st4" width="101.9" height="79.7"/>
+	</g>
+	<path id="Path_7019" class="st5" d="M412.2,205.2l-7.5-71.5L412.2,205.2z"/>
+	<path id="Path_7020" class="st6" d="M545.4,135.3v190.2H52.8v-71.3h66.8V55.6h425.7V135.3z"/>
+	<path id="Path_7023" class="st5" d="M647.3,325.5V359c0,19.1-15.5,34.5-34.6,34.5H85.5c-19.1,0-34.6-15.4-34.6-34.5v-33.5H647.3z"
+		/>
+	<path id="Path_7025" class="st5" d="M468.5,150.4l-46.3-27.5c-3-1.8-6.8-0.8-8.6,2.2c-0.7,1.2-1,2.5-0.8,3.9l5.6,53.6
+		c0.4,3.4,3.4,5.9,6.9,5.6c2-0.2,3.7-1.3,4.7-3l8.7-14.5l15,23.4c1.9,2.9,5.7,3.8,8.7,1.9c2.9-1.9,3.8-5.7,1.9-8.7l-15-23.4
+		l16.8-1.8c3.4-0.4,5.9-3.5,5.5-6.9C471.3,153.1,470.2,151.4,468.5,150.4L468.5,150.4z"/>
+	<path id="Path_7026" class="st5" d="M359.8,121.6H208.4c-6.7,0-12.2,5.5-12.2,12.2s5.5,12.2,12.2,12.2c0,0,0,0,0,0h151.4
+		c6.7,0,12.2-5.5,12.2-12.2C372,127,366.5,121.6,359.8,121.6z"/>
+	<path id="Path_7027" class="st5" d="M359.8,164.6H208.4c-6.7,0-12.2,5.5-12.2,12.2s5.5,12.2,12.2,12.2c0,0,0,0,0,0h151.4
+		c6.7,0,12.2-5.5,12.2-12.2C372,170.1,366.5,164.6,359.8,164.6z"/>
+	<path id="Path_7021" class="st0" d="M40,0h47.4c-19,0-34.5,15.4-34.5,34.5V359c0,19,15.4,34.5,34.5,34.5H40c-22.1,0-40-17.9-40-40
+		V40C0,17.9,17.9,0,40,0z"/>
+</g>
 </svg>

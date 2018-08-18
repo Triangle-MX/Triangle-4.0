@@ -12,110 +12,36 @@
     // Project Cards
     .project-card
         background-color: $white
-        padding: 0
-        overflow: hidden
-        border-radius: 5px
+        padding: 20px
+        border-radius: 15px
         transition: $transition
         z-index: 1
-        margin: 15px 0
-        vertical-align: middle
 
         @media (max-width: 750px)
-            margin: 40px 0px
+            margin: -5px 0px
 
-        a, a:hover, a:visited, a:active, a:focus
-            text-decoration: none !important
-            color: $black
-
-        .project-thumb
+        img
             width: 100%
-
-        .project-info
-            text-align: center
-            padding: 10px
-            display: none
-
-            .project-title
-                font-size: 110%
-                font-family: $montserrat
-
-
-
-    // Project Modals
-    .fade
-        background-color: $yellow
-
-    .modal-dialog
-        margin-top: 50px
-        margin-bottom: 50px
-
-        @media (min-width: 1180px)
-            width: 960px !important
-
-        @media (max-width: 770px)
-            margin-left: 25px !important
-
-    .modal-content
-        border-radius: 5px !important
-        border: 0 !important
-        box-shadow: $box-shadow2 !important
-        text-align: justify
-
-        .modal-logo
-            text-align: center
-            margin-top: 20px
-            margin-bottom: 40px
-
-            img
-                display: inline-block
-                width: 90%
-                max-width: 400px
-
-        .modal-img
-            text-align: center
-            margin-top: 20px
-            margin-bottom: 40px
-
-            img
-                display: inline-block
-                width: 80%
-                max-width: 300px
-                opacity: .8
-
-        .modal-img-big
-            text-align: center
-            margin-top: 10px
-            margin-bottom: 10px
-
-            img
-                display: inline-block
-                width: 100%
-                opacity: 1
-                border-radius: $border-radius
-
-    .modal-header
-        border: 0 !important
-
-        .close
+            display: inline-block
+            margin-bottom: 12px
             transition: $transition
-            transform: scale(2)
-            transform-origin: top right
+            border-radius: 10px
 
-            &:hover
-                opacity: 1
+        span
+            display: none
+            //  font-family: $montserrat
+                opacity: .7
 
-        .modal-title
-            font-weight: bold
+        &:hover
+            z-index: 99 !important
 
-    .modal-footer
-        border: 0 !important
-        padding-top: 0px !important
-        padding: 40px
-        text-align: center
+            img
+                transform: scale(1.1)
+                border-radius: 15px
 
 // Section Colors
 .projects-1
-    background-color: $grey
+    background-color: $white
 
 // Hover Animations
 .project-anim-1
@@ -139,15 +65,3 @@
 
         @media (max-width: 750px)
             transform: scale(1.01) rotate(-1deg)
-
-// Micro-Contact
-#micro-contact
-    background-image: url('../img/Contacto/micro-contact.jpg')
-    background-size: cover
-    background-color: rgba(32,32,32,.6)
-    background-blend-mode: overlay
-    background-attachment: fixed
-    color: $white !important
-
-    h1
-        font-size: 180%
