@@ -6,7 +6,7 @@
     background-image: url('../img/heroBG.svg')
     background-size: cover
     background-position: bottom left
-    padding: 5px 0 200px 0
+    padding: 5px 20px 200px 20px
     margin-left: 0x
     animation-duration: 1s
     animation-delay: .5s
@@ -19,16 +19,45 @@
     color: $white !important
     z-index: 10
 
+    @media (max-width: 800px)
+        padding: 5px 5px 80px 5px
+
+    @media (max-width: 1000px)
+        padding-top: 130px
+        padding: 5px 10px 100px 10px
+
     .hero-content
         h1
             span
                 font-weight: 700
 
+        p
+            font-weight: 300
+
     .hero-image
-        @media(max-width:700px)
+        display: block
+        margin: 0 auto
+
+        @media(max-width: 800px)
+            width: 60%
+            margin-bottom: 20px
+
+        @media(max-width: 550px)
             width: 80%
             margin-bottom: 20px
 
+    .ctas
+        font-family: $montserrat
+
+    .btn1blur
+        opacity: 1 !important
+
+    .hero-link
+        color: $white !important
+        opacity: .8
+
+        &:hover
+            opacity: 1
 
 // Qué Hacemos? (Servicios)
 #servicios
@@ -226,6 +255,7 @@
         transition: $transition
 
         @media(min-width: 600px)
+            top: 56px
             left: 72px
 
         .cls-1

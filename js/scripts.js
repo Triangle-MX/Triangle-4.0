@@ -109,6 +109,24 @@ jQuery(document).ready(function(){
 	}
 });
 
+// Image Randomize
+var heroImage = $('#hero-image');
+function imageRandomize() {
+    var imageSelectorRandom = Math.random();
+    console.log(imageSelectorRandom);
+
+    if (imageSelectorRandom < .25) {
+        heroImage.attr("src","img/astros-computer.svg");
+    } else {
+        if (imageSelectorRandom < .50) {
+            heroImage.attr("src","img/triangle-computer.svg");
+        } else {
+            heroImage.attr("src","img/learning-english-computer.svg");
+        };
+    };
+};
+//$('document.body').onload = imageRandomize();
+
 // Rellax JS
 (function(h,g){"function"===typeof define&&define.amd?define([],g):"object"===typeof module&&module.exports?module.exports=g():h.Rellax=g()})(this,function(){var h=function(g,n){var a=Object.create(h.prototype),k=0,p=0,l=0,q=0,e=[],r=!0,z=window.requestAnimationFrame||window.webkitRequestAnimationFrame||window.mozRequestAnimationFrame||window.msRequestAnimationFrame||window.oRequestAnimationFrame||function(a){setTimeout(a,1E3/60)},A=window.transformProp||function(){var a=document.createElement("div");
 if(null===a.style.transform){var b=["Webkit","Moz","ms"],d;for(d in b)if(void 0!==a.style[b[d]+"Transform"])return b[d]+"Transform"}return"transform"}();a.options={speed:-2,center:!1,wrapper:null,round:!0,vertical:!0,horizontal:!1,callback:function(){}};n&&Object.keys(n).forEach(function(c){a.options[c]=n[c]});g||(g=".rellax");var m="string"===typeof g?document.querySelectorAll(g):[g];if(0<m.length)a.elems=m;else throw Error("The elements you're trying to select don't exist.");if(a.options.wrapper&&
