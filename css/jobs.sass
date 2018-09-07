@@ -1,0 +1,33 @@
+#jobs
+    display: block
+    text-align: center
+
+    @media(min-width: 768px)
+        display: flex
+        align-items: center
+        text-align: left
+        
+    .job-card
+        padding: 50px 20px
+        background-color: $white
+        box-shadow: $box-shadow3
+        border-radius: 25px
+        text-align: center
+        margin-bottom: 30px
+        transition: $transition
+        z-index: 1
+
+        img
+            width: 50%
+            margin: 0 auto
+
+        h3
+            font-weight: 700
+
+        p
+            font-weight: 300
+
+        &:hover
+            transform: scale(1.05)
+            box-shadow: $box-shadow3
+            z-index: 2
