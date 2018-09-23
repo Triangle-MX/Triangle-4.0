@@ -55,15 +55,22 @@
         @media(max-width: 800px)
             margin: auto
 
-    .btn1blur
-        opacity: 1 !important
+        .btn1blur
+            opacity: 1 !important
 
-    .hero-link
-        color: $white !important
-        opacity: .85
+        span
+            @media(max-width: 1000px)
+                display: none
 
-        &:hover
-            opacity: 1
+        .hero-link
+            color: $white !important
+            opacity: .85
+
+            @media(max-width: 1000px)
+                display: none
+
+            &:hover
+                opacity: 1
 
 // Qué Hacemos? (Servicios)
 #servicios
@@ -148,17 +155,22 @@
 
 // MKT Block
 .web-mkt
-    background-color: #07093B
-    clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%)
-    background-attachment: fixed
+    background-color: #ffffff
     background-image: url('../img/MKT-Block-Space-BG.svg')
     background-repeat: no-repeat
     background-size: cover
+    background-position: center
 
 .mkt-block
     margin: 150px 0
-    padding: 120px 0
-    padding-top: 100px
+    padding: 200px 0
+    display: flex
+    flex-direction: column
+    justify-content: center
+    text-align: center
+
+    @media(max-width: 768px)
+        padding: 150px 0 !important
 
     .container
         width: 80%
@@ -166,7 +178,7 @@
     .row
         text-align: center
 
-        //@media(min-width: 768px)
+        //
             display: flex
             align-items: center
             text-align: center
@@ -200,9 +212,9 @@
 
         .centered-block
             max-width: 15%
-            display: inline-block
+            margin: 0 auto
+            display: block
             transition: $transition
-            position: relative
             margin-bottom: 20px
 
             @media(max-width: 1000px)

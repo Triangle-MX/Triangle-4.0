@@ -63,21 +63,6 @@
     <script src="js/vendor/pace.min.js"></script>
     <link rel="stylesheet" href="css/loading.css">
 
-    <!-- Notifications -->
-    <script>
-        (function(){
-
-            var scripts = ["/static/general/bf-core.min.js", "/static/containers/JAF420.js", "/static/general/push-init-code.js"]
-            for(var i = 0; i < scripts.length; i++) {
-                var script   = document.createElement("script");
-                script.src   = "//brandflow.net" + scripts[i] + "?ts=" + Date.now() + "#";
-                script.async = false;
-                document.head.appendChild(script);
-            }
-
-        })();
-    </script>
-
     <!-- Pageclip -->
     <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
     <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
@@ -148,7 +133,7 @@
                         <p><b>Páginas Web</b> y <b>Diseño Gráfico</b> para impulsar tu negocio.</p>
                         <p class="ctas">
                             <a href="#servicios" class="btn1blur">Descubre Más</a>
-                                &nbsp;&nbsp;&nbsp;&nbsp;
+                                <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
                             <a class="hero-link" href="#contacto">Contáctanos</a>
                         </p>
                     </div>
